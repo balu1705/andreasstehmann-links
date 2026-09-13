@@ -13,7 +13,49 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
     <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YPCSF9BFH2'); </script>
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22 aria-hidden=%22true%22 aria-labelledby=%22icon-title%22><style>.icon{silouhette:fill:none;stroke:fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.box{opacity:0.8;min-width:80px;min-height:80px}.t{stroke:#1a1a1a}.hh{fill:#1a1a1a}</style><text x="64" y="50" class="text" text-anchor="middle" dy=".3em" id="icon-title">H</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22 aria-hidden=%22true%22 aria-labelledby=%22icon-title%22><style>.icon{silouhette:fill:none;stroke:fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.box{opacity:0.8;min-width:80px;min-height:80px}.t{stroke:#1a1a1a}.hh{fill:#1a1a1a}
+        a.offer-card {
+            display: block;
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 0;
+            text-decoration: none;
+            transition: box-shadow 0.2s, transform 0.2s;
+            overflow: hidden;
+        }
+
+        a.offer-card:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        a.offer-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        a.offer-card h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin: 12px 15px 5px;
+        }
+
+        a.offer-card p.price {
+            color: #dc2626;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 5px 15px;
+        }
+
+        a.offer-card p.desc {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin: 5px 15px 10px;
+        }
+</style><text x="64" y="50" class="text" text-anchor="middle" dy=".3em" id="icon-title">H</text></svg>">
     <style>
         :root {
             --primary: #1e293b;
@@ -215,6 +257,42 @@
         <div class="hero">
             <h1>Amazon Top Angebote</h1>
             <p>Entdecke die besten Produkte aus allen Nischen – von Haushalt bis Smart Home, von Parfüm bis LEGO.</p>
+
+        <!-- Banner: Aktuelle Top-Angebote -->
+        <div class="section">
+            <h2>🔥 Aktuelle Top-Angebote</h2>
+            <div class="grid">
+                <!-- Angebot 1: Ninja Heißluftfritteuse -->
+                <a href="https://www.amazon.de/s?k=ninja+heissluftfritteuse+xxl&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/81uOlPYW6VL._AC_SY300_SX300_QL70_ML2_.jpg" alt="Ninja Heißluftfritteuse XXL">
+                    <h3>Ninja Heißluftfritteuse XXL</h3>
+                    <p class="price">129,99 €</p>
+                    <p class="desc">18L Fassungsvermögen, 8 Programme. Knusprig ohne Öl.</p>
+                </a>
+                <!-- Angebot 2: Vexilar W8 Saugroboter -->
+                <a href="https://www.amazon.de/s?k=vexilar+w8+saugroboter&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/813uvRgOpUL._AC_SL1500_.jpg" alt="Vexilar W8 Saugroboter">
+                    <h3>Vexilar W8 Saugroboter</h3>
+                    <p class="price">449,99 €</p>
+                    <p class="desc">Saust und wischt selbst. App-Steuerung, unter Möbeln.</p>
+                </a>
+                <!-- Angebot 3: Aroma Diffusor -->
+                <a href="https://www.amazon.de/s?k=aroma+diffusor+300ml&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Aroma Diffusor 300ml">
+                    <h3>Aroma Diffusor 300ml</h3>
+                    <p class="price">34,99 €</p>
+                    <p class="desc">Ultraschall, LED-Farbwechsel, Timer. Entspannung pur.</p>
+                </a>
+                <!-- Angebot 4: Smart Steckdose -->
+                <a href="https://www.amazon.de/s?k=smart+steckdose+wlan&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/61NwGxOLYpL._AC_SR160,134_.jpg" alt="Smart Steckdose WLAN">
+                    <h3>Smart Steckdose WLAN</h3>
+                    <p class="price">19,99 €</p>
+                    <p class="desc">Alexa &amp; Google Home kompatibel. Timer, Sprachsteuerung.</p>
+                </a>
+            </div>
+        </div>
+
         </div>
         
         <!-- Nischen-Karten -->
@@ -356,6 +434,74 @@
                     <a href="/kuechenorganisation/">Mehr erfahren</a>
                 </div>
             </div>
+
+        <!-- Banner: Wöchentliche Highlights -->
+        <div class="section">
+            <h2>⭐ Wöchentliche Highlights</h2>
+            <div class="grid">
+                <!-- Highlight 1: Ninja Luxe Café Premier -->
+                <a href="https://www.amazon.de/s?k=ninja+luxe+cafe+premier&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/811J8urmwwL._AC_SL1500_.jpg" alt="Ninja Luxe Café Premier">
+                    <h3>Ninja Luxe Café Premier</h3>
+                    <p class="price">349,99 €</p>
+                    <p class="desc">3-in-1 Kaffeevollautomat: Espresso, Cappuccino, Latte.</p>
+                </a>
+                <!-- Highlight 2: LEGO Star Wars Millennium Falcon -->
+                <a href="https://www.amazon.de/s?k=lego+star+wars+millennium+falcon&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/91Ncs5p03KL._AC_SR160,134_.jpg" alt="LEGO Star Wars Millennium Falcon">
+                    <h3>LEGO Star Wars Millennium Falcon</h3>
+                    <p class="price">649,99 €</p>
+                    <p class="desc">Über 7.500 Teile – das größte LEGO Set ever.</p>
+                </a>
+                <!-- Highlight 3: Tapo D205 Türklingel -->
+                <a href="https://www.amazon.de/s?k=tapo+d205&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/61bZbYAhsL._AC_SL1500_.jpg" alt="Tapo D205 Türklingel">
+                    <h3>Tapo D205 Türklingel</h3>
+                    <p class="price">69,99 €</p>
+                    <p class="desc">HD-Video, Bewegungserkennung, Akkubetrieben, ohne Kabel.</p>
+                </a>
+                <!-- Highlight 4: Bambus Schubladen Organizer -->
+                <a href="https://www.amazon.de/s?k=bambus+schubladen+organizer&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/81fmCBxgGdL._AC_SY450_.jpg" alt="Bambus Schubladen Organizer">
+                    <h3>Bambus Schubladen Organizer</h3>
+                    <p class="price">22,99 €</p>
+                    <p class="desc">Modular, nachhaltig, für Besteck und Kleinteile.</p>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Banner: Bestseller dieser Woche -->
+        <div class="section">
+            <h2>🏆 Bestseller dieser Woche</h2>
+            <div class="grid">
+                <a href="https://www.amazon.de/s?k=ninja+woodfire+pro+connect+xl&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/81mojqbkHWL._AC_SR160,134_.jpg" alt="Ninja Woodfire Pro Connect XL">
+                    <h3>Ninja Woodfire Pro Connect XL</h3>
+                    <p class="price">349,99 €</p>
+                    <p class="desc">Elektrischer Smoker, Bluetooth, für Balkon &amp; Terrasse.</p>
+                </a>
+                <a href="https://www.amazon.de/s?k=tapo+d205&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/813uvRgOpUL._AC_SL1500_.jpg" alt="Vexilar W8 Saugroboter">
+                    <h3>Vexilar W8 Saugroboter</h3>
+                    <p class="price">449,99 €</p>
+                    <p class="desc">Saust und wischt selbst. App-Steuerung, unter Möbeln.</p>
+                </a>
+                <a href="https://www.amazon.de/s?k=lego+star+wars+millennium+falcon&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/91Ncs5p03KL._AC_SR160,134_.jpg" alt="LEGO Star Wars Millennium Falcon">
+                    <h3>LEGO Star Wars Millennium Falcon</h3>
+                    <p class="price">649,99 €</p>
+                    <p class="desc">Über 7.500 Teile – das größte LEGO Set ever.</p>
+                </a>
+                <a href="https://www.amazon.de/s?k=aroma+diffusor+300ml&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Aroma Diffusor 300ml">
+                    <h3>Aroma Diffusor 300ml</h3>
+                    <p class="price">34,99 €</p>
+                    <p class="desc">Ultraschall, LED-Farbwechsel, Timer. Entspannung pur.</p>
+                </a>
+            </div>
+        </div>
+
         </div>
         
         <!-- Stats -->
@@ -383,6 +529,42 @@
 
             </div>
         </div>
+
+        <!-- Banner: Wöchentliche Highlights -->
+        <div class="section">
+            <h2>⭐ Wöchentliche Highlights</h2>
+            <div class="grid">
+                <!-- Highlight 1: Ninja Luxe Café Premier -->
+                <a href="https://www.amazon.de/s?k=ninja+luxe+cafe+premier&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/811J8urmwwL._AC_SL1500_.jpg" alt="Ninja Luxe Café Premier">
+                    <h3>Ninja Luxe Café Premier</h3>
+                    <p class="price">349,99 €</p>
+                    <p class="desc">3-in-1 Kaffeevollautomat: Espresso, Cappuccino, Latte.</p>
+                </a>
+                <!-- Highlight 2: LEGO Star Wars Millennium Falcon -->
+                <a href="https://www.amazon.de/s?k=lego+star+wars+millennium+falcon&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/91Ncs5p03KL._AC_SR160,134_.jpg" alt="LEGO Star Wars Millennium Falcon">
+                    <h3>LEGO Star Wars Millennium Falcon</h3>
+                    <p class="price">649,99 €</p>
+                    <p class="desc">Über 7.500 Teile – das größte LEGO Set ever.</p>
+                </a>
+                <!-- Highlight 3: Tapo D205 Türklingel -->
+                <a href="https://www.amazon.de/s?k=tapo+d205&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/61bZbYAhsL._AC_SL1500_.jpg" alt="Tapo D205 Türklingel">
+                    <h3>Tapo D205 Türklingel</h3>
+                    <p class="price">69,99 €</p>
+                    <p class="desc">HD-Video, Bewegungserkennung, Akkubetrieben, ohne Kabel.</p>
+                </a>
+                <!-- Highlight 4: Bambus Schubladen Organizer -->
+                <a href="https://www.amazon.de/s?k=bambus+schubladen+organizer&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
+                    <img src="https://m.media-amazon.com/images/I/81fmCBxgGdL._AC_SY450_.jpg" alt="Bambus Schubladen Organizer">
+                    <h3>Bambus Schubladen Organizer</h3>
+                    <p class="price">22,99 €</p>
+                    <p class="desc">Modular, nachhaltig, für Besteck und Kleinteile.</p>
+                </a>
+            </div>
+        </div>
+
     </div>
     
     <footer class="footer">
