@@ -3,571 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Andreas Stehmann - Amazon Affiliate Top Angebote in allen Nischen">
-    <meta name="keywords" content="Amazon, Affiliate, Produkte, Nischen, Wohnen, Deko, Smart Home, Wellness">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Stehmann - Amazon Top Angebote</title>
-    <link rel="canonical" href="https://balu17051.github.io/andreasstehmann-links/">
-    <!-- Google Tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-YPCSF9BFH2'); </script>
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22 aria-hidden=%22true%22 aria-labelledby=%22icon-title%22><style>.icon{silouhette:fill:none;stroke:fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}.box{opacity:0.8;min-width:80px;min-height:80px}.t{stroke:#1a1a1a}.hh{fill:#1a1a1a}
-        a.offer-card {
-            display: block;
-            background: white;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 0;
-            text-decoration: none;
-            transition: box-shadow 0.2s, transform 0.2s;
-            overflow: hidden;
-        }
-
-        a.offer-card:hover {
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-            transform: translateY(-2px);
-        }
-
-        a.offer-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-bottom: 1px solid #e2e8f0;
-        }
-
-        a.offer-card h3 {
-            color: var(--primary);
-            font-size: 1.1rem;
-            margin: 12px 15px 5px;
-        }
-
-        a.offer-card p.price {
-            color: #dc2626;
-            font-weight: 600;
-            font-size: 1.1rem;
-            margin: 5px 15px;
-        }
-
-        a.offer-card p.desc {
-            color: var(--muted);
-            font-size: 0.85rem;
-            margin: 5px 15px 10px;
-        }
-</style><text x="64" y="50" class="text" text-anchor="middle" dy=".3em" id="icon-title">H</text></svg>">
+    <title>Andreas Stehmann – Amazon Top Angebote</title>
+    <meta name="description" content="Alle Nischenseiten auf einen Blick.">
     <style>
-        :root {
-            --primary: #1e293b;
-            --secondary: #334155;
-            --accent: #1d4ed8;
-            --light: #f8fafc;
-            --dark: #0f172a;
-            --text: #1e293b;
-            --muted: #64748b;
-            --success: #10b981;
-            --info: #3b82f6;
-        }
-        
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: var(--light);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #fafafa;
+            color: #1d1d1f;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
         }
         
         .container {
-            max-width: 1400px;
+            max-width: 980px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 60px 20px;
         }
         
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            color: #f8fafc;
-            padding: 80px 20px;
-            border-radius: 20px;
-            text-align: center;
+        header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        header p {
+            font-size: 15px;
+            color: #86868b;
             margin-bottom: 40px;
         }
         
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            opacity: 0.8;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Sections */
-        .section {
-            margin-bottom: 60px;
-        }
-        
-        .section h2 {
-            color: var(--primary);
-            font-size: 2rem;
-            margin-bottom: 30px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #e2e8f0;
-        }
-        
-        .grid {
+        .links-grid {
             display: grid;
-            gap: 30px;
-        }
-        
-        @media (min-width: 768px) {
-            .grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            }
-        }
-        
-        .card {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s ease;
-        }
-        
-        .card:hover {
-            transform: translateY(-4px);
-        }
-        
-        .image-wrapper {
-            width: 100%;
-            height: 200px;
-            background: #f1f5f9;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-        
-        .image-wrapper img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .card h3 {
-            color: var(--primary);
-            font-size: 1.25rem;
-            margin-bottom: 15px;
-        }
-        
-        .card p {
-            color: var(--muted);
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background: var(--accent);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            margin-top: 15px;
-            transition: background 0.2s ease;
-        }
-        
-        .btn:hover {
-            background: #2563eb;
-        }
-        
-        /* Nischen-Karten */
-        .niche-card {
-            background: var(--white);
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        
-        .niche-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-4px);
-        }
-        
-        .niche-card h3 {
-            color: var(--primary);
-            font-size: 1.5rem;
-            margin: 10px 0;
-        }
-        
-        .niche-card p {
-            color: var(--muted);
-            font-size: 0.95rem;
-        }
-        
-        /* Stats */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 20px;
-            margin: 40px 0;
         }
         
-        .stat {
+        .link-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px 24px;
+            text-decoration: none;
+            color: #1d1d1f;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: left;
+            transition: background 0.15s ease;
+            border: 1px solid #e8e8ed;
+        }
+        
+        .link-card:hover {
+            background: #f5f5f7;
+            border-color: #d2d2d7;
+        }
+        
+        .link-card:active {
+            background: #eaeaea;
+        }
+        
+        .spacer {
+            height: 40px;
+        }
+        
+        footer {
             text-align: center;
+            padding: 40px 20px 30px;
+            font-size: 13px;
+            color: #86868b;
+            border-top: 1px solid #d2d2d7;
+            margin-top: 40px;
         }
         
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
+        footer a {
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
         }
         
-        .stat-label {
-            color: var(--muted);
-            font-size: 0.9rem;
-            margin-top: 5px;
+        footer a:hover {
+            text-decoration: underline;
         }
         
-        /* Footer */
-        .footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--muted);
-            font-size: 0.9rem;
-            background: #f1f5f9;
+        @media (max-width: 600px) {
+            .container { padding: 40px 16px; }
+            header h1 { font-size: 28px; }
+            .links-grid { grid-template-columns: 1fr; gap: 12px; }
+            .link-card { padding: 16px 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Hero Section -->
-        <div class="hero">
+        <header>
             <h1>Amazon Top Angebote</h1>
-            <p>Entdecke die besten Produkte aus allen Nischen – von Haushalt bis Smart Home, von Parfüm bis LEGO.</p>
-
-        <!-- Banner: Aktuelle Top-Angebote -->
-        <div class="section">
-            <h2>🔥 Aktuelle Top-Angebote</h2>
-            <div class="grid">
-                <!-- Angebot 1: Ninja Heißluftfritteuse -->
-                <a href="https://www.amazon.de/s?k=ninja+heissluftfritteuse+xxl&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/81uOlPYW6VL._AC_SY300_SX300_QL70_ML2_.jpg" alt="Ninja Heißluftfritteuse XXL">
-                    <h3>Ninja Heißluftfritteuse XXL</h3>
-                    <p class="price">129,99 €</p>
-                    <p class="desc">18L Fassungsvermögen, 8 Programme. Knusprig ohne Öl.</p>
-                </a>
-                <!-- Angebot 2: Vexilar W8 Saugroboter -->
-                <a href="https://www.amazon.de/s?k=vexilar+w8+saugroboter&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/813uvRgOpUL._AC_SL1500_.jpg" alt="Vexilar W8 Saugroboter">
-                    <h3>Vexilar W8 Saugroboter</h3>
-                    <p class="price">449,99 €</p>
-                    <p class="desc">Saust und wischt selbst. App-Steuerung, unter Möbeln.</p>
-                </a>
-                <!-- Angebot 3: Aroma Diffusor -->
-                <a href="https://www.amazon.de/s?k=aroma+diffusor+300ml&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Aroma Diffusor 300ml">
-                    <h3>Aroma Diffusor 300ml</h3>
-                    <p class="price">34,99 €</p>
-                    <p class="desc">Ultraschall, LED-Farbwechsel, Timer. Entspannung pur.</p>
-                </a>
-                <!-- Angebot 4: Smart Steckdose -->
-                <a href="https://www.amazon.de/s?k=smart+steckdose+wlan&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/61NwGxOLYpL._AC_SR160,134_.jpg" alt="Smart Steckdose WLAN">
-                    <h3>Smart Steckdose WLAN</h3>
-                    <p class="price">19,99 €</p>
-                    <p class="desc">Alexa &amp; Google Home kompatibel. Timer, Sprachsteuerung.</p>
-                </a>
-            </div>
-        </div>
-
-        </div>
+            <p>Alle Nischen auf einen Blick.</p>
+        </header>
         
-        <!-- Nischen-Karten -->
-        <div class="section">
-            <h2>Alle Nischen auf einen Blick</h2>
-            <div class="grid">
-                <!-- Nische: Damenparfüm -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #ff6b6b, #ee5a24);">
-                        <img src="https://m.media-amazon.com/images/I/51yOl5EAgXL._AC_SR160,134_.jpg" alt="Damenparfüm">
-                    </div>
-                    <h3>Damenparfüm</h3>
-                    <p>Vielfalt für jeden Anlass – von täglich bis festlich.</p>
-                    <a href="/parfum-damen/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Herrendüfte -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #4f46e5, #a855f7);">
-                        <img src="https://m.media-amazon.com/images/I/313uvRgOpUL._AC_SL1500_.jpg" alt="Herrendüfte">
-                    </div>
-                    <h3>Herrendüfte</h3>
-                    <p>Klassiker und neue Lieblinge für jede Gelegenheit.</p>
-                    <a href="/parfum-herren/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Haushaltshelfer -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #10b981, #34d399);">
-                        <img src="https://m.media-amazon.com/images/I/813uvRgOpUL._AC_SL1500_.jpg" alt="Haushaltshelfer">
-                    </div>
-                    <h3>Haushaltshelfer</h3>
-                    <p>Praktische Helfer für sauberes Zuhause und Organisation.</p>
-                    <a href="/haushaltshelfer/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Smart Home -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-                        <img src="https://m.media-amazon.com/images/I/61NwGxOLYpL._AC_SR160,134_.jpg" alt="Smart Home">
-                    </div>
-                    <h3>Smart Home</h3>
-                    <p>Vernetztes Zuhause für mehr Komfort und Sicherheit.</p>
-                    <a href="/smart-home/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: DIY -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #f59e0b, #fbbf24);">
-                        <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="DIY">
-                    </div>
-                    <h3>DIY & Basteln</h3>
-                    <p>Kreativ sein und selbst machen – mit den richtigen Werkzeugen.</p>
-                    <a href="/diy/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Wellness -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #14b8a6, #2dd4bf);">
-                        <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Wellness">
-                    </div>
-                    <h3>Wellness</h3>
-                    <p>Produkte für Entspannung und Wohlbefinden zu Hause.</p>
-                    <a href="/wellness/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Geschenke -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #ec4899, #f472b6);">
-                        <img src="https://m.media-amazon.com/images/I/81pZvXQ6HBL._AC_SR160,134_.jpg" alt="Geschenke">
-                    </div>
-                    <h3>Geschenke</h3>
-                    <p>Individuelle Geschenke für jeden Anlass – persönlich und besonders.</p>
-                    <a href="/geschenke/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Balkon & Garten -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #10b981, #34d399);">
-                        <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Balkon & Garten">
-                    </div>
-                    <h3>Balkon & Garten</h3>
-                    <p>Gestaltungsideen für draußen – von klein bis groß.</p>
-                    <a href="/balkon-garten/">Mehr erfahren</a>
-                </div>
+        <main>
+            <div class="links-grid">
+                <a class="link-card" href="/andreasstehmann-parfum-damen/">Damenparfüm</a>
+
+                            <a class="link-card" href="/andreasstehmann-parfum-herren/">Herrendüfte</a>
+                <a class="link-card" href="/andreasstehmann-haushaltshelfer/">Haushaltshelfer</a>
+
+                            <a class="link-card" href="/andreasstehmann-smart-home/">Smart Home</a>
+                <a class="link-card" href="/andreasstehmann-diy/">DIY & Basteln</a>
+
+                            <a class="link-card" href="/andreasstehmann-wellness/">Wellness</a>
+                <a class="link-card" href="/andreasstehmann-geschenke/">Geschenke</a>
+
+                            <a class="link-card" href="/andreasstehmann-balkon-garten/">Balkon & Garten</a>
+                <a class="link-card" href="/andreasstehmann-kuechenorganisation/">Küchenorganisation</a>
+
+                            <a class="link-card" href="/andreasstehmann-lego/">LEGO</a>
+                <a class="link-card" href="/andreasstehmann-bestseller-august/">Bestseller</a>
+
+                            <a class="link-card" href="/starlet-zone/">Starlet Zone</a>
+
             </div>
-            <div class="grid">
-                <!-- Nische: Küche -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #f97316, #fb923c);">
-                        <img src="https://m.media-amazon.com/images/I/81fmCBxgGdL._AC_SR160,134_.jpg" alt="Küche">
-                    </div>
-                    <h3>Küchenorganisation</h3>
-                    <p>Ordnung schaffen und den Überblick behalten.</p>
-                    <a href="/kuechenorganisation/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: LEGO -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #84cc16, #a3e635);">
-                        <img src="https://m.media-amazon.com/images/I/91pZvXQ6HBL._AC_SR160,134_.jpg" alt="LEGO">
-                    </div>
-                    <h3>LEGO</h3>
-                    <p>Bausets für Groß und Klein – von Sets für Kinder bis Sammler-Editionen.</p>
-                    <a href="/lego/">Mehr erfahren</a>
-                </div>
-                
-                <!-- Nische: Bestseller -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #6b46c1, #a855f7);">
-                        <img src="https://m.media-amazon.com/images/I/81uOlPYW6VL._AC_SR160,134_.jpg" alt="Bestseller">
-                    </div>
-                    <h3>Bestseller</h3>
-                    <p>Die aktuell beliebtesten Amazon-Produkte.</p>
-                    <a href="/bestseller-august/">Mehr erfahren</a>
-                </div>
-            </div>
-        </div>
+        </main>
         
-        <!-- Zusätzliche Kategorien -->
-        <div class="section">
-            <h2>Weitere interessante Nischen</h2>
-            <div class="grid">
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-                        <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Wellness">
-                    </div>
-                    <h3>Wellness</h3>
-                    <p>Produkte für Entspannung und Gesundheit.</p>
-                    <a href="/wellness/">Mehr erfahren</a>
-                </div>
-                
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #f97316, #fb923c);">
-                        <img src="https://m.media-amazon.com/images/I/81fmCBxgGdL._AC_SR160,134_.jpg" alt="Küchenorganisation">
-                    </div>
-                    <h3>Küchenorganisation</h3>
-                    <p>Ordnungssysteme für jede Küche.</p>
-                    <a href="/kuechenorganisation/">Mehr erfahren</a>
-                </div>
-            </div>
-
-        <!-- Banner: Wöchentliche Highlights -->
-        <div class="section">
-            <h2>⭐ Wöchentliche Highlights</h2>
-            <div class="grid">
-                <!-- Highlight 1: Ninja Luxe Café Premier -->
-                <a href="https://www.amazon.de/s?k=ninja+luxe+cafe+premier&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/811J8urmwwL._AC_SL1500_.jpg" alt="Ninja Luxe Café Premier">
-                    <h3>Ninja Luxe Café Premier</h3>
-                    <p class="price">349,99 €</p>
-                    <p class="desc">3-in-1 Kaffeevollautomat: Espresso, Cappuccino, Latte.</p>
-                </a>
-                <!-- Highlight 2: LEGO Star Wars Millennium Falcon -->
-                <a href="https://www.amazon.de/s?k=lego+star+wars+millennium+falcon&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/91Ncs5p03KL._AC_SR160,134_.jpg" alt="LEGO Star Wars Millennium Falcon">
-                    <h3>LEGO Star Wars Millennium Falcon</h3>
-                    <p class="price">649,99 €</p>
-                    <p class="desc">Über 7.500 Teile – das größte LEGO Set ever.</p>
-                </a>
-                <!-- Highlight 3: Tapo D205 Türklingel -->
-                <a href="https://www.amazon.de/s?k=tapo+d205&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/61bZbYAhsL._AC_SL1500_.jpg" alt="Tapo D205 Türklingel">
-                    <h3>Tapo D205 Türklingel</h3>
-                    <p class="price">69,99 €</p>
-                    <p class="desc">HD-Video, Bewegungserkennung, Akkubetrieben, ohne Kabel.</p>
-                </a>
-                <!-- Highlight 4: Bambus Schubladen Organizer -->
-                <a href="https://www.amazon.de/s?k=bambus+schubladen+organizer&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/81fmCBxgGdL._AC_SY450_.jpg" alt="Bambus Schubladen Organizer">
-                    <h3>Bambus Schubladen Organizer</h3>
-                    <p class="price">22,99 €</p>
-                    <p class="desc">Modular, nachhaltig, für Besteck und Kleinteile.</p>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- Banner: Bestseller dieser Woche -->
-        <div class="section">
-            <h2>🏆 Bestseller dieser Woche</h2>
-            <div class="grid">
-                <a href="https://www.amazon.de/s?k=ninja+woodfire+pro+connect+xl&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/81mojqbkHWL._AC_SR160,134_.jpg" alt="Ninja Woodfire Pro Connect XL">
-                    <h3>Ninja Woodfire Pro Connect XL</h3>
-                    <p class="price">349,99 €</p>
-                    <p class="desc">Elektrischer Smoker, Bluetooth, für Balkon &amp; Terrasse.</p>
-                </a>
-                <a href="https://www.amazon.de/s?k=tapo+d205&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/813uvRgOpUL._AC_SL1500_.jpg" alt="Vexilar W8 Saugroboter">
-                    <h3>Vexilar W8 Saugroboter</h3>
-                    <p class="price">449,99 €</p>
-                    <p class="desc">Saust und wischt selbst. App-Steuerung, unter Möbeln.</p>
-                </a>
-                <a href="https://www.amazon.de/s?k=lego+star+wars+millennium+falcon&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/91Ncs5p03KL._AC_SR160,134_.jpg" alt="LEGO Star Wars Millennium Falcon">
-                    <h3>LEGO Star Wars Millennium Falcon</h3>
-                    <p class="price">649,99 €</p>
-                    <p class="desc">Über 7.500 Teile – das größte LEGO Set ever.</p>
-                </a>
-                <a href="https://www.amazon.de/s?k=aroma+diffusor+300ml&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/71pZvXQ6HBL._AC_SR160,134_.jpg" alt="Aroma Diffusor 300ml">
-                    <h3>Aroma Diffusor 300ml</h3>
-                    <p class="price">34,99 €</p>
-                    <p class="desc">Ultraschall, LED-Farbwechsel, Timer. Entspannung pur.</p>
-                </a>
-            </div>
-        </div>
-
-        </div>
-        
-        <!-- Stats -->
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-number">11</div>
-                <div class="stat-label">Nischen</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">+2.500</div>
-                <div class="stat-label">Amazon Produkte</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">♾️</div>
-                <div class="stat-label">Kategorien</div>
-                <!-- Nische: Starlet Zone (Schmuck & Accessories) -->
-                <div class="niche-card">
-                    <div class="image-wrapper" style="background: linear-gradient(135deg, #d946ef, #a855f7);">
-                        <img src="https://m.media-amazon.com/images/I/61dNivsiLYL._AC_SL1500_.jpg" alt="Starlet Zone Schmuck & Accessories">
-                    </div>
-                    <h3>Starlet Zone</h3>
-                    <p>Schmuck, Accessoires und Styling für deinen Look.</p>
-                    <a href="/starlet-zone/">Mehr erfahren</a>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Banner: Wöchentliche Highlights -->
-        <div class="section">
-            <h2>⭐ Wöchentliche Highlights</h2>
-            <div class="grid">
-                <!-- Highlight 1: Ninja Luxe Café Premier -->
-                <a href="https://www.amazon.de/s?k=ninja+luxe+cafe+premier&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/811J8urmwwL._AC_SL1500_.jpg" alt="Ninja Luxe Café Premier">
-                    <h3>Ninja Luxe Café Premier</h3>
-                    <p class="price">349,99 €</p>
-                    <p class="desc">3-in-1 Kaffeevollautomat: Espresso, Cappuccino, Latte.</p>
-                </a>
-                <!-- Highlight 2: LEGO Star Wars Millennium Falcon -->
-                <a href="https://www.amazon.de/s?k=lego+star+wars+millennium+falcon&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/91Ncs5p03KL._AC_SR160,134_.jpg" alt="LEGO Star Wars Millennium Falcon">
-                    <h3>LEGO Star Wars Millennium Falcon</h3>
-                    <p class="price">649,99 €</p>
-                    <p class="desc">Über 7.500 Teile – das größte LEGO Set ever.</p>
-                </a>
-                <!-- Highlight 3: Tapo D205 Türklingel -->
-                <a href="https://www.amazon.de/s?k=tapo+d205&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/61bZbYAhsL._AC_SL1500_.jpg" alt="Tapo D205 Türklingel">
-                    <h3>Tapo D205 Türklingel</h3>
-                    <p class="price">69,99 €</p>
-                    <p class="desc">HD-Video, Bewegungserkennung, Akkubetrieben, ohne Kabel.</p>
-                </a>
-                <!-- Highlight 4: Bambus Schubladen Organizer -->
-                <a href="https://www.amazon.de/s?k=bambus+schubladen+organizer&tag=balu17051-21&utm_source=pinterest&utm_medium=social&utm_campaign=landingpage" class="offer-card">
-                    <img src="https://m.media-amazon.com/images/I/81fmCBxgGdL._AC_SY450_.jpg" alt="Bambus Schubladen Organizer">
-                    <h3>Bambus Schubladen Organizer</h3>
-                    <p class="price">22,99 €</p>
-                    <p class="desc">Modular, nachhaltig, für Besteck und Kleinteile.</p>
-                </a>
-            </div>
-        </div>
-
+        <footer>
+            <p>&copy; 2026 Andreas Stehmann</p>
+            <p><a href="https://balu17051.github.io/andreasstehmann-links/">Zur Startseite</a></p>
+        </footer>
     </div>
-    
-    <footer class="footer">
-        <p>&copy; 2026 Andreas Stehmann. Alle Rechte vorbehalten. <a href="https://balu17051.github.io/andreasstehmann-links/">Startseite</a></footer>
 </body>
 </html>
