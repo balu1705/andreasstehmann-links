@@ -3,132 +3,398 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Stehmann – Amazon Top Angebote</title>
-    <meta name="description" content="Alle Nischenseiten auf einen Blick.">
+    <title>Andreas Stehmann – Shopübersicht</title>
+    <link rel="canonical" href="https://andreasstehmann-shop.de/">
+    <meta name="description" content="Deine Übersicht aller Themenbereiche – parfum-damen, parfum-herren, haushaltshelfer, smart-home, diy, wellness, geschenke, balkon-garten, kuechenorganisation, lego, bestseller-august, beauty-pflege.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+        /* ===== RESET & BASE ===== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: #fafafa;
+            background: #ffffff;
             color: #1d1d1f;
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
         }
-        
+
         .container {
-            max-width: 980px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 60px 20px;
+            padding: 60px 24px 40px;
         }
-        
-        header h1 {
-            font-size: 32px;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 12px;
+
+        /* ===== HEADER ===== */
+        header {
+            text-align: center;
+            margin-bottom: 52px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 28px;
+            font-weight: 700;
             letter-spacing: -0.5px;
+            color: #1d1d1f;
+            margin-bottom: 10px;
         }
-        
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
         header p {
-            font-size: 15px;
+            font-size: 16px;
             color: #86868b;
-            margin-bottom: 40px;
+            max-width: 480px;
+            margin: 0 auto;
+            line-height: 1.5;
         }
-        
-        .links-grid {
+
+        header .date {
+            font-size: 14px;
+            color: #aeaeb2;
+            margin-top: 6px;
+        }
+
+        /* ===== GRID ===== */
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 20px;
+            gap: 16px;
         }
-        
-        .link-card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 20px 24px;
+
+        /* ===== LINK-KARTE ===== */
+        a.card {
+            display: block;
+            padding: 24px 20px;
             text-decoration: none;
-            color: #1d1d1f;
-            font-size: 15px;
-            font-weight: 500;
-            text-align: left;
-            transition: background 0.15s ease;
-            border: 1px solid #e8e8ed;
+            color: inherit;
+            background: #fafafa;
+            border-radius: 14px;
+            border: 1px solid #f0f0f0;
+            transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+            cursor: pointer;
         }
-        
-        .link-card:hover {
-            background: #f5f5f7;
+
+        a.card:hover {
+            background: #f0f0f0;
             border-color: #d2d2d7;
+            transform: translateY(-2px);
         }
-        
-        .link-card:active {
-            background: #eaeaea;
+
+        a.card:active {
+            background: #e8e8ed;
+            border-color: #c7c7cc;
+            transform: translateY(0);
         }
-        
-        .spacer {
-            height: 40px;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 40px 20px 30px;
-            font-size: 13px;
+
+        .card-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            margin-bottom: 14px;
+            background: #f5f5f7;
+            border-radius: 10px;
             color: #86868b;
-            border-top: 1px solid #d2d2d7;
-            margin-top: 40px;
         }
-        
-        footer a {
-            color: #0071e3;
+
+        .card-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .card-sub {
+            font-size: 13px;
+            color: #aeaeb2;
+            margin-top: 2px;
+        }
+
+        /* ===== BACK LINK ===== */
+        .back-link {
+            display: inline-block;
+            margin-top: 36px;
+            font-size: 14px;
+            color: #86868b;
             text-decoration: none;
-            font-weight: 500;
+            transition: color 0.15s;
+            padding: 8px 16px;
+            border: 1px solid #f0f0f0;
+            border-radius: 8px;
+            background: #fafafa;
         }
-        
+
+        .back-link:hover {
+            color: #1d1d1f;
+            border-color: #d2d2d7;
+            background: #f0f0f0;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: 52px;
+            padding-top: 24px;
+            border-top: 1px solid #f0f0f0;
+            text-align: center;
+            font-size: 13px;
+            color: #aeaeb2;
+        }
+
+        footer a {
+            color: #86868b;
+            text-decoration: none;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
         footer a:hover {
-            text-decoration: underline;
+            color: #1d1d1f;
         }
-        
-        @media (max-width: 600px) {
-            .container { padding: 40px 16px; }
-            header h1 { font-size: 28px; }
-            .links-grid { grid-template-columns: 1fr; gap: 12px; }
-            .link-card { padding: 16px 20px; }
+
+        .disclaimer {
+            font-size: 12px;
+            color: #aeaeb2;
+            margin-top: 8px;
+            line-height: 1.4;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            .container {
+                padding: 40px 16px 32px;
+            }
+
+            header {
+                margin-bottom: 36px;
+                padding-bottom: 24px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            a.card {
+                padding: 18px 16px;
+                border-radius: 12px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Amazon Top Angebote</h1>
-            <p>Alle Nischen auf einen Blick.</p>
+            <div class="logo">AS</div>
+            <h1>Andreas Stehmann</h1>
+            <p>Deine Übersicht aller Themenbereiche – von Parfüm über Haushaltshilfe bis LEGO.</p>
+            <div class="date">Zuletzt aktualisiert: 2026</div>
         </header>
-        
-        <main>
-            <div class="links-grid">
-                <a class="link-card" href="/andreasstehmann-parfum-damen/">Damenparfüm</a>
 
-                            <a class="link-card" href="/andreasstehmann-parfum-herren/">Herrendüfte</a>
-                <a class="link-card" href="/andreasstehmann-haushaltshelfer/">Haushaltshelfer</a>
+        <div class="grid">
+            <a class="card" href="/niches/parfum-damen/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 0 1 10 10c0 5.5-3.5 10-10 10S2 17.5 2 12 5.5 2 12 2z"/>
+                        <path d="M12 6v6"/>
+                        <path d="M9 9h6"/>
+                    </svg>
+                </div>
+                <div class="card-title">Parfum Damen</div>
+                <div class="card-sub">Duftparfüms für Frauen</div>
+            </a>
 
-                            <a class="link-card" href="/andreasstehmann-smart-home/">Smart Home</a>
-                <a class="link-card" href="/andreasstehmann-diy/">DIY & Basteln</a>
+            <a class="card" href="/niches/parfum-herren/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a10 10 0 0 1 10 10c0 5.5-3.5 10-10 10S2 17.5 2 12 5.5 2 12 2z"/>
+                        <path d="M12 6v6"/>
+                        <path d="M15 9h-6"/>
+                    </svg>
+                </div>
+                <div class="card-title">Parfum Herren</div>
+                <div class="card-sub">Männerdüfte</div>
+            </a>
 
-                            <a class="link-card" href="/andreasstehmann-wellness/">Wellness</a>
-                <a class="link-card" href="/andreasstehmann-geschenke/">Geschenke</a>
+            <a class="card" href="/niches/haushaltshelfer/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12h18"/>
+                        <path d="M5 10v4"/>
+                        <path d="M19 10v4"/>
+                        <rect x="3" y="8" width="18" height="8" rx="2"/>
+                    </svg>
+                </div>
+                <div class="card-title">Haushaltshelfer</div>
+                <div class="card-sub">Praktische Geräte</div>
+            </a>
 
-                            <a class="link-card" href="/andreasstehmann-balkon-garten/">Balkon & Garten</a>
-                <a class="link-card" href="/andreasstehmann-kuechenorganisation/">Küchenorganisation</a>
+            <a class="card" href="/niches/smart-home/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20"/>
+                        <path d="M2 12h20"/>
+                        <circle cx="12" cy="12" r="8"/>
+                        <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                </div>
+                <div class="card-title">Smart Home</div>
+                <div class="card-sub">Vernetzte Lösungen</div>
+            </a>
 
-                            <a class="link-card" href="/andreasstehmann-lego/">LEGO</a>
-                <a class="link-card" href="/andreasstehmann-bestseller-august/">Bestseller</a>
+            <a class="card" href="/niches/diy/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20"/>
+                        <circle cx="12" cy="9" r="4"/>
+                        <circle cx="12" cy="15" r="2"/>
+                    </svg>
+                </div>
+                <div class="card-title">DIY & Basteln</div>
+                <div class="card-sub">Projekte selbst machen</div>
+            </a>
 
-                            <a class="link-card" href="/starlet-zone/">Starlet Zone</a>
+            <a class="card" href="/niches/wellness/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2c-5 0-8 2-8 5v8c0 3 3 5 8 5s8-2 8-5V7c0-3-3-5-8-5z"/>
+                        <circle cx="12" cy="9" r="2"/>
+                        <path d="M10 17c0 1.5 1 2 2 2s2-.5 2-2"/>
+                    </svg>
+                </div>
+                <div class="card-title">Wellness</div>
+                <div class="card-sub">Genuss & Entspannung</div>
+            </a>
 
-            </div>
-        </main>
-        
+            <a class="card" href="/niches/geschenke/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="6" width="18" height="14" rx="2"/>
+                        <path d="M3 10h18"/>
+                        <path d="M7 6v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/>
+                        <path d="M9 20v2"/>
+                    </svg>
+                </div>
+                <div class="card-title">Geschenke</div>
+                <div class="card-sub">Ideale Überraschungen</div>
+            </a>
+
+            <a class="card" href="/niches/balkon-garten/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20"/>
+                        <path d="M8 6c0 2 1 3 4 3s4-1 4-3"/>
+                        <path d="M7 10c0 2 1 3 5 3s5-1 5-3"/>
+                        <path d="M9 14c0 1 1 2 3 2s3-1 3-2"/>
+                    </svg>
+                </div>
+                <div class="card-title">Balkon & Garten</div>
+                <div class="card-sub">Grüne Oasen</div>
+            </a>
+
+            <a class="card" href="/niches/kuechenorganisation/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="M6 4v4"/>
+                        <path d="M18 4v4"/>
+                        <path d="M6 8h12"/>
+                        <path d="M6 12h12"/>
+                        <path d="M6 16h12"/>
+                    </svg>
+                </div>
+                <div class="card-title">Küchenorganisation</div>
+                <div class="card-sub">Ordnung im Küchenbereich</div>
+            </a>
+
+            <a class="card" href="/niches/lego/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <rect x="5" y="5" width="14" height="14" rx="1"/>
+                        <circle cx="8" cy="8" r="1.5"/>
+                        <circle cx="16" cy="8" r="1.5"/>
+                        <circle cx="8" cy="16" r="1.5"/>
+                        <circle cx="16" cy="16" r="1.5"/>
+                    </svg>
+                </div>
+                <div class="card-title">LEGO</div>
+                <div class="card-sub">Bausätze & Sets</div>
+            </a>
+
+            <a class="card" href="/niches/bestseller-august/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16v16H4z"/>
+                        <path d="M8 8h8v8H8z"/>
+                        <path d="M12 4v16"/>
+                        <path d="M4 12h16"/>
+                    </svg>
+                </div>
+                <div class="card-title">Bestseller August</div>
+                <div class="card-sub">Top-Empfehlungen</div>
+            </a>
+
+            <a class="card" href="/niches/beauty-pflege/">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 7 5s7-2 7-5a7 7 0 0 0-7-7z"/>
+                        <path d="M9 9h6"/>
+                        <path d="M10 12h4"/>
+                        <path d="M9 15h6"/>
+                    </svg>
+                </div>
+                <div class="card-title">Beauty & Pflege</div>
+                <div class="card-sub">Haut, Haare & Körperpflege</div>
+            </a>
+        </div>
+
+        <a class="back-link" href="/">⬆ Zur Startseite</a>
+
         <footer>
-            <p>&copy; 2026 Andreas Stehmann</p>
-            <p><a href="https://balu17051.github.io/andreasstehmann-links/">Zur Startseite</a></p>
+            <p>&copy; 2026 Andreas Stehmann. Alle Rechte vorbehalten.</p>
+            <p class="disclaimer">
+                Affiliate-Hinweis: Dieses Online-Angebot enthält Links zu Amazon Produkten. Als Amazon-Partner erhalte ich für qualifizierte Käufe eine Provision. Für den Kauf Preis und Verfügbarkeit des Produkts auf der Produktseite von Amazon gelten. Alle Angaben ohne Gewähr.
+            </p>
         </footer>
     </div>
 </body>
