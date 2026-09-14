@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Andreas Stehmann – Alle Nischen auf einen Blick</title>
-<meta name="description" content="Übersicht aller Nischen: Parfum, Smart Home, Haushaltshelfer – mit Produkten und Amazon-Affiliate-Links.">
+<meta name="description" content="Übersicht aller Nischen: Parfum, Haushaltshelfer, Smart Home, DIY, Wellness, Geschenke, Balkon, Küche, LEGO, Bestseller, Beauty. Mit Produkten und Amazon-Affiliate-Links.">
 <meta name="robots" content="index, follow">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"><\/script>
@@ -17,128 +17,43 @@ gtag('config', 'G-YPCSF9BFH2');
 
 <style>
 *, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
-
-body {
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-background: #ffffff;
-color: #1d1d1f;
-line-height: 1.5;
--webkit-font-smoothing: antialiased;
-min-height: 100vh;
-scroll-behavior: smooth;
-}
-
+body {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #fff; color: #1d1d1f; line-height: 1.5; -webkit-font-smoothing: antialiased; min-height: 100vh; scroll-behavior: smooth;}
 .container {max-width: 1200px; margin: 0 auto; padding: 20px;}
-
-.sticky-header {
-position: sticky;
-top: 0;
-background: #ffffff;
-border-bottom: 1px solid #e8e8ed;
-padding: 10px 0;
-z-index: 100;
-}
-
-.header-content {
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
-gap: 12px;
-}
-
-.logo {font-size: 18px; font-weight: 700; color: #1d1d1f;}
-.logo-sub {font-size: 11px; color: #86868b;}
-
+.sticky-header {position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e8e8ed; padding: 10px 0; z-index: 100;}
+.header-content {display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;}
+.logo {font-size: 18px; font-weight: 700; color: #1d1d1f; letter-spacing: -0.3px;}
+.logo-sub {font-size: 11px; color: #86868b; margin-top: 2px;}
 .nav-links {display: flex; flex-wrap: wrap; gap: 6px;}
-.nav-link {
-display: inline-block;
-padding: 6px 10px;
-background: #f5f5f7;
-border-radius: 6px;
-font-size: 12px;
-color: #1d1d1f;
-text-decoration: none;
-font-weight: 500;
-transition: background 0.15s ease;
-}
+.nav-link {display: inline-block; padding: 6px 10px; background: #f5f5f7; border-radius: 6px; font-size: 12px; color: #1d1d1f; text-decoration: none; font-weight: 500; transition: background 0.15s ease;}
 .nav-link:hover {background: #e8e8ed;}
 .nav-link:active {background: #d2d2d7;}
-
 .hero {text-align: center; padding: 30px 0 20px; border-bottom: 1px solid #f0f0f0; margin-bottom: 24px;}
-.hero h1 {font-size: 26px; font-weight: 700;}
+.hero h1 {font-size: 26px; font-weight: 700; letter-spacing: -0.3px;}
 .hero p {font-size: 13px; color: #86868b; max-width: 500px; margin: 0 auto;}
-
 .niche-section {margin-bottom: 36px; padding-bottom: 24px; border-bottom: 1px solid #f0f0f0;}
 .niche-header {display: flex; align-items: center; gap: 10px; margin-bottom: 12px;}
 .niche-icon {width: 32px; height: 32px; background: #f5f5f7; border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;}
+.niche-icon svg {width: 16px; height: 16px; color: #86868b;}
 .niche-title {font-size: 16px; font-weight: 600;}
 .niche-count {font-size: 12px; color: #86868b; background: #f5f5f7; padding: 3px 6px; border-radius: 6px;}
 .niche-desc {font-size: 12px; color: #86868b; margin-bottom: 12px;}
-
 .product-grid {display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;}
-.product-card {
-background: #fafafa;
-border: 1px solid #e8e8ed;
-border-radius: 8px;
-padding: 10px;
-text-decoration: none;
-color: inherit;
-transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-display: block;
-}
+.product-card {background: #fafafa; border: 1px solid #e8e8ed; border-radius: 8px; padding: 10px; text-decoration: none; color: inherit; transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease; display: block;}
 .product-card:hover {background: #f0f0f0; border-color: #d2d2d7; transform: translateY(-2px);}
 .product-card:active {background: #e8e8ed; transform: translateY(0);}
-
-.product-image {
-width: 100%;
-aspect-ratio: 1/1;
-background: #f5f5f7;
-border-radius: 6px;
-overflow: hidden;
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 8px;
-}
+.product-image {width: 100%; aspect-ratio: 1/1; background: #f5f5f7; border-radius: 6px; overflow: hidden; display: flex; align-items: center; justify-content: center; margin-bottom: 8px;}
 .product-image img {width: 100%; height: 100%; object-fit: contain;}
-
 .product-name {font-size: 12px; font-weight: 600; margin-bottom: 2px; line-height: 1.3;}
 .product-desc {font-size: 11px; color: #86868b; margin-bottom: 4px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;}
 .product-price {font-size: 12px; font-weight: 500; color: #0071e3; margin-bottom: 6px;}
-
-.product-link {
-display: inline-block;
-padding: 5px 0;
-background: #0071e3;
-color: white;
-font-size: 11px;
-font-weight: 500;
-text-align: center;
-text-decoration: none;
-border-radius: 5px;
-transition: background 0.15s ease;
-}
+.product-link {display: inline-block; padding: 5px 0; background: #0071e3; color: #fff; font-size: 11px; font-weight: 500; text-align: center; text-decoration: none; border-radius: 5px; transition: background 0.15s ease;}
 .product-link:hover {background: #0077ed;}
 .product-link:active {background: #0067cc;}
-
-footer {
-text-align: center;
-padding: 20px 0 16px;
-font-size: 11px;
-color: #86868b;
-border-top: 1px solid #f0f0f0;
-margin-top: 24px;
-}
+footer {text-align: center; padding: 20px 0 16px; font-size: 11px; color: #86868b; border-top: 1px solid #f0f0f0; margin-top: 24px;}
 footer a {color: #0071e3; text-decoration: none;}
-footer .disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-width: 500px; line-height: 1.4;}
-
-@media (max-width: 768px) {
-.hero h1 {font-size: 22px;}
-.product-grid {grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));}
-.nav-links {gap: 4px;}
-.nav-link {padding: 4px 8px; font-size: 11px;}
-}
+footer a:hover {text-decoration: underline;}
+.disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-width: 500px; line-height: 1.4;}
+@media (max-width: 768px) { .hero h1 {font-size: 22px;} .product-grid {grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));} .nav-links {gap: 4px;} .nav-link {padding: 4px 8px; font-size: 11px;} }
 </style>
 </head>
 <body>
@@ -146,12 +61,7 @@ footer .disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-wid
 <header class="sticky-header">
 <div class="header-content">
 <div><div class="logo">AS</div><div class="logo-sub">Andreas Stehmann</div></div>
-<nav class="nav-links">
-<a class="nav-link" href="#section-parfum-damen">Parfum Damen</a>
-<a class="nav-link" href="#section-parfum-herren">Parfum Herren</a>
-<a class="nav-link" href="#section-haushaltshelfer">Haushaltshelfer</a>
-<a class="nav-link" href="#section-smart-home">Smart Home</a>
-</nav>
+<nav class="nav-links" id="navLinks"></nav>
 </div>
 </header>
 
@@ -160,111 +70,107 @@ footer .disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-wid
 <p>12 Nischen – jede mit 10 Produkten – inkl. Amazon-Affiliate-Links.</p>
 </div>
 
+<a class="nav-link" href="#section-parfum-damen">Parfum Damen</a>
+<a class="nav-link" href="#section-parfum-herren">Parfum Herren</a>
+<a class="nav-link" href="#section-haushaltshelfer">Haushaltshelfer</a>
+<a class="nav-link" href="#section-smart-home">Smart Home</a>
+<a class="nav-link" href="#section-diy">DIY & Basteln</a>
+<a class="nav-link" href="#section-wellness">Wellness & Entspannung</a>
+<a class="nav-link" href="#section-geschenke">Geschenke & Überraschungen</a>
+<a class="nav-link" href="#section-balkon-garten">Balkon & Garten</a>
+<a class="nav-link" href="#section-kuechenorganisation">Küchenorganisation</a>
+<a class="nav-link" href="#section-lego">LEGO</a>
+<a class="nav-link" href="#section-bestseller-august">Bestseller August</a>
+<a class="nav-link" href="#section-beauty-pflege">Beauty & Pflege</a>
+</aside>
 <section id="section-parfum-damen" class="niche-section">
 <div class="niche-header">
-<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
-<div>
-<div class="niche-title">Parfum Damen</div>
-<span class="niche-count">10 Produkte</span>
-</div>
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 7 5s7-2 7-5a7 7 0 0 0-7-7z"/><path d="M9 9h6"/><path d="M10 12h4"/><path d="M9 15h6"/></svg></div>
+<div><div class="niche-title">Parfum Damen</div>
+<span class="niche-count">10 Produkte</span></div>
 </div>
 <p class="niche-desc">Duftparfüms für Frauen 25+ – elegant, intensiv, langlebig.</p>
 <div class="product-grid">
-
 <a class="product-card" href="https://www.amazon.de/s?k=Dior+Jadore+Eau+de+Parfum&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Dior J'adore Eau de Parfum" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Dior J'adore Eau de Parfum" loading="lazy"></div>
 <h3 class="product-name">Dior J'adore Eau de Parfum</h3>
 <p class="product-desc">Elegant, intensiv, frisch. Jasmin und Sandelholz.</p>
 <p class="product-price">ab 69,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Chanel+No+5+Eau+de+Parfum&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Chanel No. 5 Eau de Parfum" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Chanel No. 5 Eau de Parfum" loading="lazy"></div>
 <h3 class="product-name">Chanel No. 5 Eau de Parfum</h3>
 <p class="product-desc">Legendärer Blütenduft mit Nelke und Jasmin.</p>
 <p class="product-price">ab 89,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Hermes+Terre+d+Hermes&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Hermès Terre d'Hermès" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Hermès Terre d'Hermès" loading="lazy"></div>
 <h3 class="product-name">Hermès Terre d'Hermès</h3>
 <p class="product-desc">Waldig, erdig, elegant mit Orange und Grapefruit.</p>
 <p class="product-price">ab 79,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Yves+Saint+Laurent+Black+Opium&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Yves Saint Laurent Black Opium" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Yves Saint Laurent Black Opium" loading="lazy"></div>
 <h3 class="product-name">Yves Saint Laurent Black Opium</h3>
 <p class="product-desc">Schwarzer Kaffee trifft süße Noten – modern und unwiderstehlich.</p>
 <p class="product-price">ab 59,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Lancome+La+Vie+Est+Belle&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Lancôme La Vie Est Belle" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Lancôme La Vie Est Belle" loading="lazy"></div>
 <h3 class="product-name">Lancôme La Vie Est Belle</h3>
 <p class="product-desc">Süß, blühend, euphorisch mit Iris und Vanille.</p>
 <p class="product-price">ab 59,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Jo+Malone+Wood+Sage+Sea+Salt&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Jo Malone Wood Sage & Sea Salt" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Jo Malone Wood Sage & Sea Salt" loading="lazy"></div>
 <h3 class="product-name">Jo Malone Wood Sage & Sea Salt</h3>
 <p class="product-desc">Natürlich, kühlend, unbeschwert. Schottische Küstenbrise.</p>
 <p class="product-price">ab 69,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Tom+Ford+Beaut+Tuberosa&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Tom Ford Beaut Tuberosa" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Tom Ford Beaut Tuberosa" loading="lazy"></div>
 <h3 class="product-name">Tom Ford Beaut Tuberosa</h3>
 <p class="product-desc">Raffiniert, weißblütig, Tuberose, Jasmine, warmes Basenholz.</p>
 <p class="product-price">ab 99,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Narciso+Rodriguez+For+Her&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Narciso Rodriguez For Her" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Narciso Rodriguez For Her" loading="lazy"></div>
 <h3 class="product-name">Narciso Rodriguez For Her</h3>
 <p class="product-desc">Warm, pheromonal, intim. Verführerisch ohne schrill zu sein.</p>
 <p class="product-price">ab 59,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Prada+L+Homme&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Prada L'Homme" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Prada L'Homme" loading="lazy"></div>
 <h3 class="product-name">Prada L'Homme</h3>
 <p class="product-desc">Rosenich, klar, modern und unkompliziert – für jede Frau.</p>
 <p class="product-price">ab 82,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Guerlain+L+Homme&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910_84d50c0c2c0b?w=160&h=160&fit=crop" alt="Guerlain L'Homme" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=160&h=160&fit=crop" alt="Guerlain L'Homme" loading="lazy"></div>
 <h3 class="product-name">Guerlain L'Homme</h3>
 <p class="product-desc">Der aufsteigende Duft für die Frau – fruchtig, würzig, voller Wärme.</p>
 <p class="product-price">ab 79,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 </div>
 </section>
-
 <section id="section-parfum-herren" class="niche-section">
 <div class="niche-header">
-<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
-<div>
-<div class="niche-title">Parfum Herren</div>
-<span class="niche-count">10 Produkte</span>
-</div>
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 7 5s7-2 7-5a7 7 0 0 0-7-7z"/><path d="M15 9h-6"/><path d="M10 12h4"/><path d="M15 15h-6"/></svg></div>
+<div><div class="niche-title">Parfum Herren</div>
+<span class="niche-count">10 Produkte</span></div>
 </div>
 <p class="niche-desc">Männliche Düfte – kühn, würzig, charismatisch.</p>
 <div class="product-grid">
-
 <a class="product-card" href="https://www.amazon.de/s?k=Dior+Sauvage+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
 <div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Dior Sauvage Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Dior Sauvage Eau de Toilette</h3>
@@ -272,7 +178,6 @@ footer .disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-wid
 <p class="product-price">ab 69,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Bleu+de+Chanel+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
 <div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Bleu de Chanel Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Bleu de Chanel Eau de Toilette</h3>
@@ -280,7 +185,6 @@ footer .disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-wid
 <p class="product-price">ab 75,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Acqua+di+Gio+Profondo+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
 <div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Acqua di Giò Profondo Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Acqua di Giò Profondo Eau de Toilette</h3>
@@ -288,254 +192,857 @@ footer .disclaimer {font-size: 10px; color: #aeaeb2; margin: 6px auto 0; max-wid
 <p class="product-price">ab 72,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Terre+d+Hermes+Eau+de+toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.upsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Terre d'Hermès Eau de Toilette" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Terre d'Hermès Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Terre d'Hermès Eau de Toilette</h3>
 <p class="product-desc">Weuste, erdig, würzig. Orange, Zedernholz, terracotta.</p>
 <p class="product-price">ab 79,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Valentino+Uomo+Born+in+Roma+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Valentino Uomo Born in Roma Eau de Toilette" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Valentino Uomo Born in Roma Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Valentino Uomo Born in Roma Eau de Toilette</h3>
 <p class="product-desc">Bunt, urban, gewinnend. Blumen, Wermut, warmer Amber.</p>
 <p class="product-price">ab 65,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Paco+Rabanne+Invictus+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Paco Rabanne Invictus Eau de Toilette" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Paco Rabanne Invictus Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Paco Rabanne Invictus Eau de Toilette</h3>
 <p class="product-desc">Sportlich, energetisch, kühn. Grapefruit, Schwarztee, Amboss.</p>
 <p class="product-price">ab 52,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Boss+Bottled+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.upsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Boss Bottled Eau de Toilette" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Boss Bottled Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Boss Bottled Eau de Toilette</h3>
 <p class="product-desc">Würzig, warm, verführerisch. Rum, Zimt, silberner Hintergrund.</p>
 <p class="product-price">ab 55,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Tom+Ford+Oud+Wood+Eau+de+Parfum&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Tom Ford Oud Wood Eau de Parfum" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Tom Ford Oud Wood Eau de Parfum" loading="lazy"></div>
 <h3 class="product-name">Tom Ford Oud Wood Eau de Parfum</h3>
 <p class="product-desc">Luxuriös, exotisch, sanft. Oud mit Rosen, Sandelholz, Vanille.</p>
 <p class="product-price">ab 129,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Creed+Aventus+Eau+de+Parfum&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Creed Aventus Eau de Parfum" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Creed Aventus Eau de Parfum" loading="lazy"></div>
 <h3 class="product-name">Creed Aventus Eau de Parfum</h3>
 <p class="product-desc">Königlich, frisch, ambitioniert. Birne, Berberitze, Rauch.</p>
 <p class="product-price">ab 159,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Viktor+Rolf+Spicebomb+Extreme+Eau+de+Toilette&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Viktor&Rolf Spicebomb Extreme Eau de Toilette" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=160&h=160&fit=crop" alt="Viktor&Rolf Spicebomb Extreme Eau de Toilette" loading="lazy"></div>
 <h3 class="product-name">Viktor&Rolf Spicebomb Extreme Eau de Toilette</h3>
 <p class="product-desc">Warm, pepsiert, unvergleichlich. Pfeffer, Vanille, Tabak, Lakritze.</p>
 <p class="product-price">ab 59,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 </div>
 </section>
-
 <section id="section-haushaltshelfer" class="niche-section">
 <div class="niche-header">
-<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
-<div>
-<div class="niche-title">Haushaltshelfer</div>
-<span class="niche-count">10 Produkte</span>
-</div>
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M6 4v4"/><path d="M18 4v4"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h8"/></svg></div>
+<div><div class="niche-title">Haushaltshelfer</div>
+<span class="niche-count">10 Produkte</span></div>
 </div>
 <p class="niche-desc">Praktische Geräte für jeden Haushalt – effizient, zuverlässig.</p>
 <div class="product-grid">
-
 <a class="product-card" href="https://www.amazon.de/s?k=Miele+Staubroboter+S7&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Miele Staubroboter S7" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Miele Staubroboter S7" loading="lazy"></div>
 <h3 class="product-name">Miele Staubroboter S7</h3>
 <p class="product-desc">Autonom reinigt alle Böden, Dust-Bag, ALL18-Saison.</p>
 <p class="product-price">ab 379,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Bosch+Handstaubsauger+UniversalMix+18V&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.upsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Bosch Handstaubsauger UniversalMix 18V" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Bosch Handstaubsauger UniversalMix 18V" loading="lazy"></div>
 <h3 class="product-name">Bosch Handstaubsauger UniversalMix 18V</h3>
 <p class="product-desc">Leicht, multifunktional, 18V-Power. HEPA-Filter, Ablagen-Schaum.</p>
 <p class="product-price">ab 129,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Karcher+Dampflok+D+100&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Kärcher Dampflok D 100" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Kärcher Dampflok D 100" loading="lazy"></div>
 <h3 class="product-name">Kärcher Dampflok D 100</h3>
 <p class="product-desc">Chemiefrei, Dampf-Injektion. Für Böden, Decken, Spiegel.</p>
 <p class="product-price">ab 149,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Tefal+Steam+Go+Dampfreiniger&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Tefal Steam&Go Dampfreiniger" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Tefal Steam&Go Dampfreiniger" loading="lazy"></div>
 <h3 class="product-name">Tefal Steam&Go Dampfreiniger</h3>
 <p class="product-desc">Multifunktionaler Dampfreiniger. Für Tische, Bettwäsche, Zentralgut.</p>
 <p class="product-price">ab 199,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Bosch+Serie+6+Geschirrtrockner&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Bosch Serie 6 Geschirrtrockner" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Bosch Serie 6 Geschirrtrockner" loading="lazy"></div>
 <h3 class="product-name">Bosch Serie 6 Geschirrtrockner</h3>
 <p class="product-desc">Nutzt Energie effizient. Für jede Familie, Komfort und Hygiene.</p>
 <p class="product-price">ab 429,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Unold+Backform+Set+26+teilig&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.upsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Unold Backform-Set 26-teilig" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Unold Backform-Set 26-teilig" loading="lazy"></div>
 <h3 class="product-name">Unold Backform-Set 26-teilig</h3>
 <p class="product-desc">Hitzebeständig, vielseitig. Satz für Wunschformen. Backerfolg.</p>
 <p class="product-price">ab 29,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Tiger+Mikrowelle+20L&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Tiger Mikrowelle 20L" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Tiger Mikrowelle 20L" loading="lazy"></div>
 <h3 class="product-name">Tiger Mikrowelle 20L</h3>
 <p class="product-desc">Schnell, funktional, mit Drehmann, Timer. Für schnelle Mahlzeiten.</p>
 <p class="product-price">ab 59,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Lavazza+A55+Coffee-Maschine&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Lavazza A55 Coffee-Maschine" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Lavazza A55 Coffee-Maschine" loading="lazy"></div>
 <h3 class="product-name">Lavazza A55 Coffee-Maschine</h3>
-<p class="product-desc">Mahlwerk inklusive, Espresso, Pad, Latte, Cappuccino. Delikat und robust.</p>
+<p class="product-desc">Mahlwerk inklusive, Espresso, Pad, Latte, Cappuccino.</p>
 <p class="product-price">ab 249,00 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Clatronic+Wasserkocher+WK+1700&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Clatronic Wasserkocher WK 1700" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Clatronic Wasserkocher WK 1700" loading="lazy"></div>
 <h3 class="product-name">Clatronic Wasserkocher WK 1700</h3>
 <p class="product-desc">1,7L, 360° Dreh, Haltemagnet, Schnellheiß. Perfekt für Alltag.</p>
 <p class="product-price">ab 24,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Miele+Staubsauger+Beutel+HEPA&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Miele Staubsauger-Beutel HEPA" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=160&h=160&fit=crop" alt="Miele Staubsauger-Beutel HEPA" loading="lazy"></div>
 <h3 class="product-name">Miele Staubsauger-Beutel HEPA</h3>
 <p class="product-desc">Allzweck, Beutel, Filter, HEPA-Aktiv. Ganzer Haushalt.</p>
 <p class="product-price">ab 129,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 </div>
 </section>
-
 <section id="section-smart-home" class="niche-section">
 <div class="niche-header">
-<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
-<div>
-<div class="niche-title">Smart Home</div>
-<span class="niche-count">10 Produkte</span>
-</div>
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20"/><path d="M2 12h20"/><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></div>
+<div><div class="niche-title">Smart Home</div>
+<span class="niche-count">10 Produkte</span></div>
 </div>
 <p class="niche-desc">Vernetzte Heime – intelligent, vernetzt, einfach.</p>
 <div class="product-grid">
-
 <a class="product-card" href="https://www.amazon.de/s?k=TP-Link+Tapo+P110M+Steckdose&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.pspictures.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="TP-Link Tapo P110M Steckdose" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="TP-Link Tapo P110M Steckdose" loading="lazy"></div>
 <h3 class="product-name">TP-Link Tapo P110M Steckdose</h3>
 <p class="product-desc">Günstiger Einstieg, Strommessung, Matter kompatibel.</p>
 <p class="product-price">ab 24,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Philips+Hue+Starter+Set+Beleuchtung&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.pspictures.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Philips Hue Starter-Set Beleuchtung" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Philips Hue Starter-Set Beleuchtung" loading="lazy"></div>
 <h3 class="product-name">Philips Hue Starter-Set Beleuchtung</h3>
 <p class="product-desc">Sehr etabliertes Smart-Light-System für den ganzen Raum.</p>
 <p class="product-price">ab 89,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
-<a class="product-card" href="https://www.amazon.de/s?k=Aqara+Tuer+Fenstersensor&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.pspictures.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Aqara Tür-/Fenstersensor" loading="lazy"></div>
+<a class="product-card" href="https://www.amazon.de/s?k=Aqara+Tür+Fenstersensor&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Aqara Tür-/Fenstersensor" loading="lazy"></div>
 <h3 class="product-name">Aqara Tür-/Fenstersensor</h3>
 <p class="product-desc">Sicherheit. Klein, günstig, viele Automationen möglich.</p>
 <p class="product-price">ab 19,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Amazon+Echo+Dot&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.pspictures.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Amazon Echo Dot" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Amazon Echo Dot" loading="lazy"></div>
 <h3 class="product-name">Amazon Echo Dot</h3>
 <p class="product-desc">Smart Speaker – Alexa-Zentrale für viele Geräte im Haushalt.</p>
 <p class="product-price">ab 49,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=FRITZ+DECT+350+Heizung+Sensorik&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="FRITZ!DECT 350 Heizung/Sensorik" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="FRITZ!DECT 350 Heizung/Sensorik" loading="lazy"></div>
 <h3 class="product-name">FRITZ!DECT 350 Heizung/Sensorik</h3>
 <p class="product-desc">Besonders interessant für FRITZ!-Haushalte.</p>
 <p class="product-price">ab 79,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=SwitchBot+Hub+Mini&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.pspictures.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="SwitchBot Hub Mini" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="SwitchBot Hub Mini" loading="lazy"></div>
 <h3 class="product-name">SwitchBot Hub Mini</h3>
 <p class="product-desc">Automation – Macht viele vorhandene Geräte smart.</p>
 <p class="product-price">ab 29,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Eve+Energy+Steckdose&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Eve Energy Steckdose" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Eve Energy Steckdose" loading="lazy"></div>
 <h3 class="product-name">Eve Energy Steckdose</h3>
 <p class="product-desc">Gute Option für Apple Home/Matter – einfach integrierbar.</p>
 <p class="product-price">ab 29,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Ring+Video+Doorbell&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.pspictures.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Ring Video Doorbell" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Ring Video Doorbell" loading="lazy"></div>
 <h3 class="product-name">Ring Video Doorbell</h3>
 <p class="product-desc">Sicherheit – Smart Doorbell mit App-Anbindung und Video.</p>
 <p class="product-price">ab 99,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Bosch+Smart+Home+Heizungs-Set&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Bosch Smart Home Heizungs-Set" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Bosch Smart Home Heizungs-Set" loading="lazy"></div>
 <h3 class="product-name">Bosch Smart Home Heizungs-Set</h3>
 <p class="product-desc">Heizung – Hochwertige Heizungsautomation für dein Zuhause.</p>
 <p class="product-price">ab 199,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 <a class="product-card" href="https://www.amazon.de/s?k=Google+Nest+Hub&tag=balu17051-21" target="_blank" rel="nofollow noopener">
-<div class="product-image"><img src="https://images.opsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Google Nest Hub" loading="lazy"></div>
+<div class="product-image"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=160&h=160&fit=crop" alt="Google Nest Hub" loading="lazy"></div>
 <h3 class="product-name">Google Nest Hub</h3>
 <p class="product-desc">Smart Display – Steuere deine Geräte mit Bildschirm und Alexa.</p>
 <p class="product-price">ab 99,99 €</p>
 <span class="product-link">Zum Produkt</span>
 </a>
-
 </div>
 </section>
-
+<section id="section-diy" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3l5 5-5 5"/><path d="M13 8h4l-3 3 3 4-3 3-4-4 3-4-3-3z"/><path d="M3 12l3 3-3 3"/><path d="M7 15l3 3-3 3"/></svg></div>
+<div><div class="niche-title">DIY & Basteln</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Projekte selbst machen – kreativ, praktisch, spaßig.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Brennen+Holz-Set+Anfänger&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Brennen Holz-Set für Anfänger" loading="lazy"></div>
+<h3 class="product-name">Brennen Holz-Set für Anfänger</h3>
+<p class="product-desc">Brenn Werkzeug mit Meister. Holz-Köpfl, Holz-Pflege, Stampfer.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Multitool+Set+Handwerker+18+teilig&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Multitool Set für Handwerker" loading="lazy"></div>
+<h3 class="product-name">Multitool Set für Handwerker</h3>
+<p class="product-desc">18-teiliges Werkzeugset: Dreh, Schrauben, Löten, Schneiden, Biegen.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=3D+Drucker+Einsteiger+kompakt&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="3D-Drucker für Einsteiger" loading="lazy"></div>
+<h3 class="product-name">3D-Drucker für Einsteiger</h3>
+<p class="product-desc">Kompakte 3D-Druckstation. Schnell, zuverlässig, einfach. Für Modelle.</p>
+<p class="product-price">ab 199,00 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LED+Kanal+Module+Bausätze+smart&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="LED-Kanal-Module für Bausätze" loading="lazy"></div>
+<h3 class="product-name">LED-Kanal-Module für Bausätze</h3>
+<p class="product-desc">Smart LED-Module für jedes Projekt. Reichlich, flexibel, verlässlich.</p>
+<p class="product-price">ab 12,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Schlossvlucht+DIY+30+Vorrichtungen+USB&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Schlossvlucht für DIY (30 Vorrichtungen)" loading="lazy"></div>
+<h3 class="product-name">Schlossvlucht für DIY (30 Vorrichtungen)</h3>
+<p class="product-desc">30 hochwertige Vorrichtungen, USB-Antrieb. Für jedes Model.</p>
+<p class="product-price">ab 159,00 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Schablonie+Set+100+Metall+Holzkörper&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Schablonie-Set für DIY (100 Stück)" loading="lazy"></div>
+<h3 class="product-name">Schablonie-Set für DIY (100 Stück)</h3>
+<p class="product-desc">100 Metall-Schablonen mit Holzkörper. Reicht für jedes Projekt.</p>
+<p class="product-price">ab 34,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Lampions+Deckenbogen+DIY+Lampion+Jung&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Lampions & Deckenbogen für DIY" loading="lazy"></div>
+<h3 class="product-name">Lampions & Deckenbogen für DIY</h3>
+<p class="product-desc">Lampion-Jungle für DIY-Licht, Werk-Tieren, Mogenzen Decken.</p>
+<p class="product-price">ab 34,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Holz+Set+DIY+Anfänger+Werkzeuge+Anleitungen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Holz-Set für DIY Anfänger" loading="lazy"></div>
+<h3 class="product-name">Holz-Set für DIY Anfänger</h3>
+<p class="product-desc">Verschiedene Holzformen, Werkzeuge und Anleitungen. Start in DIY.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Lackleiste+Modellbau+Pinsel+Farben+Lacke&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="Lackleiste für Modellbau" loading="lazy"></div>
+<h3 class="product-name">Lackleiste für Modellbau</h3>
+<p class="product-desc">Präzisionsleiste für Pinsel, Farben, Lacke. Ideal für Modelle.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LED+Streifen+5m+farbwechselnd+fernsteuerbar&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=160&h=160&fit=crop" alt="LED-Streifen für DIY-Projekte" loading="lazy"></div>
+<h3 class="product-name">LED-Streifen für DIY-Projekte</h3>
+<p class="product-desc">5m LED-Streifen, farbwechselnd, fernsteuerbar. Für jedes Projekt.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-wellness" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c-5 0-8 2-8 5v8c0 3 3 5 8 5s8-2 8-5V7c0-3-3-5-8-5z"/><circle cx="12" cy="9" r="2"/><path d="M10 17c0 1.5 1 2 2 2s2-.5 2-2"/></svg></div>
+<div><div class="niche-title">Wellness & Entspannung</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Für Körper und Geist – entspannt, erholt, gestärkt.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Massage+Pistole+Muskelkitzel+Power&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Massage-Pistole für Muskelkitzel" loading="lazy"></div>
+<h3 class="product-name">Massage-Pistole für Muskelkitzel</h3>
+<p class="product-desc">Power-Pistole für Gliedmaßen und Fasc, ersetzt manuelle Anfrischung.</p>
+<p class="product-price">ab 79,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Aroma+Diffuser+Essenzielle+Öle+ruhige+Atmosphäre&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Aroma-Diffuser für ruhige Atmosphäre" loading="lazy"></div>
+<h3 class="product-name">Aroma-Diffuser für ruhige Atmosphäre</h3>
+<p class="product-desc">Essenzielle Öle verteilen, ruhige Atmosphäre. Optimal für Schlaf.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Massagematte+Entspannung+Rücken+Beine+Schultern&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Massagematte für Entspannung" loading="lazy"></div>
+<h3 class="product-name">Massagematte für Entspannung</h3>
+<p class="product-desc">Rollenmassage für Rücken, Beine, Schultern. Alltag entspannter.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Atemtherapiegerät+Stressabbau+Schlaf+Erholung&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Atemtherapiegerät für Stressabbau" loading="lazy"></div>
+<h3 class="product-name">Atemtherapiegerät für Stressabbau</h3>
+<p class="product-desc">Atmungsübungen gegen Stress, Schlaf- und Erholungsphase.</p>
+<p class="product-price">ab 54,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Gesichtspflege+Set+zu+Hause+Reinigung+Tonic+Serum&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Gesichtspflege-Set für zu Hause" loading="lazy"></div>
+<h3 class="product-name">Gesichtspflege-Set für zu Hause</h3>
+<p class="product-desc">Reinigung, Tonic, Serum, Feuchtigkeitscreme – komplettes Set.</p>
+<p class="product-price">ab 34,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Bett+Show+Relax+Kissen+Erkältungswärme+Massage&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Bett-Show-Relax-Kissen" loading="lazy"></div>
+<h3 class="product-name">Bett-Show-Relax-Kissen</h3>
+<p class="product-desc">Erkältungskissen, Wärme, Massage. Entspannung und Schlafkomfort.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Achtsamkeit+App+Abonnement+Meditation+Atemübungen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Achtsamkeits-App-Abonnement" loading="lazy"></div>
+<h3 class="product-name">Achtsamkeits-App-Abonnement</h3>
+<p class="product-desc">Achtsamkeitstraining, Meditation, Atemübungen. Für psychische Gesundheit.</p>
+<p class="product-price">ab 9,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Gesundheits+Kur+Vitalstoffe+Vitamine+Mineralstoffe&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Gesundheits-Kur mit Vitalstoffen" loading="lazy"></div>
+<h3 class="product-name">Gesundheits-Kur mit Vitalstoffen</h3>
+<p class="product-desc">Vitamine, Mineralstoffe, Spurenelemente – alles für gute Gesundheit.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Yoga+Matte+Anfänger+dicht+rutschfest+langlebig&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Yoga-Matte für Anfänger" loading="lazy"></div>
+<h3 class="product-name">Yoga-Matte für Anfänger</h3>
+<p class="product-desc">Dicht, rutschfest, langlebig. Ideal für Yoga, Meditation, Stretching.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Entspannungsmusik+CD+App+Beruhigende+Naturklänge&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=160&h=160&fit=crop" alt="Entspannungsmusik-CD & App" loading="lazy"></div>
+<h3 class="product-name">Entspannungsmusik-CD & App</h3>
+<p class="product-desc">Beruhigende Musik, Naturklänge, Stressabbau. Für Erholung und Schlaf.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-geschenke" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18"/><path d="M7 6v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><path d="M9 20v2"/></svg></div>
+<div><div class="niche-title">Geschenke & Überraschungen</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Die richtige Wahl für jede Gelegenheit.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Schmuck+Set+Damen+elegant+edel+pflegeleicht&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Schmuck-Set für Damen" loading="lazy"></div>
+<h3 class="product-name">Schmuck-Set für Damen</h3>
+<p class="product-desc">Elegant, edel, pflegeleicht. Perfekt für jede Gelegenheit.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Schokoladen+Set+Hausgemacht+handverlesen+kostbar&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Schokoladen-Set für jede Tafelfreude" loading="lazy"></div>
+<h3 class="product-name">Schokoladen-Set für jede Tafelfreude</h3>
+<p class="product-desc">Hausgemacht, handverlesen, kostbar. Für jede Tafelfreude.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Buch+Set+Bestseller+Romane+Sachbücher+Leselust&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Buch-Set für Leselust" loading="lazy"></div>
+<h3 class="product-name">Buch-Set für Leselust</h3>
+<p class="product-desc">Bestseller, Romane, Sachbücher. Ideal für Leseratten.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Kaffee+Set+Kaffeebohnen+Tassen+Zucker+Schlüssel&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Kaffee-Set für Gourmets" loading="lazy"></div>
+<h3 class="product-name">Kaffee-Set für Gourmets</h3>
+<p class="product-desc">Kaffeebohnen, Kaffeetassen, Zucker, Schlüssel. Für Kaffeeliebhaber.</p>
+<p class="product-price">ab 44,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Kosmetik+Set+Beauty+Lover+Lippenstift+Lidschatten+Foundation&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Kosmetik-Set für Beauty-Lovers" loading="lazy"></div>
+<h3 class="product-name">Kosmetik-Set für Beauty-Lovers</h3>
+<p class="product-desc">Lippenstifte, Lidschatten, Foundation, Puder. Ideal für Beauty-Enthusiasten.</p>
+<p class="product-price">ab 59,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Haushalts+Set+Reinigungsklappern+Duschgel+Spülmittel&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Haushalts-Set für Ordnungsfreaks" loading="lazy"></div>
+<h3 class="product-name">Haushalts-Set für Ordnungsfreaks</h3>
+<p class="product-desc">Reinigungsklappern, Duschgel, Spülmittel. Für effiziente Reinigung.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Sommer+Look+Set+T+Shirts+Shorts+Hausschuhe&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Sommer-Look-Set für Style-Bewusste" loading="lazy"></div>
+<h3 class="product-name">Sommer-Look-Set für Style-Bewusste</h3>
+<p class="product-desc">T-Shirts, Shorts, Hausschuhe. Für entspannte Sommer-Tage.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Winter+Set+Schal+Handschuhe+Mütze+Pullover&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Winter-Set für Wärme-Suchende" loading="lazy"></div>
+<h3 class="product-name">Winter-Set für Wärme-Suchende</h3>
+<p class="product-desc">Schal, Handschuhe, Mütze, Pullover. Für komfortable Kälte-Tage.</p>
+<p class="product-price">ab 59,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Technik+Set+Gadget+Fan+USB+Lampe+Bluetooth+Lautsprecher+Powerbank&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Technik-Set für Gadget-Fans" loading="lazy"></div>
+<h3 class="product-name">Technik-Set für Gadget-Fans</h3>
+<p class="product-desc">USB-Lampen, Bluetooth-Lautsprecher, Powerbank. Für technikbegeisterte Personen.</p>
+<p class="product-price">ab 54,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Sport+Equipment+Laufschuhe+Sportsocken+Wassermarken+Fitness&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1513297887119-d385215374e3?w=160&h=160&fit=crop" alt="Sportequipment für aktive Menschen" loading="lazy"></div>
+<h3 class="product-name">Sportequipment für aktive Menschen</h3>
+<p class="product-desc">Laufschuhe, Sportsocken, Wassermarken. Für Sport und Fitness.</p>
+<p class="product-price">ab 79,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-balkon-garten" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20"/><path d="M8 6c0 2 1 3 4 3s4-1 4-3"/><path d="M7 10c0 2 1 3 5 3s5-1 5-3"/><path d="M9 14c0 1 1 2 3 2s3-1 3-2"/></svg></div>
+<div><div class="niche-title">Balkon & Garten</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Grüne Oasen – blühend, fruchtbar, wohlfühlig.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Balkon+Boder+Box+Bepflanzung+Drehbar+Wasserfilter+Blumen+Edelgrüns&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Balkon-Boder-Box für Bepflanzung" loading="lazy"></div>
+<h3 class="product-name">Balkon-Boder-Box für Bepflanzung</h3>
+<p class="product-desc">Drehbare Balkonplanung, Wasserfilter. Ideal für Blumen und Edelgrüns.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Selbstwässerndes+Gartenbeet+effizient+wassersparend+pflegeleicht&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Selbstwässerndes Gartenbeet" loading="lazy"></div>
+<h3 class="product-name">Selbstwässerndes Gartenbeet</h3>
+<p class="product-desc">Effizient, wassersparend, pflegeleicht. Für ihre grüne Oase.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Deko+Steine+Balkon+natürlich+robust+pflegeleicht+grüne+Atmosphäre&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Deko-Steine für Balkon" loading="lazy"></div>
+<h3 class="product-name">Deko-Steine für Balkon</h3>
+<p class="product-desc">Natürlich, robust, pflegeleicht. Decken Sie ihren Balkon mit grüner Atmosphäre.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Pflanzständer+Kübelpflanzen+robust+mehrere+Ebenen+Blumen+Kräuter&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Pflanzständer für Kübelpflanzen" loading="lazy"></div>
+<h3 class="product-name">Pflanzständer für Kübelpflanzen</h3>
+<p class="product-desc">Robuster Ständer, mehrere Ebenen, ideal für Blumen und Kräuter.</p>
+<p class="product-price">ab 14,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Garten+Komposter+natürlicher+Dünger+eigenen+Abfälle+nachhaltig+effizient&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Garten-Komposter für eigenes Kompost" loading="lazy"></div>
+<h3 class="product-name">Garten-Komposter für eigenes Kompost</h3>
+<p class="product-desc">Natürlicher Dünger aus eigenen Abfällen. Nachhaltig, effizient.</p>
+<p class="product-price">ab 44,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Hängeschaukel+Garten+Entspannung+Wohlgefühl+Frischeluft+Sommerabende&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Hängeschaukel für Garten" loading="lazy"></div>
+<h3 class="product-name">Hängeschaukel für Garten</h3>
+<p class="product-desc">Entspannung, Wohlgefühl, Frischeluft. Perfekt für entspannte Sommerabende.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Solar+Geräte+Garten+Beleuchtung+effizient+wartungsfrei&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Solargeräte für Garten Beleuchtung" loading="lazy"></div>
+<h3 class="product-name">Solargeräte für Garten Beleuchtung</h3>
+<p class="product-desc">Solarlicht, effizient, wartungsfrei. Für schönere Abende im Garten.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Kletterspitz+Kletterpflanzen+stabil+mehrfach+Rankpflanzen+Kletterrosen+Efeu&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Kletterspitz für Kletterpflanzen" loading="lazy"></div>
+<h3 class="product-name">Kletterspitz für Kletterpflanzen</h3>
+<p class="product-desc">Stabil, vielseitig, perfekt für Rankpflanzen, Kletterrosen und Efeu.</p>
+<p class="product-price">ab 14,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Flower+Kit+Balkon+Blumen+Dünger+Töpfen+startklar+blühende+Balkone&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Flower-Kit für Balkon" loading="lazy"></div>
+<h3 class="product-name">Flower-Kit für Balkon</h3>
+<p class="product-desc">Blumen-Set mit Blumen, Dünger, Töpfen. Sofort startklar für blühende Balkone.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Garten+Sitzecke+komfortabel+stylisch+robust+entspannte+Stunden+im+Grünen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=160&h=160&fit=crop" alt="Garten-Sitzecke für Entspannung" loading="lazy"></div>
+<h3 class="product-name">Garten-Sitzecke für Entspannung</h3>
+<p class="product-desc">Komfortabel, stylisch, robust. Ideal für entspannte Stunden im Grünen.</p>
+<p class="product-price">ab 79,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-kuechenorganisation" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 4v4"/><path d="M18 4v4"/><path d="M6 8h12"/><path d="M6 12h12"/><path d="M6 16h12"/></svg></div>
+<div><div class="niche-title">Küchenorganisation</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Hinweise für eine ordentliche, funktionale Küche.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Küchen+Regal+Abdeckung+Aufbewahrung+Vorratsschrank+langlebig+praktisch&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Küchen-Regal mit Abdeckung für Vorratsschrank" loading="lazy"></div>
+<h3 class="product-name">Küchen-Regal mit Abdeckung für Vorratsschrank</h3>
+<p class="product-desc">Aufbewahrung für Vorratsschrank, langlebig, praktisch. Perfekt für jede Küche.</p>
+<p class="product-price">ab 69,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=RGB+Lichter+Küche+modern+stimmungsvoll+energiesparend&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="RGB-Lichter für Küche" loading="lazy"></div>
+<h3 class="product-name">RGB-Lichter für Küche</h3>
+<p class="product-desc">Modern, stimmungsvoll, energiesparend. Für eine stimmungsvolle Küche.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Kühlschrank+Folger+Organisation+Moderne+Kühlregale+Stapelsystem&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Kühlschrank-Folger für Organisation" loading="lazy"></div>
+<h3 class="product-name">Kühlschrank-Folger für Organisation</h3>
+<p class="product-desc">Moderne Kühlregale, Stapelsystem, verdeckter Schrank. Für optimale Ordnung.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Zubehör+Set+Küchenorganisation+Töpfe+Boxen+Beschriftungen+Etiketten&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Zubehör-Set für Küchenorganisation" loading="lazy"></div>
+<h3 class="product-name">Zubehör-Set für Küchenorganisation</h3>
+<p class="product-desc">Töpfe, Boxen, Beschriftungen, Etiketten. Sofort systematisch und übersichtlich.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Spülmittel+Verstärker+Staatsstark+effizient+sparsam+saubere+Spülmaschinen+reduzierter+Kost&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Spülmittel-Verstärker für Effizienz" loading="lazy"></div>
+<h3 class="product-name">Spülmittel-Verstärker für Effizienz</h3>
+<p class="product-desc">Staatsstark, effizient, sparsam. Für saubere Spülmaschinen und reduzierter Kost.</p>
+<p class="product-price">ab 14,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Küchenspül+Set+Hygiene+Handtuch+Schwamm+Reinigungsmittel&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Küchenspül-Set für Hygiene" loading="lazy"></div>
+<h3 class="product-name">Küchenspül-Set für Hygiene</h3>
+<p class="product-desc">Handtuch, Schwamm, Reinigungsmittel. Für saubere Küchen, Wohlgefühl und Hygiene.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Küchen+Regal+Aufbewahrung+stabiles+Regal+Flaschen+Dosen+Behälter&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Küchen-Regal für Aufbewahrung" loading="lazy"></div>
+<h3 class="product-name">Küchen-Regal für Aufbewahrung</h3>
+<p class="product-desc">Stabiles Regal, praktische Aufbewahrung. Perfekt für Flaschen, Dosen, Behälter.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Küchen+Waschmaschine+Reinigung+effizient+zuverlässig+langlebig+konsequenter+Service&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Küchen-Waschmaschine für Reinigung" loading="lazy"></div>
+<h3 class="product-name">Küchen-Waschmaschine für Reinigung</h3>
+<p class="product-desc">Effizient, zuverlässig, langlebig. Für konsequenten Service und Hygiene auf den Spülbänken.</p>
+<p class="product-price">ab 89,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Küchen+Einfassung+Tischdecke+hochwertig+robust+pflegeleicht+Tischdecken+Unterlagen+Servietten&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Küchen-Einfassung für Tischdecke" loading="lazy"></div>
+<h3 class="product-name">Küchen-Einfassung für Tischdecke</h3>
+<p class="product-desc">Hochwertig, robust, pflegeleicht. Tischdecken, Unterlagen und Servietten.</p>
+<p class="product-price">ab 14,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Mockingbird+Küchenorganisation+Dekostecker+Füll+App+mit+Deckel+Kante+dekorierende+Küche&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=160&h=160&fit=crop" alt="Mockingbird für Küchenorganisation" loading="lazy"></div>
+<h3 class="product-name">Mockingbird für Küchenorganisation</h3>
+<p class="product-desc">Dekostecker, Füll-App, mit Deckel, Kante. Für dekorierende Küche, Wohlgefühl, Ordnung.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-lego" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="5" y="5" width="14" height="14" rx="1"/><circle cx="8" cy="8" r="1.5"/><circle cx="16" cy="8" r="1.5"/><circle cx="8" cy="16" r="1.5"/><circle cx="16" cy="16" r="1.5"/></svg></div>
+<div><div class="niche-title">LEGO</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Bausätze & Sets – kreativ bauen, freuen, sammeln.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+City+Razor+Coast+60369&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO City Razor Coast 60369" loading="lazy"></div>
+<h3 class="product-name">LEGO City Razor Coast 60369</h3>
+<p class="product-desc">Action, Adventure, Autos, Personen. Vielseitige Spielwelt.</p>
+<p class="product-price">ab 99,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Harry+Potter+76419&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Harry Potter 76419" loading="lazy"></div>
+<h3 class="product-name">LEGO Harry Potter 76419</h3>
+<p class="product-desc">Magie, Abenteuer, magische Kreaturen. Perfekt für Harry-Potter-Fans.</p>
+<p class="product-price">ab 129,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Star+Wars+75233&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Star Wars 75233" loading="lazy"></div>
+<h3 class="product-name">LEGO Star Wars 75233</h3>
+<p class="product-desc">Galaktische Abenteuer, Spaceships, Dinos. Spannende Welt.</p>
+<p class="product-price">ab 149,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Technic+42143&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Technic 42143" loading="lazy"></div>
+<h3 class="product-name">LEGO Technic 42143</h3>
+<p class="product-desc">Technik, Mechanik, Funktion. Herausforderung für Technik-Liebhaber.</p>
+<p class="product-price">ab 89,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Friends+41426&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Friends 41426" loading="lazy"></div>
+<h3 class="product-name">LEGO Friends 41426</h3>
+<p class="product-desc">Freundschaft, Familie, Tierpflege. Liebevolle Spielwelten.</p>
+<p class="product-price">ab 59,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Creator+31135&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Creator 31135" loading="lazy"></div>
+<h3 class="product-name">LEGO Creator 31135</h3>
+<p class="product-desc">Kreativität, 3 Modelle in 1, Vielfalt. Für Kreationisten.</p>
+<p class="product-price">ab 69,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Ninjago+71766&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Ninjago 71766" loading="lazy"></div>
+<h3 class="product-name">LEGO Ninjago 71766</h3>
+<p class="product-desc">Ninja, Kampf, Spinne. Actionreicher Ninjago-Universum.</p>
+<p class="product-price">ab 79,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Botanik+10309&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Botanik 10309" loading="lazy"></div>
+<h3 class="product-name">LEGO Botanik 10309</h3>
+<p class="product-desc">Natur, Blumen, Schönheit, Dank. Für dekorative Balkone und Zimmer.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Architecture+21058&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Architecture 21058" loading="lazy"></div>
+<h3 class="product-name">LEGO Architecture 21058</h3>
+<p class="product-desc">Weltberühmte Bauwerke, elegante Modelle. Für Sammler und Architektur-Fans.</p>
+<p class="product-price">ab 59,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Classic+10698&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=160&h=160&fit=crop" alt="LEGO Classic 10698" loading="lazy"></div>
+<h3 class="product-name">LEGO Classic 10698</h3>
+<p class="product-desc">Klassisch, Kreativ, Vielseitig. Mit 484 Teilen, die Fantasie wecken.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-bestseller-august" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/><path d="M12 4v16"/><path d="M4 12h16"/></svg></div>
+<div><div class="niche-title">Bestseller August</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Die aktuellsten Top Produkte des Monats.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Nike+Air+Max+270+Laufen+Sport&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Nike Air Max 270 – Laufen & Sport" loading="lazy"></div>
+<h3 class="product-name">Nike Air Max 270 – Laufen & Sport</h3>
+<p class="product-desc">Leicht, bequem, langlebig. Perfekt für Training und Alltag.</p>
+<p class="product-price">ab 119,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Apple+AirPods+Pro+2+Generation+Aktive+Noise+Cancellation&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Apple AirPods Pro (2. Generation)" loading="lazy"></div>
+<h3 class="product-name">Apple AirPods Pro (2. Generation)</h3>
+<p class="product-desc">Aktive Noise Cancellation, transparente Modus. Für Audiophile.</p>
+<p class="product-price">ab 199,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Samsung+Galaxy+Tab+S9+FE&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Samsung Galaxy Tab S9 FE" loading="lazy"></div>
+<h3 class="product-name">Samsung Galaxy Tab S9 FE</h3>
+<p class="product-desc">Smart, leistungsstark, langlebig. Tablet für Arbeit und Spiel.</p>
+<p class="product-price">ab 299,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Bosch+Serie+6+Backofen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Bosch Serie 6 Backofen" loading="lazy"></div>
+<h3 class="product-name">Bosch Serie 6 Backofen</h3>
+<p class="product-desc">Zuverlässig, effizient. Für perfekte Ergebnisse beim Backen.</p>
+<p class="product-price">ab 399,00 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=LEGO+Star+Wars+Millennium+Falcon+75257&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="LEGO Star Wars Millennium Falcon 75257" loading="lazy"></div>
+<h3 class="product-name">LEGO Star Wars Millennium Falcon 75257</h3>
+<p class="product-desc">Legolas Unikate, noch nie gesehen. Nostalgisch und spannend.</p>
+<p class="product-price">ab 169,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Philips+Hue+White+Warm+Licht+16+Millonen+Farben+Hue+Bridge+Smart+Licht+Zimmer&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Philips Hue White & Warm Licht" loading="lazy"></div>
+<h3 class="product-name">Philips Hue White & Warm Licht</h3>
+<p class="product-desc">16 Millionen Farben, Hue Bridge. Smart Licht für jedes Zimmer.</p>
+<p class="product-price">ab 59,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Tangled+Up+New+Pop-Up+Buch+erstaunlich+kunstvoll+lehrreich+Kinder+Erwachsene&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Tangled Up – New Pop-Up-Buch" loading="lazy"></div>
+<h3 class="product-name">Tangled Up – New Pop-Up-Buch</h3>
+<p class="product-desc">Erstaunliches Buch, kunstvoll, lehrreich. Für Kinder und Erwachsene.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Samsung+Galaxy+S23+FE+Smartphone+Prozessor+Display+fotos+Videos+smart+schnell&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Samsung Galaxy S23 FE" loading="lazy"></div>
+<h3 class="product-name">Samsung Galaxy S23 FE</h3>
+<p class="product-desc">Smartphone, Prozessor, Display. Für fotos und Videos, smart und schnell.</p>
+<p class="product-price">ab 399,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Ream+Pigmentfarben+Set+Kreativ+bunt+vielseitig+Malen+Zeichnen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Ream Pigmentfarben Set" loading="lazy"></div>
+<h3 class="product-name">Ream Pigmentfarben Set</h3>
+<p class="product-desc">Kreativ, bunt, vielseitig. Ideal für Malen, Zeichnen, Kreativprojekte.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Jin+Xing+Heißer+Tee+Premium+Sorte+wohltuend+aromatisch+kühlend+Erfrischung+Genuss&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=160&h=160&fit=crop" alt="Jin-Xing Heißer Tee – Premium-Sorte" loading="lazy"></div>
+<h3 class="product-name">Jin-Xing Heißer Tee – Premium-Sorte</h3>
+<p class="product-desc">Wohltuend, aromatisch, kühlend. Für Erfrischung und Genuss.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
+<section id="section-beauty-pflege" class="niche-section">
+<div class="niche-header">
+<div class="niche-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 0 0-7 7c0 3 2 5 7 5s7-2 7-5a7 7 0 0 0-7-7z"/><path d="M9 9h6"/><path d="M10 12h4"/><path d="M9 15h6"/></svg></div>
+<div><div class="niche-title">Beauty & Pflege</div>
+<span class="niche-count">10 Produkte</span></div>
+</div>
+<p class="niche-desc">Haut, Haare, Körperpflege – für ein strahlendes Erscheinungsbild.</p>
+<div class="product-grid">
+<a class="product-card" href="https://www.amazon.de/s?k=Skincare+Set+reife+Haut+Reiniger+Toner+Serum+Augencreme+Feuchtigkeitsspendend+strahlende+Haut&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Skincare-Set für reife Haut" loading="lazy"></div>
+<h3 class="product-name">Skincare-Set für reife Haut</h3>
+<p class="product-desc">Reiniger, Toner, Serum, Augencreme, Feuchtigkeitsspendend. Für strahlende Haut.</p>
+<p class="product-price">ab 69,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Haar+Wäsche+Set+lockige+Wellen+Shampoo+Conditioner+Haarspray+strahlende+Wellen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Haar-Wäsche-Set für lockige Wellen" loading="lazy"></div>
+<h3 class="product-name">Haar-Wäsche-Set für lockige Wellen</h3>
+<p class="product-desc">Shampoo, Conditioner, Haarspray für lockige Wellen. Für strahlende Wellen.</p>
+<p class="product-price">ab 34,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Lippenstift+Set+alle+Anlässe+5+Lippenstifte+12+Farben+lang+anhaltend&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Lippenstift-Set für alle Anlässe" loading="lazy"></div>
+<h3 class="product-name">Lippenstift-Set für alle Anlässe</h3>
+<p class="product-desc">5 Lippenstifte, 12 Farben, lang anhaltend. Für jeden Anlass.</p>
+<p class="product-price">ab 39,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Sonnencreme+UV+Schutz+SPF+50+UVA+UVB+Schutz+Haut&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Sonnencreme für UV-Schutz" loading="lazy"></div>
+<h3 class="product-name">Sonnencreme für UV-Schutz</h3>
+<p class="product-desc">Hochwertige Sonnencreme mit SPF 50+, UVA & UVB Schutz. Für Ihre Haut.</p>
+<p class="product-price">ab 19,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Anti+Age+Serum+jugendliche+Haut+Wirkstoffe+gegen+Falten+Feuchtigkeitsspender+Haarfollikel&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Anti-Age Serum für jugendliche Haut" loading="lazy"></div>
+<h3 class="product-name">Anti-Age Serum für jugendliche Haut</h3>
+<p class="product-desc">Wirkstoffe gegen Falten, Feuchtigkeitsspender, Haarfollikel. Für jugendliche Haut.</p>
+<p class="product-price">ab 44,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Deha+Puder+macellose+Haut+torknendes+mattierende+Haut+keine+Rückstände+rosige+Haut&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Deha-Puder für makellose Haut" loading="lazy"></div>
+<h3 class="product-name">Deha-Puder für makellose Haut</h3>
+<p class="product-desc">Trocknendes Deha-Puder für mattierende Haut. Keine Rückstände, rosige Haut.</p>
+<p class="product-price">ab 14,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Parfüms+Spray+Incredible+Lingering+UV+Schutz+singer+Halt+Linderung+Wärme+Chanel&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Parfüm-Spray für Incredible Lingering" loading="lazy"></div>
+<h3 class="product-name">Parfüm-Spray für Incredible Lingering</h3>
+<p class="product-desc">Parfüm-Spray, UV-Schutz, langer Halt, Linderung. Für Ihre Wärme, Chanel.</p>
+<p class="product-price">ab 49,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Haar+Puder+sieben+Tage+Puderpflege+Haare+Wasser+Zyklus+langlebige+Pflege+Körnchen+Glatze&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Haar-Puder für sieben Tage" loading="lazy"></div>
+<h3 class="product-name">Haar-Puder für sieben Tage</h3>
+<p class="product-desc">Puderpflege, Haare, Wasser-Zyklus, langlebige Pflege. Für Körnchen und Glatze.</p>
+<p class="product-price">ab 24,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Nägel+lange+stark+Pflegeset+wachsen+stärken+ohne+Bruch&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Nägel lange & stark – Pflegeset" loading="lazy"></div>
+<h3 class="product-name">Nägel lange & stark – Pflegeset</h3>
+<p class="product-desc">Wachsen, stärken, stärken. Für lange, starke Nägel, ohne Bruch.</p>
+<p class="product-price">ab 29,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+<a class="product-card" href="https://www.amazon.de/s?k=Sonne+Schutz+Lippenbalsam+SPF+30+Feuchtigkeit+UV+Schutz+schützt+Lippen&tag=balu17051-21" target="_blank" rel="nofollow noopener">
+<div class="product-image"><img src="https://images.upsplash.com/photo-1596755094514-f87e34085b2c?w=160&h=160&fit=crop" alt="Sonne-Schutz-Lippenbalsam" loading="lazy"></div>
+<h3 class="product-name">Sonne-Schutz-Lippenbalsam</h3>
+<p class="product-desc">Lippenbalsam mit SPF 30, Feuchtigkeit, UV-Schutz. Schützt Lippen.</p>
+<p class="product-price">ab 9,99 €</p>
+<span class="product-link">Zum Produkt</span>
+</a>
+</div>
+</section>
 <footer>
 <p class="disclaimer">Dieser Shop enthält Affiliate-Links zu Amazon. Als Amazon-Partner erhalte ich für qualifizierte Käufe eine kleine Provision – ohne Zusatzkosten für dich. Alle Produktpreise und Verfügbarkeiten können sich ändern.<br>© 2026 – <a href="https://balu17051.github.io/andreasstehmann-links/">Zur Startseite</a></p>
 </footer>
