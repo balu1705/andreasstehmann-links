@@ -2,62 +2,80 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://balu17051.github.io/andreasstehmann-links/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-parfum-damen/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/balkon-garten/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-parfum-herren/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/beauty-pflege/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-haushaltshelfer/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://balu17051.github.io/andreasstehmann-smart-home/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/bestseller-august/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-diy/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://balu17051.github.io/andreasstehmann-wellness/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/diy/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-geschenke/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/geschenke/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-balkon-garten/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/haushaltshelfer/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-kuechenorganisation/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/kuechenorganisation/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-lego/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/lego/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://balu17051.github.io/andreasstehmann-bestseller-august/</loc>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/parfum-damen/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/parfum-herren/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/smart-home/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://balu17051.github.io/andreasstehmann-links/niches/wellness/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
