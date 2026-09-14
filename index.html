@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Stehmann – Shopübersicht</title>
-    <link rel="canonical" href="https://andreasstehmann-shop.de/?69016">
-    <meta name="description" content="Deine Übersicht aller Themenbereiche – parfum-damen, parfum-herren, haushaltshelfer, smart-home, diy, wellness, geschenke, balkon-garten, kuechenorganisation, lego, bestseller-august, beauty-pflege.">
+    <title>Andreas Stehmann – Übersicht aller Nischen</title>
+    <meta name="description" content="Übersicht aller Nischen von Andreas Stehmann: Parfum, Haushaltshelfer, Smart Home, DIY, Wellness, Geschenke, Balkon, Küche, LEGO, Bestseller, Beauty.">
     <meta name="robots" content="index, follow">
-
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
     <script>
@@ -16,289 +15,300 @@
         gtag('js', new Date());
         gtag('config', 'G-YPCSF9BFH2');
     </script>
-
+    
     <style>
-        /* ===== RESET & BASE ===== */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* RESET */
+        *, *::before, *::after {box-sizing: border-box; margin: 0; padding: 0;}
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background: #ffffff;
             color: #1d1d1f;
             line-height: 1.5;
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
             min-height: 100vh;
+            scroll-behavior: smooth;
         }
-
+        
+        /* CONTAINER */
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 60px 24px 40px;
+            padding: 20px;
         }
-
-        /* ===== HEADER ===== */
-        header {
-            text-align: center;
-            margin-bottom: 52px;
-            padding-bottom: 32px;
-            border-bottom: 1px solid #f0f0f0;
+        
+        /* STICKY HEADER */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background: #ffffff;
+            border-bottom: 1px solid #e8e8ed;
+            padding: 16px 0;
+            z-index: 100;
         }
-
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
         .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+        
+        .logo-sub {
+            font-size: 12px;
+            color: #86868b;
+            margin-top: 2px;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .nav-link {
             display: inline-block;
-            font-size: 28px;
+            padding: 8px 12px;
+            background: #f5f5f7;
+            border-radius: 8px;
+            font-size: 13px;
+            color: #1d1d1f;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.15s ease;
+        }
+        
+        .nav-link:hover {
+            background: #e8e8ed;
+        }
+        
+        .nav-link:active {
+            background: #d2d2d7;
+        }
+        
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 40px 0 30px;
+            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 30px;
+        }
+        
+        .hero h1 {
+            font-size: 32px;
             font-weight: 700;
             letter-spacing: -0.5px;
             color: #1d1d1f;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
-
-        header h1 {
-            font-size: 36px;
-            font-weight: 600;
-            letter-spacing: -1px;
-            color: #1d1d1f;
-            margin-bottom: 10px;
-            line-height: 1.2;
-        }
-
-        header p {
-            font-size: 16px;
-            color: #86868b;
-            max-width: 480px;
-            margin: 0 auto;
-            line-height: 1.5;
-        }
-
-        header .date {
+        
+        .hero p {
             font-size: 14px;
-            color: #aeaeb2;
-            margin-top: 6px;
+            color: #86868b;
+            max-width: 500px;
+            margin: 0 auto;
         }
-
-        /* ===== GRID ===== */
-        .grid {
+        
+        /* NISSCHEN ABSCHNITTE */
+        .niche-section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .niche-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+        
+        .niche-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .niche-icon {
+            width: 36px;
+            height: 36px;
+            background: #f5f5f7;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .niche-icon svg {
+            width: 18px;
+            height: 18px;
+            color: #86868b;
+        }
+        
+        .niche-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+        
+        .niche-count {
+            font-size: 13px;
+            color: #86868b;
+            background: #f5f5f7;
+            padding: 4px 8px;
+            border-radius: 8px;
+        }
+        
+        .niche-desc {
+            font-size: 13px;
+            color: #86868b;
+            margin-bottom: 16px;
+        }
+        
+        /* PRODUKT GRID */
+        .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-            gap: 16px;
+            gap: 12px;
         }
-
-        /* ===== LINK-KARTE ===== */
-        a.card {
-            display: block;
-            padding: 24px 20px;
+        
+        .product-card {
+            background: #fafafa;
+            border: 1px solid #e8e8ed;
+            border-radius: 10px;
+            padding: 12px;
             text-decoration: none;
             color: inherit;
-            background: #fafafa;
-            border-radius: 14px;
-            border: 1px solid #f0f0f0;
-            transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-            cursor: pointer;
+            transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+            display: block;
         }
-
-        a.card:hover {
+        
+        .product-card:hover {
             background: #f0f0f0;
             border-color: #d2d2d7;
             transform: translateY(-2px);
         }
-
-        a.card:active {
-            background: #e8e8ed;
-            border-color: #c7c7cc;
-            transform: translateY(0);
-        }
-
-        .card-icon {
+        
+        .product-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            background: #f5f5f7;
+            border-radius: 8px;
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 44px;
-            height: 44px;
-            margin-bottom: 14px;
-            background: #f5f5f7;
-            border-radius: 10px;
-            color: #86868b;
+            margin-bottom: 10px;
         }
-
-        .card-icon svg {
-            width: 22px;
-            height: 22px;
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
-
-        .card-title {
-            font-size: 15px;
+        
+        .product-name {
+            font-size: 13px;
             font-weight: 600;
             color: #1d1d1f;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             line-height: 1.3;
         }
-
-        .card-sub {
-            font-size: 13px;
-            color: #aeaeb2;
-            margin-top: 2px;
+        
+        .product-desc {
+            font-size: 11px;
+            color: #86868b;
+            margin-bottom: 6px;
+            line-height: 1.3;
         }
-
-        /* ===== BACK LINK ===== */
-        .back-link {
+        
+        .product-price {
+            font-size: 13px;
+            font-weight: 500;
+            color: #0071e3;
+            margin-bottom: 8px;
+        }
+        
+        .product-link {
             display: inline-block;
-            margin-top: 36px;
-            font-size: 14px;
-            color: #86868b;
-            text-decoration: none;
-            transition: color 0.15s;
-            padding: 8px 16px;
-            border: 1px solid #f0f0f0;
-            border-radius: 8px;
-            background: #fafafa;
-        }
-
-        .back-link:hover {
-            color: #1d1d1f;
-            border-color: #d2d2d7;
-            background: #f0f0f0;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            margin-top: 52px;
-            padding-top: 24px;
-            border-top: 1px solid #f0f0f0;
-            text-align: center;
-            font-size: 13px;
-            color: #aeaeb2;
-        }
-
-        footer a {
-            color: #86868b;
-            text-decoration: none;
-            border-bottom: 1px solid #d2d2d7;
-        }
-
-        footer a:hover {
-            color: #1d1d1f;
-        }
-
-        .disclaimer {
+            padding: 6px 0;
+            background: #0071e3;
+            color: white;
             font-size: 12px;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.15s ease;
+        }
+        
+        .product-link:hover {
+            background: #0077ed;
+        }
+        
+        .product-link:active {
+            background: #0067cc;
+        }
+        
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px 0 20px;
+            font-size: 12px;
+            color: #86868b;
+            border-top: 1px solid #f0f0f0;
+            margin-top: 30px;
+        }
+        
+        footer a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .disclaimer {
+            font-size: 11px;
             color: #aeaeb2;
             margin-top: 8px;
             line-height: 1.4;
-            max-width: 600px;
+            max-width: 500px;
             margin-left: auto;
             margin-right: auto;
         }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 640px) {
-            .container {
-                padding: 40px 16px 32px;
-            }
-
-            header {
-                margin-bottom: 36px;
-                padding-bottom: 24px;
-            }
-
-            header h1 {
-                font-size: 28px;
-            }
-
-            .grid {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
-            a.card {
-                padding: 18px 16px;
-                border-radius: 12px;
-            }
-        }
-    
         
-        .card-thumb {
-            width: 48px;
-            height: 48px;
-            object-fit: cover;
-            border-radius: 8px;
-            background: #f5f5f7;
-            margin-bottom: 12px;
-            display: block;
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {font-size: 24px;}
+            .product-grid {grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));}
+            .nav-links {gap: 4px;}
+            .nav-link {padding: 6px 10px; font-size: 12px;}
         }
-</style>
+        
+        @media (max-width: 480px) {
+            .product-grid {grid-template-columns: 1fr; max-width: 360px; margin: 0 auto;}
+            .sticky-header {position: relative;}
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">AS</div>
-            <h1>Andreas Stehmann</h1>
-            <p>Deine Übersicht aller Themenbereiche – von Parfüm über Haushaltshilfe bis LEGO.</p>
-            <div class="date">Zuletzt aktualisiert: 2026</div>
-        </header>
-
-        <div class="grid">
-            <a class="card" href="/niches/parfum-damen/?69016"><img src="https://images.unsplash.com/photo-1594035910382-84d50c0c2c0b?w=80&h=80&fit=crop&crop=center" alt="parfum-damen" loading="lazy" class="card-thumb">
-                <div class="card-title">Parfum Damen</div>
-                <div class="card-sub">Duftparfüms für Frauen</div></a>
-
-            <a class="card" href="/niches/parfum-herren/?69016"><img src="https://images.unsplash.com/photo-1541643863066-0940e93c3a3a?w=80&h=80&fit=crop&crop=center" alt="parfum-herren" loading="lazy" class="card-thumb">
-                <div class="card-title">Parfum Herren</div>
-                <div class="card-sub">Männerdüfte</div></a>
-
-            <a class="card" href="/niches/haushaltshelfer/?69016"><img src="https://images.unsplash.com/photo-1558317374-067fb5f30001?w=80&h=80&fit=crop&crop=center" alt="haushaltshelfer" loading="lazy" class="card-thumb">
-                <div class="card-title">Haushaltshelfer</div>
-                <div class="card-sub">Praktische Geräte</div></a>
-
-            <a class="card" href="/niches/smart-home/?69016"><img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=80&h=80&fit=crop&crop=center" alt="smart-home" loading="lazy" class="card-thumb">
-                <div class="card-title">Smart Home</div>
-                <div class="card-sub">Vernetzte Lösungen</div></a>
-
-            <a class="card" href="/niches/diy/?69016"><img src="https://images.unsplash.com/photo-1581578731548-c64695cc1b61?w=80&h=80&fit=crop&crop=center" alt="diy" loading="lazy" class="card-thumb">
-                <div class="card-title">DIY & Basteln</div>
-                <div class="card-sub">Projekte selbst machen</div></a>
-
-            <a class="card" href="/niches/wellness/?69016"><img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=80&h=80&fit=crop&crop=center" alt="wellness" loading="lazy" class="card-thumb">
-                <div class="card-title">Wellness</div>
-                <div class="card-sub">Genuss & Entspannung</div></a>
-
-            <a class="card" href="/niches/geschenke/?69016"><img src="https://images.unsplash.com/photo-1513297887119-d385215374e3?w=80&h=80&fit=crop&crop=center" alt="geschenke" loading="lazy" class="card-thumb">
-                <div class="card-title">Geschenke</div>
-                <div class="card-sub">Ideale Überraschungen</div></a>
-
-            <a class="card" href="/niches/balkon-garten/?69016"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=80&h=80&fit=crop&crop=center" alt="balkon-garten" loading="lazy" class="card-thumb">
-                <div class="card-title">Balkon & Garten</div>
-                <div class="card-sub">Grüne Oasen</div></a>
-
-            <a class="card" href="/niches/kuechenorganisation/?69016"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3132?w=80&h=80&fit=crop&crop=center" alt="kuechenorganisation" loading="lazy" class="card-thumb">
-                <div class="card-title">Küchenorganisation</div>
-                <div class="card-sub">Ordnung im Küchenbereich</div></a>
-
-            <a class="card" href="/niches/lego/?69016"><img src="https://images.unsplash.com/photo-1587654780474-30c93c8c2529?w=80&h=80&fit=crop&crop=center" alt="lego" loading="lazy" class="card-thumb">
-                <div class="card-title">LEGO</div>
-                <div class="card-sub">Bausätze & Sets</div></a>
-
-            <a class="card" href="/niches/bestseller-august/?69016"><img src="https://images.unsplash.com/photo-1549294463-740a69061de0?w=80&h=80&fit=crop&crop=center" alt="bestseller-august" loading="lazy" class="card-thumb">
-                <div class="card-title">Bestseller August</div>
-                <div class="card-sub">Top-Empfehlungen</div></a>
-
-            <a class="card" href="/niches/beauty-pflege/?69016"><img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=80&h=80&fit=crop&crop=center" alt="beauty-pflege" loading="lazy" class="card-thumb">
-                <div class="card-title">Beauty & Pflege</div>
-                <div class="card-sub">Haut, Haare & Körperpflege</div></a>
-        </div>
-
-        <a class="back-link" href="/?69016">⬆ Zur Startseite</a>
-
-        <footer>
-            <p>&copy; 2026 Andreas Stehmann. Alle Rechte vorbehalten.</p>
-            <p class="disclaimer">
-                Affiliate-Hinweis: Dieses Online-Angebot enthält Links zu Amazon Produkten. Als Amazon-Partner erhalte ich für qualifizierte Käufe eine Provision. Für den Kauf Preis und Verfügbarkeit des Produkts auf der Produktseite von Amazon gelten. Alle Angaben ohne Gewähr.
-            </p>
-        </footer>
-    </div>
-</body>
-</html>
+        <!-- STICKY HEADER -->
+        <header class="sticky-header">
+            <div class="header-content">
+                <div>
+                    <div class="logo">AS</div>
+                    <div class="logo-sub">Andreas Stehmann</div>
+                </div>
+                <nav class="nav-links">
