@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Andreas Stehmann – Dein Shop</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #fafafa; color: #1d1d1f; padding: 20px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { font-size: 32px; font-weight: 700; margin-bottom: 6px; }
+  .sub { color: #86868b; font-size: 14px; margin-bottom: 25px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+  .card { background: white; border: 1px solid #e8e8ed; border-radius: 10px; padding: 14px; text-decoration: none; color: inherit; transition: box-shadow 0.15s; }
+  .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+  .card h2 { font-size: 15px; margin-bottom: 3px; }
+  .card p { font-size: 11px; color: #86868b; }
+  .cnt { font-size: 10px; color: #0071e3; margin-top: 5px; font-weight: 500; }
+  footer { margin-top: 30px; font-size: 10px; color: #aeaeb2; text-align: center; border-top: 1px solid #f0f0f0; padding-top: 15px; }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Andreas Stehmann</h1>
+  <p class="sub">Dein Shop – alle Kategorien auf einen Blick</p>
+  
+  <div class="grid">
+    <a class="card" href="/niches/parfum-damen/">
+      <h2>Parfum Damen</h2>
+      <p>Duftparfüms für Frauen 25+</p>
+      <div class="cnt">10 Produkte →</div>
+    </a>
+    <a class="card" href="/niches/parfum-herren/">
+      <h2>Parfum Herren</h2>
+      <p>Männliche Düfte – kühn, würzig</p>
+      <div class="cnt">10 Produkte →</div>
+    </a>
+  </div>
+  
+  <footer>
+    <p>© 2026 – Affiliate-Links zu Amazon. Als Amazon-Partner erhalte ich für qualifizierte Käufe eine kleine Provision.</p>
+  </footer>
+</div>
+</body>
+</html>
