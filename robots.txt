@@ -1,5 +1,5 @@
-# robots.txt – Andreas Stehmann Shop
 User-agent: *
 Allow: /
+Disallow: /blog/drafts/
 
-Sitemap: https://balu17051.github.io/andreasstehmann-links/sitemap.xml
+Sitemap: https://balu1705.github.io/andreasstehmann-links/sitemap.xml
