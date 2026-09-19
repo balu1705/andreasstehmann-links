@@ -99,4 +99,5 @@ document.getElementById('go').addEventListener('click',show);
 document.getElementById('q').addEventListener('keydown',e=>{if(e.key==='Enter')show()});
 document.getElementById('q').addEventListener('input',show);
 </script>
+<script>document.addEventListener('click',function(e){try{var a=e.target.closest('a[href*="amazon."]');if(a){gtag('event','outbound_click',{link_domain:'amazon',asin:(a.href.match(/\/dp\/([A-Z0-9]{10})/)||[])[1]||''});}}catch(_){}},true);</script>
 </body></html>
