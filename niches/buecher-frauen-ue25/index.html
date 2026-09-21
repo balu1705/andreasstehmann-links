@@ -290,5 +290,6 @@ function qFin(){const sc={};ans.forEach(t=>sc[t]=(sc[t]||0)+1);
  r.innerHTML='<div class="rt">DEIN BUCH-MATCH</div><img src="'+best.img+'" alt="'+best.titel+'"><h3>'+best.titel+'</h3><div class="ra">von '+best.autor+'</div><a class="cta" href="'+best.link+'" target="_blank" rel="nofollow sponsored noopener">Jetzt bei Amazon entdecken*</a><button class="qagain" onclick="location.reload()">Quiz nochmal machen</button>';}
 qShow();
 </script>
+<script>document.addEventListener('click',function(e){try{var a=e.target.closest('a[href*="amazon."]');if(a){gtag('event','outbound_click',{link_domain:'amazon',asin:(a.href.match(/\/dp\/([A-Z0-9]{10})/)||[])[1]||''});}}catch(_){}},true);</script>
 </body>
 </html>
