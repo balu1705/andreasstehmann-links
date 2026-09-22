@@ -1,4 +1,35 @@
 {
- "updated": "2026-09-21",
- "deals": []
+ "updated": "2026-09-22",
+ "deals": [
+  {
+   "asin": "B0C3CLCXGG",
+   "preis": 34.99,
+   "median": 42.95,
+   "spar_pct": 19,
+   "titel": "KADAX Blumenkasten 60 cm 3er Set Balkonkasten – Kunststoff Pflanzkasten für Balkon &amp; Garten, Anthrazit, Wetterfest &amp; Stabil, Ideal für Blumen &amp; Kräuter",
+   "nische": "balkon-garten",
+   "link": "https://www.amazon.de/dp/B0C3CLCXGG?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B0DJ285BWW",
+   "preis": 14.41,
+   "median": 16.95,
+   "spar_pct": 15,
+   "titel": "Rolife 3D Puzzle - Holzpuzzle 3D Modellbausatz für Erwachsene Kreativer DIY-Bausatz, Bastelset für Dekoration &amp; Ästhetische Geschenke für Teenager(Evergreen Pine Bonsai)",
+   "nische": "diy",
+   "link": "https://www.amazon.de/dp/B0DJ285BWW?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B07FTXBNVL",
+   "preis": 14.49,
+   "median": 16.71,
+   "spar_pct": 13,
+   "titel": "Real Techniques Everyday Essentials + Make-up-Schwamm-Set, Make-up-Pinsel und Make-up-Mixer-Schwamm, für Foundation, Rouge, Bronzer, Lidschatten und Puder, 5-teiliges Set",
+   "nische": "beauty-pflege",
+   "link": "https://www.amazon.de/dp/B07FTXBNVL?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  }
+ ]
 }
