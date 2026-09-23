@@ -1,6 +1,56 @@
 {
- "updated": "2026-09-22",
+ "updated": "2026-09-23",
  "deals": [
+  {
+   "asin": "B0F2HMLW81",
+   "preis": 11.99,
+   "median": 16.99,
+   "spar_pct": 29,
+   "titel": "YJWZ 1115pcs Stück Perlenset für Armbänder - 48 Farben Meeresthema Bastelset, Perlenset Kinder ab 4 Jahre &amp; Erwachsene inkl Schmuckzubehör zum Auffädeln | DIY Armband Selber Machen Kit",
+   "nische": "diy",
+   "link": "https://www.amazon.de/dp/B0F2HMLW81?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B001HCM756",
+   "preis": 29.9,
+   "median": 40.9,
+   "spar_pct": 27,
+   "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für ölige Haut &amp; Mischhaut",
+   "nische": "beauty-pflege",
+   "link": "https://www.amazon.de/dp/B001HCM756?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B0H412TL8Y",
+   "preis": 66.48,
+   "median": 89.99,
+   "spar_pct": 26,
+   "titel": "LLIVEKIT 1500W Küchenmaschine, 10 Geschwindigkeiten + Pulsfunktion",
+   "nische": "backen-kochen",
+   "link": "https://www.amazon.de/dp/B0H412TL8Y?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B0D49FWWBY",
+   "preis": 16.98,
+   "median": 22.98,
+   "spar_pct": 26,
+   "titel": "Netz Schreibtisch Organizer,12 Fächer Mesh Stifthalter mit Schublade, Stiftehalter Schreibtisch, Stiftebox, Multifunktionaler Schreibtisch Organizer für Heimbürobedarf",
+   "nische": "home-office",
+   "link": "https://www.amazon.de/dp/B0D49FWWBY?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B007BJEKJA",
+   "preis": 14.43,
+   "median": 18.04,
+   "spar_pct": 20,
+   "titel": "BaByliss 19mm Lockenstab – Satin Touch Beschichtung, 10 Heizstufen, professionelles Styling-Tool für definierte Locken, Schwarz &amp; Pink, C319E",
+   "nische": "haare-styling",
+   "link": "https://www.amazon.de/dp/B007BJEKJA?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
   {
    "asin": "B0C3CLCXGG",
    "preis": 34.99,
@@ -9,6 +59,36 @@
    "titel": "KADAX Blumenkasten 60 cm 3er Set Balkonkasten – Kunststoff Pflanzkasten für Balkon &amp; Garten, Anthrazit, Wetterfest &amp; Stabil, Ideal für Blumen &amp; Kräuter",
    "nische": "balkon-garten",
    "link": "https://www.amazon.de/dp/B0C3CLCXGG?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B0FZJKLJWK",
+   "preis": 30.59,
+   "median": 37.99,
+   "spar_pct": 19,
+   "titel": "Flower Clusters Blumenstrauß-Bausatz, 762 Teile Ewiger Blumenstrauß mit Hibiscus, Rose, Lilie, Lavendel &amp; mehr, DIY Deko-Set für Wohnraum, Weihnachten, Bausteine für Erwachsene &amp; Kinder ab 6 Jahren",
+   "nische": "lego",
+   "link": "https://www.amazon.de/dp/B0FZJKLJWK?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B07G7FF5K4",
+   "preis": 22.98,
+   "median": 27.77,
+   "spar_pct": 17,
+   "titel": "Remington Lockenstab Pro Soft Curl, 25 mm, Schwarz, LCD-Display",
+   "nische": "haare-styling",
+   "link": "https://www.amazon.de/dp/B07G7FF5K4?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B0DR1MY5BX",
+   "preis": 28.89,
+   "median": 34.99,
+   "spar_pct": 17,
+   "titel": "Feandrea Hundebett, orthopädisch, für mittelgroße Hunde, 76 x 51 x 18 cm",
+   "nische": "haustier-damen",
+   "link": "https://www.amazon.de/dp/B0DR1MY5BX?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 5
   },
   {
@@ -19,6 +99,36 @@
    "titel": "Rolife 3D Puzzle - Holzpuzzle 3D Modellbausatz für Erwachsene Kreativer DIY-Bausatz, Bastelset für Dekoration &amp; Ästhetische Geschenke für Teenager(Evergreen Pine Bonsai)",
    "nische": "diy",
    "link": "https://www.amazon.de/dp/B0DJ285BWW?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B0F7XMNQQS",
+   "preis": 29.74,
+   "median": 34.99,
+   "spar_pct": 15,
+   "titel": "Schminkset für Frauen, All in One Make Up Set, Kosmetik Geschenkset für Damen Mädchen mit Lidschatten Concealer Palette, Konturierungspalette, Foundation, Mascara, Lipgloss, Eyeliner, Reisetasche",
+   "nische": "geschenke",
+   "link": "https://www.amazon.de/dp/B0F7XMNQQS?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B08NC88YD7",
+   "preis": 45.04,
+   "median": 52.99,
+   "spar_pct": 15,
+   "titel": "BEDSURE orthopädisches Hundebett ergonomisches Hundesofa, 89x63cm, grau",
+   "nische": "haustier-damen",
+   "link": "https://www.amazon.de/dp/B08NC88YD7?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B0B2ZM8Z3J",
+   "preis": 34.83,
+   "median": 40.99,
+   "spar_pct": 15,
+   "titel": "WESTERN HOME Hundebett Grosse/Mittelgroße Orthopädisches Hundebett,Grau",
+   "nische": "haustier-damen",
+   "link": "https://www.amazon.de/dp/B0B2ZM8Z3J?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 5
   },
   {
@@ -29,6 +139,26 @@
    "titel": "Real Techniques Everyday Essentials + Make-up-Schwamm-Set, Make-up-Pinsel und Make-up-Mixer-Schwamm, für Foundation, Rouge, Bronzer, Lidschatten und Puder, 5-teiliges Set",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B07FTXBNVL?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B0DRCQ4PBG",
+   "preis": 42.73,
+   "median": 48.99,
+   "spar_pct": 13,
+   "titel": "Wavytalk Thermobürste Rundbürste Blowout Boost für trockenes Haar Volumen",
+   "nische": "haare-styling",
+   "link": "https://www.amazon.de/dp/B0DRCQ4PBG?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
+  },
+  {
+   "asin": "B0C71GKGB8",
+   "preis": 15.98,
+   "median": 18.19,
+   "spar_pct": 12,
+   "titel": "Detectalia Dokumentenablage aus Metall, 3 Fächer, Schwarz - Briefablage Dokumenten-Organizer, Schreibtischablage Organizer für A4-Blätter, Briefe und Mappen, 35.5 x 29.7 x 27 cm",
+   "nische": "home-office",
+   "link": "https://www.amazon.de/dp/B0C71GKGB8?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 5
   }
  ]
