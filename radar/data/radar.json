@@ -1,36 +1,6 @@
 {
- "updated": "2026-09-25",
+ "updated": "2026-09-26",
  "deals": [
-  {
-   "asin": "B072WCC7HB",
-   "preis": 16.5,
-   "median": 175.0,
-   "spar_pct": 91,
-   "titel": "Parfums de Marly Parfums de Marly Layton Eau de parfum 75 ml",
-   "nische": "parfum-herren",
-   "link": "https://www.amazon.de/dp/B072WCC7HB?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
-  },
-  {
-   "asin": "B09232XNTX",
-   "preis": 24.99,
-   "median": 49.98,
-   "spar_pct": 50,
-   "titel": "BellaVita Luxury Parfüm Geschenkset für Damen (4 x 20 ml) | Französische EDP | Blumig, süß, Vanille und Moschus | DATE, SENORITA, GLAM &amp; ROSE | Das perfekte Valentinstagsgeschenk",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B09232XNTX?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B0F2HMLW81",
-   "preis": 11.99,
-   "median": 16.99,
-   "spar_pct": 29,
-   "titel": "YJWZ 1115pcs Stück Perlenset für Armbänder - 48 Farben Meeresthema Bastelset, Perlenset Kinder ab 4 Jahre &amp; Erwachsene inkl Schmuckzubehör zum Auffädeln | DIY Armband Selber Machen Kit",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0F2HMLW81?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
   {
    "asin": "B0GT4LNL4D",
    "preis": 16.99,
@@ -39,7 +9,7 @@
    "titel": "10 Stück Premium Parfüm Geschenk für Frauen Set Eau de Toilette für Damen",
    "nische": "parfum-damen",
    "link": "https://www.amazon.de/dp/B0GT4LNL4D?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
+   "tag": 7
   },
   {
    "asin": "B001HCM756",
@@ -49,7 +19,7 @@
    "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für ölige Haut &amp; Mischhaut",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B001HCM756?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B0H412TL8Y",
@@ -59,7 +29,7 @@
    "titel": "LLIVEKIT 1500W Küchenmaschine, 10 Geschwindigkeiten + Pulsfunktion",
    "nische": "backen-kochen",
    "link": "https://www.amazon.de/dp/B0H412TL8Y?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B0D49FWWBY",
@@ -69,7 +39,7 @@
    "titel": "Netz Schreibtisch Organizer,12 Fächer Mesh Stifthalter mit Schublade, Stiftehalter Schreibtisch, Stiftebox, Multifunktionaler Schreibtisch Organizer für Heimbürobedarf",
    "nische": "home-office",
    "link": "https://www.amazon.de/dp/B0D49FWWBY?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B002RBTB8C",
@@ -79,7 +49,7 @@
    "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für trockene Mischhaut",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B002RBTB8C?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B0GDZZY32Z",
@@ -89,7 +59,7 @@
    "titel": "Fragrances 4 PCS Premium Parfüm Geschenkset für Frauen,Miniparfums &amp; Duftproben Damen als langanhaltendes Geschenk,Eau de Parfum(Parfümset für Freundin, Geburtstag, Weihnachten)",
    "nische": "parfum-damen",
    "link": "https://www.amazon.de/dp/B0GDZZY32Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B007BJEKJA",
@@ -99,26 +69,16 @@
    "titel": "BaByliss 19mm Lockenstab – Satin Touch Beschichtung, 10 Heizstufen, professionelles Styling-Tool für definierte Locken, Schwarz &amp; Pink, C319E",
    "nische": "haare-styling",
    "link": "https://www.amazon.de/dp/B007BJEKJA?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
-  },
-  {
-   "asin": "B0C3CLCXGG",
-   "preis": 34.99,
-   "median": 42.95,
-   "spar_pct": 19,
-   "titel": "KADAX Blumenkasten 60 cm 3er Set Balkonkasten – Kunststoff Pflanzkasten für Balkon &amp; Garten, Anthrazit, Wetterfest &amp; Stabil, Ideal für Blumen &amp; Kräuter",
-   "nische": "balkon-garten",
-   "link": "https://www.amazon.de/dp/B0C3CLCXGG?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 8
   },
   {
-   "asin": "B07FTXBNVL",
-   "preis": 13.75,
-   "median": 16.71,
-   "spar_pct": 18,
-   "titel": "Real Techniques Everyday Essentials + Make-up-Schwamm-Set, Make-up-Pinsel und Make-up-Mixer-Schwamm, für Foundation, Rouge, Bronzer, Lidschatten und Puder, 5-teiliges Set",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B07FTXBNVL?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "asin": "B0DK8V197Z",
+   "preis": 63.49,
+   "median": 78.15,
+   "spar_pct": 19,
+   "titel": "Damenparfüm-Set Dolce &amp; Gabbana the One, 3-teilig, Marke: Dolce &amp; Gabbana - EAN: 8054754400748",
+   "nische": "parfum-damen",
+   "link": "https://www.amazon.de/dp/B0DK8V197Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 8
   },
   {
@@ -129,7 +89,7 @@
    "titel": "Remington Lockenstab Pro Soft Curl, 25 mm, Schwarz, LCD-Display",
    "nische": "haare-styling",
    "link": "https://www.amazon.de/dp/B07G7FF5K4?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B0DR317BFR",
@@ -139,7 +99,7 @@
    "titel": "Natürliche Amazonit perlen für armbänder Edelstein Perlen Perlen Set Zum Auffädeln Kit Perlenset Beads für DIY armbänder selber machen Schmuck Halskette Ohrringe Kette für Kinder Erwachsene (Pink)",
    "nische": "diy",
    "link": "https://www.amazon.de/dp/B0DR317BFR?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B0F7XMNQQS",
@@ -149,7 +109,7 @@
    "titel": "Schminkset für Frauen, All in One Make Up Set, Kosmetik Geschenkset für Damen Mädchen mit Lidschatten Concealer Palette, Konturierungspalette, Foundation, Mascara, Lipgloss, Eyeliner, Reisetasche",
    "nische": "geschenke",
    "link": "https://www.amazon.de/dp/B0F7XMNQQS?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B07JF7M9M8",
@@ -159,7 +119,7 @@
    "titel": "Jette Love Set Eau de Parfum 30 ml + Bodylotion 50 ml + Showergel 50 ml",
    "nische": "parfum-damen",
    "link": "https://www.amazon.de/dp/B07JF7M9M8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B0FRRQHGL2",
@@ -169,7 +129,7 @@
    "titel": "2er Pack USB C Ladegerät, 4 Ports 40W Mehrfach Schnellladegerät Netzteil Power Adapter Für iPhone 17/16/15/14/Für iPhone 13/12/11 Pro/Max/Plus/XR/XS/iPad/Samsung Handy, USB C &amp; USB A PD 3.0 Charger",
    "nische": "handy-zubehoer",
    "link": "https://www.amazon.de/dp/B0FRRQHGL2?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B08CHH2N9D",
@@ -179,7 +139,7 @@
    "titel": "SEVERIN Fondue, spülmaschinengeeignetes Fondueset mit 8 farblich marki",
    "nische": "esstisch-gaeste",
    "link": "https://www.amazon.de/dp/B08CHH2N9D?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 5
+   "tag": 6
   },
   {
    "asin": "B0C71GKGB8",
@@ -189,7 +149,7 @@
    "titel": "Detectalia Dokumentenablage aus Metall, 3 Fächer, Schwarz - Briefablage Dokumenten-Organizer, Schreibtischablage Organizer für A4-Blätter, Briefe und Mappen, 35.5 x 29.7 x 27 cm",
    "nische": "home-office",
    "link": "https://www.amazon.de/dp/B0C71GKGB8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   }
  ]
 }
