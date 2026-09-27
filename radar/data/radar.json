@@ -1,6 +1,26 @@
 {
- "updated": "2026-09-26",
+ "updated": "2026-09-27",
  "deals": [
+  {
+   "asin": "B07L2P9QFT",
+   "preis": 20.99,
+   "median": 71.76,
+   "spar_pct": 71,
+   "titel": "Znewtech Hexagon Drehbarer Timer und Wecker, cyan",
+   "nische": "quality_kuechen-gadgets",
+   "link": "https://www.amazon.de/dp/B07L2P9QFT?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
+  },
+  {
+   "asin": "B013DQF2S2",
+   "preis": 49.0,
+   "median": 74.9,
+   "spar_pct": 35,
+   "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 30 Funktionen, Universalmesser, Schneide/ Raspeln, Schlagscheibe, Rührschüssel 2,3 L, Mixer 1,0 L, weiß, 800 W, kleine Küchenmaschine, MCM3200W",
+   "nische": "backen-kochen",
+   "link": "https://www.amazon.de/dp/B013DQF2S2?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 10
+  },
   {
    "asin": "B0GT4LNL4D",
    "preis": 16.99,
@@ -9,7 +29,7 @@
    "titel": "10 Stück Premium Parfüm Geschenk für Frauen Set Eau de Toilette für Damen",
    "nische": "parfum-damen",
    "link": "https://www.amazon.de/dp/B0GT4LNL4D?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B001HCM756",
@@ -19,7 +39,7 @@
    "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für ölige Haut &amp; Mischhaut",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B001HCM756?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
+   "tag": 10
   },
   {
    "asin": "B0H412TL8Y",
@@ -29,17 +49,7 @@
    "titel": "LLIVEKIT 1500W Küchenmaschine, 10 Geschwindigkeiten + Pulsfunktion",
    "nische": "backen-kochen",
    "link": "https://www.amazon.de/dp/B0H412TL8Y?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B0D49FWWBY",
-   "preis": 16.98,
-   "median": 22.98,
-   "spar_pct": 26,
-   "titel": "Netz Schreibtisch Organizer,12 Fächer Mesh Stifthalter mit Schublade, Stiftehalter Schreibtisch, Stiftebox, Multifunktionaler Schreibtisch Organizer für Heimbürobedarf",
-   "nische": "home-office",
-   "link": "https://www.amazon.de/dp/B0D49FWWBY?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 10
   },
   {
    "asin": "B002RBTB8C",
@@ -49,6 +59,16 @@
    "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für trockene Mischhaut",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B002RBTB8C?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 10
+  },
+  {
+   "asin": "B0DK8V197Z",
+   "preis": 59.97,
+   "median": 78.15,
+   "spar_pct": 23,
+   "titel": "Damenparfüm-Set Dolce &amp; Gabbana the One, 3-teilig, Marke: Dolce &amp; Gabbana - EAN: 8054754400748",
+   "nische": "parfum-damen",
+   "link": "https://www.amazon.de/dp/B0DK8V197Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 9
   },
   {
@@ -59,37 +79,7 @@
    "titel": "Fragrances 4 PCS Premium Parfüm Geschenkset für Frauen,Miniparfums &amp; Duftproben Damen als langanhaltendes Geschenk,Eau de Parfum(Parfümset für Freundin, Geburtstag, Weihnachten)",
    "nische": "parfum-damen",
    "link": "https://www.amazon.de/dp/B0GDZZY32Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B007BJEKJA",
-   "preis": 14.43,
-   "median": 18.04,
-   "spar_pct": 20,
-   "titel": "BaByliss 19mm Lockenstab – Satin Touch Beschichtung, 10 Heizstufen, professionelles Styling-Tool für definierte Locken, Schwarz &amp; Pink, C319E",
-   "nische": "haare-styling",
-   "link": "https://www.amazon.de/dp/B007BJEKJA?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B0DK8V197Z",
-   "preis": 63.49,
-   "median": 78.15,
-   "spar_pct": 19,
-   "titel": "Damenparfüm-Set Dolce &amp; Gabbana the One, 3-teilig, Marke: Dolce &amp; Gabbana - EAN: 8054754400748",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0DK8V197Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B07G7FF5K4",
-   "preis": 22.98,
-   "median": 27.77,
-   "spar_pct": 17,
-   "titel": "Remington Lockenstab Pro Soft Curl, 25 mm, Schwarz, LCD-Display",
-   "nische": "haare-styling",
-   "link": "https://www.amazon.de/dp/B07G7FF5K4?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B0DR317BFR",
@@ -99,7 +89,7 @@
    "titel": "Natürliche Amazonit perlen für armbänder Edelstein Perlen Perlen Set Zum Auffädeln Kit Perlenset Beads für DIY armbänder selber machen Schmuck Halskette Ohrringe Kette für Kinder Erwachsene (Pink)",
    "nische": "diy",
    "link": "https://www.amazon.de/dp/B0DR317BFR?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
+   "tag": 10
   },
   {
    "asin": "B0F7XMNQQS",
@@ -109,17 +99,7 @@
    "titel": "Schminkset für Frauen, All in One Make Up Set, Kosmetik Geschenkset für Damen Mädchen mit Lidschatten Concealer Palette, Konturierungspalette, Foundation, Mascara, Lipgloss, Eyeliner, Reisetasche",
    "nische": "geschenke",
    "link": "https://www.amazon.de/dp/B0F7XMNQQS?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B07JF7M9M8",
-   "preis": 19.3,
-   "median": 22.7,
-   "spar_pct": 15,
-   "titel": "Jette Love Set Eau de Parfum 30 ml + Bodylotion 50 ml + Showergel 50 ml",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B07JF7M9M8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 10
   },
   {
    "asin": "B0FRRQHGL2",
@@ -129,27 +109,7 @@
    "titel": "2er Pack USB C Ladegerät, 4 Ports 40W Mehrfach Schnellladegerät Netzteil Power Adapter Für iPhone 17/16/15/14/Für iPhone 13/12/11 Pro/Max/Plus/XR/XS/iPad/Samsung Handy, USB C &amp; USB A PD 3.0 Charger",
    "nische": "handy-zubehoer",
    "link": "https://www.amazon.de/dp/B0FRRQHGL2?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B08CHH2N9D",
-   "preis": 21.99,
-   "median": 25.0,
-   "spar_pct": 12,
-   "titel": "SEVERIN Fondue, spülmaschinengeeignetes Fondueset mit 8 farblich marki",
-   "nische": "esstisch-gaeste",
-   "link": "https://www.amazon.de/dp/B08CHH2N9D?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
-  },
-  {
-   "asin": "B0C71GKGB8",
-   "preis": 15.98,
-   "median": 18.19,
-   "spar_pct": 12,
-   "titel": "Detectalia Dokumentenablage aus Metall, 3 Fächer, Schwarz - Briefablage Dokumenten-Organizer, Schreibtischablage Organizer für A4-Blätter, Briefe und Mappen, 35.5 x 29.7 x 27 cm",
-   "nische": "home-office",
-   "link": "https://www.amazon.de/dp/B0C71GKGB8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "tag": 9
   }
  ]
 }
