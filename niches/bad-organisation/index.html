@@ -121,5 +121,6 @@ footer p{margin-bottom:8px;max-width:760px}
 </div></footer>
 <div id="cookie-banner"><span>Ich nutze Google Analytics & Amazon-Affiliate-Links. OK?</span><button onclick="document.getElementById('cookie-banner').style.display='none';localStorage.setItem('ck','1')">OK</button></div>
 <script>if(localStorage.getItem('ck'))document.getElementById('cookie-banner').style.display='none';</script>
+<script>document.addEventListener('click',function(e){try{var a=e.target.closest('a[href*="amazon."]');if(a){gtag('event','outbound_click',{link_domain:'amazon',asin:(a.href.match(/\/dp\/([A-Z0-9]{10})/)||[])[1]||''});}}catch(_){}},true);</script>
 </body>
 </html>
