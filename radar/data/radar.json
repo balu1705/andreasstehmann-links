@@ -1,25 +1,15 @@
 {
- "updated": "2026-09-28",
+ "updated": "2026-09-29",
  "deals": [
   {
-   "asin": "B0CB3YLNYH",
-   "preis": 3.96,
-   "median": 36.99,
-   "spar_pct": 89,
-   "titel": "Marbrasse Schreibtisch Organizer mit Aktenhalter, 5 Ebenen Papier Briefablage mit Schublade und 2 Stiftehalter,Schreibtisch Netz Ablagefächer Organizer mit für Büro Bedarf (Schwarz)",
-   "nische": "home-office",
-   "link": "https://www.amazon.de/dp/B0CB3YLNYH?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B08YZ5CM66",
-   "preis": 13.75,
-   "median": 55.61,
-   "spar_pct": 75,
-   "titel": "Christian Dior Sauvage Edt Spray",
-   "nische": "parfum-herren",
-   "link": "https://www.amazon.de/dp/B08YZ5CM66?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "asin": "B09B8X9RGM",
+   "preis": 29.99,
+   "median": 89.99,
+   "spar_pct": 67,
+   "titel": "Echo Dot (Neueste Generation) | Smarter WLAN- und Bluetooth-Lautsprecher und gigantischem, sattem Klang | Anthrazit, mit Alexa+ Early Access",
+   "nische": "smart-home",
+   "link": "https://www.amazon.de/dp/B09B8X9RGM?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 5
   },
   {
    "asin": "B07L2P9QFT",
@@ -29,7 +19,7 @@
    "titel": "Znewtech Hexagon Drehbarer Timer und Wecker, cyan",
    "nische": "quality_kuechen-gadgets",
    "link": "https://www.amazon.de/dp/B07L2P9QFT?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B013DQF2S2",
@@ -39,47 +29,27 @@
    "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 30 Funktionen, Universalmesser, Schneide/ Raspeln, Schlagscheibe, Rührschüssel 2,3 L, Mixer 1,0 L, weiß, 800 W, kleine Küchenmaschine, MCM3200W",
    "nische": "backen-kochen",
    "link": "https://www.amazon.de/dp/B013DQF2S2?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 12
+  },
+  {
+   "asin": "B09LLRNGSD",
+   "preis": 25.76,
+   "median": 35.99,
+   "spar_pct": 28,
+   "titel": "Anker Nano 65W USB C Ladegerät, 3-Port PPS Schnellladegerät, iPad Ladegerät",
+   "nische": "handy-zubehoer",
+   "link": "https://www.amazon.de/dp/B09LLRNGSD?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 11
   },
   {
-   "asin": "B072WCC7HB",
-   "preis": 131.99,
-   "median": 175.0,
-   "spar_pct": 25,
-   "titel": "Parfums de Marly Parfums de Marly Layton Eau de parfum 75 ml",
-   "nische": "parfum-herren",
-   "link": "https://www.amazon.de/dp/B072WCC7HB?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B0DK8V197Z",
-   "preis": 59.97,
-   "median": 78.15,
-   "spar_pct": 23,
-   "titel": "Damenparfüm-Set Dolce &amp; Gabbana the One, 3-teilig, Marke: Dolce &amp; Gabbana - EAN: 8054754400748",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0DK8V197Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0GDZZY32Z",
-   "preis": 18.99,
+   "asin": "B08YXLY93M",
+   "preis": 19.49,
    "median": 23.99,
-   "spar_pct": 21,
-   "titel": "Fragrances 4 PCS Premium Parfüm Geschenkset für Frauen,Miniparfums &amp; Duftproben Damen als langanhaltendes Geschenk,Eau de Parfum(Parfümset für Freundin, Geburtstag, Weihnachten)",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0GDZZY32Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0FBWQMQY4",
-   "preis": 48.85,
-   "median": 59.99,
    "spar_pct": 19,
-   "titel": "Amazon Basics 15-teiliges Keramik-Antihaft-Kochgeschirr-Set, Töpfe und Pfannen mit Deckeln und Utensilien, Spiralboden, Weiche Griffe, für Gas-, Elektro- und Glasherde, Schwarz",
-   "nische": "pflanzen",
-   "link": "https://www.amazon.de/dp/B0FBWQMQY4?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
+   "titel": "Vtopmart 0.8L Vorratsdosen Set, Müsli Schüttdose &amp; Frischhaltedosen",
+   "nische": "kuechenorganisation",
+   "link": "https://www.amazon.de/dp/B08YXLY93M?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 10
   },
   {
    "asin": "B0FH6DGBXD",
@@ -89,17 +59,7 @@
    "titel": "CUBIMANA Blumen Blumenstrauß Set mit LED für Erwachsene Frauen Mädchen 12+",
    "nische": "lego",
    "link": "https://www.amazon.de/dp/B0FH6DGBXD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B0H1B27788",
-   "preis": 35.98,
-   "median": 42.99,
-   "spar_pct": 16,
-   "titel": "CUBIMANA Blumen Blumenstrauß Set mit LED für Erwachsene Frauen Mädchen 12+",
-   "nische": "lego",
-   "link": "https://www.amazon.de/dp/B0H1B27788?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
+   "tag": 10
   },
   {
    "asin": "B0GF75G55P",
@@ -109,7 +69,7 @@
    "titel": "SONGMICS Duschablage ohne Bohren, 2 Ebenen Duschregal zum Hängen, Schwarz",
    "nische": "bad-organisation",
    "link": "https://www.amazon.de/dp/B0GF75G55P?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 12
   },
   {
    "asin": "B07N11YB7N",
@@ -119,17 +79,7 @@
    "titel": "CASARIA Blumenkasten 3 Innentöpfe",
    "nische": "balkon-garten",
    "link": "https://www.amazon.de/dp/B07N11YB7N?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
-  },
-  {
-   "asin": "B0DR317BFR",
-   "preis": 16.99,
-   "median": 19.99,
-   "spar_pct": 15,
-   "titel": "Natürliche Amazonit perlen für armbänder Edelstein Perlen Perlen Set Zum Auffädeln Kit Perlenset Beads für DIY armbänder selber machen Schmuck Halskette Ohrringe Kette für Kinder Erwachsene (Pink)",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0DR317BFR?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 12
   },
   {
    "asin": "B0FCLG8VSY",
@@ -139,7 +89,7 @@
    "titel": "Feandrea Hundebett, großes orthopädisches Hundekörbchen, 71 x 55 x 18 cm",
    "nische": "haustier-damen",
    "link": "https://www.amazon.de/dp/B0FCLG8VSY?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
+   "tag": 11
   },
   {
    "asin": "B0D4M91TLB",
@@ -149,36 +99,6 @@
    "titel": "Vorratsdosen mit deckel luftdicht 25er Set: BPA-FREI Aufbewahrungsbox Küche",
    "nische": "kuechenorganisation",
    "link": "https://www.amazon.de/dp/B0D4M91TLB?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B07JF7M9M8",
-   "preis": 19.3,
-   "median": 22.7,
-   "spar_pct": 15,
-   "titel": "Jette Love Set Eau de Parfum 30 ml + Bodylotion 50 ml + Showergel 50 ml",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B07JF7M9M8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B0DP6KNGG3",
-   "preis": 21.98,
-   "median": 25.99,
-   "spar_pct": 15,
-   "titel": "Bettwäsche 135x200 Baumwolle 2teilig, Beige/Weiß",
-   "nische": "schlafen-wohlfuehlzimmer",
-   "link": "https://www.amazon.de/dp/B0DP6KNGG3?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
-  },
-  {
-   "asin": "B0FRRQHGL2",
-   "preis": 13.89,
-   "median": 15.99,
-   "spar_pct": 13,
-   "titel": "2er Pack USB C Ladegerät, 4 Ports 40W Mehrfach Schnellladegerät Netzteil Power Adapter Für iPhone 17/16/15/14/Für iPhone 13/12/11 Pro/Max/Plus/XR/XS/iPad/Samsung Handy, USB C &amp; USB A PD 3.0 Charger",
-   "nische": "handy-zubehoer",
-   "link": "https://www.amazon.de/dp/B0FRRQHGL2?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 10
   }
  ]
