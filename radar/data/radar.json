@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-09-30",
  "deals": [
   {
    "asin": "B09B8X9RGM",
@@ -9,27 +9,7 @@
    "titel": "Echo Dot (Neueste Generation) | Smarter WLAN- und Bluetooth-Lautsprecher und gigantischem, sattem Klang | Anthrazit, mit Alexa+ Early Access",
    "nische": "smart-home",
    "link": "https://www.amazon.de/dp/B09B8X9RGM?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 5
-  },
-  {
-   "asin": "B07L2P9QFT",
-   "preis": 27.74,
-   "median": 71.76,
-   "spar_pct": 61,
-   "titel": "Znewtech Hexagon Drehbarer Timer und Wecker, cyan",
-   "nische": "quality_kuechen-gadgets",
-   "link": "https://www.amazon.de/dp/B07L2P9QFT?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B013DQF2S2",
-   "preis": 49.0,
-   "median": 74.9,
-   "spar_pct": 35,
-   "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 30 Funktionen, Universalmesser, Schneide/ Raspeln, Schlagscheibe, Rührschüssel 2,3 L, Mixer 1,0 L, weiß, 800 W, kleine Küchenmaschine, MCM3200W",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B013DQF2S2?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
+   "tag": 6
   },
   {
    "asin": "B09LLRNGSD",
@@ -39,27 +19,67 @@
    "titel": "Anker Nano 65W USB C Ladegerät, 3-Port PPS Schnellladegerät, iPad Ladegerät",
    "nische": "handy-zubehoer",
    "link": "https://www.amazon.de/dp/B09LLRNGSD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 12
   },
   {
-   "asin": "B08YXLY93M",
-   "preis": 19.49,
-   "median": 23.99,
-   "spar_pct": 19,
-   "titel": "Vtopmart 0.8L Vorratsdosen Set, Müsli Schüttdose &amp; Frischhaltedosen",
-   "nische": "kuechenorganisation",
-   "link": "https://www.amazon.de/dp/B08YXLY93M?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
+   "asin": "B013DQF2S2",
+   "preis": 55.0,
+   "median": 74.9,
+   "spar_pct": 27,
+   "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 30 Funktionen, Universalmesser, Schneide/ Raspeln, Schlagscheibe, Rührschüssel 2,3 L, Mixer 1,0 L, weiß, 800 W, kleine Küchenmaschine, MCM3200W",
+   "nische": "backen-kochen",
+   "link": "https://www.amazon.de/dp/B013DQF2S2?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 13
   },
   {
-   "asin": "B0FH6DGBXD",
-   "preis": 35.99,
-   "median": 42.99,
-   "spar_pct": 16,
-   "titel": "CUBIMANA Blumen Blumenstrauß Set mit LED für Erwachsene Frauen Mädchen 12+",
-   "nische": "lego",
-   "link": "https://www.amazon.de/dp/B0FH6DGBXD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
+   "asin": "B0H35P9FHX",
+   "preis": 19.99,
+   "median": 24.99,
+   "spar_pct": 20,
+   "titel": "3 Etagen Badezimmer Organizer, Kosmetik Aufbewahrung &amp; Parfüm Tablett (Grau), Großes Hautpflege Regal für Schminktisch, Bad &amp; Arbeitsplatte, Elegantes Design (30x17x48 cm)",
+   "nische": "bad-organisation",
+   "link": "https://www.amazon.de/dp/B0H35P9FHX?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 13
+  },
+  {
+   "asin": "B002RBTB8C",
+   "preis": 29.95,
+   "median": 37.65,
+   "spar_pct": 20,
+   "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für trockene Mischhaut",
+   "nische": "beauty-pflege",
+   "link": "https://www.amazon.de/dp/B002RBTB8C?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 13
+  },
+  {
+   "asin": "B0H9M8K1M6",
+   "preis": 6.99,
+   "median": 8.76,
+   "spar_pct": 20,
+   "titel": "Herbst Press on Nails — Kürbis-Herbst-Nagel zum Aufkleben",
+   "nische": "beauty-pflege",
+   "link": "https://www.amazon.de/dp/B0H9M8K1M6?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 7
+  },
+  {
+   "asin": "B0F2HMLW81",
+   "preis": 9.99,
+   "median": 11.99,
+   "spar_pct": 17,
+   "titel": "YJWZ 1115pcs Stück Perlenset für Armbänder - 48 Farben Meeresthema Bastelset, Perlenset Kinder ab 4 Jahre &amp; Erwachsene inkl Schmuckzubehör zum Auffädeln | DIY Armband Selber Machen Kit",
+   "nische": "diy",
+   "link": "https://www.amazon.de/dp/B0F2HMLW81?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 13
+  },
+  {
+   "asin": "B0CM9J2FHV",
+   "preis": 9.91,
+   "median": 11.99,
+   "spar_pct": 17,
+   "titel": "GYMERK Fitnessbänder Set 4er, 1.8M/2M Fitnessband, 4 Widerstandsstufen",
+   "nische": "fitness-sport",
+   "link": "https://www.amazon.de/dp/B0CM9J2FHV?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 9
   },
   {
    "asin": "B0GF75G55P",
@@ -69,7 +89,7 @@
    "titel": "SONGMICS Duschablage ohne Bohren, 2 Ebenen Duschregal zum Hängen, Schwarz",
    "nische": "bad-organisation",
    "link": "https://www.amazon.de/dp/B0GF75G55P?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
+   "tag": 13
   },
   {
    "asin": "B07N11YB7N",
@@ -79,27 +99,7 @@
    "titel": "CASARIA Blumenkasten 3 Innentöpfe",
    "nische": "balkon-garten",
    "link": "https://www.amazon.de/dp/B07N11YB7N?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
-  },
-  {
-   "asin": "B0FCLG8VSY",
-   "preis": 25.49,
-   "median": 29.99,
-   "spar_pct": 15,
-   "titel": "Feandrea Hundebett, großes orthopädisches Hundekörbchen, 71 x 55 x 18 cm",
-   "nische": "haustier-damen",
-   "link": "https://www.amazon.de/dp/B0FCLG8VSY?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
-  },
-  {
-   "asin": "B0D4M91TLB",
-   "preis": 31.44,
-   "median": 36.99,
-   "spar_pct": 15,
-   "titel": "Vorratsdosen mit deckel luftdicht 25er Set: BPA-FREI Aufbewahrungsbox Küche",
-   "nische": "kuechenorganisation",
-   "link": "https://www.amazon.de/dp/B0D4M91TLB?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
+   "tag": 13
   }
  ]
 }
