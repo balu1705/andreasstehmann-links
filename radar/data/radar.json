@@ -1,26 +1,6 @@
 {
- "updated": "2026-09-30",
+ "updated": "2026-10-01",
  "deals": [
-  {
-   "asin": "B09B8X9RGM",
-   "preis": 29.99,
-   "median": 89.99,
-   "spar_pct": 67,
-   "titel": "Echo Dot (Neueste Generation) | Smarter WLAN- und Bluetooth-Lautsprecher und gigantischem, sattem Klang | Anthrazit, mit Alexa+ Early Access",
-   "nische": "smart-home",
-   "link": "https://www.amazon.de/dp/B09B8X9RGM?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
-  },
-  {
-   "asin": "B09LLRNGSD",
-   "preis": 25.76,
-   "median": 35.99,
-   "spar_pct": 28,
-   "titel": "Anker Nano 65W USB C Ladegerät, 3-Port PPS Schnellladegerät, iPad Ladegerät",
-   "nische": "handy-zubehoer",
-   "link": "https://www.amazon.de/dp/B09LLRNGSD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
-  },
   {
    "asin": "B013DQF2S2",
    "preis": 55.0,
@@ -29,7 +9,7 @@
    "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 30 Funktionen, Universalmesser, Schneide/ Raspeln, Schlagscheibe, Rührschüssel 2,3 L, Mixer 1,0 L, weiß, 800 W, kleine Küchenmaschine, MCM3200W",
    "nische": "backen-kochen",
    "link": "https://www.amazon.de/dp/B013DQF2S2?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
+   "tag": 14
   },
   {
    "asin": "B0H35P9FHX",
@@ -39,7 +19,7 @@
    "titel": "3 Etagen Badezimmer Organizer, Kosmetik Aufbewahrung &amp; Parfüm Tablett (Grau), Großes Hautpflege Regal für Schminktisch, Bad &amp; Arbeitsplatte, Elegantes Design (30x17x48 cm)",
    "nische": "bad-organisation",
    "link": "https://www.amazon.de/dp/B0H35P9FHX?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
+   "tag": 14
   },
   {
    "asin": "B002RBTB8C",
@@ -49,7 +29,7 @@
    "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für trockene Mischhaut",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B002RBTB8C?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
+   "tag": 14
   },
   {
    "asin": "B0H9M8K1M6",
@@ -59,7 +39,7 @@
    "titel": "Herbst Press on Nails — Kürbis-Herbst-Nagel zum Aufkleben",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B0H9M8K1M6?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 7
+   "tag": 8
   },
   {
    "asin": "B0F2HMLW81",
@@ -69,17 +49,7 @@
    "titel": "YJWZ 1115pcs Stück Perlenset für Armbänder - 48 Farben Meeresthema Bastelset, Perlenset Kinder ab 4 Jahre &amp; Erwachsene inkl Schmuckzubehör zum Auffädeln | DIY Armband Selber Machen Kit",
    "nische": "diy",
    "link": "https://www.amazon.de/dp/B0F2HMLW81?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
-  },
-  {
-   "asin": "B0CM9J2FHV",
-   "preis": 9.91,
-   "median": 11.99,
-   "spar_pct": 17,
-   "titel": "GYMERK Fitnessbänder Set 4er, 1.8M/2M Fitnessband, 4 Widerstandsstufen",
-   "nische": "fitness-sport",
-   "link": "https://www.amazon.de/dp/B0CM9J2FHV?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
+   "tag": 14
   },
   {
    "asin": "B0GF75G55P",
@@ -89,7 +59,7 @@
    "titel": "SONGMICS Duschablage ohne Bohren, 2 Ebenen Duschregal zum Hängen, Schwarz",
    "nische": "bad-organisation",
    "link": "https://www.amazon.de/dp/B0GF75G55P?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
+   "tag": 14
   },
   {
    "asin": "B07N11YB7N",
@@ -99,7 +69,17 @@
    "titel": "CASARIA Blumenkasten 3 Innentöpfe",
    "nische": "balkon-garten",
    "link": "https://www.amazon.de/dp/B07N11YB7N?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
+   "tag": 14
+  },
+  {
+   "asin": "B0GH7LM96D",
+   "preis": 16.57,
+   "median": 18.99,
+   "spar_pct": 13,
+   "titel": "10-teiliges MAANGE Make-up Pinsel set mit Magnetetui, hochwertige Synthetikpinsel mit kurzem Griff für Foundation, Puder, Concealer, Lidschatten, Make-up-Pinsel",
+   "nische": "beauty-pflege",
+   "link": "https://www.amazon.de/dp/B0GH7LM96D?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 14
   }
  ]
 }
