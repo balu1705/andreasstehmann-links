@@ -1,55 +1,25 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "deals": [
   {
-   "asin": "B09B8X9RGM",
-   "preis": 29.99,
-   "median": 89.99,
-   "spar_pct": 67,
-   "titel": "Echo Dot (Neueste Generation) | Smarter WLAN- und Bluetooth-Lautsprecher und gigantischem, sattem Klang | Anthrazit, mit Alexa+ Early Access",
-   "nische": "smart-home",
-   "link": "https://www.amazon.de/dp/B09B8X9RGM?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
-  },
-  {
-   "asin": "B0C2S2J7JP",
-   "preis": 49.99,
-   "median": 119.99,
-   "spar_pct": 58,
-   "titel": "Amazon Echo Spot (neueste generation), smarter Wecker mit sattem Klang, Schwarz, mit Alexa+ Early Access",
-   "nische": "smart-home",
-   "link": "https://www.amazon.de/dp/B0C2S2J7JP?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 5
-  },
-  {
    "asin": "B0DLWDHQLT",
-   "preis": 14.3,
+   "preis": 14.99,
    "median": 33.56,
-   "spar_pct": 57,
+   "spar_pct": 55,
    "titel": "Marbrasse Schreibtisch Organizer mit Aktenhalter,5 Ebenen Papier Briefablage,Schreibtisch Netz Ablagefächer Organizer Dokumentenablage für Büro Bedarf(Weiß no Schublade)",
    "nische": "home-office",
    "link": "https://www.amazon.de/dp/B0DLWDHQLT?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 13
+   "tag": 14
   },
   {
-   "asin": "B0FPBLHMYG",
-   "preis": 21.99,
-   "median": 39.95,
-   "spar_pct": 45,
-   "titel": "Versace Herren Miniatur-Kollektions-Set, 4 x 5 ml",
-   "nische": "parfum-herren",
-   "link": "https://www.amazon.de/dp/B0FPBLHMYG?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
-  },
-  {
-   "asin": "B0DB51QB66",
-   "preis": 79.96,
-   "median": 129.99,
-   "spar_pct": 38,
-   "titel": "Redchef Pfannenset Topfsets 16-Teilig Antihaft-Keramik-Kochgeschirr-Set mit Abnehmbaren Griff, Pfanne 20/26cm, Tiefe Bratpfanne 26cm, Topf 18/20cm, Stapelbar Topfset Für alle Herdarten, Ofenfest Grün",
-   "nische": "pflanzen",
-   "link": "https://www.amazon.de/dp/B0DB51QB66?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 8
+   "asin": "B007830WAA",
+   "preis": 8.99,
+   "median": 15.92,
+   "spar_pct": 44,
+   "titel": "Orbegozo KF 600 - Italienischer Kaffeekocher aus Aluminium, Kapazität: 6 Tassen (280 ml), ergonomischer Griff, Sicherheitsventil, abnehmbarer Filter",
+   "nische": "kaffee-genuss",
+   "link": "https://www.amazon.de/dp/B007830WAA?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 12
   },
   {
    "asin": "B0FN7B6JSJ",
@@ -59,7 +29,7 @@
    "titel": "Geschenke für Frauen,Wellness-Geschenkset für Damen - 9-teilig",
    "nische": "geschenke",
    "link": "https://www.amazon.de/dp/B0FN7B6JSJ?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 15
+   "tag": 16
   },
   {
    "asin": "B0BQ1CRQ3L",
@@ -69,7 +39,7 @@
    "titel": "Cecotec Zubehörset für 5 Bis 6,5L Heißluftfritteuse Cecofry Pack",
    "nische": "heissluftfritteuse",
    "link": "https://www.amazon.de/dp/B0BQ1CRQ3L?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
+   "tag": 11
   },
   {
    "asin": "B000GI0NGW",
@@ -79,17 +49,7 @@
    "titel": "Clinique Liquid Facial Soap Mild 200 ml",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B000GI0NGW?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
-  },
-  {
-   "asin": "B09LLRNGSD",
-   "preis": 25.76,
-   "median": 35.99,
-   "spar_pct": 28,
-   "titel": "Anker Nano 65W USB C Ladegerät, 3-Port PPS Schnellladegerät, iPad Ladegerät",
-   "nische": "handy-zubehoer",
-   "link": "https://www.amazon.de/dp/B09LLRNGSD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 14
+   "tag": 17
   },
   {
    "asin": "B013DQF2S2",
@@ -99,7 +59,7 @@
    "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 30 Funktionen, Universalmesser, Schneide/ Raspeln, Schlagscheibe, Rührschüssel 2,3 L, Mixer 1,0 L, weiß, 800 W, kleine Küchenmaschine, MCM3200W",
    "nische": "backen-kochen",
    "link": "https://www.amazon.de/dp/B013DQF2S2?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
+   "tag": 17
   },
   {
    "asin": "B076QDSYCH",
@@ -109,17 +69,7 @@
    "titel": "Amazon Basics Kettlebell - Gusseisen Widerstandstraining Gewicht mit T",
    "nische": "fitness-sport",
    "link": "https://www.amazon.de/dp/B076QDSYCH?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
-  },
-  {
-   "asin": "B0DK8V197Z",
-   "preis": 59.97,
-   "median": 78.15,
-   "spar_pct": 23,
-   "titel": "Damenparfüm-Set Dolce &amp; Gabbana the One, 3-teilig, Marke: Dolce &amp; Gabbana - EAN: 8054754400748",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0DK8V197Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 13
   },
   {
    "asin": "B0G3PR433C",
@@ -129,17 +79,7 @@
    "titel": "4Pcs Premium Parfüm Geschenkset für Frauen,Langanhaltender Duft Parfüm, Tragbarer Damendüfte,Hautverträgliche Parfüm Geschenk Freundin,Geburtstagsgeschenk für Frauen",
    "nische": "geschenke",
    "link": "https://www.amazon.de/dp/B0G3PR433C?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 15
-  },
-  {
-   "asin": "B0GDZZY32Z",
-   "preis": 18.99,
-   "median": 23.99,
-   "spar_pct": 21,
-   "titel": "Fragrances 4 PCS Premium Parfüm Geschenkset für Frauen,Miniparfums &amp; Duftproben Damen als langanhaltendes Geschenk,Eau de Parfum(Parfümset für Freundin, Geburtstag, Weihnachten)",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0GDZZY32Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 16
   },
   {
    "asin": "B0H35P9FHX",
@@ -149,7 +89,7 @@
    "titel": "3 Etagen Badezimmer Organizer, Kosmetik Aufbewahrung &amp; Parfüm Tablett (Grau), Großes Hautpflege Regal für Schminktisch, Bad &amp; Arbeitsplatte, Elegantes Design (30x17x48 cm)",
    "nische": "bad-organisation",
    "link": "https://www.amazon.de/dp/B0H35P9FHX?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
+   "tag": 17
   },
   {
    "asin": "B0H9M8K1M6",
@@ -159,17 +99,7 @@
    "titel": "Herbst Press on Nails — Kürbis-Herbst-Nagel zum Aufkleben",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B0H9M8K1M6?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0FJGQHDTH",
-   "preis": 19.96,
-   "median": 24.95,
-   "spar_pct": 20,
-   "titel": "GUESS Geschenkset Damen, 4 Mini EDT Seductive, Red, Blue, Noir, 7.5 ml",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0FJGQHDTH?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 9
+   "tag": 11
   },
   {
    "asin": "B08YXLY93M",
@@ -179,17 +109,7 @@
    "titel": "Vtopmart 0.8L Vorratsdosen Set, Müsli Schüttdose &amp; Frischhaltedosen",
    "nische": "kuechenorganisation",
    "link": "https://www.amazon.de/dp/B08YXLY93M?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
-  },
-  {
-   "asin": "B0BD43SMHD",
-   "preis": 49.97,
-   "median": 61.08,
-   "spar_pct": 18,
-   "titel": "Kenwood MultiPro Go - Kompakte Küchenmaschine 650 W 1,3 L Schüssel Grau",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B0BD43SMHD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
+   "tag": 12
   },
   {
    "asin": "B0DZT5MXPS",
@@ -199,7 +119,7 @@
    "titel": "2 Stück Hochbeet mit Rankgitter, 145 cm Pflanzkasten für Tomaten",
    "nische": "balkon-garten",
    "link": "https://www.amazon.de/dp/B0DZT5MXPS?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
+   "tag": 17
   },
   {
    "asin": "B0GTB1HNFB",
@@ -209,17 +129,7 @@
    "titel": "Tefal Dail'Easy 6-tlg. Heißluftfritteusen Accessoires Set, Lochble",
    "nische": "heissluftfritteuse",
    "link": "https://www.amazon.de/dp/B0GTB1HNFB?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0F2HMLW81",
-   "preis": 9.99,
-   "median": 11.99,
-   "spar_pct": 17,
-   "titel": "YJWZ 1115pcs Stück Perlenset für Armbänder - 48 Farben Meeresthema Bastelset, Perlenset Kinder ab 4 Jahre &amp; Erwachsene inkl Schmuckzubehör zum Auffädeln | DIY Armband Selber Machen Kit",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0F2HMLW81?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
+   "tag": 11
   },
   {
    "asin": "B08556XV39",
@@ -229,17 +139,7 @@
    "titel": "Bialetti - Neue italienische Espressomaschine Venus Induction aus Edelstahl, geeignet für alle Arten von Tellern, 4 Kaffeetassen (170 ml), Silber",
    "nische": "kaffee-genuss",
    "link": "https://www.amazon.de/dp/B08556XV39?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
-  },
-  {
-   "asin": "B0FH6DGBXD",
-   "preis": 35.99,
-   "median": 42.99,
-   "spar_pct": 16,
-   "titel": "CUBIMANA Blumen Blumenstrauß Set mit LED für Erwachsene Frauen Mädchen 12+",
-   "nische": "lego",
-   "link": "https://www.amazon.de/dp/B0FH6DGBXD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 13
   },
   {
    "asin": "B0HFW7C3B9",
@@ -249,37 +149,17 @@
    "titel": "OBVHNUA Babyphone mit Kamera ohne WLAN 5 Zoll 720P, 100 Std. VOX",
    "nische": "baby-kindersicherheit",
    "link": "https://www.amazon.de/dp/B0HFW7C3B9?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 6
+   "tag": 7
   },
   {
-   "asin": "B0D4M91TLB",
-   "preis": 31.44,
-   "median": 36.99,
-   "spar_pct": 15,
-   "titel": "Vorratsdosen mit deckel luftdicht 25er Set: BPA-FREI Aufbewahrungsbox Küche",
-   "nische": "kuechenorganisation",
-   "link": "https://www.amazon.de/dp/B0D4M91TLB?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
-  },
-  {
-   "asin": "B07JF7M9M8",
-   "preis": 19.3,
-   "median": 22.7,
-   "spar_pct": 15,
-   "titel": "Jette Love Set Eau de Parfum 30 ml + Bodylotion 50 ml + Showergel 50 ml",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B07JF7M9M8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0F29J6H1V",
-   "preis": 37.99,
-   "median": 43.99,
+   "asin": "B0GLQZJWQG",
+   "preis": 94.99,
+   "median": 109.99,
    "spar_pct": 14,
-   "titel": "Anker Nano magnetische ultraschlanke Powerbank Qi2 15W",
-   "nische": "handy-zubehoer",
-   "link": "https://www.amazon.de/dp/B0F29J6H1V?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 14
+   "titel": "Ninja PrecisionPro 2,1 l Küchenmaschine, spülmaschinengeeignete Teile",
+   "nische": "backen-kochen",
+   "link": "https://www.amazon.de/dp/B0GLQZJWQG?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 17
   },
   {
    "asin": "B0GH7LM96D",
@@ -289,7 +169,7 @@
    "titel": "10-teiliges MAANGE Make-up Pinsel set mit Magnetetui, hochwertige Synthetikpinsel mit kurzem Griff für Foundation, Puder, Concealer, Lidschatten, Make-up-Pinsel",
    "nische": "beauty-pflege",
    "link": "https://www.amazon.de/dp/B0GH7LM96D?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
+   "tag": 17
   }
  ]
 }
