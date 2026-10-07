@@ -3,3 +3,6 @@ Allow: /
 Disallow: /blog/drafts/
 
 Sitemap: https://balu1705.github.io/andreasstehmann-links/sitemap.xml
+
+# Tagesangebot-Indexung erlauben
+Allow: /deals/tagesangebot/
