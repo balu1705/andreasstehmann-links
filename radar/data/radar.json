@@ -1,415 +1,55 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "deals": [
   {
    "asin": "B0GS91YJZP",
    "preis": 99.99,
    "median": 159.99,
    "spar_pct": 38,
-   "titel": "QCen Siebträgermaschine 20 Bar, 9-in-1 Espressomaschine mit Milchtank",
-   "nische": "bestseller",
-   "link": "https://www.amazon.de/dp/B0GS91YJZP?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B079D9B82W",
-   "preis": 30.1,
-   "median": 46.34,
-   "spar_pct": 35,
-   "titel": "OXO Good Grips 5 kg Edelstahl-Küchenwaage",
-   "nische": "quality_backen-kochen",
-   "link": "https://www.amazon.de/dp/B079D9B82W?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 17
-  },
-  {
-   "asin": "B09VCMRN4Y",
-   "preis": 12.59,
-   "median": 19.0,
-   "spar_pct": 34,
-   "titel": "Real Techniques Travel Fantasy Mini-Pinsel-Set, Make-up-Pinsel für Lidschatten, Highlights, Konturen, Puder und Concealer, Pinsel in Reisegröße und Kosmetiktasche, 11-teiliges Set",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B09VCMRN4Y?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0C9HQ6FSG",
-   "preis": 56.98,
-   "median": 79.99,
-   "spar_pct": 29,
-   "titel": "5-in-1 Elektrischer wein-dekanter &amp; Liquor-Spender,Alkohol pourer-schwarz",
-   "nische": "cocktail-abend",
-   "link": "https://www.amazon.de/dp/B0C9HQ6FSG?tag=balu17051-21",
-   "tag": 9
+   "titel": "B0GS91YJZP",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0GS91YJZP",
+   "tag": 11
   },
   {
    "asin": "B015DR863C",
    "preis": 79.0,
    "median": 106.9,
    "spar_pct": 26,
-   "titel": "Bosch Kompakt-Küchenmaschine Multi Talent 3, 50 Funktionen, 2,3 l Schüssel, Mixer, spülmaschinengeeignet, Universalzerkleinerer, kleine Küchenmaschine, 800 Watt, schwarz/Edelstahl, MCM3501M",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B015DR863C?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
+   "titel": "B015DR863C",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B015DR863C",
+   "tag": 21
   },
   {
-   "asin": "B07KSW21HY",
-   "preis": 49.99,
-   "median": 67.99,
-   "spar_pct": 26,
-   "titel": "Edelstahl Cocktail Set 11tlg. – 700 ml Cocktail Shaker Set mit Ständer und Bar Zubehör, Cocktailshaker Set | Barkeeper Set | Cocktail Mix Set | Bar Set | Geschenkset | Schwarz",
-   "nische": "cocktail-abend",
-   "link": "https://www.amazon.de/dp/B07KSW21HY?tag=balu17051-21",
-   "tag": 9
-  },
-  {
-   "asin": "B0FKH3ZY1R",
-   "preis": 19.36,
-   "median": 25.98,
-   "spar_pct": 25,
-   "titel": "Cieex DIY Seifen Selber Machen Komplettset Kreative Bastelset Erwachsene",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0FKH3ZY1R?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B086RJZKT3",
-   "preis": 22.52,
-   "median": 29.67,
-   "spar_pct": 24,
-   "titel": "ZUOFENG Antihaft Pfanne Bratpfanne Beschichtet 28cm, Granit Pfannen Nonstick Frying Pan, Beschichtete Pfanne Für Gasherd Induktion",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B086RJZKT3?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0FJDLQ1L8",
-   "preis": 28.87,
-   "median": 37.99,
-   "spar_pct": 24,
-   "titel": "MAANGE Pinselset Make Up Pinsel Set, 16 Schminkpinsel, 25-in-16 Duo-End Make up Pinsel Für Foundation Puder Lidschatten Concealer Blush, Kaffee Gold",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0FJDLQ1L8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B002RBTB8C",
-   "preis": 27.03,
-   "median": 34.95,
+   "asin": "B000GI0NGW",
+   "preis": 13.01,
+   "median": 16.91,
    "spar_pct": 23,
-   "titel": "Clinique All About Clean™ Liquid Facial Soap | Gesichtsreiniger | Für trockene Mischhaut",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B002RBTB8C?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0GH7LM96D",
-   "preis": 14.53,
-   "median": 18.99,
-   "spar_pct": 23,
-   "titel": "10-teiliges MAANGE Make-up Pinsel set mit Magnetetui, hochwertige Synthetikpinsel mit kurzem Griff für Foundation, Puder, Concealer, Lidschatten, Make-up-Pinsel",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0GH7LM96D?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0925CKGJP",
-   "preis": 33.97,
-   "median": 42.99,
-   "spar_pct": 21,
-   "titel": "SENSARTE 28cm Schweizer Granit Beschichtung Tiefe Bratpfanne mit Deckel",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B0925CKGJP?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
+   "titel": "B000GI0NGW",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B000GI0NGW",
+   "tag": 21
   },
   {
    "asin": "B0H35P9FHX",
    "preis": 19.99,
    "median": 24.99,
    "spar_pct": 20,
-   "titel": "3 Etagen Badezimmer Organizer, Kosmetik Aufbewahrung &amp; Parfüm Tablett (Grau), Großes Hautpflege Regal für Schminktisch, Bad &amp; Arbeitsplatte, Elegantes Design (30x17x48 cm)",
-   "nische": "bad-organisation",
-   "link": "https://www.amazon.de/dp/B0H35P9FHX?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B000GI0NGW",
-   "preis": 13.51,
-   "median": 16.91,
-   "spar_pct": 20,
-   "titel": "Clinique Liquid Facial Soap Mild 200 ml",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B000GI0NGW?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B079NQNST5",
-   "preis": 33.69,
-   "median": 41.99,
-   "spar_pct": 20,
-   "titel": "Rolife Gewächshaus, DIY Miniatur Haus für Erwachsene, Cathy&#39;s Blumenhaus",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B079NQNST5?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0HFW7C3B9",
-   "preis": 56.52,
-   "median": 69.99,
-   "spar_pct": 19,
-   "titel": "OBVHNUA Babyphone mit Kamera ohne WLAN 5 Zoll 720P, 100 Std. VOX",
-   "nische": "baby-kindersicherheit",
-   "link": "https://www.amazon.de/dp/B0HFW7C3B9?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0C9X7DSVS",
-   "preis": 80.73,
-   "median": 99.99,
-   "spar_pct": 19,
-   "titel": "Hakuna Matte Wolkenweiche Spielmatte Baby 200x150x2,5cm, beige,Tatami Matte",
-   "nische": "babywelt",
-   "link": "https://www.amazon.de/dp/B0C9X7DSVS?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B09ZKYQMVD",
-   "preis": 16.24,
-   "median": 19.99,
-   "spar_pct": 19,
-   "titel": "Vtopmart 4 Pack Stackable Storage Drawers, Acrylic Organiser with 32 Non-slip Mat, Acrylic Drawer Organiser for Dresser, Bathroom",
-   "nische": "bad-organisation",
-   "link": "https://www.amazon.de/dp/B09ZKYQMVD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0CL9KJPSS",
-   "preis": 13.72,
-   "median": 16.99,
-   "spar_pct": 19,
-   "titel": "Duschablage Ohne Bohren 2 Stück Duschregal Badezimmer Organizer Duschkorb",
-   "nische": "bad-organisation",
-   "link": "https://www.amazon.de/dp/B0CL9KJPSS?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0C2C2S9LG",
-   "preis": 16.14,
-   "median": 19.99,
-   "spar_pct": 19,
-   "titel": "Make Up Pinsel Set MAANGE Professionelles 25 Pcs Pinselset makeup, Kosmetikpinsel Foundation Gesicht, Augen, Lippen pinsel Lidschatten pinsel Schminkpinsel Set with schwarze Geschenkbox",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0C2C2S9LG?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0CJ57NND6",
-   "preis": 16.14,
-   "median": 19.99,
-   "spar_pct": 19,
-   "titel": "Make up Pinsel Set MAGEFY Professionelles 22 Pcs Pinselset Makeup Schminkpinsel Kit Foundation Lidschatten Kosmetikpinsel Set mit Pu Leder Tasche",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0CJ57NND6?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0H8DT5FQF",
-   "preis": 29.06,
-   "median": 35.99,
-   "spar_pct": 19,
-   "titel": "BESTOPE PRO Lockenstab, 5 in 1 Lockenstäbe Set mit Glätteisen, Thermobürste, 3 Keramische Lockeneisen (9mm- 25mm) für Große Locken, 13 Temperaturen, Hair Curler mit Hitzebest.Matte, Handschuh, Klammer",
-   "nische": "haare-styling",
-   "link": "https://www.amazon.de/dp/B0H8DT5FQF?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 16
-  },
-  {
-   "asin": "B0G2XTYYPK",
-   "preis": 27.87,
-   "median": 33.99,
-   "spar_pct": 18,
-   "titel": "Parfüm Selber Machen Set, Kreative Bastelset Erwachsene DIY Set für Frauen",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0G2XTYYPK?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0CCVX6FSD",
-   "preis": 49.99,
-   "median": 59.99,
-   "spar_pct": 17,
-   "titel": "Dreo Smart Luftbefeuchter für Schlafzimmer, oben befüllbarer 4L Supergroßer Kühler Nebel Humidifier mit Öl Diffusor und Nachtlicht, 36 Stunden Laufzeit, leiser Ultraschall Luftbefeuchter Zuhause",
-   "nische": "bestseller",
-   "link": "https://www.amazon.de/dp/B0CCVX6FSD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B09L8M7H36",
-   "preis": 134.8,
-   "median": 159.8,
-   "spar_pct": 16,
-   "titel": "KESSER® Küchenmaschine 3in1 mit Fleischwolf &amp; Mixer, 1500W Knetmaschine 5,5L Rührschüssel + Spritzschutz, 6 Geschwindigkeiten, Knethaken, Schneebesen, Rührhaken &amp; Raspeln, Backen &amp; Kochen, Schwarz",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B09L8M7H36?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
+   "titel": "B0H35P9FHX",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0H35P9FHX",
+   "tag": 21
   },
   {
    "asin": "B07TPFW4BG",
    "preis": 73.94,
-   "median": 87.99,
-   "spar_pct": 16,
-   "titel": "Philips Küchenmaschine Viva Collection, Schwarz, 1,5 L Fassungsvermögen",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B07TPFW4BG?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0FCN11LYD",
-   "preis": 26.95,
-   "median": 31.95,
-   "spar_pct": 16,
-   "titel": "LIEBHEIM Duschablage Ohne Bohren - Badregal - Duschkorb - Bad Organizer",
-   "nische": "bad-organisation",
-   "link": "https://www.amazon.de/dp/B0FCN11LYD?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0CYCDTZ6G",
-   "preis": 76.49,
-   "median": 89.99,
-   "spar_pct": 15,
-   "titel": "HelloBaby Babyphone mit Kamera, Kein WLAN, 6&quot; IPS, HB6560, 4000 mAh",
-   "nische": "baby-kindersicherheit",
-   "link": "https://www.amazon.de/dp/B0CYCDTZ6G?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0C3VPY6PL",
-   "preis": 25.56,
-   "median": 29.99,
-   "spar_pct": 15,
-   "titel": "ULLENBOOM Krabbeldecke für Baby 120x120 cm - Dick und weich gepolstert",
-   "nische": "babywelt",
-   "link": "https://www.amazon.de/dp/B0C3VPY6PL?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 10
-  },
-  {
-   "asin": "B0BVQHZFM9",
-   "preis": 76.49,
-   "median": 89.99,
-   "spar_pct": 15,
-   "titel": "Küchenmaschine Multifunktional SNDOAS, 1100W Food Processor Kompakt küchenmaschine 11 in 1 include Küchenmaschine Zerkleinerer, 3,2L Rührschüssel &amp; 1,5L mixerbecher, mahlwerk, schneebesen, Silber",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B0BVQHZFM9?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B07RHLSJPK",
-   "preis": 8.49,
-   "median": 9.99,
-   "spar_pct": 15,
-   "titel": "Orimade Duschablage ohne Bohren-Duschregal 2 Stück,Shampoo Halterung für Dusche Große Kapazität,Badregal ohne Bohren, ABS, Weiß",
-   "nische": "bad-organisation",
-   "link": "https://www.amazon.de/dp/B07RHLSJPK?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0DKFLX48H",
-   "preis": 20.18,
-   "median": 23.74,
-   "spar_pct": 15,
-   "titel": "MAANGE Pinselset Makeup, 51-teiliges Make-up-Tool-Set, multifunktionales Make up Pinsel Set, Foundation, Puder, Rouge, Concealer, Lidschatten, Make-up-Pinsel (Champagner)",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0DKFLX48H?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0CXPNBFBP",
-   "preis": 22.09,
-   "median": 25.99,
-   "spar_pct": 15,
-   "titel": "MAANGE Pinselset Makeup 49 Stück Make up Pinsel Set Professionelle Schminkpinsel für Foundation Lidschatten Konturen, Puder und Concealer",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0CXPNBFBP?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0G94QPZC1",
-   "preis": 4.24,
-   "median": 4.99,
-   "spar_pct": 15,
-   "titel": "Herbst Press on Nails — Almond-Shape in Acryl-Optik",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0G94QPZC1?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 14
-  },
-  {
-   "asin": "B0H9M8K1M6",
-   "preis": 5.94,
-   "median": 6.99,
-   "spar_pct": 15,
-   "titel": "Herbst Press on Nails — Kürbis-Herbst-Nagel zum Aufkleben",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B0H9M8K1M6?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 14
-  },
-  {
-   "asin": "B0D6KF7XWW",
-   "preis": 46.74,
-   "median": 54.99,
-   "spar_pct": 15,
-   "titel": "Magcheer Cocktail Shaker Set mit Integrierter Maßskala 900ml Premium Edelstahl Frostsicherer Doppelwand-Barkeeper Set Geschenkset mit Aufbewahrungsbox für Anfänger und Barkeeper(Silber)",
-   "nische": "cocktail-abend",
-   "link": "https://www.amazon.de/dp/B0D6KF7XWW?tag=balu17051-21",
-   "tag": 9
-  },
-  {
-   "asin": "B0D12SPNTC",
-   "preis": 6.79,
-   "median": 7.99,
-   "spar_pct": 15,
-   "titel": "Basteln Mädchen 8 Jahre, DIY Diamond Painting ab 5 6 7 8 9 10 Jahre Kinder",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0D12SPNTC?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0DR317BFR",
-   "preis": 16.99,
-   "median": 19.99,
-   "spar_pct": 15,
-   "titel": "Natürliche Amazonit perlen für armbänder Edelstein Perlen Perlen Set Zum Auffädeln Kit Perlenset Beads für DIY armbänder selber machen Schmuck Halskette Ohrringe Kette für Kinder Erwachsene (Pink)",
-   "nische": "diy",
-   "link": "https://www.amazon.de/dp/B0DR317BFR?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B013DQF1DI",
-   "preis": 47.49,
-   "median": 55.0,
+   "median": 85.99,
    "spar_pct": 14,
-   "titel": "Bosch Kompakt-Küchenmaschine MultiTalent 3, 20 Funktionen, Rührschüssel 2,3 L, Universalmesser, Schneid-Raspel-Wendescheibe, Schlagscheibe (Sahne), Einfüllhilfe, Deckel, 800 W, weiß, MCM3100W",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B013DQF1DI?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B0GLQZJWQG",
-   "preis": 94.9,
-   "median": 109.99,
-   "spar_pct": 14,
-   "titel": "Ninja PrecisionPro 2,1 l Küchenmaschine, spülmaschinengeeignete Teile",
-   "nische": "backen-kochen",
-   "link": "https://www.amazon.de/dp/B0GLQZJWQG?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
-  },
-  {
-   "asin": "B07FTXBNVL",
-   "preis": 13.19,
-   "median": 15.29,
-   "spar_pct": 14,
-   "titel": "Real Techniques Everyday Essentials + Make-up-Schwamm-Set, Make-up-Pinsel und Make-up-Mixer-Schwamm, für Foundation, Rouge, Bronzer, Lidschatten und Puder, 5-teiliges Set",
-   "nische": "beauty-pflege",
-   "link": "https://www.amazon.de/dp/B07FTXBNVL?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 20
+   "titel": "B07TPFW4BG",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B07TPFW4BG",
+   "tag": 21
   }
  ]
 }
