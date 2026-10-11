@@ -1,46 +1,6 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "deals": [
-  {
-   "asin": "B0GVSK5S4R",
-   "preis": 19.99,
-   "median": 38.56,
-   "spar_pct": 48,
-   "titel": "DN DECONATION Vintage Flock Kürbis Deko, Herbst Thanksgiving Dekoratio",
-   "nische": "weihnachten-advent-selected",
-   "link": "https://www.amazon.de/dp/B0GVSK5S4R",
-   "tag": 13
-  },
-  {
-   "asin": "B0H9BGBZ9C",
-   "preis": 59.9,
-   "median": 89.9,
-   "spar_pct": 33,
-   "titel": "B0H9BGBZ9C",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H9BGBZ9C",
-   "tag": 6
-  },
-  {
-   "asin": "B0FTZQQRSV",
-   "preis": 25.9,
-   "median": 35.9,
-   "spar_pct": 28,
-   "titel": "B0FTZQQRSV",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0FTZQQRSV",
-   "tag": 16
-  },
-  {
-   "asin": "B0H4ZM9CRF",
-   "preis": 79.98,
-   "median": 109.99,
-   "spar_pct": 27,
-   "titel": "B0H4ZM9CRF",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H4ZM9CRF",
-   "tag": 8
-  },
   {
    "asin": "B015DR863C",
    "preis": 79.0,
@@ -49,17 +9,7 @@
    "titel": "B015DR863C",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015DR863C",
-   "tag": 23
-  },
-  {
-   "asin": "B0H9M8K1M6",
-   "preis": 5.19,
-   "median": 6.99,
-   "spar_pct": 26,
-   "titel": "B0H9M8K1M6",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H9M8K1M6",
-   "tag": 17
+   "tag": 24
   },
   {
    "asin": "B000GI0NGW",
@@ -69,7 +19,7 @@
    "titel": "B000GI0NGW",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B000GI0NGW",
-   "tag": 23
+   "tag": 24
   },
   {
    "asin": "B0FQV5NNRN",
@@ -79,27 +29,7 @@
    "titel": "B0FQV5NNRN",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FQV5NNRN",
-   "tag": 17
-  },
-  {
-   "asin": "B004QOKYCU",
-   "preis": 22.5,
-   "median": 29.04,
-   "spar_pct": 23,
-   "titel": "B004QOKYCU",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B004QOKYCU",
-   "tag": 20
-  },
-  {
-   "asin": "B0FGV27D2S",
-   "preis": 15.28,
-   "median": 18.99,
-   "spar_pct": 20,
-   "titel": "B0FGV27D2S",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0FGV27D2S",
-   "tag": 15
+   "tag": 18
   },
   {
    "asin": "B087LZWSFF",
@@ -109,17 +39,7 @@
    "titel": "B087LZWSFF",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B087LZWSFF",
-   "tag": 12
-  },
-  {
-   "asin": "B0CLTNH8CN",
-   "preis": 19.94,
-   "median": 23.99,
-   "spar_pct": 17,
-   "titel": "B0CLTNH8CN",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0CLTNH8CN",
-   "tag": 16
+   "tag": 13
   },
   {
    "asin": "B0C2ZCVRZN",
@@ -129,37 +49,7 @@
    "titel": "B0C2ZCVRZN",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C2ZCVRZN",
-   "tag": 23
-  },
-  {
-   "asin": "B076QDSYCH",
-   "preis": 38.88,
-   "median": 45.99,
-   "spar_pct": 15,
-   "titel": "B076QDSYCH",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B076QDSYCH",
-   "tag": 16
-  },
-  {
-   "asin": "B07P25BPT5",
-   "preis": 25.49,
-   "median": 29.99,
-   "spar_pct": 15,
-   "titel": "B07P25BPT5",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B07P25BPT5",
-   "tag": 15
-  },
-  {
-   "asin": "B0CXCR3W4S",
-   "preis": 16.99,
-   "median": 19.99,
-   "spar_pct": 15,
-   "titel": "B0CXCR3W4S",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0CXCR3W4S",
-   "tag": 17
+   "tag": 24
   },
   {
    "asin": "B07TPFW4BG",
@@ -169,27 +59,7 @@
    "titel": "B07TPFW4BG",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B07TPFW4BG",
-   "tag": 23
-  },
-  {
-   "asin": "B0GF7S81CQ",
-   "preis": 59.99,
-   "median": 69.99,
-   "spar_pct": 14,
-   "titel": "B0GF7S81CQ",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0GF7S81CQ",
-   "tag": 7
-  },
-  {
-   "asin": "B0CGL56VQH",
-   "preis": 50.14,
-   "median": 56.99,
-   "spar_pct": 12,
-   "titel": "B0CGL56VQH",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0CGL56VQH",
-   "tag": 7
+   "tag": 24
   }
  ]
 }
