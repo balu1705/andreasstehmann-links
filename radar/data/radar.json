@@ -1,6 +1,76 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "deals": [
+  {
+   "asin": "B076QDSYCH",
+   "preis": 17.49,
+   "median": 45.99,
+   "spar_pct": 62,
+   "titel": "B076QDSYCH",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B076QDSYCH",
+   "tag": 17
+  },
+  {
+   "asin": "B0GS91YJZP",
+   "preis": 99.99,
+   "median": 159.99,
+   "spar_pct": 38,
+   "titel": "B0GS91YJZP",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0GS91YJZP",
+   "tag": 14
+  },
+  {
+   "asin": "B0H9BGBZ9C",
+   "preis": 59.9,
+   "median": 89.9,
+   "spar_pct": 33,
+   "titel": "B0H9BGBZ9C",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H9BGBZ9C",
+   "tag": 7
+  },
+  {
+   "asin": "B0FTZQQRSV",
+   "preis": 25.9,
+   "median": 35.9,
+   "spar_pct": 28,
+   "titel": "B0FTZQQRSV",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FTZQQRSV",
+   "tag": 17
+  },
+  {
+   "asin": "B0DR7SM2W5",
+   "preis": 8.99,
+   "median": 12.56,
+   "spar_pct": 28,
+   "titel": "B0DR7SM2W5",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0DR7SM2W5",
+   "tag": 14
+  },
+  {
+   "asin": "B0H4ZD5NCJ",
+   "preis": 12.99,
+   "median": 17.97,
+   "spar_pct": 28,
+   "titel": "B0H4ZD5NCJ",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H4ZD5NCJ",
+   "tag": 7
+  },
+  {
+   "asin": "B0H4ZM9CRF",
+   "preis": 79.98,
+   "median": 109.99,
+   "spar_pct": 27,
+   "titel": "B0H4ZM9CRF",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H4ZM9CRF",
+   "tag": 9
+  },
   {
    "asin": "B015DR863C",
    "preis": 79.0,
@@ -9,7 +79,37 @@
    "titel": "B015DR863C",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015DR863C",
-   "tag": 24
+   "tag": 25
+  },
+  {
+   "asin": "B0H9M8K1M6",
+   "preis": 5.19,
+   "median": 6.99,
+   "spar_pct": 26,
+   "titel": "B0H9M8K1M6",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H9M8K1M6",
+   "tag": 18
+  },
+  {
+   "asin": "B0FXXLSV2K",
+   "preis": 28.25,
+   "median": 37.99,
+   "spar_pct": 26,
+   "titel": "LED Deko Lampe Nachttischlampe Sternenhimmel Projektor Geschenke für frauen",
+   "nische": "weihnachten-advent-selected",
+   "link": "https://www.amazon.de/dp/B0FXXLSV2K",
+   "tag": 6
+  },
+  {
+   "asin": "B09C1V1J24",
+   "preis": 29.98,
+   "median": 39.99,
+   "spar_pct": 25,
+   "titel": "B09C1V1J24",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B09C1V1J24",
+   "tag": 17
   },
   {
    "asin": "B000GI0NGW",
@@ -19,7 +119,7 @@
    "titel": "B000GI0NGW",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B000GI0NGW",
-   "tag": 24
+   "tag": 25
   },
   {
    "asin": "B0FQV5NNRN",
@@ -29,7 +129,27 @@
    "titel": "B0FQV5NNRN",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FQV5NNRN",
-   "tag": 18
+   "tag": 19
+  },
+  {
+   "asin": "B004QOKYCU",
+   "preis": 22.5,
+   "median": 29.04,
+   "spar_pct": 23,
+   "titel": "B004QOKYCU",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B004QOKYCU",
+   "tag": 21
+  },
+  {
+   "asin": "B0FGV27D2S",
+   "preis": 15.28,
+   "median": 18.99,
+   "spar_pct": 20,
+   "titel": "B0FGV27D2S",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FGV27D2S",
+   "tag": 16
   },
   {
    "asin": "B087LZWSFF",
@@ -39,7 +159,37 @@
    "titel": "B087LZWSFF",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B087LZWSFF",
-   "tag": 13
+   "tag": 14
+  },
+  {
+   "asin": "B08BZCQQ5P",
+   "preis": 20.58,
+   "median": 24.99,
+   "spar_pct": 18,
+   "titel": "B08BZCQQ5P",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B08BZCQQ5P",
+   "tag": 5
+  },
+  {
+   "asin": "B0CLTNH8CN",
+   "preis": 19.94,
+   "median": 23.99,
+   "spar_pct": 17,
+   "titel": "B0CLTNH8CN",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0CLTNH8CN",
+   "tag": 17
+  },
+  {
+   "asin": "B0FCN11LYD",
+   "preis": 26.95,
+   "median": 31.95,
+   "spar_pct": 16,
+   "titel": "B0FCN11LYD",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FCN11LYD",
+   "tag": 25
   },
   {
    "asin": "B0C2ZCVRZN",
@@ -49,7 +199,67 @@
    "titel": "B0C2ZCVRZN",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C2ZCVRZN",
-   "tag": 24
+   "tag": 25
+  },
+  {
+   "asin": "B07N11YB7N",
+   "preis": 59.45,
+   "median": 69.95,
+   "spar_pct": 15,
+   "titel": "B07N11YB7N",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B07N11YB7N",
+   "tag": 25
+  },
+  {
+   "asin": "B0DR317BFR",
+   "preis": 16.99,
+   "median": 19.99,
+   "spar_pct": 15,
+   "titel": "B0DR317BFR",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0DR317BFR",
+   "tag": 23
+  },
+  {
+   "asin": "B07P25BPT5",
+   "preis": 25.49,
+   "median": 29.99,
+   "spar_pct": 15,
+   "titel": "B07P25BPT5",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B07P25BPT5",
+   "tag": 16
+  },
+  {
+   "asin": "B0CXCR3W4S",
+   "preis": 16.99,
+   "median": 19.99,
+   "spar_pct": 15,
+   "titel": "B0CXCR3W4S",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0CXCR3W4S",
+   "tag": 18
+  },
+  {
+   "asin": "B0C84FT1LJ",
+   "preis": 16.99,
+   "median": 19.99,
+   "spar_pct": 15,
+   "titel": "B0C84FT1LJ",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0C84FT1LJ",
+   "tag": 16
+  },
+  {
+   "asin": "B0CBV7DRK7",
+   "preis": 10.19,
+   "median": 11.99,
+   "spar_pct": 15,
+   "titel": "B0CBV7DRK7",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0CBV7DRK7",
+   "tag": 17
   },
   {
    "asin": "B07TPFW4BG",
@@ -59,7 +269,37 @@
    "titel": "B07TPFW4BG",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B07TPFW4BG",
-   "tag": 24
+   "tag": 25
+  },
+  {
+   "asin": "B0GF7S81CQ",
+   "preis": 59.99,
+   "median": 69.99,
+   "spar_pct": 14,
+   "titel": "B0GF7S81CQ",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0GF7S81CQ",
+   "tag": 8
+  },
+  {
+   "asin": "B0DF1XD9ZY",
+   "preis": 14.94,
+   "median": 16.99,
+   "spar_pct": 12,
+   "titel": "B0DF1XD9ZY",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0DF1XD9ZY",
+   "tag": 25
+  },
+  {
+   "asin": "B0CGL56VQH",
+   "preis": 50.14,
+   "median": 56.99,
+   "spar_pct": 12,
+   "titel": "B0CGL56VQH",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0CGL56VQH",
+   "tag": 8
   }
  ]
 }
