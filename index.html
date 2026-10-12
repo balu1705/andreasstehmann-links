@@ -17,137 +17,192 @@
 <script>document.addEventListener('click',function(e){try{var a=e.target.closest('a[href*="amazon."]');if(a){gtag('event','outbound_click',{link_domain:'amazon',asin:(a.href.match(/\/dp\/([A-Z0-9]{10})/)||[])[1]||''});}}catch(_){}},true);</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Andreas Stehmann","url":"https://balu1705.github.io/andreasstehmann-links/","description":"Wohnen, Deko, DIY, Smart Home, Wellness, Küche & Haustier"}</script>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#f5f5f7;--card:#fff;--text:#1d1d1f;--muted:#86868b;--accent:#0071e3;--accent-hover:#0077ed;--accent-light:#e8f2ff;--border:#e8e8ed;--radius:20px;--shadow:0 2px 12px rgba(0,0,0,.06);--shadow-hover:0 12px 40px rgba(0,0,0,.12);--gradient:linear-gradient(135deg,#667eea 0%,#764ba2 100%)}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fafafa;--bg-alt:#f0f0f3;--card:#fff;--text:#1a1a1a;--text-secondary:#5f6368;--muted:#9aa0a6;
+  --accent:#0066cc;--accent-hover:#0077ed;--accent-light:#e8f0fe;--accent-gradient:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+  --border:#e8eaed;--border-light:#f1f3f4;
+  --radius:16px;--radius-lg:24px;--radius-sm:8px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.04);--shadow:0 4px 16px rgba(0,0,0,.08);--shadow-lg:0 8px 32px rgba(0,0,0,.12);--shadow-xl:0 16px 48px rgba(0,0,0,.16);
+  --transition:all .3s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
-.container{max-width:1120px;margin:0 auto;padding:0 24px}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
 
 /* ===== NAVIGATION ===== */
-.nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
-.nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,.08)}
-.nav-inner{max-width:1120px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
-.nav-logo{font-weight:700;font-size:18px;letter-spacing:-.3px}
-.nav-logo span{color:var(--accent)}
-.nav-links{display:flex;gap:32px;align-items:center}
-.nav-links a{font-size:14px;color:var(--muted);font-weight:500;transition:color .2s;position:relative}
-.nav-links a:not(.nav-cta):hover{color:var(--text)}
-.nav-links a:not(.nav-cta)::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--accent);transition:width .25s}
-.nav-links a:not(.nav-cta):hover::after{width:100%}
-.nav-cta{background:var(--accent);color:#fff!important;padding:8px 20px;border-radius:22px;font-weight:600;font-size:13px!important;transition:all .2s;box-shadow:0 2px 8px rgba(0,113,227,.3)}
-.nav-cta:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,113,227,.4)}
-.nav-cta::after{display:none!important}
-.mobile-menu-btn{display:none;background:none;border:none;font-size:24px;cursor:pointer;color:var(--text);padding:4px 8px}
-.mobile-nav{display:none;position:fixed;top:56px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:16px 24px;z-index:999;flex-direction:column;gap:16px}
-.mobile-nav.open{display:flex}
-.mobile-nav a{font-size:16px;font-weight:500;color:var(--text);padding:12px 0;border-bottom:1px solid var(--border)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.06);transition:var(--transition)}
+.nav.scrolled{background:rgba(255,255,255,.95);box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:60px}
+.nav-logo{font-weight:700;font-size:17px;letter-spacing:-.5px;display:flex;align-items:center;gap:8px}
+.nav-logo-icon{width:28px;height:28px;background:var(--accent-gradient);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:800}
+.nav-links{display:flex;gap:8px;align-items:center}
+.nav-links a{font-size:14px;color:var(--text-secondary);font-weight:500;padding:8px 16px;border-radius:20px;transition:var(--transition);position:relative}
+.nav-links a:not(.nav-cta):hover{color:var(--text);background:rgba(0,0,0,.04)}
+.nav-cta{background:var(--accent);color:#fff!important;font-weight:600;padding:10px 22px!important;box-shadow:0 2px 8px rgba(0,102,204,.3)}
+.nav-cta:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,102,204,.4)}
+.mobile-menu-btn{display:none;width:40px;height:40px;border-radius:10px;align-items:center;justify-content:center;font-size:20px;color:var(--text);transition:var(--transition)}
+.mobile-menu-btn:hover{background:rgba(0,0,0,.04)}
+.mobile-nav{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(255,255,255,.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:16px 32px;z-index:999;flex-direction:column;gap:4px;box-shadow:var(--shadow-lg)}
+.mobile-nav.open{display:flex;animation:slideDown .3s ease}
+.mobile-nav a{font-size:16px;font-weight:500;color:var(--text);padding:14px 0;border-bottom:1px solid var(--border-light)}
 .mobile-nav a:last-child{border-bottom:none}
 .mobile-nav .nav-cta{text-align:center;margin-top:8px}
+@keyframes slideDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
 
 /* ===== HERO ===== */
-.hero{padding:100px 0 80px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;top:-50%;left:-20%;width:140%;height:200%;background:radial-gradient(ellipse at center,rgba(0,113,227,.06) 0%,transparent 70%);pointer-events:none;z-index:-1}
-.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--accent);background:var(--accent-light);padding:8px 18px;border-radius:24px;margin-bottom:24px;border:1px solid rgba(0,113,227,.1)}
-.hero h1{font-size:clamp(36px,7vw,64px);font-weight:800;letter-spacing:-2px;line-height:1.05;margin-bottom:20px;background:linear-gradient(135deg,var(--text) 0%,#3a3a3c 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero h1 span{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero p{font-size:clamp(16px,2.5vw,20px);color:var(--muted);max-width:580px;margin:0 auto 40px;line-height:1.6}
-.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:30px;font-size:15px;font-weight:600;transition:all .25s;cursor:pointer;border:none;position:relative;overflow:hidden}
-.btn-primary{background:var(--accent);color:#fff;box-shadow:0 4px 16px rgba(0,113,227,.3)}
-.btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,113,227,.4)}
-.btn-secondary{background:#fff;color:var(--text);border:1px solid var(--border)}
-.btn-secondary:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
-.hero-images{display:flex;gap:16px;justify-content:center;margin-top:48px;flex-wrap:wrap}
-.hero-img{width:160px;height:110px;object-fit:cover;border-radius:16px;box-shadow:var(--shadow);transition:transform .3s}
-.hero-img:hover{transform:scale(1.05)}
+.hero{padding:140px 0 100px;text-align:center;position:relative;overflow:hidden}
+.hero-bg{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;overflow:hidden}
+.hero-bg::before{content:'';position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:1200px;height:800px;background:radial-gradient(ellipse at center,rgba(102,126,234,.12) 0%,rgba(118,75,162,.08) 40%,transparent 70%);border-radius:50%}
+.hero-bg::after{content:'';position:absolute;bottom:-20%;left:50%;transform:translateX(-50%);width:800px;height:400px;background:radial-gradient(ellipse at center,rgba(0,102,204,.06) 0%,transparent 70%);border-radius:50%}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--accent);background:var(--accent-light);padding:8px 18px;border-radius:24px;margin-bottom:28px;border:1px solid rgba(0,102,204,.1);animation:fadeInUp .6s ease}
+.hero h1{font-size:clamp(40px,7vw,72px);font-weight:800;letter-spacing:-2.5px;line-height:1.02;margin-bottom:24px;animation:fadeInUp .6s ease .1s both}
+.hero h1 .gradient{background:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero p{font-size:clamp(16px,2.5vw,20px);color:var(--text-secondary);max-width:560px;margin:0 auto 44px;line-height:1.65;animation:fadeInUp .6s ease .2s both}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:fadeInUp .6s ease .3s both}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 36px;border-radius:32px;font-size:15px;font-weight:600;transition:var(--transition);position:relative;overflow:hidden}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 4px 20px rgba(0,102,204,.35)}
+.btn-primary::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transition:left .5s}
+.btn-primary:hover::before{left:100%}
+.btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,102,204,.45)}
+.btn-secondary{background:var(--card);color:var(--text);border:1px solid var(--border)}
+.btn-secondary:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.hero-images{display:flex;gap:12px;justify-content:center;margin-top:56px;animation:fadeInUp .6s ease .4s both}
+.hero-img{width:140px;height:100px;object-fit:cover;border-radius:14px;box-shadow:var(--shadow);transition:var(--transition);cursor:pointer}
+.hero-img:hover{transform:scale(1.06) translateY(-4px);box-shadow:var(--shadow-lg)}
+.hero-trust{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:48px;font-size:13px;color:var(--muted);animation:fadeInUp .6s ease .5s both}
+.trust-item{display:flex;align-items:center;gap:6px}
+.trust-icon{font-size:16px}
 
 /* ===== SECTIONS ===== */
-.section{padding:80px 0}
-.section-label{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:8px}
-.section-title{font-size:clamp(28px,4.5vw,40px);font-weight:700;letter-spacing:-1px;margin-bottom:14px}
-.section-desc{font-size:16px;color:var(--muted);max-width:560px;margin-bottom:40px;line-height:1.6}
+.section{padding:100px 0}
+.section-alt{background:var(--bg-alt);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light)}
+.section-label{font-size:12px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.section-label::before{content:'';width:24px;height:2px;background:var(--accent-gradient);border-radius:1px}
+.section-title{font-size:clamp(28px,4.5vw,42px);font-weight:700;letter-spacing:-1.5px;margin-bottom:16px;line-height:1.15}
+.section-desc{font-size:16px;color:var(--text-secondary);max-width:580px;margin-bottom:48px;line-height:1.65}
+.section-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:48px;flex-wrap:wrap;gap:16px}
+.section-link{font-size:14px;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:4px;transition:var(--transition)}
+.section-link:hover{gap:8px}
 
 /* ===== NICHTEN-GRID ===== */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .3s;cursor:pointer;position:relative}
-.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover);border-color:transparent}
-.card-img{width:100%;height:160px;object-fit:cover;transition:transform .4s}
-.card:hover .card-img{transform:scale(1.08)}
-.card-body{padding:24px}
-.card h3{font-size:18px;font-weight:600;margin-bottom:6px;letter-spacing:-.3px}
-.card p{font-size:14px;color:var(--muted);line-height:1.5}
-.card-count{position:absolute;top:12px;right:12px;font-size:11px;font-weight:600;color:#fff;background:rgba(0,0,0,.5);backdrop-filter:blur(8px);padding:4px 12px;border-radius:12px;z-index:1}
-.card-arrow{position:absolute;bottom:16px;right:16px;width:32px;height:32px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;opacity:0;transition:opacity .3s,transform .3s;transform:translateX(-8px)}
-.card:hover .card-arrow{opacity:1;transform:translateX(0)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:28px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:var(--transition);cursor:pointer;position:relative}
+.card:hover{transform:translateY(-8px);box-shadow:var(--shadow-xl);border-color:transparent}
+.card-img-wrapper{position:relative;overflow:hidden;height:180px}
+.card-img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.card:hover .card-img{transform:scale(1.1)}
+.card-overlay{position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,rgba(0,0,0,.3));pointer-events:none}
+.card-count{position:absolute;top:14px;right:14px;font-size:11px;font-weight:700;color:#fff;background:rgba(0,0,0,.55);backdrop-filter:blur(8px);padding:6px 14px;border-radius:14px;z-index:1;letter-spacing:.5px}
+.card-body{padding:28px}
+.card-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:16px;background:var(--accent-light)}
+.card h3{font-size:19px;font-weight:700;margin-bottom:8px;letter-spacing:-.4px}
+.card p{font-size:14px;color:var(--text-secondary);line-height:1.55}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:20px;padding-top:16px;border-top:1px solid var(--border-light)}
+.card-link{font-size:13px;font-weight:600;color:var(--accent);display:inline-flex;align-items:center;gap:4px}
+.card-arrow{width:32px;height:32px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;transition:var(--transition)}
+.card:hover .card-arrow{background:var(--accent-hover);transform:translateX(4px)}
 
 /* ===== ABOUT ===== */
 .about{background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.about h2{font-size:clamp(28px,4.5vw,40px);font-weight:700;letter-spacing:-1px;margin-bottom:20px}
-.about p{color:var(--muted);font-size:16px;line-height:1.7;margin-bottom:16px}
-.about-img{width:100%;height:340px;object-fit:cover;border-radius:24px;box-shadow:var(--shadow-hover)}
-.about-stats{display:flex;gap:40px;margin-top:32px}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-content h2{font-size:clamp(28px,4.5vw,42px);font-weight:700;letter-spacing:-1.5px;margin-bottom:20px;line-height:1.15}
+.about-content p{color:var(--text-secondary);font-size:16px;line-height:1.7;margin-bottom:16px}
+.about-img-wrapper{position:relative}
+.about-img{width:100%;height:400px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow-xl)}
+.about-img-badge{position:absolute;bottom:20px;left:20px;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);padding:12px 20px;border-radius:14px;box-shadow:var(--shadow)}
+.about-img-badge-text{font-size:13px;font-weight:600;color:var(--text)}
+.about-img-badge-sub{font-size:11px;color:var(--muted)}
+.about-stats{display:flex;gap:48px;margin-top:36px;padding-top:32px;border-top:1px solid var(--border-light)}
 .stat{text-align:center}
-.stat-num{font-size:32px;font-weight:800;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.stat-label{font-size:13px;color:var(--muted);font-weight:500}
+.stat-num{font-size:36px;font-weight:800;background:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-1px}
+.stat-label{font-size:13px;color:var(--muted);font-weight:500;margin-top:4px}
 
-/* ===== BLOG PREVIEW ===== */
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
-.blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:all .3s;cursor:pointer}
-.blog-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover)}
-.blog-card-img{width:100%;height:180px;object-fit:cover}
-.blog-card-body{padding:24px}
-.blog-card-tag{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
-.blog-card h3{font-size:17px;font-weight:600;margin-bottom:8px;line-height:1.4}
-.blog-card p{font-size:14px;color:var(--muted);line-height:1.5}
-.blog-card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:12px;color:var(--muted)}
+/* ===== BLOG ===== */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px}
+.blog-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:var(--transition);cursor:pointer;display:flex;flex-direction:column}
+.blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.blog-card-img-wrapper{position:relative;overflow:hidden;height:200px}
+.blog-card-img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+.blog-card:hover .blog-card-img{transform:scale(1.08)}
+.blog-card-tag{position:absolute;top:14px;left:14px;font-size:11px;font-weight:700;color:var(--accent);background:#fff;padding:6px 14px;border-radius:14px;letter-spacing:.5px;box-shadow:var(--shadow-sm)}
+.blog-card-body{padding:28px;flex:1;display:flex;flex-direction:column}
+.blog-card h3{font-size:18px;font-weight:700;margin-bottom:10px;line-height:1.4;letter-spacing:-.3px}
+.blog-card p{font-size:14px;color:var(--text-secondary);line-height:1.6;flex:1}
+.blog-card-meta{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:16px;border-top:1px solid var(--border-light);font-size:12px;color:var(--muted)}
+.blog-card-meta .read-more{font-weight:600;color:var(--accent)}
 
 /* ===== NEWSLETTER ===== */
-.newsletter{background:var(--gradient);color:#fff;border-radius:28px;padding:64px 48px;text-align:center;position:relative;overflow:hidden}
-.newsletter::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:radial-gradient(circle at 20% 50%,rgba(255,255,255,.1) 0%,transparent 50%)}
-.newsletter h2{font-size:clamp(26px,4vw,36px);font-weight:700;letter-spacing:-.8px;margin-bottom:12px}
-.newsletter p{font-size:16px;opacity:.85;margin-bottom:32px}
-.newsletter-form{display:flex;gap:10px;justify-content:center;max-width:480px;margin:0 auto;flex-wrap:wrap;position:relative;z-index:1}
-.newsletter-form input{flex:1;min-width:220px;padding:14px 22px;border:none;border-radius:28px;font-size:15px;outline:none}
-.newsletter-form button{padding:14px 28px;border:none;border-radius:28px;background:var(--text);color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:transform .2s}
-.newsletter-form button:hover{transform:translateY(-2px)}
-.newsletter small{display:block;margin-top:16px;font-size:12px;opacity:.7;position:relative;z-index:1}
+.newsletter{background:var(--accent-gradient);color:#fff;border-radius:var(--radius-lg);padding:80px 48px;text-align:center;position:relative;overflow:hidden}
+.newsletter::before{content:'';position:absolute;top:-50%;left:-20%;width:140%;height:200%;background:radial-gradient(ellipse at center,rgba(255,255,255,.1) 0%,transparent 60%);pointer-events:none}
+.newsletter::after{content:'';position:absolute;bottom:-30%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,255,255,.08) 0%,transparent 70%);border-radius:50%}
+.newsletter-content{position:relative;z-index:1}
+.newsletter h2{font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-1.2px;margin-bottom:14px}
+.newsletter p{font-size:16px;opacity:.9;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
+.newsletter-form{display:flex;gap:10px;justify-content:center;max-width:500px;margin:0 auto;flex-wrap:wrap}
+.newsletter-form input{flex:1;min-width:240px;padding:16px 24px;border:none;border-radius:32px;font-size:15px;outline:none;background:rgba(255,255,255,.95);color:var(--text)}
+.newsletter-form input::placeholder{color:var(--muted)}
+.newsletter-form button{padding:16px 32px;border:none;border-radius:32px;background:var(--text);color:#fff;font-size:15px;font-weight:600;transition:var(--transition)}
+.newsletter-form button:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.newsletter small{display:block;margin-top:20px;font-size:12px;opacity:.75}
 
 /* ===== FOOTER ===== */
-.footer{background:var(--text);color:#a1a1a6;padding:64px 0 32px;margin-top:80px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
-.footer-brand{font-size:20px;font-weight:700;color:#fff;margin-bottom:14px}
-.footer-brand span{color:var(--accent)}
-.footer-desc{font-size:14px;line-height:1.6;max-width:300px}
-.footer h4{font-size:13px;font-weight:600;color:#fff;margin-bottom:16px;text-transform:uppercase;letter-spacing:1.2px}
-.footer a{display:block;font-size:14px;color:#a1a1a6;margin-bottom:10px;transition:color .2s}
-.footer a:hover{color:#fff}
-.footer-bottom{border-top:1px solid #424245;padding-top:28px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#6e6e73}
-.footer-bottom-links{display:flex;gap:24px}
+.footer{background:#1a1a1a;color:#a1a1a6;padding:80px 0 32px;margin-top:0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;margin-bottom:56px}
+.footer-brand{font-size:20px;font-weight:700;color:#fff;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.footer-brand-icon{width:32px;height:32px;background:var(--accent-gradient);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;font-weight:800}
+.footer-desc{font-size:14px;line-height:1.7;max-width:320px}
+.footer-social{display:flex;gap:12px;margin-top:20px}
+.footer-social a{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:16px;transition:var(--transition)}
+.footer-social a:hover{background:rgba(255,255,255,.15);transform:translateY(-2px)}
+.footer h4{font-size:12px;font-weight:700;color:#fff;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px}
+.footer a{display:block;font-size:14px;color:#a1a1a6;margin-bottom:12px;transition:var(--transition)}
+.footer a:hover{color:#fff;transform:translateX(4px)}
+.footer-bottom{border-top:1px solid #333;padding-top:28px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#666}
+.footer-bottom-links{display:flex;gap:28px}
 .footer-bottom-links a{font-size:13px;color:#a1a1a6}
+.footer-bottom-links a:hover{color:#fff}
 
 /* ===== ANIMATIONEN ===== */
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-.animate{opacity:0;transform:translateY(30px);transition:opacity .6s ease-out,transform .6s ease-out}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.animate{opacity:0;transform:translateY(40px);transition:opacity .7s ease-out,transform .7s ease-out}
 .animate.visible{opacity:1;transform:translateY(0)}
+.animate-delay-1{transition-delay:.1s}
+.animate-delay-2{transition-delay:.2s}
+.animate-delay-3{transition-delay:.3s}
+.animate-delay-4{transition-delay:.4s}
 
 /* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+.container{padding:0 24px}
+.hero{padding:120px 0 80px}
+.section{padding:80px 0}
+.about-inner{gap:48px}
+.footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+}
 @media(max-width:768px){
 .nav-links{display:none}
-.mobile-menu-btn{display:block}
-.hero{padding:60px 0 48px}
-.hero h1{font-size:clamp(30px,8vw,40px);letter-spacing:-1px}
-.hero-images{gap:10px}
-.hero-img{width:100px;height:70px}
-.section{padding:56px 0}
+.mobile-menu-btn{display:flex}
+.hero{padding:100px 0 60px}
+.hero h1{font-size:clamp(32px,8vw,44px);letter-spacing:-1.5px}
+.hero-images{gap:8px}
+.hero-img{width:80px;height:56px}
+.hero-trust{flex-direction:column;gap:12px}
+.section{padding:60px 0}
+.section-header{flex-direction:column;align-items:flex-start}
+.grid{grid-template-columns:1fr;gap:20px}
 .about-inner{grid-template-columns:1fr;gap:32px}
-.about-img{height:240px}
-.newsletter{padding:40px 24px}
-.footer-grid{grid-template-columns:1fr 1fr;gap:32px}
-.footer-bottom{flex-direction:column;gap:12px;text-align:center}
+.about-img{height:280px}
+.about-stats{gap:24px}
+.blog-grid{grid-template-columns:1fr;gap:20px}
+.newsletter{padding:48px 24px}
+.footer-grid{grid-template-columns:1fr;gap:32px}
+.footer-bottom{flex-direction:column;gap:16px;text-align:center}
 .footer-bottom-links{flex-direction:column;gap:8px}
 }
 </style>
@@ -157,14 +212,19 @@ img{max-width:100%;display:block}
 <!-- Navigation -->
 <nav class="nav" id="navbar">
 <div class="nav-inner">
-<a href="https://balu1705.github.io/andreasstehmann-links/" class="nav-logo">andreas<span>stehmann</span></a>
+<a href="https://balu1705.github.io/andreasstehmann-links/" class="nav-logo">
+<div class="nav-logo-icon">A</div>
+andreas stehmann
+</a>
 <div class="nav-links">
 <a href="#nischen">Nischen</a>
 <a href="#blog">Blog</a>
 <a href="#ueber-mich">Über mich</a>
 <a href="#newsletter" class="nav-cta">Newsletter</a>
 </div>
-<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü">☰</button>
+<button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü">
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+</button>
 </div>
 </nav>
 
@@ -178,10 +238,11 @@ img{max-width:100%;display:block}
 
 <!-- Hero -->
 <header class="hero">
+<div class="hero-bg"></div>
 <div class="container">
 <span class="hero-badge">🏠 Willkommen zu Hause</span>
-<h1>Dein Zuhause,<br><span>dein Stil.</span></h1>
-<p>Entdecke kuratiere Produktempfehlungen, DIY-Projekte und Lifestyle-Tipps – auf einem Level, das sich gut anfühlt.</p>
+<h1>Dein Zuhause,<br><span class="gradient">dein Stil.</span></h1>
+<p>Entdecke kuratiere Produktempfehlungen, DIY-Projekte und Lifestyle-Tipps — auf einem Level, das sich gut anfühlt.</p>
 <div class="hero-actions">
 <a href="#nischen" class="btn btn-primary">Nischen entdecken</a>
 <a href="#ueber-mich" class="btn btn-secondary">Über mich</a>
@@ -193,78 +254,136 @@ img{max-width:100%;display:block}
 <img src="/andreasstehmann-links/assets/104120860X.jpg" alt="Küche" class="hero-img" loading="lazy">
 <img src="/andreasstehmann-links/assets/1118251652.jpg" alt="Garten" class="hero-img" loading="lazy">
 </div>
+<div class="hero-trust">
+<div class="trust-item"><span class="trust-icon">✅</span> Unabhängig getestet</div>
+<div class="trust-item"><span class="trust-icon">🚀</span> Kostenlos & ohne Anmeldung</div>
+<div class="trust-item"><span class="trust-icon">🇩🇪</span> Made in Germany</div>
+</div>
 </div>
 </header>
 
 <!-- Nischen -->
 <section class="section" id="nischen">
 <div class="container">
+<div class="section-header">
+<div>
 <div class="section-label animate">Nischen</div>
 <h2 class="section-title animate">Alles für dein Zuhause</h2>
 <p class="section-desc animate">Wähle deine Kategorie und entdecke handverlesene Produkte und Projekte.</p>
+</div>
+</div>
 <div class="grid">
 <a href="/andreasstehmann-links/niches/wohnen-deko/" class="card animate">
+<div class="card-img-wrapper">
 <span class="card-count">12 Produkte</span>
 <img src="/andreasstehmann-links/assets/032174957X.jpg" alt="Wohnen" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">🛋️</div>
 <h3>Wohnen</h3>
 <p>Möbel, Dekoration und Alltagshelfer für dein Wohnzimmer.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
-<a href="/andreasstehmann-links/niches/wanddeko/" class="card animate">
+<a href="/andreasstehmann-links/niches/wanddeko/" class="card animate animate-delay-1">
+<div class="card-img-wrapper">
 <span class="card-count">8 Produkte</span>
 <img src="/andreasstehmann-links/assets/0470689544.jpg" alt="Deko" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">🖼️</div>
 <h3>Deko</h3>
 <p>Wanddeko, Vasen, Bilderrahmen und mehr für deinen Stil.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
-<a href="/andreasstehmann-links/niches/diy/" class="card animate">
+<a href="/andreasstehmann-links/niches/diy/" class="card animate animate-delay-2">
+<div class="card-img-wrapper">
 <span class="card-count">10 Projekte</span>
 <img src="/andreasstehmann-links/assets/0692769447.jpg" alt="DIY" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">🔨</div>
 <h3>DIY</h3>
 <p>Selbermachen mit Anleitungen und Materialtipps.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
-<a href="/andreasstehmann-links/niches/smart-home/" class="card animate">
+<a href="/andreasstehmann-links/niches/smart-home/" class="card animate animate-delay-3">
+<div class="card-img-wrapper">
 <span class="card-count">15 Produkte</span>
 <img src="/andreasstehmann-links/assets/104120860X.jpg" alt="Smart Home" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">💡</div>
 <h3>Smart Home</h3>
 <p>Intelligente Geräte für Licht, Sicherheit und Komfort.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
 <a href="/andreasstehmann-links/niches/wellness/" class="card animate">
+<div class="card-img-wrapper">
 <span class="card-count">9 Produkte</span>
 <img src="/andreasstehmann-links/assets/1118251652.jpg" alt="Wellness" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">🧘</div>
 <h3>Wellness</h3>
 <p>Entspannung, Aromen und Pflege für Körper und Geist.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
-<a href="/andreasstehmann-links/niches/kuechenorganisation/" class="card animate">
+<a href="/andreasstehmann-links/niches/kuechenorganisation/" class="card animate animate-delay-1">
+<div class="card-img-wrapper">
 <span class="card-count">11 Produkte</span>
 <img src="/andreasstehmann-links/assets/1406290963.jpg" alt="Küche" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">🍳</div>
 <h3>Küche</h3>
 <p>Kochhelfer, Kitchen-Gadgets und Rezeptideen.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
-<a href="/andreasstehmann-links/niches/haustier-damen/" class="card animate">
+<a href="/andreasstehmann-links/niches/haustier-damen/" class="card animate animate-delay-2">
+<div class="card-img-wrapper">
 <span class="card-count">7 Produkte</span>
 <img src="/andreasstehmann-links/assets/1412981492.jpg" alt="Haustier" class="card-img" loading="lazy">
+<div class="card-overlay"></div>
+</div>
 <div class="card-body">
+<div class="card-icon">🐾</div>
 <h3>Haustier</h3>
 <p>Alles für dein tierisches Familienmitglied.</p>
-</div>
+<div class="card-footer">
+<span class="card-link">Entdecken</span>
 <span class="card-arrow">→</span>
+</div>
+</div>
 </a>
 </div>
 </div>
@@ -274,10 +393,10 @@ img{max-width:100%;display:block}
 <section class="section about" id="ueber-mich">
 <div class="container">
 <div class="about-inner">
-<div class="animate">
+<div class="about-content animate">
 <div class="section-label">Über mich</div>
 <h2>Hallo, ich bin Andreas 👋</h2>
-<p>Ich helfe dir, dein Zuhause schöner, funktionaler und gemütlicher zu machen. Mit echten Produktempfehlungen, DIY-Anleitungen und Lifestyle-Tipps – ehrlich geprüft und ohne Marketing-Blabla.</p>
+<p>Ich helfe dir, dein Zuhause schöner, funktionaler und gemütlicher zu machen. Mit echten Produktempfehlungen, DIY-Anleitungen und Lifestyle-Tipps — ehrlich geprüft und ohne Marketing-Blabla.</p>
 <p>Mein Ziel: dir Zeit zu sparen, indem ich die Suche nach den besten Produkten schon mal erledigt habe. Alles, was du hier findest, habe ich selbst ausgewählt oder ausprobiert.</p>
 <div class="about-stats">
 <div class="stat">
@@ -294,45 +413,68 @@ img{max-width:100%;display:block}
 </div>
 </div>
 </div>
-<div class="animate">
+<div class="about-img-wrapper animate">
 <img src="/andreasstehmann-links/assets/1529713625.jpg" alt="Andreas Stehmann" class="about-img" loading="lazy">
+<div class="about-img-badge">
+<div class="about-img-badge-text">Andreas Stehmann</div>
+<div class="about-img-badge-sub">Lifestyle & Deko Enthusiast</div>
+</div>
 </div>
 </div>
 </div>
 </section>
 
 <!-- Blog -->
-<section class="section" id="blog">
+<section class="section section-alt" id="blog">
 <div class="container">
+<div class="section-header">
+<div>
 <div class="section-label animate">Blog</div>
 <h2 class="section-title animate">Neueste Artikel</h2>
 <p class="section-desc animate">Tipps, Guides und Inspiration für dein Zuhause.</p>
+</div>
+</div>
 <div class="blog-grid">
 <a href="/andreasstehmann-links/blog/bad-deko/" class="blog-card animate">
+<div class="blog-card-img-wrapper">
+<span class="blog-card-tag">Bad</span>
 <img src="/andreasstehmann-links/assets/178272009X.jpg" alt="Bad Deko" class="blog-card-img" loading="lazy">
+</div>
 <div class="blog-card-body">
-<div class="blog-card-tag">Bad</div>
-<h3>Bad Deko: 10 Ideen für dein Wellness-Oase</h3>
+<h3>Bad Deko: 10 Ideen für deine Wellness-Oase</h3>
 <p>Verwandele dein Badezimmer in eine Spa-Oase mit diesen einfachen Deko-Ideen.</p>
-<div class="blog-card-meta"><span>📖 8 Min Lesezeit</span><span>→</span></div>
+<div class="blog-card-meta">
+<span>📖 8 Min Lesezeit</span>
+<span class="read-more">Lesen →</span>
+</div>
 </div>
 </a>
-<a href="/andreasstehmann-links/blog/balkon-garten/" class="blog-card animate">
+<a href="/andreasstehmann-links/blog/balkon-garten/" class="blog-card animate animate-delay-1">
+<div class="blog-card-img-wrapper">
+<span class="blog-card-tag">Garten</span>
 <img src="/andreasstehmann-links/assets/1932394494.jpg" alt="Balkon Garten" class="blog-card-img" loading="lazy">
+</div>
 <div class="blog-card-body">
-<div class="blog-card-tag">Garten</div>
 <h3>Balkon & Garten: Gemütlich gestalten im Sommer</h3>
 <p>Die besten Tipps für einen gemütlichen Balkon und einen blühenden Garten.</p>
-<div class="blog-card-meta"><span>📖 10 Min Lesezeit</span><span>→</span></div>
+<div class="blog-card-meta">
+<span>📖 10 Min Lesezeit</span>
+<span class="read-more">Lesen →</span>
+</div>
 </div>
 </a>
-<a href="/andreasstehmann-links/blog/smart-home-einsteiger-guide/" class="blog-card animate">
+<a href="/andreasstehmann-links/blog/smart-home-einsteiger-guide/" class="blog-card animate animate-delay-2">
+<div class="blog-card-img-wrapper">
+<span class="blog-card-tag">Smart Home</span>
 <img src="/andreasstehmann-links/assets/3035504555.jpg" alt="Smart Home" class="blog-card-img" loading="lazy">
+</div>
 <div class="blog-card-body">
-<div class="blog-card-tag">Smart Home</div>
 <h3>Smart Home Einsteiger-Guide: Starte jetzt durch</h3>
-<p>Alles, was du für dein erstes Smart Home brauchst – von Licht bis Sicherheit.</p>
-<div class="blog-card-meta"><span>📖 12 Min Lesezeit</span><span>→</span></div>
+<p>Alles, was du für dein erstes Smart Home brauchst — von Licht bis Sicherheit.</p>
+<div class="blog-card-meta">
+<span>📖 12 Min Lesezeit</span>
+<span class="read-more">Lesen →</span>
+</div>
 </div>
 </a>
 </div>
@@ -343,13 +485,15 @@ img{max-width:100%;display:block}
 <section class="section" id="newsletter">
 <div class="container">
 <div class="newsletter animate">
+<div class="newsletter-content">
 <h2>Bleib auf dem Laufenden</h2>
-<p>Die besten Produkte und Projekte – direkt in dein Postfach.</p>
+<p>Die besten Produkte und Projekte — direkt in dein Postfach.</p>
 <form class="newsletter-form" onsubmit="event.preventDefault();alert('Danke für deine Anmeldung!');">
 <input type="email" placeholder="deine@email.de" required>
 <button type="submit">Abonnieren</button>
 </form>
 <small>Kein Spam. Abmeldung jederzeit möglich.</small>
+</div>
 </div>
 </div>
 </section>
@@ -359,8 +503,16 @@ img{max-width:100%;display:block}
 <div class="container">
 <div class="footer-grid">
 <div>
-<div class="footer-brand">andreas<span>stehmann</span></div>
+<div class="footer-brand">
+<div class="footer-brand-icon">A</div>
+andreas stehmann
+</div>
 <p class="footer-desc">Dein Guide für Wohnen, Deko & Lifestyle. Ehrliche Empfehlungen, DIY-Projekte und Tipps für dein Zuhause.</p>
+<div class="footer-social">
+<a href="#" aria-label="Pinterest">📌</a>
+<a href="#" aria-label="Instagram">📷</a>
+<a href="#" aria-label="YouTube">▶️</a>
+</div>
 </div>
 <div>
 <h4>Nischen</h4>
@@ -398,15 +550,17 @@ const observer = new IntersectionObserver((entries) => {
 entries.forEach(entry => {
 if (entry.isIntersecting) {
 entry.target.classList.add('visible');
+observer.unobserve(entry.target);
 }
 });
-}, { threshold: 0.1 });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 
-// Navbar Schatten
+// Navbar
 window.addEventListener('scroll', () => {
-document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+const nav = document.getElementById('navbar');
+nav.classList.toggle('scrolled', window.scrollY > 20);
 });
 
 // Mobile Menü
@@ -414,6 +568,15 @@ const btn = document.getElementById('mobileMenuBtn');
 const nav = document.getElementById('mobileNav');
 btn.addEventListener('click', () => nav.classList.toggle('open'));
 nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+});
 </script>
 
 </body>
