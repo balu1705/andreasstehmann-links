@@ -1,0 +1,13 @@
+# Credentials und Secrets — niemals committen
+.git-credentials
+.env
+.env.*
+*.pem
+*.key
+*_token.txt
+*_secret*
+
+# Build-Artefakte
+_build/
+__pycache__/
+*.pyc
