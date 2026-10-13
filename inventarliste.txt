@@ -1,0 +1,945 @@
+================================================================================
+VOLLSTÄNDIGE INVENTARLISTE — Andreas' Amazon-Affiliate-Automatisierung
+================================================================================
+Stand: 13.10.2026 | Alle Angaben ohne Credentials oder Tokens
+
+================================================================================
+1. TOOLS / FUNKTIONEN
+================================================================================
+
+1.1 Kern-Tools (direkt verfügbar)
+
+Tool: terminal
+  Zweck: Shell-Befehle ausführen
+  Eingaben: command, workdir, timeout, background, pty
+  Ausgaben: stdout/stderr, exit_code, cwd
+  Typische Verwendung: Builds, Git, Python-Skripte, Systemprüfungen
+
+Tool: read_file
+  Zweck: Datei lesen (mit Paginierung)
+  Eingaben: path, offset, limit
+  Ausgaben: Inhalt mit Zeilennummern, total_lines
+  Typische Verwendung: Code lesen, Configs prüfen, JSON/YAML einsehen
+
+Tool: write_file
+  Zweck: Datei erstellen/überschreiben
+  Eingaben: path, content
+  Ausgaben: Erfolg, verified
+  Typische Verwendung: Scripts schreiben, Configs anlegen
+
+Tool: patch
+  Zweck: Find-and-replace in Dateien
+  Eingaben: path, old_string, new_string
+  Ausgaben: unified diff
+  Typische Verwendung: Code-Edits, Config-Änderungen
+
+Tool: search_files
+  Zweck: Inhalte oder Dateinamen suchen
+  Eingaben: pattern, target, path, limit
+  Ausgaben: matches mit Zeilennummern/Pfaden
+  Typische Verwendung: Code-Navigation, Symbol-Updates finden
+
+Tool: execute_code
+  Zweck: Python mit Hermes-Tools programmatisch
+  Eingaben: code, reset
+  Ausgaben: print-output, gespeicherte Dateien
+  Typische Verwendung: Batch-Operationen, API-Calls mit Logik, Filtern
+
+Tool: vision_analyze
+  Zweck: Bildanalyse
+  Eingaben: image_url, question, region
+  Ausgaben: Antwort des Vision-Modells
+  Typische Verwendung: Pin-QC, Screenshot-Analyse, Referenzbild-Vermessung
+
+Tool: web_search
+  Zweck: Websuche
+  Eingaben: query, limit
+  Ausgaben: Ergebnisse mit URL/Title/Description
+  Typische Verwendung: Recherche, Wettbewerber, Trends
+
+Tool: web_extract
+  Zweck: Webseiten extrahieren
+  Eingaben: urls, char_limit
+  Ausgaben: Markdown-Inhalte
+  Typische Verwendung: Amazon-Produktdaten, Blog-Posts, API-Docs
+
+Tool: browser_exec
+  Zweck: Browser-Steuerung (Python)
+  Eingaben: code, session, timeout_s
+  Ausgaben: print-output, Screenshot-Pfade
+  Typische Verwendung: Amazon-Scraping (Desktop-UA), Zernio-Posts, JS-Extraktion
+
+Tool: tool_search
+  Zweck: Deferred-Tools suchen
+  Eingaben: queries, limit
+  Ausgaben: Tool-Namen + Beschreibungen
+  Typische Verwendung: Vor tool_call: Schema verstehen
+
+Tool: tool_describe
+  Zweck: Tool-Schemata laden
+  Eingaben: names
+  Ausgaben: JSON-Schemas
+  Typische Verwendung: Parameter-Formate prüfen
+
+Tool: tool_call
+  Zweck: Deferred-Tools aufrufen
+  Eingaben: calls (name+arguments)
+  Ausgaben: Tool-Results
+  Typische Verwendung: Cron-Jobs, Connections, Todos
+
+Tool: manage_connections
+  Zweck: Connector verwalten
+  Eingaben: action, connectors, force
+  Ausgaben: Status, connect_url
+  Typische Verwendung: Gmail, Telegram, GitHub OAuth
+
+Tool: session_search
+  Zweck: Session-History durchsuchen
+  Eingaben: query, limit, sort
+  Ausgaben: Session-Links, Messages
+  Typische Verwendung: "Was haben wir X gemacht?"
+
+Tool: memory
+  Zweck: Persistente Notizen
+  Eingaben: operations (add/replace/remove)
+  Ausgaben: Aktueller Stand, Grenzen
+  Typische Verwendung: Fakten über Umgebung, Präferenzen
+
+Tool: skill_manage
+  Zweck: Skills verwalten
+  Eingaben: operations
+  Ausgaben: Erfolg/Fehler
+  Typische Verwendung: Skills erstellen, patchen, löschen
+
+Tool: skill_view
+  Zweck: Skill-Inhalt laden
+  Eingaben: name, file_path
+  Ausgaben: SKILL.md, linked_files
+  Typische Verwendung: Skill-Details, Referenzen lesen
+
+Tool: skills_list
+  Zweck: Skills auflisten
+  Eingaben: category (optional)
+  Ausgaben: Liste mit Name+Beschreibung
+  Typische Verwendung: Übersicht, Skill-Navigation
+
+Tool: clarify
+  Zweck: Rückfrage an den Nutzer
+  Eingaben: questions (1-5)
+  Ausgaben: responses
+  Typische Verwendung: Mehrdeutigkeit, fehlende Eingaben
+
+Tool: delegate_task
+  Zweck: Sub-Agenten spawnen
+  Eingaben: tasks, action, subagent_id
+  Ausgaben: Transcript-Pfade
+  Typische Verwendung: Parallele Arbeit, große Reasoning-Aufgaben
+
+1.2 Browser-Vault-Tools (Passwörter/Logins)
+
+Tool: browser_vault_list
+  Zweck: Gespeicherte Logins auflisten
+  Eingaben: —
+  Ausgaben: Handles, Metadaten
+  Typische Verwendung: Vor Login-Formular prüfen
+
+Tool: browser_vault_fill
+  Zweck: Login-Formular füllen
+  Eingaben: handle
+  Ausgaben: Erfolg/Ablehnung
+  Typische Verwendung: Passwort-Fill (nur Binding-Origin)
+
+Tool: browser_vault_save_login
+  Zweck: Neues Login speichern
+  Eingaben: label
+  Ausgaben: handle, identifier
+  Typische Verwendung: Einmal-Setup für neue Seite
+
+Tool: browser_vault_enter_code
+  Zweck: 2FA/OTP-Code
+  Eingaben: handle
+  Ausgaben: Automatisch oder User-Prompt
+  Typische Verwendung: Zwei-Faktor-Authentifizierung
+
+Tool: browser_vault_unlock
+  Zweck: Passwort-Manager entsperren
+  Eingaben: backend
+  Ausgaben: unlock_cancelled/failed/success
+  Typische Verwendung: 1Password/Bitwarden
+
+1.3 Deferred-Tools (über tool_call)
+
+Tool: cronjob_manage
+  Zweck: Cron-Jobs verwalten
+  Eingaben: action, job_id, schedule, prompt, script, etc.
+  Ausgaben: Job-Liste, Status
+  Typische Verwendung: Scheduler, automatisierte Abläufe
+
+Tool: todo_list
+  Zweck: Todo-Liste
+  Eingaben: todos, merge
+  Ausgaben: Aktuelle Liste
+  Typische Verwendung: Mehr-Schritte-Aufgaben
+
+================================================================================
+2. SKILLS
+================================================================================
+
+Skill: german-communication
+  Pfad: /opt/data/skills/german-communication/
+  Auslösebedingungen: Immer aktiv — jede Antwort
+  Übernimmt: Erzwingt deutsche, klare, kurze Sätze; keine Filler
+
+Skill: github-pages-affiliate-sites
+  Pfad: /opt/data/skills/github-pages-affiliate-sites/
+  Auslösebedingungen: Nischen-Seiten auf GitHub Pages deployen
+  Übernimmt: Komplette Site-Pipeline (Produktdaten → HTML → Git-Push → CDN-Check)
+
+Skill: daily-affiliate-social-posting
+  Pfad: /opt/data/skills/social-media/daily-affiliate-social-posting/
+  Auslösebedingungen: Tägliche Pinterest/Instagram-Pins, DIY-Pins
+  Übernimmt: Komplette Social-Pipeline (Bilder → Pin-Rendering → Zernio-API → Telegram)
+
+Skill: social-api-posting
+  Pfad: /opt/data/skills/social-media/social-api-posting/
+  Auslösebedingungen: Cross-Platform-Posting via Zernio API
+  Übernimmt: API-Schema, Polling-Muster, Compliance
+
+Skill: affiliate-link-platform-publisher
+  Pfad: /opt/data/skills/affiliate/affiliate-link-platform-publisher/
+  Auslösebedingungen: Affiliate-Links auf kuratierte Plattformen
+  Übernimmt: Link-Plattform-Publishing
+
+Skill: mydealz-amazon-monitoring
+  Pfad: /opt/data/skills/affiliate/mydealz-amazon-monitoring/
+  Auslösebedingungen: Tägliches myDealz-Deal-Tracking
+  Übernimmt: Deal-Scraping, Preisalarm, Posting
+
+Skill: bulkpublish-tiktok-threads
+  Pfad: /opt/data/skills/bulkpublish-tiktok-threads/
+  Auslösebedingungen: Threads + TikTok + YouTube-Posts via BulkPublish
+  Übernimmt: Multi-Platform-Social-Posting
+
+Skill: product-price-monitor
+  Pfad: /opt/data/skills/productivity/product-price-monitor/
+  Auslösebedingungen: Preisüberwachung, Ziel-Preis-Alerts
+  Übernimmt: Preis-Tracking
+
+Skill: amazon-affiliate-automation
+  Pfad: /opt/data/skills/marketing/amazon-affiliate-automation/
+  Auslösebedingungen: DACH-Amazon-Affiliate-Regeln
+  Übernimmt: Link-Format, Nischen-Tiering, Compliance
+
+Skill: dach-affiliate-social-automation
+  Pfad: /opt/data/skills/marketing/dach-affiliate-social-automation/
+  Auslösebedingungen: Zernio-basierte DACH Social-Automation
+  Übernimmt: Deutsche Keywords, Posting 18-21h MEZ
+
+Skill: digistore24-product-creation
+  Pfad: /opt/data/skills/marketing/digistore24-product-creation/
+  Auslösebedingungen: Digitale Produkte via Digistore24
+  Übernimmt: DS24-Produkt-Listing
+
+Skill: github-pages-blog-automation
+  Pfad: /opt/data/skills/github/github-pages-blog-automation/
+  Auslösebedingungen: Blog-Artikel auf GitHub Pages
+  Übernimmt: Blog-Pipeline
+
+Skill: rss-feeds
+  Pfad: /opt/data/skills/research/rss-feeds/
+  Auslösebedingungen: RSS/Atom-Feeds lesen
+  Übernimmt: Content-Discovery
+
+Skill: polymarket
+  Pfad: /opt/data/skills/research/polymarket/
+  Auslösebedingungen: Polymarkt-Abfragen
+  Übernimmt: Markt-Prognosen
+
+Skill: ocr-and-documents
+  Pfad: /opt/data/skills/productivity/ocr-and-documents/
+  Auslösebedingungen: PDF/Scraper-Textextraktion
+  Übernimmt: Dokumentenverarbeitung
+
+Skill: nano-pdf
+  Pfad: /opt/data/skills/productivity/nano-pdf/
+  Auslösebedingungen: PDF-Bearbeitung via NLP
+  Übernimmt: PDF-Editierung
+
+Skill: petdex
+  Pfad: /opt/data/skills/productivity/petdex/
+  Auslösebedingungen: Hermes-Maskottchen
+  Übernimmt: UI-Personalization
+
+Skill: session-librarian
+  Pfad: /opt/data/skills/productivity/session-librarian/
+  Auslösebedingungen: Sessions organisieren/archivieren
+  Übernimmt: Wissensmanagement
+
+Skill: blocked-page-recovery
+  Pfad: /opt/data/skills/web/blocked-page-recovery/
+  Auslösebedingungen: 403/429/Paywall/Bot-Wall
+  Übernimmt: Amazon-Scraping (Fallback)
+
+Skill: hermes-agent
+  Pfad: /opt/data/skills/autonomous-ai-agents/hermes-agent/
+  Auslösebedingungen: Hermes konfigurieren/erweitern
+  Übernimmt: Agent-Konfiguration
+
+Skill: hermes-local-deployment
+  Pfad: /opt/data/skills/autonomous-ai-agents/hermes-local-deployment/
+  Auslösebedingungen: Hermes auf Server/NAS deployen
+  Übernimmt: Self-Hosting
+
+Skill: llm-provider-onboarding
+  Pfad: /opt/data/skills/autonomous-ai-agents/llm-provider-onboarding/
+  Auslösebedingungen: LLM-Provider anbinden (Ollama, OpenRouter)
+  Übernimmt: Modell-Switching
+
+Skill: merge-reconciler
+  Pfad: /opt/data/skills/autonomous-ai-agents/merge-reconciler/
+  Auslösebedingungen: Merge-Konflikte lösen
+  Übernimmt: Code-Repos
+
+Skill: openjarvis-autonomous-agents
+  Pfad: /opt/data/skills/autonomous-ai-agents/openjarvis-autonomous-agents/
+  Auslösebedingungen: OpenJarvis autonomous Schedules
+  Übernimmt: Agent-Automatisierung
+
+Skill: openjarvis-bridge
+  Pfad: /opt/data/skills/autonomous-ai-agents/openjarvis-bridge/
+  Auslösebedingungen: OpenJarvis steuern/verbinden
+  Übernimmt: Lokale AI-Bridge
+
+Skill: openjarvis-speech
+  Pfad: /opt/data/skills/autonomous-ai-agents/openjarvis-speech/
+  Auslösebedingungen: TTS/STT einrichten
+  Übernimmt: Sprachschnittstelle
+
+Skill: self-hosted-ai-assistant
+  Pfad: /opt/data/skills/autonomous-ai-agents/self-hosted-ai-assistant/
+  Auslösebedingungen: Self-Hosted AI-Assistent
+  Übernimmt: Infrastruktur
+
+Skill: hermes-telegram-troubleshooting
+  Pfad: /opt/data/skills/autonomous-ai-agents/hermes-telegram-troubleshooting/
+  Auslösebedingungen: Telegram-Gateway-Probleme
+  Übernimmt: Messaging
+
+Skill: jarvis-ai-assistant
+  Pfad: /opt/data/skills/autonomous-ai-agents/jarvis-ai-assistant/
+  Auslösebedingungen: JARVIS-Assistent bauen
+  Übernimmt: Agent-Setup
+
+Skill: openjarvis
+  Pfad: /opt/data/skills/openjarvis/openjarvis/
+  Auslösebedingungen: OpenJarvis verbinden
+  Übernimmt: Lokale AI
+
+Skill: hermes-desktop-plugins
+  Pfad: /opt/data/skills/hermes-desktop-plugins/hermes-desktop-plugins/
+  Auslösebedingungen: Desktop-Plugins schreiben
+  Übernimmt: UI-Erweiterung
+
+Skill: ascii-art
+  Pfad: /opt/data/skills/creative/ascii-art/
+  Auslösebedingungen: ASCII-Art generieren
+  Übernimmt: Kreative Ausgabe
+
+Skill: comfyui
+  Pfad: /opt/data/skills/creative/comfyui/
+  Auslösebedingungen: ComfyUI-Workflows
+  Übernimmt: Bild/Video-Generierung
+
+Skill: excalidraw
+  Pfad: /opt/data/skills/creative/excalidraw/
+  Auslösebedingungen: Excalidraw-Diagramme
+  Übernimmt: Visualisierung
+
+Skill: pretext
+  Pfad: /opt/data/skills/creative/pretext/
+  Auslösebedingungen: Browser-Demos (DOM-frei)
+  Übernimmt: Prototyping
+
+Skill: sketch
+  Pfad: /opt/data/skills/creative/sketch/
+  Auslösebedingungen: HTML-Mockups
+  Übernimmt: Design-Varianten
+
+Skill: touchdesigner-mcp
+  Pfad: /opt/data/skills/creative/touchdesigner-mcp/
+  Auslösebedingungen: TouchDesigner via MCP
+  Übernimmt: Generative Kunst
+
+Skill: jupyter-live-kernel
+  Pfad: /opt/data/skills/data-science/jupyter-live-kernel/
+  Auslösebedingungen: Jupyter via hamelnb
+  Übernimmt: Data-Science
+
+Skill: github-api-automation
+  Pfad: /opt/data/skills/github/github-api-automation/
+  Auslösebedingungen: GitHub via API automatisieren
+  Übernimmt: CI/CD
+
+Skill: github-auth
+  Pfad: /opt/data/skills/github/github-auth/
+  Auslösebedingungen: GitHub-Auth (HTTPS/SSH/gh)
+  Übernimmt: Repo-Zugriff
+
+Skill: github-code-review
+  Pfad: /opt/data/skills/github/github-code-review/
+  Auslösebedingungen: PR-Reviews
+  Übernimmt: Code-Quality
+
+Skill: github-issue-to-pr
+  Pfad: /opt/data/skills/github/github-issue-to-pr/
+  Auslösebedingungen: Issue → PR-Workflow
+  Übernimmt: Entwicklung
+
+Skill: github-issues
+  Pfad: /opt/data/skills/github/github-issues/
+  Auslösebedingungen: Issues via gh/REST
+  Übernimmt: Projekt-Tracking
+
+Skill: github-pages-auto-deploy
+  Pfad: /opt/data/skills/github/github-pages-auto-deploy/
+  Auslösebedingungen: Statische Seiten auto-deployen
+  Übernimmt: Site-Hosting
+
+Skill: github-pages-blog-automation
+  Pfad: /opt/data/skills/github/github-pages-blog-automation/
+  Auslösebedingungen: Blog-Deploy auf GitHub Pages
+  Übernimmt: Blog-Pipeline
+
+Skill: github-pages-deploy
+  Pfad: /opt/data/skills/github/github-pages-deploy/
+  Auslösebedingungen: Statisches HTML auf GitHub Pages
+  Übernimmt: Deployment
+
+Skill: github-pr-workflow
+  Pfad: /opt/data/skills/github/github-pr-workflow/
+  Auslösebedingungen: PR-Lifecycle
+  Übernimmt: Entwicklung
+
+Skill: github-repo-management
+  Pfad: /opt/data/skills/github/github-repo-management/
+  Auslösebedingungen: Repos klonen/forken/managen
+  Übernimmt: Code-Repos
+
+Skill: github
+  Pfad: /opt/data/skills/github/github/
+  Auslösebedingungen: gh CLI: PRs, Issues, Repos
+  Übernimmt: GitHub-Alltag
+
+Skill: google-workspace
+  Pfad: /opt/data/skills/productivity/google-workspace/
+  Auslösebedingungen: Gmail, Calendar, Drive, Docs, Sheets
+  Übernimmt: Google-Integration
+
+Skill: heartmula
+  Pfad: /opt/data/skills/media/heartmula/
+  Auslösebedingungen: Song-Generierung (Suno-ähnlich)
+  Übernimmt: Audio-Content
+
+Skill: huggingface-hub
+  Pfad: /opt/data/skills/mlops/huggingface-hub/
+  Auslösebedingungen: hf CLI: Modelle/Datasets
+  Übernimmt: ML-Workflows
+
+Skill: llama-cpp
+  Pfad: /opt/data/skills/mlops/inference/llama-cpp/
+  Auslösebedingungen: GGUF-Inferenz + HF-Discovery
+  Übernimmt: Lokale LLM
+
+Skill: serving-llms-vllm
+  Pfad: /opt/data/skills/mlops/inference/serving-llms-vllm/
+  Auslösebedingungen: vLLM, OpenAI API, Quantisierung
+  Übernimmt: Model-Serving
+
+Skill: llm-performance-tuning
+  Pfad: /opt/data/skills/mlops/llm-performance-tuning/
+  Auslösebedingungen: LLM-Antwortzeit/-Format optimieren
+  Übernimmt: Performance
+
+Skill: evaluating-llms-harness
+  Pfad: /opt/data/skills/mlops/evaluation/evaluating-llms-harness/
+  Auslösebedingungen: lm-eval: MMLU, GSM8K
+  Übernimmt: LLM-Benchmarks
+
+Skill: weights-and-biases
+  Pfad: /opt/data/skills/mlops/evaluation/weights-and-biases/
+  Auslösebedingungen: W&B: Experiment-Tracking
+  Übernimmt: ML-Tracking
+
+Skill: audiocraft-audio-generation
+  Pfad: /opt/data/skills/mlops/models/audiocraft-audio-generation/
+  Auslösebedingungen: MusicGen/AudioGen
+  Übernimmt: Audio-Generierung
+
+Skill: segment-anything-model
+  Pfad: /opt/data/skills/mlops/models/segment-anything-model/
+  Auslösebedingungen: SAM: Bild-Segmentierung
+  Übernimmt: Bildverarbeitung
+
+Skill: openhue
+  Pfad: /opt/data/skills/smart-home/openhue/
+  Auslösebedingungen: Philips Hue steuern
+  Übernimmt: Smart-Home
+
+Skill: pinterest-affiliate-marketing
+  Pfad: /opt/data/skills/social-media/pinterest-affiliate-marketing/
+  Auslösebedingungen: Pinterest-Affiliate-End-to-End
+  Übernimmt: Pin-Marketing
+
+Skill: reddit-reading
+  Pfad: /opt/data/skills/social-media/reddit-reading/
+  Auslösebedingungen: Subreddits/Threads lesen
+  Übernimmt: Community-Recherche
+
+Skill: zernio-social-posting
+  Pfad: /opt/data/skills/social-media/zernio-social-posting/
+  Auslösebedingungen: Zernio-Posts (Instagram + Pinterest)
+  Übernimmt: Social-Publishing
+
+Skill: affiliate-cross-posting
+  Pfad: /opt/data/skills/marketing/affiliate-cross-posting/
+  Auslösebedingungen: Affiliate-Content cross-platform
+  Übernimmt: Multi-Channel
+
+================================================================================
+3. EXTERNE INTEGRATIONEN UND PLATTFORMEN
+================================================================================
+
+Plattform: Amazon Associates
+  API: Product Advertising API (Scraping via Desktop-UA curl)
+  Aktionen: Produktdaten scrapen; Affiliate-Links mit ?tag=balu17051-21
+  Credentials: Keine (Scraping)
+
+Plattform: GitHub Pages
+  API: Git (push via terminal), GitHub API
+  Aktionen: Statische Site deployen, Sitemap, Pages aktivieren
+  Credentials: Keine (SSH/HTTPS in Git-Config)
+
+Plattform: Zernio API
+  API: REST — POST /api/v1/posts, GET /api/v1/posts/{id},
+        GET /api/v1/accounts, POST /api/v1/media/upload-direct,
+        GET /api/v1/analytics/daily-metrics
+  Aktionen: Pinterest/Instagram-Pins, Media-Upload, Status-Check, Metriken
+  Credentials: ZERNIO_API_KEY
+
+Plattform: Pinterest
+  API: Via Zernio
+  Aktionen: Pins veröffentlichen, Boards, Metriken
+  Credentials: Via Zernio accountId
+
+Plattform: Instagram
+  API: Via Zernio
+  Aktionen: Feed-Posts (4:5 oder 1:1)
+  Credentials: Via Zernio accountId
+
+Plattform: Threads
+  API: Via BulkPublish (/opt/data/site-build/bulkpublish/bulkpublish_lib.py)
+  Aktionen: Tägliche Posts um 17:00 UTC
+  Credentials: BulkPublish-Credentials
+
+Plattform: TikTok
+  API: Via BulkPublish
+  Aktionen: Videos posten (Rotation)
+  Credentials: BulkPublish-Credentials
+
+Plattform: YouTube
+  API: Via BulkPublish
+  Aktionen: Videos uploaden (Rotation)
+  Credentials: BulkPublish-Credentials
+
+Plattform: Telegram Bot
+  API: Bot API
+  Aktionen: Benachrichtigungen an 7843837558, Report-Delivery, Cron-Alerts
+  Credentials: TELEGRAM_BOT_TOKEN, TELEGRAM_ALLOWED_USERS, TELEGRAM_HOME_CHANNEL
+
+Plattform: Ollama
+  API: OpenAI-kompatibel http://192.168.178.191:30040/v1
+  Aktionen: Lokales LLM (qwen2.5-coder:3b, 3,1B, 32k Kontext)
+  Credentials: OLLAMA_API_KEY
+
+Plattform: OpenRouter
+  API: https://openrouter.ai/api/v1
+  Aktionen: Vision-Modell (google/gemini-3.5-flash-lite), Fallback-LLM
+  Credentials: OPENROUTER_API_KEY
+
+Plattform: Google Gemini
+  API: https://generativelanguage.googleapis.com
+  Aktionen: Vision-Analyse (Fallback)
+  Credentials: GEMINI_API_KEY, GEMINI_BASE_URL
+
+Plattform: Digistore24
+  API: REST-API
+  Aktionen: Digitale Produkte erstellen/listen, Sales tracken
+  Credentials: DIGISTORE24_API_KEY
+
+Plattform: myDealz
+  API: Scraping (HTTP)
+  Aktionen: Deal-Scraping, Preisvergleiche
+  Credentials: Keine
+
+Plattform: WhatsApp
+  API: Hermes-Integration
+  Aktionen: (deaktiviert)
+  Credentials: WHATSAPP_ENABLED
+
+Plattform: 1Password / Bitwarden
+  API: Browser-Vault-Tools
+  Aktionen: Passwort-Manager-Integration
+  Credentials: Keine (Vault-basiert)
+
+Plattform: Firecrawl
+  API: web.backend: firecrawl in config.yaml
+  Aktionen: Web-Scraping-Fallback
+  Credentials: Keine
+
+Plattform: Browser-Use
+  API: browser.cloud_provider: browser-use
+  Aktionen: Cloud-Browser für komplexe Seiten
+  Credentials: Keine
+
+Plattform: RapidOCR
+  API: rapidocr-onnxruntime (via uv venv)
+  Aktionen: OCR-Zeichenzählung für DIY-Foto-Filter
+  Credentials: Keine
+
+Plattform: Pillow (PIL)
+  API: Python-Bibliothek (via uv venv)
+  Aktionen: Pin-Rendering, Bild-Compositing, Perceptual-Hash
+  Credentials: Keine
+
+Plattform: Cron (Hermes)
+  API: cronjob_manage
+  Aktionen: 23 geplante Jobs (siehe Kategorie 4)
+  Credentials: Keine
+
+================================================================================
+4. ZEITGESTEUERTE AUFGABEN (CRON JOBS)
+================================================================================
+
+4.1 Aktive Jobs (20)
+
+Job-ID: f0ef3b634a9a | Name: optimizer-taeglich
+  Zeitplan: 0 21 * * * | Zweck: CTA-/Platzierungs-Optimierung (optimizer.sh)
+  Status: OK | Letzte Ausführung: 12.10. 21:00
+
+Job-ID: 71d711a60fc0 | Name: preisradar-taeglich
+  Zeitplan: 30 4 * * * | Zweck: Preisradar, Amazon-Preisverfolgung (radar.sh)
+  Status: OK | Letzte Ausführung: 13.10. 04:54
+
+Job-ID: 534e56fa21b3 | Name: dealgifs-taeglich
+  Zeitplan: 15 6 * * * | Zweck: Preisstürze als animierte Pinterest-Pins (dealgifs.sh)
+  Status: OK | Letzte Ausführung: 13.10. 06:15
+
+Job-ID: ccd84c4bfff7 | Name: reel-fabrik
+  Zeitplan: 30 18 * * 1,4 | Zweck: Instagram-Reels Mo+Do (reelfab.sh)
+  Status: OK | Letzte Ausführung: 12.10. 18:30
+
+Job-ID: 9067d8d80fda | Name: uptime-radar-taeglich
+  Zeitplan: 15 5 * * * | Zweck: Website-Verfügbarkeit, Telegram-Alert (uptime.sh)
+  Status: OK | Letzte Ausführung: 13.10. 05:17
+
+Job-ID: 717d80b4bc2e | Name: quizdaten-woechentlich
+  Zeitplan: 20 7 * * 0 | Zweck: Geschenk-Finder Produktdatenpflege (quizdaten.sh)
+  Status: FEHLER | Letzte Ausführung: 11.10. 07:20
+
+Job-ID: 1fddf4feeac7 | Name: Daily Social Post TikTok+Threads (19 Uhr MEZ)
+  Zeitplan: 0 17 * * * | Zweck: Threads + TikTok-Posts (social_daily.py)
+  Status: OK | Letzte Ausführung: 12.10. 17:14
+
+Job-ID: ba8317d81bb2 | Name: tiktok-assets-taeglich
+  Zeitplan: 0 3 * * * | Zweck: Amazon-Bilder reparieren + TikTok-9:16-Assets (tiktok_assets.sh)
+  Status: OK | Letzte Ausführung: 13.10. 03:00
+
+Job-ID: 99f1dcc2ac31 | Name: sitecheck-watchdog
+  Zeitplan: 0 6 * * * | Zweck: Link- und Struktur-Check, Telegram nur bei Problemen (sitecheck.sh)
+  Status: OK | Letzte Ausführung: 13.10. 06:00
+
+Job-ID: a03a9c3860db | Name: link-audit-woechentlich
+  Zeitplan: 0 7 * * 1 | Zweck: Blog-Posts ohne Amazon-Tracking-Links (link_audit.sh)
+  Status: OK | Letzte Ausführung: 12.10. 07:00
+
+Job-ID: 41aa40f5356c | Name: placement-daily-taeglich
+  Zeitplan: every day at 8am | Zweck: Platzierungs-Schedule (placement_daily.sh)
+  Status: OK | Letzte Ausführung: 13.10. 08:00
+
+Job-ID: faad3cd3f53a | Name: social-daily-taeglich
+  Zeitplan: every day at 5pm | Zweck: DS24 + Zernio Social-Posts (social_daily.sh)
+  Status: FEHLER | Letzte Ausführung: 12.10. 17:00
+
+Job-ID: 22af45779c77 | Name: outreach-taeglich
+  Zeitplan: every day at 8:30am | Zweck: Outreach/Networking (outreach.sh)
+  Status: OK | Letzte Ausführung: 13.10. 08:30
+
+Job-ID: 080da084078b | Name: werbemaschine-taeglich
+  Zeitplan: 0 */5 * * * | Zweck: Haupt-Werbemaschine — Pins/Posts alle 5h (werbemaschine.sh)
+  Status: OK | Letzte Ausführung: 13.10. 10:01
+
+Job-ID: d247ff92f9c8 | Name: autonom-report
+  Zeitplan: 0 22 * * * | Zweck: 22h-Report an Andreas (daily_report.sh)
+  Status: OK | Letzte Ausführung: 12.10. 22:00
+
+Job-ID: 99783874e84d | Name: blog-artikel-autonom
+  Zeitplan: every 4320m (3 Tage) | Zweck: Blog-Artikel generieren + deployen
+  Status: OK | Letzte Ausführung: 10.10. 19:39
+
+Job-ID: 4982124423fc | Name: instagram-reel-fabrik
+  Zeitplan: 15 15 * * * | Zweck: Instagram-Reels (reel_fabrik_daily.sh)
+  Status: OK | Letzte Ausführung: 12.10. 15:15
+
+Job-ID: c6801290eb05 | Name: cta-performance-analyzer
+  Zeitplan: 0 6 * * 0 | Zweck: CTA-A/B-Analyse (cta_analyze_weekly.sh)
+  Status: OK | Letzte Ausführung: 11.10. 06:00
+
+Job-ID: a1b2c3d4e5f6 | Name: dealer-auto-taeglich
+  Zeitplan: 0 21 * * * | Zweck: Händler-Automatisierung (dealer_auto.sh)
+  Status: OK | Letzte Ausführung: 12.10. 21:00
+
+Job-ID: d2130a9d0624 | Name: youtube-metriken-taeglich
+  Zeitplan: 0 6 * * * | Zweck: YouTube-Metriken sammeln (youtube_daily.sh)
+  Status: OK | Letzte Ausführung: 13.10. 06:01
+
+4.2 Pausierte Jobs (3)
+
+Job-ID: 9a93505c0e07 | Name: performance-report-monatlich
+  Zeitplan: 0 9 1 * * | Grund: HTTP 402 — OpenRouter Guthaben zu niedrig (11.10. pausiert)
+
+Job-ID: 97fd10003c1b | Name: saison-kalender-check
+  Zeitplan: 0 8 1 * * | Grund: HTTP 402 — OpenRouter Guthaben zu niedrig (11.10. pausiert)
+
+Job-ID: provider-monitor-automation | Name: provider-monitor
+  Zeitplan: */5 * * * * | Grund: Script nicht gefunden (09.10. pausiert)
+
+================================================================================
+5. AUTOMATISIERTE GESCHÄFTSABLÄUFE (WORKFLOWS)
+================================================================================
+
+Workflow 5.1: Werbemaschine (werbemaschine.sh) — alle 5 Stunden
+  1. State laden (campaign_state.json — Historie, Pointer, CTA-Variante)
+  2. Nische nach weights.json + highlight-Flag auswählen (×1.8 Gewicht)
+  3. Produkt aus products.json ziehen (Rotation ohne Duplikate)
+  4. Pin bauen: make_pin() → 1000×1000, Produktbild, Preis-Banner, CTA-Pill
+  5. Zernio: POST /v1/media/upload-direct → öffentliche URL
+  6. Zernio: POST /v1/posts (nur Pinterest, boardId der Nische, publishNow=true)
+  7. Status-Check: GET /v1/posts/{id} → status='published'?
+  8. State speichern (Zeitstempel, Slug, ASIN, Post-ID, CTA-Variante)
+  9. Bei Fehler: Telegram-Alert
+
+Workflow 5.2: Social Daily (social_daily.py + social_daily.sh) — täglich 17:00 UTC
+  1. Zernio: Zwei Posts (Pinterest + Instagram) für Zernio-Kampagne
+  2. BulkPublish: Threads-Post (@gamerbrosis14)
+  3. BulkPublish: TikTok-Video (@gamerbrosis14)
+  4. BulkPublish: YouTube-Video (Gamerbrosis) — Rotation
+  5. Status-Check über jede Plattform
+  6. Bei Fehler: Telegram-Alert (aktuell: Threads/TikTok-Kanal nicht konfiguriert für DS24)
+
+Workflow 5.3: Preisradar (radar.sh) — täglich 04:30 UTC
+  1. Amazon-Preise für alle ASINs in products.json scrapen
+  2. Vergleich mit radar.json (letzte Preise)
+  3. Preisstürze erkennen (-15% oder mehr)
+  4. Alert-Log schreiben
+  5. Deal-Gifs (animierte Pins) für Preisstürze vorbereiten
+  6. Bei Alarm: Telegram-Alert
+
+Workflow 5.4: DIY-Pin-Engine (diy_engine.py) — als Teil der Werbemaschine
+  1. diy_guides.json laden (nur verifizierte Kits: ≥4.4★, ≥300 Bewertungen, 30-80 €)
+  2. Kit-Amazon-Seite scrapen (Desktop-UA, /dp/<ASIN>)
+  3. HiRes-Galerie extrahieren (ppd-Zone, SL1000)
+  4. Kontaktbögen bauen → vision_analyze: HANDS vs. POSE vs. RENDER
+  5. WERKELN-Filter: nur echte Arbeitsfotos behalten
+  6. Duplikat-Filter (Perceptual-Hash, Hamming ≤24)
+  7. Größenfilter (min-Kante <400px → raus)
+  8. make_diy_pin7.py: v6-Layout + Produktstreifen
+  9. Zernio: Upload + Post (nur Pinterest, 08:17 UTC next morning)
+  10. Status-Check → State speichern
+
+Workflow 5.5: 22h-Report (daily_report.sh) — täglich 22:00 UTC
+  1. Alle Plattform-Metriken sammeln:
+     - Pinterest: Zernio analytics/daily-metrics + PartnerNet-Screenshot (vision_analyze)
+     - GA4: Klicks, Sessions, Conversions
+     - Threads: 658 Posts
+     - TikTok: 657 Videos (@gamerbrosis14)
+     - YouTube: 679 Videos (Gamerbrosis)
+  2. KPI-Berechnung: Klicks, CVR, EPC, Einnahmen
+  3. Tagesbericht formatieren (copy-paste-freundlich)
+  4. An Andreas liefern (deliver='origin')
+
+Workflow 5.6: Blog-Artikel-Automat (github-pages-blog-automation) — alle 3 Tage
+  1. Thema aus seasonal.yaml + Kalender-Logik wählen
+  2. Artikel generieren (SEO-optimiert, DACH)
+  3. Produkte aus products.json einbetten
+  4. Auf GitHub Pages deployen
+  5. Telegram-Benachrichtigung
+
+Workflow 5.7: Preisradar-Deal-Gifs (dealgifs.sh) — täglich 06:15 UTC
+  1. radar.json nach Preisstürzen durchsuchen
+  2. Animierte GIFs für Pinterest-Pins bauen
+  3. Zernio: Upload + Post (Pinterest-only)
+
+Workflow 5.8: TikTok-Assets (tiktok_assets.sh) — täglich 03:00 UTC
+  1. Amazon-Bilder reparieren (repair_images.py — inkrementell)
+  2. TikTok-9:16-Video-Assets aus Bildern generieren
+  3. Für social_daily.py vorbereiten
+
+================================================================================
+6. SPEICHER UND KONFIGURATION
+================================================================================
+
+6.1 Speicherorte
+
+Produktdaten:        /opt/data/andreasstehmann-links/niches/*/products.json
+DIY-Guides:          /opt/data/site-build/data/diy_guides.json (+ diy_steps_text.json, diy_steps_hands.json)
+Recommender-Pool:    /opt/data/site-build/data/recommender_pool.json
+Preisradar:          /opt/data/andreasstehmann-links/radar/data/radar.json
+Werbemaschine-State: /opt/data/site-build/campaign_state.json (+ campaign_state_*.json)
+Weights (A/B):       /opt/data/site-build/weights.json
+Placement-Schedule:  /opt/data/site-build/placement_schedule.json
+Wunschliste:         /opt/data/site-build/data/wunschliste.json
+Saison-Kalender:     /opt/data/site-build/seasonal.yaml
+Nischen-Konfiguration:/opt/data/site-build/niches.yaml
+Site-Build-Konfig:   /opt/data/site-build/config.yaml
+Hermes-Konfig:       /opt/data/.hermes/config.yaml
+Env-Variablen:       /opt/data/.env, /opt/data/.hermes/.env, /opt/data/home/zernio-poster/.env
+Cron-Jobs:           /opt/data/.hermes/cron/
+Scripts:             /opt/data/scripts/, /opt/data/site-build/*.py, /opt/data/site-build/*.sh
+Assets (Bilder):     /opt/data/site-build/assets/
+Pins (Cache):        /opt/data/site-build/pins/
+Memory:              /opt/data/.hermes/memory/
+Skills:              /opt/data/skills/
+Venv:                /opt/data/site-build/.venv/ (Python 3.13 + Pillow, rapidocr)
+
+6.2 Wichtige Konfigurationsdateien
+
+/opt/data/.hermes/config.yaml
+  Steuert: Modell (meituan/longcat-2.5-preview), Agent-Max-Turns,
+           Tool-Loop-Guardrails, Skills-Liste, Allowlist, Fallbacks,
+           Browser-Provider (browser-use), Web-Backend (firecrawl),
+           Vision (OpenRouter/Gemini), Container-Resources
+
+/opt/data/site-build/niches.yaml
+  Steuert: Nischen-Definition, Highlight-Flags, Slugs, CTA-Varianten
+
+/opt/data/site-build/config.yaml
+  Steuert: Site-Build-spezifische Konfiguration
+
+/opt/data/site-build/seasonal.yaml
+  Steuert: Saison-Kalender DACH, Vorlauf 6 Wochen
+
+/opt/data/.env
+  Steuert: Telegram, Ollama, OpenRouter, Gemini, Digistore24, WhatsApp
+
+/opt/data/home/zernio-poster/.env
+  Steuert: Zernio-API-Key
+
+================================================================================
+7. RISIKEN UND ABHÄNGIGKEITEN
+================================================================================
+
+7.1 Ohne menschliche Freigabe laufende Schritte
+
+Pinterest-Pins (Werbemaschine)
+  Automatisierung: Vollautomatisch
+  Risiko: Falscher Preis/Titel wenn Amazon-ASIN recycelt wird
+  Gegenmaßnahme: VERTRAUENSREGEL — Live-Prüfung vor Post
+
+CTA-Rotation (campaign_engine.py)
+  Automatisierung: Vollautomatisch
+  Risiko: Niedrige Conversion bei falscher CTA-Variante
+
+Preisradar (radar.sh)
+  Automatisierung: Vollautomatisch, Alert nur bei Sturz
+  Risiko: False-Positives durch Amazon-Preisschwankungen
+
+22h-Report (daily_report.sh)
+  Automatisierung: Vollautomatisch
+  Risiko: Metriken ohne Kontext können irreführen
+
+Blog-Artikel (github-pages-blog-automation)
+  Automatisierung: Vollautomatisch
+  Risiko: Qualität hängt von Prompt und Produktdaten ab
+
+Social Daily (Threads/TikTok/YouTube)
+  Automatisierung: Vollautomatisch
+  Risiko: Kanal-Konfiguration (aktuell: DS24-Kanäle fehlen)
+
+DIY-Pins (diy_engine.py)
+  Automatisierung: Vollautomatisch
+  Risiko: Foto-Qualität hängt von Amazon-Galerie ab
+
+Placement-Daily (placement_daily.sh)
+  Automatisierung: Vollautomatisch
+  Risiko: Veraltete Platzierungen wenn Struktur sich ändert
+
+7.2 Single-Point-of-Failure-Abhängigkeiten
+
+Zernio API
+  Auswirkung: Pinterest + Instagram-Pins komplett lahm
+  Workaround: Manuelle Posts via Browser
+
+Amazon ASINs
+  Auswirkung: Produktdaten falsch/recycelt
+  Workaround: Live-Prüfung via /dp/<ASIN>
+
+OpenRouter
+  Auswirkung: LLM-Cronjobs (Blog, Report, saison-Kalender) pausiert
+  Workaround: Ollama als Fallback (qwen2.5-coder:3b)
+
+Telegram
+  Auswirkung: Keine Alerts bei Problemen
+  Workaround: deliver='origin' als Fallback
+
+GitHub Pages
+  Auswirkung: Site nicht erreichbar
+  Workaround: Lokales Backup in andreasstehmann-links_backup_*
+
+Pillow (Python)
+  Auswirkung: Pin-Rendering unmöglich
+  Workaround: System-Python hat Pillow nicht — venv erforderlich
+
+7.3 Fehlerbehandlung und Benachrichtigungen
+
+sitecheck-watchdog (täglich 06:00)
+  Deckung: Telegram-Alert nur bei Problemen
+
+uptime-radar-taeglich (täglich 05:15)
+  Deckung: Telegram-Alert bei Website-Down
+
+cronjob_manage failure_deliver
+  Deckung: Konfigurierbar per Job (aktuell nicht gesetzt)
+
+provider-monitor (pausiert)
+  Deckung: Sollte alle 5 Min Provider prüfen — aktuell deaktiviert (Script fehlt)
+
+tool_loop_guardrails in config
+  Deckung: Max 5 exakte Fehler, max 8 gleiche Fehler, dann harter Stopp
+
+blocked-page-recovery Skill
+  Deckung: Fallback wenn Amazon-Scraping blockiert
+
+7.4 Bekannte offene Probleme
+
+1. quizdaten-woechentlich — Crashed seit 11.10. (ValueError in recommender.py:145)
+2. social-daily-taeglich — DS24-Kanäle nicht konfiguriert für Threads/TikTok
+3. performance-report-monatlich + saison-kalender-check — Pausiert wegen OpenRouter-Guthaben (402)
+4. provider-monitor — Pausiert wegen fehlendem Script
+
+================================================================================
+ZUSAMMENFASSUNG
+================================================================================
+
+Kern-Tools:              22
+Browser-Vault-Tools:      5
+Deferred-Tools:            3
+Skills:                  66
+Externe Plattformen:     18
+Aktive Cron-Jobs:        20
+Pausierte Cron-Jobs:      3
+Workflows (End-to-End):   8
+Konfigurationsdateien:    6
+
+================================================================================
+ENDE DER INVENTARLISTE
+================================================================================
