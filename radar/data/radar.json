@@ -1,16 +1,6 @@
 {
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "deals": [
-  {
-   "asin": "B076QDSYCH",
-   "preis": 17.49,
-   "median": 45.99,
-   "spar_pct": 62,
-   "titel": "B076QDSYCH",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B076QDSYCH",
-   "tag": 18
-  },
   {
    "asin": "B015DR863C",
    "preis": 55.0,
@@ -19,7 +9,17 @@
    "titel": "B015DR863C",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015DR863C",
-   "tag": 26
+   "tag": 27
+  },
+  {
+   "asin": "B0DLWDHQLT",
+   "preis": 16.98,
+   "median": 33.56,
+   "spar_pct": 49,
+   "titel": "B0DLWDHQLT",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0DLWDHQLT",
+   "tag": 17
   },
   {
    "asin": "B0GVSK5S4R",
@@ -29,17 +29,7 @@
    "titel": "DN DECONATION Vintage Flock Kürbis Deko, Herbst Thanksgiving Dekoratio",
    "nische": "weihnachten-advent-selected",
    "link": "https://www.amazon.de/dp/B0GVSK5S4R",
-   "tag": 14
-  },
-  {
-   "asin": "B0D6Z4L6BW",
-   "preis": 41.4,
-   "median": 68.99,
-   "spar_pct": 40,
-   "titel": "B0D6Z4L6BW",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0D6Z4L6BW",
-   "tag": 6
+   "tag": 15
   },
   {
    "asin": "B0GS91YJZP",
@@ -49,27 +39,17 @@
    "titel": "B0GS91YJZP",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0GS91YJZP",
-   "tag": 15
+   "tag": 16
   },
   {
    "asin": "B0F541XX7X",
-   "preis": 35.99,
+   "preis": 39.99,
    "median": 56.52,
-   "spar_pct": 36,
+   "spar_pct": 29,
    "titel": "B0F541XX7X",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0F541XX7X",
-   "tag": 5
-  },
-  {
-   "asin": "B0FTGGYVQD",
-   "preis": 19.99,
-   "median": 29.99,
-   "spar_pct": 33,
-   "titel": "B0FTGGYVQD",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0FTGGYVQD",
-   "tag": 15
+   "tag": 6
   },
   {
    "asin": "B0DR7SM2W5",
@@ -79,27 +59,7 @@
    "titel": "B0DR7SM2W5",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DR7SM2W5",
-   "tag": 15
-  },
-  {
-   "asin": "B0H4ZD5NCJ",
-   "preis": 12.99,
-   "median": 17.97,
-   "spar_pct": 28,
-   "titel": "B0H4ZD5NCJ",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H4ZD5NCJ",
-   "tag": 8
-  },
-  {
-   "asin": "B013DQF2S2",
-   "preis": 55.0,
-   "median": 74.9,
-   "spar_pct": 27,
-   "titel": "B013DQF2S2",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B013DQF2S2",
-   "tag": 26
+   "tag": 16
   },
   {
    "asin": "B0H4ZM9CRF",
@@ -109,17 +69,17 @@
    "titel": "B0H4ZM9CRF",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H4ZM9CRF",
-   "tag": 10
+   "tag": 11
   },
   {
-   "asin": "B0F4KHWH9M",
-   "preis": 139.99,
-   "median": 191.3,
-   "spar_pct": 27,
-   "titel": "B0F4KHWH9M",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0F4KHWH9M",
-   "tag": 6
+   "asin": "B013DQF2S2",
+   "preis": 55.0,
+   "median": 74.58,
+   "spar_pct": 26,
+   "titel": "B013DQF2S2",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B013DQF2S2",
+   "tag": 27
   },
   {
    "asin": "B0H9M8K1M6",
@@ -129,17 +89,7 @@
    "titel": "B0H9M8K1M6",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H9M8K1M6",
-   "tag": 19
-  },
-  {
-   "asin": "B0D49FWWBY",
-   "preis": 16.98,
-   "median": 22.98,
-   "spar_pct": 26,
-   "titel": "B0D49FWWBY",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0D49FWWBY",
-   "tag": 16
+   "tag": 20
   },
   {
    "asin": "B015MXF752",
@@ -149,7 +99,7 @@
    "titel": "B015MXF752",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015MXF752",
-   "tag": 8
+   "tag": 9
   },
   {
    "asin": "B09C1V1J24",
@@ -159,37 +109,7 @@
    "titel": "B09C1V1J24",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B09C1V1J24",
-   "tag": 18
-  },
-  {
-   "asin": "B0CPHZRV99",
-   "preis": 29.99,
-   "median": 39.99,
-   "spar_pct": 25,
-   "titel": "B0CPHZRV99",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0CPHZRV99",
-   "tag": 14
-  },
-  {
-   "asin": "B0BHSXFTGH",
-   "preis": 18.99,
-   "median": 24.99,
-   "spar_pct": 24,
-   "titel": "B0BHSXFTGH",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0BHSXFTGH",
-   "tag": 15
-  },
-  {
-   "asin": "B000GI0NGW",
-   "preis": 13.01,
-   "median": 16.91,
-   "spar_pct": 23,
-   "titel": "B000GI0NGW",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B000GI0NGW",
-   "tag": 26
+   "tag": 19
   },
   {
    "asin": "B0FQV5NNRN",
@@ -199,27 +119,27 @@
    "titel": "B0FQV5NNRN",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FQV5NNRN",
-   "tag": 20
+   "tag": 21
   },
   {
-   "asin": "B004QOKYCU",
-   "preis": 22.5,
-   "median": 29.04,
+   "asin": "B0H8HPLCJC",
+   "preis": 10.79,
+   "median": 13.99,
    "spar_pct": 23,
-   "titel": "B004QOKYCU",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B004QOKYCU",
-   "tag": 22
+   "titel": "Serviettenringe Herbst, Metall Tischdeko Gold, 6 Stück Set",
+   "nische": "weihnachten-advent-selected",
+   "link": "https://www.amazon.de/dp/B0H8HPLCJC",
+   "tag": 18
   },
   {
-   "asin": "B0F8QMVV29",
-   "preis": 69.99,
-   "median": 89.99,
-   "spar_pct": 22,
-   "titel": "B0F8QMVV29",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0F8QMVV29",
-   "tag": 16
+   "asin": "B000GI0NGW",
+   "preis": 13.51,
+   "median": 16.91,
+   "spar_pct": 20,
+   "titel": "B000GI0NGW",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B000GI0NGW",
+   "tag": 27
   },
   {
    "asin": "B0FGV27D2S",
@@ -229,27 +149,47 @@
    "titel": "B0FGV27D2S",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FGV27D2S",
-   "tag": 17
-  },
-  {
-   "asin": "B08BZCQQ5P",
-   "preis": 20.58,
-   "median": 24.99,
-   "spar_pct": 18,
-   "titel": "B08BZCQQ5P",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B08BZCQQ5P",
-   "tag": 6
-  },
-  {
-   "asin": "B0CLTNH8CN",
-   "preis": 19.94,
-   "median": 23.99,
-   "spar_pct": 17,
-   "titel": "B0CLTNH8CN",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0CLTNH8CN",
    "tag": 18
+  },
+  {
+   "asin": "B0B8ZMV71R",
+   "preis": 19.99,
+   "median": 24.9,
+   "spar_pct": 20,
+   "titel": "B0B8ZMV71R",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0B8ZMV71R",
+   "tag": 14
+  },
+  {
+   "asin": "B0H4ZD5NCJ",
+   "preis": 12.99,
+   "median": 15.99,
+   "spar_pct": 19,
+   "titel": "B0H4ZD5NCJ",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H4ZD5NCJ",
+   "tag": 9
+  },
+  {
+   "asin": "B0DY7R7KF4",
+   "preis": 20.07,
+   "median": 24.31,
+   "spar_pct": 17,
+   "titel": "PATIKIL 2 Stück Herbst Girlande Ahornblätter, 175 cm Herbst Hängende, ",
+   "nische": "weihnachten-advent-selected",
+   "link": "https://www.amazon.de/dp/B0DY7R7KF4",
+   "tag": 14
+  },
+  {
+   "asin": "B0FTGGYVQD",
+   "preis": 24.99,
+   "median": 29.99,
+   "spar_pct": 17,
+   "titel": "B0FTGGYVQD",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FTGGYVQD",
+   "tag": 16
   },
   {
    "asin": "B0FCN11LYD",
@@ -259,17 +199,7 @@
    "titel": "B0FCN11LYD",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FCN11LYD",
-   "tag": 26
-  },
-  {
-   "asin": "B0DJ5S6ZPQ",
-   "preis": 30.99,
-   "median": 36.99,
-   "spar_pct": 16,
-   "titel": "B0DJ5S6ZPQ",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0DJ5S6ZPQ",
-   "tag": 15
+   "tag": 27
   },
   {
    "asin": "B0BVQHZFM9",
@@ -279,7 +209,7 @@
    "titel": "B0BVQHZFM9",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0BVQHZFM9",
-   "tag": 26
+   "tag": 27
   },
   {
    "asin": "B0C2ZCVRZN",
@@ -289,7 +219,7 @@
    "titel": "B0C2ZCVRZN",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C2ZCVRZN",
-   "tag": 26
+   "tag": 27
   },
   {
    "asin": "B0DZT5MXPS",
@@ -299,7 +229,7 @@
    "titel": "B0DZT5MXPS",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DZT5MXPS",
-   "tag": 26
+   "tag": 27
   },
   {
    "asin": "B07N11YB7N",
@@ -309,7 +239,7 @@
    "titel": "B07N11YB7N",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B07N11YB7N",
-   "tag": 26
+   "tag": 27
   },
   {
    "asin": "B0DR317BFR",
@@ -319,7 +249,17 @@
    "titel": "B0DR317BFR",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0DR317BFR",
-   "tag": 24
+   "tag": 25
+  },
+  {
+   "asin": "B076QDSYCH",
+   "preis": 38.88,
+   "median": 45.99,
+   "spar_pct": 15,
+   "titel": "B076QDSYCH",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B076QDSYCH",
+   "tag": 19
   },
   {
    "asin": "B07P25BPT5",
@@ -329,7 +269,7 @@
    "titel": "B07P25BPT5",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B07P25BPT5",
-   "tag": 17
+   "tag": 18
   },
   {
    "asin": "B0C84FT1LJ",
@@ -339,7 +279,7 @@
    "titel": "B0C84FT1LJ",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C84FT1LJ",
-   "tag": 17
+   "tag": 18
   },
   {
    "asin": "B0CBV7DRK7",
@@ -349,7 +289,7 @@
    "titel": "B0CBV7DRK7",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0CBV7DRK7",
-   "tag": 18
+   "tag": 19
   },
   {
    "asin": "B0BW87GSWN",
@@ -359,37 +299,7 @@
    "titel": "B0BW87GSWN",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0BW87GSWN",
-   "tag": 7
-  },
-  {
-   "asin": "B09BJWQBZ8",
-   "preis": 16.14,
-   "median": 18.99,
-   "spar_pct": 15,
-   "titel": "B09BJWQBZ8",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B09BJWQBZ8",
-   "tag": 16
-  },
-  {
-   "asin": "B00PFWXAU0",
-   "preis": 38.23,
-   "median": 44.99,
-   "spar_pct": 15,
-   "titel": "B00PFWXAU0",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B00PFWXAU0",
-   "tag": 5
-  },
-  {
-   "asin": "B0H8YXG8S4",
-   "preis": 50.99,
-   "median": 59.99,
-   "spar_pct": 15,
-   "titel": "B0H8YXG8S4",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H8YXG8S4",
-   "tag": 6
+   "tag": 8
   },
   {
    "asin": "B0F1D9N76S",
@@ -399,7 +309,7 @@
    "titel": "B0F1D9N76S",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0F1D9N76S",
-   "tag": 5
+   "tag": 6
   },
   {
    "asin": "B0D4M91TLB",
@@ -409,7 +319,37 @@
    "titel": "B0D4M91TLB",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0D4M91TLB",
-   "tag": 13
+   "tag": 14
+  },
+  {
+   "asin": "B01KMAYKIU",
+   "preis": 64.95,
+   "median": 76.46,
+   "spar_pct": 15,
+   "titel": "B01KMAYKIU",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B01KMAYKIU",
+   "tag": 9
+  },
+  {
+   "asin": "B0G6XD2VD1",
+   "preis": 14.44,
+   "median": 16.99,
+   "spar_pct": 15,
+   "titel": "B0G6XD2VD1",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0G6XD2VD1",
+   "tag": 8
+  },
+  {
+   "asin": "B07VNBLLZ6",
+   "preis": 13.59,
+   "median": 15.99,
+   "spar_pct": 15,
+   "titel": "B07VNBLLZ6",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B07VNBLLZ6",
+   "tag": 6
   },
   {
    "asin": "B07TPFW4BG",
@@ -419,17 +359,7 @@
    "titel": "B07TPFW4BG",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B07TPFW4BG",
-   "tag": 26
-  },
-  {
-   "asin": "B0H8HPLCJC",
-   "preis": 11.99,
-   "median": 13.99,
-   "spar_pct": 14,
-   "titel": "Serviettenringe Herbst, Metall Tischdeko Gold, 6 Stück Set",
-   "nische": "weihnachten-advent-selected",
-   "link": "https://www.amazon.de/dp/B0H8HPLCJC",
-   "tag": 17
+   "tag": 27
   },
   {
    "asin": "B0GF7S81CQ",
@@ -439,27 +369,7 @@
    "titel": "B0GF7S81CQ",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0GF7S81CQ",
-   "tag": 9
-  },
-  {
-   "asin": "B004QGXND0",
-   "preis": 34.58,
-   "median": 39.9,
-   "spar_pct": 13,
-   "titel": "B004QGXND0",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B004QGXND0",
-   "tag": 11
-  },
-  {
-   "asin": "B0DF1XD9ZY",
-   "preis": 14.94,
-   "median": 16.99,
-   "spar_pct": 12,
-   "titel": "B0DF1XD9ZY",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0DF1XD9ZY",
-   "tag": 26
+   "tag": 10
   },
   {
    "asin": "B0CGL56VQH",
@@ -469,7 +379,17 @@
    "titel": "B0CGL56VQH",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0CGL56VQH",
-   "tag": 9
+   "tag": 10
+  },
+  {
+   "asin": "B0F1CJD2MD",
+   "preis": 59.84,
+   "median": 68.26,
+   "spar_pct": 12,
+   "titel": "B0F1CJD2MD",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0F1CJD2MD",
+   "tag": 12
   }
  ]
 }
