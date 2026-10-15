@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Ratgeber — Andreas Stehmann</title>
+<meta name="description" content="Praktische Tipps und Guides für Wohnen, Kochen, Wellness und mehr — ehrlich getestet und handverlesen.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/blog/">
+<meta property="og:title" content="Ratgeber — Andreas Stehmann">
+<meta property="og:description" content="Praktische Tipps und Guides für Wohnen, Kochen, Wellness und mehr.">
+<meta property="og:type" content="website">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  --bg: #f8f9fa;
+  --bg-section: #ffffff;
+  --text: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #86868b;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-light: #eff6ff;
+  --accent-warm: #f59e0b;
+  --accent-warm-light: #fffbeb;
+  --border: #d2d2d7;
+  --border-light: #e8e8ed;
+  --card-bg: #ffffff;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
+  --shadow: 0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,.16);
+  --transition: .3s cubic-bezier(.25, .1, .25, 1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; }
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVIGATION
+   ═══════════════════════════════════════════════════════════════ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: rgba(255,255,255,.75);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--border-light);
+  z-index: 1000;
+  transition: box-shadow var(--transition), background var(--transition);
+}
+.nav.scrolled {
+  background: rgba(255,255,255,.95);
+  box-shadow: var(--shadow);
+}
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--text);
+  transition: opacity .2s;
+}
+.nav-logo:hover { opacity: .7; }
+.nav-logo span { color: var(--accent); }
+.nav-menu {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+}
+.nav-menu a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  transition: color .2s, background .2s;
+}
+.nav-menu a:hover, .nav-menu a.active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.nav-toggle svg { width: 24px; height: 24px; stroke: var(--text); }
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════════ */
+.hero {
+  padding: 140px 24px 48px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION
+   ═══════════════════════════════════════════════════════════════ */
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+.section-header {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section-header h2 {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+.section-header p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FILTER & SEARCH
+   ═══════════════════════════════════════════════════════════════ */
+.filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.search-box {
+  position: relative;
+  max-width: 480px;
+}
+.search-box input {
+  width: 100%;
+  padding: 12px 16px 12px 44px;
+  font-size: 15px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  color: var(--text);
+  outline: none;
+}
+.search-box input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.1);
+}
+.search-box input::placeholder {
+  color: var(--text-tertiary);
+}
+.search-box .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  stroke: var(--text-tertiary);
+  pointer-events: none;
+}
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--border-light);
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.filter-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.filter-chip.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 4px 14px rgba(37,99,235,.3);
+}
+.filter-chip .count {
+  font-size: 11px;
+  opacity: .8;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BLOG GRID
+   ═══════════════════════════════════════════════════════════════ */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.blog-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+  opacity: 0;
+  transition: opacity .3s;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border);
+}
+.blog-card:hover::after { opacity: 1; }
+.blog-card .card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.blog-card .category-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  border-radius: 12px;
+  background: var(--accent-light);
+  color: var(--accent);
+}
+.blog-card .date {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.blog-card .title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.blog-card .desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-card .link {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.blog-card .link svg {
+  width: 14px; height: 14px;
+  transition: transform .2s;
+}
+.blog-card:hover .link svg { transform: translateX(4px); }
+
+.no-results {
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════════════ */
+.footer {
+  background: #1d1d1f;
+  color: #a1a1a6;
+  padding: 56px 24px 24px;
+  margin-top: 80px;
+}
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-brand .logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-brand .logo span { color: #64d2ff; }
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 300px;
+}
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a {
+  font-size: 14px;
+  color: #a1a1a6;
+  transition: color .2s;
+}
+.footer-col a:hover { color: #fff; }
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.footer-bottom p { line-height: 1.5; }
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0; right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+  }
+  .nav-menu.open { display: flex; }
+  .nav-toggle { display: block; }
+  .hero { padding: 120px 20px 32px; }
+  .section-header { flex-direction: column; align-items: flex-start; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 420px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero { padding: 100px 16px 24px; }
+  .hero h1 { font-size: 28px; }
+  .search-box { max-width: 100%; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMATION
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.hero { animation: fadeInUp .8s cubic-bezier(.25, .1, .25, 1) both; }
+.section { animation: fadeIn .6s ease both; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAVIGATION ═══════════════ -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Andreas<span> Stehmann</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="/">Startseite</a></li>
+      <li><a href="/#nischen">Nischen</a></li>
+      <li><a href="/blog/" class="active">Ratgeber</a></li>
+      <li><a href="/#ueber-mich">Über mich</a></li>
+      <li><a href="/#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero-badge">✨ Praktische Guides</div>
+  <h1>Ratgeber</h1>
+  <p>Praktische Tipps und Guides für Wohnen, Kochen, Wellness und mehr</p>
+</section>
+
+<!-- ═══════════════ BLOG-LISTE ═══════════════ -->
+<section class="section" id="blog-liste">
+  <div class="section-header">
+    <div>
+      <h2>Alle Artikel</h2>
+      <p>Neueste Beiträge zuerst</p>
+    </div>
+  </div>
+
+  <div class="filter-bar">
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Artikel suchen..." autocomplete="off">
+    </div>
+    <div class="filter-chips" id="filterChips">
+      <button class="filter-chip active" data-category="alle">Alle</button>
+      <button class="filter-chip" data-category="wohnen">Wohnen <span class="count">(4)</span></button>
+      <button class="filter-chip" data-category="smart-home">Smart Home <span class="count">(4)</span></button>
+      <button class="filter-chip" data-category="wellness">Wellness <span class="count">(1)</span></button>
+      <button class="filter-chip" data-category="weihnachten">Weihnachten <span class="count">(1)</span></button>
+    </div>
+  </div>
+
+  <div class="blog-grid" id="blogGrid">
+    <a href="/blog/zimmerpflanzen-dekorieren/" class="blog-card" data-category="wohnen" data-title="Zimmerpflanzen dekorieren: Übertöpfe, Regale & Arrangements | Wohn-Fieber">
+      <div class="card-meta">
+        <span class="category-tag">Wohnen</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Zimmerpflanzen dekorieren: Übertöpfe, Regale & Arrangements | Wohn-Fieber</span>
+      <span class="desc">Zimmerpflanzen dekorieren mit System: richtige Übertopf-Größe, Höhenstaffelung im Regal, Arrangements in Dreiergruppen und Pflege-Tipps für jede Lichtzone.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/wellness/" class="blog-card" data-category="wellness" data-title="Wellness – Top-Reihen & Tests | andreasstehmann-diy">
+      <div class="card-meta">
+        <span class="category-tag">Wellness</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Wellness – Top-Reihen & Tests | andreasstehmann-diy</span>
+      <span class="desc">Ein wellness Ratgeber mit 3 top Produkten, Preisen und Tipps – alle auf echten Tests basierend.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/weihnachten-advent/" class="blog-card" data-category="weihnachten" data-title="Weihnachten advent – Top-Reihen & Tests | andreasstehmann-diy">
+      <div class="card-meta">
+        <span class="category-tag">Weihnachten</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Weihnachten advent – Top-Reihen & Tests | andreasstehmann-diy</span>
+      <span class="desc">Ein weihnachten advent Ratgeber mit 3 top Produkten, Preisen und Tipps – alle auf echten Tests basierend.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/wohnzimmer-gemuetlich-gestalten/" class="blog-card" data-category="wohnen" data-title="Wohnzimmer gemütlich gestalten: 12 Ideen, die sofort wirken | Wohn-Fieber">
+      <div class="card-meta">
+        <span class="category-tag">Wohnen</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Wohnzimmer gemütlich gestalten: 12 Ideen, die sofort wirken | Wohn-Fieber</span>
+      <span class="desc">Ein Wohnzimmer ohne Wohlfühl-Faktor hat meist dasselbe Problem: Licht, textile Ebenen, Pflanzen. Die 12 Ideen nach Wirkung sortiert, ohne teure Möbel.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/tapo-p110-smarte-wlan-steckdose/" class="blog-card" data-category="smart-home" data-title="TP-Link Tapo P110 Smart WLAN Steckdose mit Energieverbrauchskontrolle Test 2026 — Smarte Steckdose mit Strommessung | Andreas Stehmann">
+      <div class="card-meta">
+        <span class="category-tag">Smart Home</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">TP-Link Tapo P110 Smart WLAN Steckdose mit Energieverbrauchskontrolle Test 2026 — Smarte Steckdose mit Strommessung | Andreas Stehmann</span>
+      <span class="desc">TP-Link Tapo P110 Smart WLAN Steckdose mit Energieverbrauchskontrolle: Die TP-Link Tapo P110 ist eine WLAN-Steckdose mit integrierter Energieverbrauchskontrolle — für unter 10 €. Sie erlaubt Zeitschaltungen per App und ze</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/wandbeschilderung-diy/" class="blog-card" data-category="wohnen" data-title="Wandbeschilderung — Die 10 besten DIY-Wanddekos">
+      <div class="card-meta">
+        <span class="category-tag">Wohnen</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Wandbeschilderung — Die 10 besten DIY-Wanddekos</span>
+      <span class="desc">Selbstklebende Wandbeschilderung, Wandtattoos & Wandaufkleber — einfach & stylisch.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/schlafzimmer-gemuetlich-gestalten/" class="blog-card" data-category="wohnen" data-title="Schlafzimmer gemütlich gestalten: Bett, Licht & Textilien richtig gewählt | Andreas Stehmann">
+      <div class="card-meta">
+        <span class="category-tag">Wohnen</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Schlafzimmer gemütlich gestalten: Bett, Licht & Textilien richtig gewählt | Andreas Stehmann</span>
+      <span class="desc">Ehrlicher Ratgeber: Schlafzimmer gemütlich gestalten mit echten Produkt-Tipps von Andreas.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/smart-home-licht-lampen/" class="blog-card" data-category="smart-home" data-title="Smart-Home-Licht — Die 10 besten Lampen & Leuchten">
+      <div class="card-meta">
+        <span class="category-tag">Smart Home</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Smart-Home-Licht — Die 10 besten Lampen & Leuchten</span>
+      <span class="desc">Smarte Beleuchtung für dein Zuhause: Philips Hue, WLAN-Lampen, LED-Leuchten & mehr.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/smart-home/" class="blog-card" data-category="smart-home" data-title="Smart home – Top-Reihen & Tests | andreasstehmann-diy">
+      <div class="card-meta">
+        <span class="category-tag">Smart Home</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Smart home – Top-Reihen & Tests | andreasstehmann-diy</span>
+      <span class="desc">Ein smart home Ratgeber mit 3 top Produkten, Preisen und Tipps – alle auf echten Tests basierend.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="/blog/smart-home-einsteiger-tipps/" class="blog-card" data-category="smart-home" data-title="Smart Home einsteigen 2026 — Die besten 8 Produkte fürs intelligente Zuhause">
+      <div class="card-meta">
+        <span class="category-tag">Smart Home</span>
+        <span class="date">2026-10-13</span>
+      </div>
+      <span class="title">Smart Home einsteigen 2026 — Die besten 8 Produkte fürs intelligente Zuhause</span>
+      <span class="desc">So startest du mit Smart Home — 8 Produkte unter 150€, bewährt, günstig. Schritt für Schritt mit Andreas Stehmann.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer" id="kontakt">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Andreas<span> Stehmann</span></div>
+        <p>Kuratierte Empfehlungen für einen schönen, praktischen Alltag. Unabhängig, ehrlich, handverlesen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Startseite</a></li>
+          <li><a href="/#nischen">Nischen</a></li>
+          <li><a href="/blog/">Ratgeber</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/datenschutz/">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:kontakt@andreasstehmann.de">E-Mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><b>Transparenz:</b> Als Amazon-Partner verdiene ich an qualifizierten Käufen. Der Preis bleibt für dich gleich.</p>
+      <p>© 2026 Andreas Stehmann</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Sticky Navigation Shadow
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  nav.classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// Mobile Menü
+const toggle = document.getElementById('navToggle');
+const menu = document.getElementById('navMenu');
+toggle.addEventListener('click', () => menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+// ─── BLOG FILTER & SEARCH ─────────────────────────────────────
+const searchInput = document.getElementById('searchInput');
+const filterChips = document.getElementById('filterChips');
+const blogCards = document.querySelectorAll('.blog-card');
+const blogGrid = document.getElementById('blogGrid');
+const allChips = filterChips.querySelectorAll('.filter-chip');
+
+let activeCategory = 'alle';
+let searchQuery = '';
+
+function applyFilters() {
+  let visibleCount = 0;
+  blogCards.forEach(card => {
+    const category = card.getAttribute('data-category');
+    const title = (card.getAttribute('data-title') || '').toLowerCase();
+    const desc = (card.querySelector('.desc')?.textContent || '').toLowerCase();
+    const matchesCategory = activeCategory === 'alle' || category === activeCategory;
+    const matchesSearch = !searchQuery || title.includes(searchQuery) || desc.includes(searchQuery);
+    if (matchesCategory && matchesSearch) {
+      card.style.display = '';
+      visibleCount++;
+    } else {
+      card.style.display = 'none';
+    }
+  });
+
+  // No-results Hinweis
+  let noResults = document.getElementById('noResults');
+  if (visibleCount === 0) {
+    if (!noResults) {
+      noResults = document.createElement('div');
+      noResults.id = 'noResults';
+      noResults.className = 'no-results';
+      noResults.textContent = 'Keine Artikel gefunden. Versuche einen anderen Suchbegriff oder Filter.';
+      blogGrid.parentNode.insertBefore(noResults, blogGrid.nextSibling);
+    }
+  } else if (noResults) {
+    noResults.remove();
+  }
+}
+
+// Suche
+searchInput.addEventListener('input', (e) => {
+  searchQuery = e.target.value.trim().toLowerCase();
+  applyFilters();
+});
+
+// Kategorie-Filter
+allChips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    allChips.forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    activeCategory = chip.getAttribute('data-category');
+    applyFilters();
+  });
+});
+</script>
+</body>
+</html>
