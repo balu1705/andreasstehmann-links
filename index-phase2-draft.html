@@ -1,0 +1,1614 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Andreas‘ Empfehlungen — Schön & Praktisch für deinen Alltag</title>
+<meta name="description" content="Kuratierte Produkt-Empfehlungen rund ums Zuhause: Wohnen, Küche, Wellness, Fitness & Sport und mehr — handverlesen, nicht durchgeklickt.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/">
+<meta property="og:title" content="Andreas‘ Empfehlungen — Schön & Praktisch">
+<meta property="og:description" content="Kuratierte Produkt-Empfehlungen rund ums Zuhause.">
+<meta property="og:type" content="website">
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   RESET & BASE
+   ═══════════════════════════════════════════════════════════════ */
+:root {
+  --bg: #f8f9fa;
+  --bg-section: #ffffff;
+  --text: #1d1d1f;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #86868b;
+  --accent: #0066cc;
+  --accent-hover: #0077ed;
+  --accent-light: #e8f4fd;
+  --border: #d2d2d7;
+  --border-light: #e8e8ed;
+  --card-bg: #ffffff;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
+  --shadow: 0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+  --shadow-xl: 0 16px 48px rgba(0,0,0,.16);
+  --transition: .3s cubic-bezier(.25, .1, .25, 1);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; height: auto; }
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVIGATION
+   ═══════════════════════════════════════════════════════════════ */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: rgba(255,255,255,.75);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--border-light);
+  z-index: 1000;
+  transition: box-shadow var(--transition), background var(--transition);
+}
+.nav.scrolled {
+  background: rgba(255,255,255,.95);
+  box-shadow: var(--shadow);
+}
+.nav-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  color: var(--text);
+  transition: opacity .2s;
+}
+.nav-logo:hover { opacity: .7; }
+.nav-logo span { color: var(--accent); }
+.nav-menu {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+}
+.nav-menu a {
+  display: block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  transition: color .2s, background .2s;
+}
+.nav-menu a:hover, .nav-menu a.active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+.nav-toggle svg { width: 24px; height: 24px; stroke: var(--text); }
+
+/* ═══════════════════════════════════════════════════════════════
+   HERO
+   ═══════════════════════════════════════════════════════════════ */
+.hero {
+  padding: 140px 24px 64px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--text) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.55;
+}
+.hero-cta {
+  display: inline-flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all var(--transition);
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(0,102,204,.3);
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,102,204,.35);
+}
+.btn-secondary {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--text-tertiary);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SECTION
+   ═══════════════════════════════════════════════════════════════ */
+.section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+.section-header {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+.section-header h2 {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+.section-header p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+.section-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  transition: opacity .2s;
+}
+.section-link:hover { opacity: .7; }
+
+/* ═══════════════════════════════════════════════════════════════
+   CATEGORY GRID
+   ═══════════════════════════════════════════════════════════════ */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.category-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border);
+}
+.category-card .icon {
+  font-size: 24px;
+  line-height: 1;
+}
+.category-card .name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.category-card .count {
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   NICHE CARDS
+   ═══════════════════════════════════════════════════════════════ */
+.niche-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.niche-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.niche-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.niche-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border);
+}
+.niche-card:hover::before { opacity: 1; }
+.niche-card .emoji {
+  font-size: 28px;
+  line-height: 1;
+}
+.niche-card .title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  line-height: 1.4;
+}
+.niche-card .desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.niche-card .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+.niche-card .meta .count {
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BLOG PREVIEW
+   ═══════════════════════════════════════════════════════════════ */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+.blog-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.blog-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #64d2ff);
+  opacity: 0;
+  transition: opacity .3s;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border);
+}
+.blog-card:hover::after { opacity: 1; }
+.blog-card .date {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.blog-card .title {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.blog-card .desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog-card .link {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: auto;
+  padding-top: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.blog-card .link svg {
+  width: 14px; height: 14px;
+  transition: transform .2s;
+}
+.blog-card:hover .link svg { transform: translateX(4px); }
+
+/* ═══════════════════════════════════════════════════════════════
+   ABOUT / TRUST
+   ═══════════════════════════════════════════════════════════════ */
+.about {
+  background: linear-gradient(135deg, #f8f9fa, #e8f4fd);
+  border-radius: var(--radius-xl);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  margin: 48px 0;
+  border: 1px solid var(--border-light);
+}
+.about-text h2 {
+  font-size: clamp(22px, 4vw, 28px);
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: -.02em;
+}
+.about-text p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 480px;
+}
+.about-badge {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  min-width: 180px;
+}
+.about-badge .emoji { font-size: 40px; }
+.about-badge .name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.about-badge .role {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════════════ */
+.footer {
+  background: #1d1d1f;
+  color: #a1a1a6;
+  padding: 56px 24px 24px;
+  margin-top: 80px;
+}
+.footer-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-brand .logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-brand .logo span { color: #64d2ff; }
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 300px;
+}
+.footer-col h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 10px; }
+.footer-col a {
+  font-size: 14px;
+  color: #a1a1a6;
+  transition: color .2s;
+}
+.footer-col a:hover { color: #fff; }
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+.footer-bottom p { line-height: 1.5; }
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .category-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0; right: 0;
+    background: #fff;
+    flex-direction: column;
+    padding: 12px;
+    border-bottom: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+  }
+  .nav-menu.open { display: flex; }
+  .nav-toggle { display: block; }
+  .hero { padding: 120px 20px 48px; }
+  .about { grid-template-columns: 1fr; padding: 32px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .niche-grid { grid-template-columns: 1fr 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
+  .section-header { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 420px) {
+  .niche-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .hero { padding: 100px 16px 32px; }
+  .hero h1 { font-size: 28px; }
+  .btn { padding: 12px 20px; font-size: 14px; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMATION
+   ═══════════════════════════════════════════════════════════════ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.hero { animation: fadeInUp .8s cubic-bezier(.25, .1, .25, 1) both; }
+.section { animation: fadeIn .6s ease both; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ NAVIGATION ═══════════════ -->
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">Andreas<span>‘ Empfehlungen</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="/" class="active">Startseite</a></li>
+      <li><a href="#nischen">Nischen</a></li>
+      <li><a href="#ratgeber">Ratgeber</a></li>
+      <li><a href="#ueber-mich">Über mich</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero-badge">✨ Handverlesen & unabhängig</div>
+  <h1>Schön & praktisch<br>für deinen Alltag</h1>
+  <p>Kuratierte Produkt-Empfehlungen — ehrlich getestet, nicht durchgeklickt. Finde, was wirklich passt.</p>
+  <div class="hero-cta">
+    <a href="#nischen" class="btn btn-primary">Nischen entdecken →</a>
+    <a href="#ratgeber" class="btn btn-secondary">Ratgeber lesen</a>
+  </div>
+</section>
+
+<!-- ═══════════════ KATEGORIEN ═══════════════ -->
+<section class="section" id="kategorien">
+  <div class="section-header">
+    <div>
+      <h2>Kategorien</h2>
+      <p>6 Themenbereiche — übersichtlich sortiert</p>
+    </div>
+  </div>
+  <div class="category-grid">
+    <a href="/wohnen/" class="category-card">
+      <span class="icon">🏠</span>
+      <span class="name">Wohnen</span>
+      <span class="count">21 Produkte</span>
+    </a>
+    <a href="/kochen/" class="category-card">
+      <span class="icon">🍳</span>
+      <span class="name">Küche</span>
+      <span class="count">21 Produkte</span>
+    </a>
+    <a href="/wellness/" class="category-card">
+      <span class="icon">🧘</span>
+      <span class="name">Wellness</span>
+      <span class="count">19 Produkte</span>
+    </a>
+    <a href="/smart-home/" class="category-card">
+      <span class="icon">📱</span>
+      <span class="name">Smart Home</span>
+      <span class="count">24 Produkte</span>
+    </a>
+    <a href="/geschenke/" class="category-card">
+      <span class="icon">🎁</span>
+      <span class="name">Geschenke</span>
+      <span class="count">17 Produkte</span>
+    </a>
+    <a href="/fitness/" class="category-card">
+      <span class="icon">💪</span>
+      <span class="name">Fitness & Sport</span>
+      <span class="count">14 Produkte</span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════ NISCHEN ═══════════════ -->
+<section class="section" id="nischen">
+  <div class="section-header">
+    <div>
+      <h2>Alle Nischen</h2>
+      <p>94 Themenbereiche — sortiert nach Aktualität</p>
+    </div>
+  </div>
+  <div class="niche-grid">
+    <a href="niches/baby-kindersicherheit/" class="niche-card">
+      <span class="emoji">👶</span>
+      <span class="title">Baby & Kindersicherheit</span>
+      <span class="desc">Sichere Ausstattung fuer die Kleinsten — getestet und empfohlen. 5 kuratierte Baby & Kindersicherheit-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/babywelt/" class="niche-card">
+      <span class="emoji">👶</span>
+      <span class="title">Babywelt</span>
+      <span class="desc">Die schoensten Erstausstattungs-Stuecke fuer Babyzimmer. 5 kuratierte Babywelt-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/backen-kochen/" class="niche-card">
+      <span class="emoji">🧁</span>
+      <span class="title">Backen & Kochen</span>
+      <span class="desc">Für Küchenmomente, die man gern wiederholt. 20 kuratierte Backen & Kochen-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">20 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/bad-deko/" class="niche-card">
+      <span class="emoji">🛁</span>
+      <span class="title">Bad-Deko — Die 10 besten Deko-Ideen für dein Bad</span>
+      <span class="desc">Elegante Bad-Deko: Wandtattoos, Accessoires, Duschvorhänge & mehr — gemütlich & funktional.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/bad-organisation/" class="niche-card">
+      <span class="emoji">🛁</span>
+      <span class="title">Bad & Organisation</span>
+      <span class="desc">Ordentlich, sauber, schön — dein Bad aufgeräumt. 13 kuratierte Bad & Organisation-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">13 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/balkon-garten/" class="niche-card">
+      <span class="emoji">🌿</span>
+      <span class="title">Balkon & Garten</span>
+      <span class="desc">Dein grünes Wohnzimmer — auch bei 4 m². 13 kuratierte Balkon & Garten-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">13 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/balkon-moebel-lounge/" class="niche-card">
+      <span class="emoji">🌿</span>
+      <span class="title">Balkon Möbel Lounge</span>
+      <span class="desc">Klappmöbel, Hängesessel und wetterfeste Kleinlounges: der Balkon wird Wohnzimmer 5 kuratierte Balkon Möbel Lounge-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/beauty-pflege/" class="niche-card">
+      <span class="emoji">💄</span>
+      <span class="title">Beauty & Pflege</span>
+      <span class="desc">Routinen, die deine Haut wirklich mögen. 23 kuratierte Beauty & Pflege-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">23 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/bestseller/" class="niche-card">
+      <span class="emoji">🔥</span>
+      <span class="title">Alle Bestseller</span>
+      <span class="desc">Beliebte Dauerbrenner aus Kueche, Haus und Wohlbefinden. 5 kuratierte Alle Bestseller-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/buecher-frauen-ue25/" class="niche-card">
+      <span class="emoji">🔥</span>
+      <span class="title">10 Bücher, die Frauen ab 25 gerade nicht aus der Hand legen wollen</span>
+      <span class="desc">Die 10 aktuell beliebtesten Bücher für Frauen ab 25: Romance, Psychothriller, Feel-Good und Selbstfindung — alle unter 15 €, mit Bewertungen von Amazon.de und Buch-Quiz. Stand: 21.09.2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">0 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/cocktail-abend/" class="niche-card">
+      <span class="emoji">🍹</span>
+      <span class="title">Cocktail-Abend</span>
+      <span class="desc">Shaker, Bar-Zubehör, Gläser und Dekanter: die Heimbar wird Wirklichkeit — 5 kuratierte Cocktail-Abend-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/diy/" class="niche-card">
+      <span class="emoji">🧰</span>
+      <span class="title">DIY & Gestalten</span>
+      <span class="desc">Selbermachen, das schön wird — Material und Werkzeug. 18 kuratierte DIY & Gestalten-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">18 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/duftkerzen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Duftkerzen & ambient</span>
+      <span class="desc">Kerzen, die nach Urlaub riechen — Sojawachs statt Paraffin. 5 kuratierte Duftkerzen & ambient-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/esstisch-gaeste/" class="niche-card">
+      <span class="emoji">🪑</span>
+      <span class="title">Esstisch & Gäste</span>
+      <span class="desc">Schön gedeckt: Alles für Dinner-Abende mit Freunden und Familie. 10 kuratierte Esstisch & Gäste-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/finanztools/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Finanztools</span>
+      <span class="desc">Apps & Werkzeuge für Geldmanagement, Budgetplanung und Finanzüberblick 20 kuratierte Finanztools-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">20 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/fitness-apps/" class="niche-card">
+      <span class="emoji">💪</span>
+      <span class="title">Fitness-Apps — Die 10 besten Apps für dein Training</span>
+      <span class="desc">Kostenlose & premium Fitness-Apps: Workouts, Ernährung, Tracking & mehr — für iOS & Android.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/fitness-homegym/" class="niche-card">
+      <span class="emoji">💪</span>
+      <span class="title">Fitness-Homegym — Die 10 besten Geräte für dein Zuhause</span>
+      <span class="desc">Dein Home-Gym: Kompakte Fitnessgeräte, Hanteln, Kraftstationen & mehr — ohne teures Studio.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/fitness-sport/" class="niche-card">
+      <span class="emoji">💪</span>
+      <span class="title">Fitness & Sport</span>
+      <span class="desc">Dein Home-Gym, kompakt: Training, Erholung und Fortschritt — ohne teures 9 kuratierte Fitness & Sport-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">9 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/fitness-uebung-zuhause/" class="niche-card">
+      <span class="emoji">💪</span>
+      <span class="title">Fitness zuhause</span>
+      <span class="desc">Kompaktes Trainingsequipment fuer Zuhause — effektiv und leise. 5 kuratierte Fitness zuhause-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/flur-ordnung-stauraum/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Flur Ordnung & Stauraum</span>
+      <span class="desc">Schmale Schuhregale, Garderoben und Kommoden: der Flur als Visitenkarte — 5 kuratierte Flur Ordnung & Stauraum-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/fotos-kamera/" class="niche-card">
+      <span class="emoji">📷</span>
+      <span class="title">Foto & Kamera</span>
+      <span class="desc">Klare Bilder ohne Technikstress — Einsteiger bis Fortgeschrittene. 5 kuratierte Foto & Kamera-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/gaeste-willkommen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Weinregale & Flaschenregale</span>
+      <span class="desc">Gastfreundschaft in Flaeschchenform: stabile Weinregale aus Akazie und Bambus 5 kuratierte Weinregale & Flaschenregale-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/gaming-monitor/" class="niche-card">
+      <span class="emoji">🎮</span>
+      <span class="title">Gaming-Monitor — Die 10 besten Displays für 2026</span>
+      <span class="desc">Die besten Gaming-Monitore 2026: 144Hz, 4K, Curved & Budget — finde dein perfektes Display.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/garten-balkon-saisonal/" class="niche-card">
+      <span class="emoji">🌿</span>
+      <span class="title">Garten & Balkon</span>
+      <span class="desc">Saisonale Begleiter fuer Draussen: Beet, Balkon, Terrasse. 5 kuratierte Garten & Balkon-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/garten-helfer/" class="niche-card">
+      <span class="emoji">🌱</span>
+      <span class="title">Gartenhelfer Herbst</span>
+      <span class="desc">Laubsauger, Hochbeete und Gewächshäuser — den Garten winterfest machen. 5 kuratierte Gartenhelfer Herbst-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/garten-pflanzen/" class="niche-card">
+      <span class="emoji">🌱</span>
+      <span class="title">Garten-Pflanzen — Die 10 besten Pflanzen für deinen Garten</span>
+      <span class="desc">Pflegeleichte Gartenpflanzen, Blumen, Sträucher & mehr — für Anfänger & Profis.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/geschenke/" class="niche-card">
+      <span class="emoji">🎁</span>
+      <span class="title">Geschenke für sie</span>
+      <span class="desc">Schenken, das im Kopf bleibt — kuratiert für Frauen 25+. 12 kuratierte Geschenke für sie-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">12 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/geschenke-fuer-sie/" class="niche-card">
+      <span class="emoji">🎁</span>
+      <span class="title">Geschenke für Sie</span>
+      <span class="desc">Wellness-Sets, Duftkerzen und digitale Fotoalben — Geschenke, die wirklich 5 kuratierte Geschenke für Sie-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/gesundes-fruehstueck/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Gesundes Frühstück</span>
+      <span class="desc">Slow Juicer, Vorratsdose und Frühstücks-Bretter: der beste Start in den Tag 5 kuratierte Gesundes Frühstück-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/haare-styling/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Haare & Styling</span>
+      <span class="desc">Glänzende Tage, schöne Frisur — ohne Salon. 15 kuratierte Haare & Styling-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">15 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/handy-zubehoer/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Handy & Zubehör</span>
+      <span class="desc">Damit alles geladen, sicher und griffbereit ist. 15 kuratierte Handy & Zubehör-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">15 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/haushaltshelfer/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Haushaltshelfer</span>
+      <span class="desc">Kleine Helfer, große Wirkung — weniger Aufwand im Alltag. 20 kuratierte Haushaltshelfer-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">20 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/hauskleidung/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Wohlfühl-Zuhause</span>
+      <span class="desc">Bademantel, Loungewear & Co. — gemütlich aussehen darf sein. 5 kuratierte Wohlfühl-Zuhause-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/haustier-damen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Hund & Katze</span>
+      <span class="desc">Für die wichtigsten Familienmitglieder — schön und praktisch. 14 kuratierte Hund & Katze-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">14 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/heissluftfritteuse/" class="niche-card">
+      <span class="emoji">💨</span>
+      <span class="title">Heißluftfritteuse & Zubehör</span>
+      <span class="desc">Crispy in Minuten: Das Zubehör, das deinen Airfryer wirklich besser macht. 10 kuratierte Heißluftfritteuse & Zubehör-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/heissluftfritteuse-profi/" class="niche-card">
+      <span class="emoji">💨</span>
+      <span class="title">Heißluftfritteusen Profi</span>
+      <span class="desc">Airfryer mit Dual-Zone, XL-Modelle und Mini-Öfen — knusprig kochen ohne Frittieren. 5 kuratierte Heißluftfritteusen Profi-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/heizung-waerme/" class="niche-card">
+      <span class="emoji">🌡️</span>
+      <span class="title">Heizung & Wärme clever</span>
+      <span class="desc">Infrarotheizung, smarte Thermostate und Heizdecke — warm durch den Winter ohne hohe Rechnung. 5 kuratierte Heizung & Wärme clever-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/herbst-deko/" class="niche-card">
+      <span class="emoji">🎨</span>
+      <span class="title">Herbst- & Halloween-Deko</span>
+      <span class="desc">Gemütliche Herbststimmung: Kürbis, Kerzen & Herbstakzente für dein Zuhause. 10 kuratierte Herbst- & Halloween-Deko-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/herbst-winter-deko/" class="niche-card">
+      <span class="emoji">🎨</span>
+      <span class="title">Herbst- & Winterdeko</span>
+      <span class="desc">Licht, Duft und Textilien für die dunkle Jahreszeit — Projektoren, Diffuser, 9 kuratierte Herbst- & Winterdeko-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">9 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/home-office/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Home-Office</span>
+      <span class="desc">Konzentriert arbeiten, bequem sitzen, aufgeräumt bleiben. 13 kuratierte Home-Office-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">13 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/home-office-organisation/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Home-Office Ordnung</span>
+      <span class="desc">Aufgeraeumt arbeiten: alles griffbereit, nichts im Weg. 5 kuratierte Home-Office Ordnung-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/home-workout-damen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Home-Workout für Damen</span>
+      <span class="desc">Hantel-Sets, Vibrationsplatte und Fitnessmatten — das Workout für zu Hause. 5 kuratierte Home-Workout für Damen-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/hundebedarf-damen/" class="niche-card">
+      <span class="emoji">🐕</span>
+      <span class="title">Hundebedarf</span>
+      <span class="desc">Qualitaet fuer den besten Freund — Bett, Box & Beschäftigung. 5 kuratierte Hundebedarf-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/hundehaltung/" class="niche-card">
+      <span class="emoji">🐕</span>
+      <span class="title">Hundehaltung</span>
+      <span class="desc">Alltag mit Hund: Leine, Halsband & kuschelige Ruheplaetze. 5 kuratierte Hundehaltung-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kaffee/" class="niche-card">
+      <span class="emoji">☕</span>
+      <span class="title">Kaffee & Genuss — Die 10 besten Kaffeevollautomaten</span>
+      <span class="desc">Schmaler Kaffeevollautomat, Kaffeemaschinen & Zubehör — für perfekten Kaffee zuhause.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kaffee-genuss/" class="niche-card">
+      <span class="emoji">☕</span>
+      <span class="title">Kaffee-Genuss</span>
+      <span class="desc">Barista-Gefuehl in 5 Minuten — alles fürs gute Glas. 5 kuratierte Kaffee-Genuss-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kaffeevollautomat-bestseller/" class="niche-card">
+      <span class="emoji">🚗</span>
+      <span class="title">Kaffeevollautomat Bestseller 100-150€ — 7 echte DACH-Empfehlungen</span>
+      <span class="desc">Die beliebtesten Kaffeevollautomaten unter 150€ im Vergleich — De'Longhi Magnifica, Philips Series 1200, Krups Espresseria. Mit echtem Bild und direktem Amazon-Link.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">7 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/katzenbedarf-edel/" class="niche-card">
+      <span class="emoji">🐈</span>
+      <span class="title">Katzenbedarf</span>
+      <span class="desc">Edle Katzenmoebel, die auch deinem Zuhause gut stehen. 5 kuratierte Katzenbedarf-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kleintiere-arena/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Kleintier-Paradies</span>
+      <span class="desc">Ställe, Häuser und Spielzeug in Holz-Optik: Kaninchen, Meerschweinchen & 5 kuratierte Kleintier-Paradies-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kuechen-gadgets/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Küchen-Gadgets</span>
+      <span class="desc">Die Teile, die man nicht mehr hergibt — praktisch und schön. 11 kuratierte Küchen-Gadgets-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">11 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kuechen-organisation-profi/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Küchen-Organisation Profi</span>
+      <span class="desc">Gewürzregale, luftdichte Vorratsdosen und Schubsysteme: die Küche sauber 5 kuratierte Küchen-Organisation Profi-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kuechenmaschine-profi-bestseller/" class="niche-card">
+      <span class="emoji">🔥</span>
+      <span class="title">Küchenmaschine Bestseller 100-150€ — Profi-Geräte für die Küche</span>
+      <span class="desc">Die besten Küchenmaschinen zwischen 100€ und 150€ — Bosch MultiTalent 3, Ninja PrecisionPro, KESSER 3in1 mit Fleischwolf & Mixer.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">6 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kuechenorganisation/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Küchenorganisation</span>
+      <span class="desc">Schrank für Schrank: Ordnung, die im Alltag funktioniert. 15 kuratierte Küchenorganisation-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">15 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/kurzhaar-pflege-damen/" class="niche-card">
+      <span class="emoji">🏥</span>
+      <span class="title">Kurzhaar-Pflege</span>
+      <span class="desc">Schnelles, gesundes Styling fuer kurze Haare. 5 kuratierte Kurzhaar-Pflege-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/lauf-ausruestung-damen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Lauf-Ausrüstung Damen</span>
+      <span class="desc">Laufjacke, Gürteltasche und Sports-BH: Training an der frischen Luft — Ausrüstung 5 kuratierte Lauf-Ausrüstung Damen-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/lego/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">LEGO für Erwachsene</span>
+      <span class="desc">Entspannen mit Händen im Kopf — Blumen, Bilder & Bausätze. 14 kuratierte LEGO für Erwachsene-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">14 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/lesezeit/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Lesezeit & Bücher</span>
+      <span class="desc">Für die schönste Stunde des Tages — mit dem richtigen Zubehör. 5 kuratierte Lesezeit & Bücher-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/maedchenzimmer-aktuell/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Maedchenzimmer</span>
+      <span class="desc">Wohnen wie gross: Schminken, Lernen, Kuscheln. 5 kuratierte Maedchenzimmer-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/mikrowelle-klein/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Mikrowelle Klein — Die 10 besten kompakten Modelle</span>
+      <span class="desc">Platzsparende Mikrowellen für Küche, Büro & Wohnung: kompakt, leistungsstark & günstig.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/nachhaltige-haushaltsprodukte/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Nachhaltiger Haushalt</span>
+      <span class="desc">Langlebig und schonend: Haushalt ohne Einweg-Plastik. 5 kuratierte Nachhaltiger Haushalt-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/online-marketing/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Online-Marketing</span>
+      <span class="desc">SEO, Social Media & E-Mail-Marketing — Strategien und Tools für den digitalen 20 kuratierte Online-Marketing-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">20 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/outdoor-abenteuer/" class="niche-card">
+      <span class="emoji">🏕️</span>
+      <span class="title">Outdoor & Camping</span>
+      <span class="desc">Fuers Wochenende draussen: Rucksack, Schlafsack, Ausruestung. 5 kuratierte Outdoor & Camping-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/parfum-damen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Parfum Damen</span>
+      <span class="desc">Dein Duft, dein Auftritt — die Klassiker und neue Favoriten. 14 kuratierte Parfum Damen-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">14 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/parfum-herren/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Parfum Herren</span>
+      <span class="desc">Die Düfte, die ankommen — kuratiert statt durchgeklickt. 15 kuratierte Parfum Herren-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">15 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/pflanzen/" class="niche-card">
+      <span class="emoji">🪴</span>
+      <span class="title">Pflanzen & Terrarien</span>
+      <span class="desc">Grün für jede Ecke — pflegeleicht und schön. 13 kuratierte Pflanzen & Terrarien-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">13 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/pflanzen-terrarien/" class="niche-card">
+      <span class="emoji">🪴</span>
+      <span class="title">Pflanzen & Terrarien</span>
+      <span class="desc">Grüne Wohnoase: Terrarien, Aquarien & Pflanzenmöbel. 5 kuratierte Pflanzen & Terrarien-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/produktivitaet/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Produktivität</span>
+      <span class="desc">Planer, Timer & Tools für effizientes Arbeiten und Zeitmanagement 20 kuratierte Produktivität-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">20 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/reise-organisation/" class="niche-card">
+      <span class="emoji">🍦</span>
+      <span class="title">Reise & Organisation</span>
+      <span class="desc">Weniger stressig packen, mehr ankommen. 14 kuratierte Reise & Organisation-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">14 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/reiseausruestung-leicht/" class="niche-card">
+      <span class="emoji">🍦</span>
+      <span class="title">Reiseausruestung</span>
+      <span class="desc">Leicht reisen, ankommen ohne Aerger: Trolley, Rucksack & Koffer. 5 kuratierte Reiseausruestung-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/saugroboter-bestseller/" class="niche-card">
+      <span class="emoji">🤖</span>
+      <span class="title">Saugroboter Bestseller 100-150€ — 6 Akku-Saugroboter im Vergleich</span>
+      <span class="desc">Die besten Saugroboter zwischen 100€ und 150€ für Hartböden und Teppiche — iRobot Roomba i3, Ecovacs Deebot N10+ mit Wischfunktion.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">6 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/schlaf-topper/" class="niche-card">
+      <span class="emoji">😴</span>
+      <span class="title">Schlaf & Komfort</span>
+      <span class="desc">Matratzen-Topper, Massagekissen und Keilkissen — besser schlafen im Winter. 5 kuratierte Schlaf & Komfort-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/schlafen-wohlfuehlzimmer/" class="niche-card">
+      <span class="emoji">😴</span>
+      <span class="title">Schlafen & Wohlfühlzimmer</span>
+      <span class="desc">Alles für erholsame Nächte und morgens gute Laune. 15 kuratierte Schlafen & Wohlfühlzimmer-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">15 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/schmoren-genuss/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Schmoren & Fondue</span>
+      <span class="desc">Slow Cooker, Bräter und Fondue-Sets — gemütliche Schmorgerichte für kalte 5 kuratierte Schmoren & Fondue-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/schmuck-aufbewahrung/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Schmuck aufbewahren</span>
+      <span class="desc">Ketten ohne Knoten, Ohrringe komplett — schön verstaut. 5 kuratierte Schmuck aufbewahren-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/schneeflocken-deko/" class="niche-card">
+      <span class="emoji">🎨</span>
+      <span class="title">Schneeflocken Deko — Die 10 besten Winter-Dekorationen</span>
+      <span class="desc">Winterliche Schneeflocken-Deko für drinnen & draußen: glitzernd, gemütlich & festlich.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/schrank-organisation/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Schrank & Ordnung</span>
+      <span class="desc">Der Kleiderschrank, der morgens Freude macht — System statt Chaos. 5 kuratierte Schrank & Ordnung-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/smart-home/" class="niche-card">
+      <span class="emoji">📱</span>
+      <span class="title">Smart Home bequem</span>
+      <span class="desc">Technik, die dir Arbeit abnimmt — ohne Elektrokurs. 22 kuratierte Smart Home bequem-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">22 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/smart-home-bestseller/" class="niche-card">
+      <span class="emoji">📱</span>
+      <span class="title">Smart Home Bestseller 100-150€ — Geräte für das intelligente Zuhause</span>
+      <span class="desc">Die besten Smart-Home-Geräte zwischen 100€ und 150€ — Amazon Echo Spot, Leistungsmodule, Haushaltshelfer für Alltag.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">6 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/smart-home-licht/" class="niche-card">
+      <span class="emoji">📱</span>
+      <span class="title">Smart-Home-Licht — Die 10 besten Lampen & Leuchten</span>
+      <span class="desc">Smarte Beleuchtung für dein Zuhause: Philips Hue, WLAN-Lampen, LED-Leuchten & mehr.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/smart-home-sicherheit/" class="niche-card">
+      <span class="emoji">📱</span>
+      <span class="title">Smart Home Sicherheit</span>
+      <span class="desc">WLAN-Steckdosen, Innenkameras und Leck-Sensoren: das vernetzte, sichere Zuhause 5 kuratierte Smart Home Sicherheit-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/spa-beauty-erlebnis/" class="niche-card">
+      <span class="emoji">💄</span>
+      <span class="title">Spa & Beauty</span>
+      <span class="desc">Wie im Wellness-Urlaub: Spa-Rituale fuer zuhause. 5 kuratierte Spa & Beauty-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/tattoo-vorrichtungen/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Tattoo & Kunst</span>
+      <span class="desc">Fuer Motive mit Bleistift bis Nadel: Tattoo-Set und Kuenstlerbedarf. 5 kuratierte Tattoo & Kunst-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/tee-lounge/" class="niche-card">
+      <span class="emoji">🍵</span>
+      <span class="title">Tee-Lounge</span>
+      <span class="desc">Tee-Geschenksets, Kannen mit Tassen und Sorten-Boxen — Genuss für Winternachmittage. 5 kuratierte Tee-Lounge-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/tischkultur-elegant/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Tischkultur Elegant</span>
+      <span class="desc">Teller-, Glas- und Besteck-Sets mit Kerzenständern: der gedeckte Tisch als 5 kuratierte Tischkultur Elegant-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/waesche-pflege/" class="niche-card">
+      <span class="emoji">🏥</span>
+      <span class="title">Wäsche & Pflege-Ordnung</span>
+      <span class="desc">Wäsche-Chaos adé: Ordnung rund ums Waschen, Trocknen und Pflegen. 10 kuratierte Wäsche & Pflege-Ordnung-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wandbeschilderung/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Wandbeschilderung — Die 10 besten DIY-Wanddekos</span>
+      <span class="desc">Selbstklebende Wandbeschilderung, Wandtattoos & Wandaufkleber — einfach & stylisch.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">10 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wanddeko/" class="niche-card">
+      <span class="emoji">🎨</span>
+      <span class="title">Wanddeko & Bilder</span>
+      <span class="desc">Deine Wand, deine Geschichte — Gallery-Wall-Sets ohne Renovieren. 5 kuratierte Wanddeko & Bilder-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/weihnachten-advent/" class="niche-card">
+      <span class="emoji">🎄</span>
+      <span class="title">Weihnachten & Advent</span>
+      <span class="desc">Besinnliche Vorfreude: Adventskranz, Deko & Geschenke verpacken wie ein Profi. 5 kuratierte Weihnachten & Advent-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wellness/" class="niche-card">
+      <span class="emoji">🧘</span>
+      <span class="title">Wellness zuhause</span>
+      <span class="desc">Auszeit ohne Termin — Spa-Momente für dich. 19 kuratierte Wellness zuhause-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">19 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wellness-massage-bestseller/" class="niche-card">
+      <span class="emoji">🧘</span>
+      <span class="title">Massagegerät Bestseller 100-150€ — Wellness für zu Hause</span>
+      <span class="desc">Die besten Massagegeräte und Wellness-Bestseller zwischen 100€ und 150€ — Massagesitzauflage, Shiatsu-Massage, Wärmflasche Premium.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">6 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wohnen-deko/" class="niche-card">
+      <span class="emoji">🎨</span>
+      <span class="title">Wohnen & Deko</span>
+      <span class="desc">Gemütliche Wohnideen für dein Zuhause — liebevoll ausgewählt. 16 kuratierte Wohnen & Deko-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">16 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wohnen-traumumfeld/" class="niche-card">
+      <span class="emoji">🏠</span>
+      <span class="title">Traumhaft Wohnen</span>
+      <span class="desc">Grosse Wuerfe fuer dein Zuhause: Regale, Spiegel, Raumteiler. 5 kuratierte Traumhaft Wohnen-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/wohnwand-design/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Wand & Galerie</span>
+      <span class="desc">Bilderwand-Sets, Desigregale und Wanduhren — die Wohnzimmer-Wand wird zum 5 kuratierte Wand & Galerie-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">5 Produkte</span>
+      </span>
+    </a>
+    <a href="niches/yoga-meditation/" class="niche-card">
+      <span class="emoji">📦</span>
+      <span class="title">Yoga & Meditation</span>
+      <span class="desc">Ruhe reinbringen, Kraft holen — zuhause, 10 Minuten reichen. 13 kuratierte Yoga & Meditation-Favoriten mit echtem Bild und Preis, aktualisiert 2026.</span>
+      <span class="meta">
+        <span>2026-10-13</span>
+        <span class="count">13 Produkte</span>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════ RATGEBER ═══════════════ -->
+<section class="section" id="ratgeber">
+  <div class="section-header">
+    <div>
+      <h2>Ausgewählte Ratgeber</h2>
+      <p>Neueste Artikel und Guides</p>
+    </div>
+  </div>
+  <div class="blog-grid">
+    <a href="blog/zimmerpflanzen-dekorieren/" class="blog-card">
+      <span class="date">2026-10-13</span>
+      <span class="title">Zimmerpflanzen dekorieren: Übertöpfe, Regale & Arrangements | Wohn-Fieber</span>
+      <span class="desc">Zimmerpflanzen dekorieren mit System: richtige Übertopf-Größe, Höhenstaffelung im Regal, Arrangements in Dreiergruppen und Pflege-Tipps für jede Lichtzone.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="blog/wellness/" class="blog-card">
+      <span class="date">2026-10-13</span>
+      <span class="title">Wellness – Top-Reihen & Tests | andreasstehmann-diy</span>
+      <span class="desc">Ein wellness Ratgeber mit 3 top Produkten, Preisen und Tipps – alle auf echten Tests basierend.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="blog/weihnachten-advent/" class="blog-card">
+      <span class="date">2026-10-13</span>
+      <span class="title">Weihnachten advent – Top-Reihen & Tests | andreasstehmann-diy</span>
+      <span class="desc">Ein weihnachten advent Ratgeber mit 3 top Produkten, Preisen und Tipps – alle auf echten Tests basierend.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+    <a href="blog/wohnzimmer-gemuetlich-gestalten/" class="blog-card">
+      <span class="date">2026-10-13</span>
+      <span class="title">Wohnzimmer gemütlich gestalten: 12 Ideen, die sofort wirken | Wohn-Fieber</span>
+      <span class="desc">Ein Wohnzimmer ohne Wohlfühl-Faktor hat meist dasselbe Problem: Licht, textile Ebenen, Pflanzen. Die 12 Ideen nach Wirkung sortiert, ohne teure Möbel.</span>
+      <span class="link">Weiterlesen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════ ÜBER MICH ═══════════════ -->
+<section class="section" id="ueber-mich">
+  <div class="about">
+    <div class="about-text">
+      <h2>Über mich</h2>
+      <p>Ich bin Andreas und kuratiere seit 2026 handverlesene Produkt-Empfehlungen rund ums Zuhause. Mein Ziel: Dir zeigen, was wirklich lohnt — ohne Affiliate-Flut, ohne Bewertungen kaufen.</p>
+    </div>
+    <div class="about-badge">
+      <div class="emoji">👤</div>
+      <div class="name">Andreas Stehmann</div>
+      <div class="role">Kurator & Gründer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer" id="kontakt">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Andreas<span>‘ Empfehlungen</span></div>
+        <p>Kuratierte Empfehlungen für einen schönen, praktischen Alltag. Unabhängig, ehrlich, handverlesen.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Startseite</a></li>
+          <li><a href="#nischen">Nischen</a></li>
+          <li><a href="#ratgeber">Ratgeber</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/datenschutz/">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:kontakt@andreasstehmann.de">E-Mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><b>Transparenz:</b> Als Amazon-Partner verdiene ich an qualifizierten Käufen. Der Preis bleibt für dich gleich.</p>
+      <p>© 2026 Andreas Stehmann</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Sticky Navigation Shadow
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  nav.classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// Mobile Menü
+const toggle = document.getElementById('navToggle');
+const menu = document.getElementById('navMenu');
+toggle.addEventListener('click', () => menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', (e) => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+</script>
+</body>
+</html>
