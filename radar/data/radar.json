@@ -1,25 +1,15 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "deals": [
   {
-   "asin": "B07L2P9QFT",
-   "preis": 19.73,
-   "median": 71.76,
-   "spar_pct": 73,
-   "titel": "B07L2P9QFT",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B07L2P9QFT",
-   "tag": 12
-  },
-  {
-   "asin": "B0DLWDHQLT",
-   "preis": 11.99,
-   "median": 33.56,
-   "spar_pct": 64,
-   "titel": "B0DLWDHQLT",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0DLWDHQLT",
-   "tag": 18
+   "asin": "B09JLY626Q",
+   "preis": 8.99,
+   "median": 101.79,
+   "spar_pct": 91,
+   "titel": "Bicaree Wärmflasche mit Bezug, 2 l PVC-Wärmebeutel für Nacken, Schulterschmerzen und zum Wärmen von Händen und Füßen, gegen Menstruationskrämpfe, als Wärmekompresse und Kältetherapie, Lilienweiß",
+   "nische": "wellness",
+   "link": "https://www.amazon.de/dp/B09JLY626Q?tag=balu17051-21&utm_source=site&utm_medium=organic",
+   "tag": 6
   },
   {
    "asin": "B015DR863C",
@@ -29,7 +19,7 @@
    "titel": "B015DR863C",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015DR863C",
-   "tag": 28
+   "tag": 29
   },
   {
    "asin": "B0GVSK5S4R",
@@ -39,7 +29,7 @@
    "titel": "DN DECONATION Vintage Flock Kürbis Deko, Herbst Thanksgiving Dekoratio",
    "nische": "weihnachten-advent-selected",
    "link": "https://www.amazon.de/dp/B0GVSK5S4R",
-   "tag": 16
+   "tag": 17
   },
   {
    "asin": "B0D6Z4L6BW",
@@ -49,7 +39,27 @@
    "titel": "B0D6Z4L6BW",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0D6Z4L6BW",
-   "tag": 7
+   "tag": 8
+  },
+  {
+   "asin": "B08JQZ2TT8",
+   "preis": 98.5,
+   "median": 155.0,
+   "spar_pct": 36,
+   "titel": "B08JQZ2TT8",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B08JQZ2TT8",
+   "tag": 5
+  },
+  {
+   "asin": "B07L2P9QFT",
+   "preis": 19.73,
+   "median": 27.74,
+   "spar_pct": 29,
+   "titel": "B07L2P9QFT",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B07L2P9QFT",
+   "tag": 13
   },
   {
    "asin": "B0DR7SM2W5",
@@ -59,7 +69,7 @@
    "titel": "B0DR7SM2W5",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DR7SM2W5",
-   "tag": 17
+   "tag": 18
   },
   {
    "asin": "B0H4ZM9CRF",
@@ -69,7 +79,27 @@
    "titel": "B0H4ZM9CRF",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H4ZM9CRF",
-   "tag": 12
+   "tag": 13
+  },
+  {
+   "asin": "B0FHH6ZXZ7",
+   "preis": 31.47,
+   "median": 42.88,
+   "spar_pct": 27,
+   "titel": "B0FHH6ZXZ7",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FHH6ZXZ7",
+   "tag": 21
+  },
+  {
+   "asin": "B0F4KHWH9M",
+   "preis": 139.99,
+   "median": 191.3,
+   "spar_pct": 27,
+   "titel": "B0F4KHWH9M",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0F4KHWH9M",
+   "tag": 9
   },
   {
    "asin": "B013DQF2S2",
@@ -79,7 +109,7 @@
    "titel": "B013DQF2S2",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B013DQF2S2",
-   "tag": 28
+   "tag": 29
   },
   {
    "asin": "B0H9M8K1M6",
@@ -89,7 +119,7 @@
    "titel": "B0H9M8K1M6",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H9M8K1M6",
-   "tag": 21
+   "tag": 22
   },
   {
    "asin": "B0C9HQ6FSG",
@@ -99,7 +129,7 @@
    "titel": "B0C9HQ6FSG",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C9HQ6FSG",
-   "tag": 16
+   "tag": 17
   },
   {
    "asin": "B015MXF752",
@@ -109,7 +139,7 @@
    "titel": "B015MXF752",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015MXF752",
-   "tag": 10
+   "tag": 11
   },
   {
    "asin": "B09C1V1J24",
@@ -119,7 +149,7 @@
    "titel": "B09C1V1J24",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B09C1V1J24",
-   "tag": 20
+   "tag": 21
   },
   {
    "asin": "B0CPHZRV99",
@@ -129,7 +159,7 @@
    "titel": "B0CPHZRV99",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0CPHZRV99",
-   "tag": 15
+   "tag": 16
   },
   {
    "asin": "B0DK8V197Z",
@@ -139,7 +169,7 @@
    "titel": "B0DK8V197Z",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DK8V197Z",
-   "tag": 12
+   "tag": 13
   },
   {
    "asin": "B086RJZKT3",
@@ -149,7 +179,7 @@
    "titel": "B086RJZKT3",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B086RJZKT3",
-   "tag": 28
+   "tag": 29
   },
   {
    "asin": "B079Y1N9YJ",
@@ -159,17 +189,17 @@
    "titel": "B079Y1N9YJ",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B079Y1N9YJ",
-   "tag": 15
+   "tag": 16
   },
   {
-   "asin": "B0BHSXFTGH",
-   "preis": 18.99,
-   "median": 24.99,
-   "spar_pct": 24,
-   "titel": "B0BHSXFTGH",
+   "asin": "B000GI0NGW",
+   "preis": 13.01,
+   "median": 16.91,
+   "spar_pct": 23,
+   "titel": "B000GI0NGW",
    "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0BHSXFTGH",
-   "tag": 16
+   "link": "https://www.amazon.de/dp/B000GI0NGW",
+   "tag": 29
   },
   {
    "asin": "B0FQV5NNRN",
@@ -179,7 +209,7 @@
    "titel": "B0FQV5NNRN",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FQV5NNRN",
-   "tag": 22
+   "tag": 23
   },
   {
    "asin": "B0H8HPLCJC",
@@ -189,7 +219,7 @@
    "titel": "Serviettenringe Herbst, Metall Tischdeko Gold, 6 Stück Set",
    "nische": "weihnachten-advent-selected",
    "link": "https://www.amazon.de/dp/B0H8HPLCJC",
-   "tag": 19
+   "tag": 20
   },
   {
    "asin": "B0GFZQPS4W",
@@ -199,7 +229,7 @@
    "titel": "B0GFZQPS4W",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0GFZQPS4W",
-   "tag": 20
+   "tag": 21
   },
   {
    "asin": "B0CP9BVF6R",
@@ -209,27 +239,7 @@
    "titel": "B0CP9BVF6R",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0CP9BVF6R",
-   "tag": 20
-  },
-  {
-   "asin": "B0GDZZY32Z",
-   "preis": 18.99,
-   "median": 23.99,
-   "spar_pct": 21,
-   "titel": "Fragrances 4 PCS Premium Parfüm Geschenkset für Frauen,Miniparfums &amp; Duftproben Damen als langanhaltendes Geschenk,Eau de Parfum(Parfümset für Freundin, Geburtstag, Weihnachten)",
-   "nische": "parfum-damen",
-   "link": "https://www.amazon.de/dp/B0GDZZY32Z?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 12
-  },
-  {
-   "asin": "B000GI0NGW",
-   "preis": 13.51,
-   "median": 16.91,
-   "spar_pct": 20,
-   "titel": "B000GI0NGW",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B000GI0NGW",
-   "tag": 28
+   "tag": 21
   },
   {
    "asin": "B0FGV27D2S",
@@ -239,7 +249,7 @@
    "titel": "B0FGV27D2S",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FGV27D2S",
-   "tag": 19
+   "tag": 20
   },
   {
    "asin": "B0B8ZMV71R",
@@ -249,7 +259,7 @@
    "titel": "B0B8ZMV71R",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0B8ZMV71R",
-   "tag": 15
+   "tag": 16
   },
   {
    "asin": "B0DR317BFR",
@@ -259,17 +269,37 @@
    "titel": "B0DR317BFR",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0DR317BFR",
-   "tag": 26
+   "tag": 27
   },
   {
    "asin": "B0H4ZD5NCJ",
-   "preis": 12.99,
-   "median": 15.99,
+   "preis": 10.99,
+   "median": 13.59,
    "spar_pct": 19,
    "titel": "B0H4ZD5NCJ",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H4ZD5NCJ",
-   "tag": 10
+   "tag": 11
+  },
+  {
+   "asin": "B0C71GKGB8",
+   "preis": 12.99,
+   "median": 15.99,
+   "spar_pct": 19,
+   "titel": "B0C71GKGB8",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0C71GKGB8",
+   "tag": 17
+  },
+  {
+   "asin": "B0D4256RNZ",
+   "preis": 32.4,
+   "median": 39.95,
+   "spar_pct": 19,
+   "titel": "B0D4256RNZ",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0D4256RNZ",
+   "tag": 11
   },
   {
    "asin": "B0GQ72D3YD",
@@ -279,7 +309,7 @@
    "titel": "Duftkerzen im Glas, Duftkerze Geschenkset aus 12 Düft Kerze für Frauen",
    "nische": "weihnachten-advent-selected",
    "link": "https://www.amazon.de/dp/B0GQ72D3YD",
-   "tag": 24
+   "tag": 25
   },
   {
    "asin": "B0CCVX6FSD",
@@ -289,7 +319,7 @@
    "titel": "B0CCVX6FSD",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0CCVX6FSD",
-   "tag": 18
+   "tag": 19
   },
   {
    "asin": "B0FCN11LYD",
@@ -299,7 +329,7 @@
    "titel": "B0FCN11LYD",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FCN11LYD",
-   "tag": 28
+   "tag": 29
   },
   {
    "asin": "B0DJ5S6ZPQ",
@@ -309,7 +339,7 @@
    "titel": "B0DJ5S6ZPQ",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DJ5S6ZPQ",
-   "tag": 16
+   "tag": 17
   },
   {
    "asin": "B0C9X7DSVS",
@@ -319,7 +349,7 @@
    "titel": "B0C9X7DSVS",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C9X7DSVS",
-   "tag": 18
+   "tag": 19
   },
   {
    "asin": "B0BVQHZFM9",
@@ -329,7 +359,7 @@
    "titel": "B0BVQHZFM9",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0BVQHZFM9",
-   "tag": 28
+   "tag": 29
   },
   {
    "asin": "B0C2ZCVRZN",
@@ -339,7 +369,7 @@
    "titel": "B0C2ZCVRZN",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C2ZCVRZN",
-   "tag": 28
+   "tag": 29
   },
   {
    "asin": "B0DZT5MXPS",
@@ -349,17 +379,17 @@
    "titel": "B0DZT5MXPS",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DZT5MXPS",
-   "tag": 28
+   "tag": 29
   },
   {
-   "asin": "B07N11YB7N",
-   "preis": 59.45,
-   "median": 69.95,
+   "asin": "B0H4F5ZPM7",
+   "preis": 15.29,
+   "median": 17.99,
    "spar_pct": 15,
-   "titel": "B07N11YB7N",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B07N11YB7N",
-   "tag": 28
+   "titel": "Duftkerzen im Glas,4x Duft Duftkerze Geschenkset für Frauen,Sojawachs Kerze",
+   "nische": "weihnachten-advent-selected",
+   "link": "https://www.amazon.de/dp/B0H4F5ZPM7",
+   "tag": 25
   },
   {
    "asin": "B076QDSYCH",
@@ -369,7 +399,7 @@
    "titel": "B076QDSYCH",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B076QDSYCH",
-   "tag": 20
+   "tag": 21
   },
   {
    "asin": "B0H11FLX7C",
@@ -379,7 +409,7 @@
    "titel": "B0H11FLX7C",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H11FLX7C",
-   "tag": 11
+   "tag": 12
   },
   {
    "asin": "B0C84FT1LJ",
@@ -389,7 +419,7 @@
    "titel": "B0C84FT1LJ",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C84FT1LJ",
-   "tag": 19
+   "tag": 20
   },
   {
    "asin": "B0CBV7DRK7",
@@ -399,7 +429,7 @@
    "titel": "B0CBV7DRK7",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0CBV7DRK7",
-   "tag": 20
+   "tag": 21
   },
   {
    "asin": "B0B2ZM8Z3J",
@@ -409,7 +439,7 @@
    "titel": "B0B2ZM8Z3J",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0B2ZM8Z3J",
-   "tag": 20
+   "tag": 21
   },
   {
    "asin": "B00PFWXAU0",
@@ -419,7 +449,7 @@
    "titel": "B00PFWXAU0",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B00PFWXAU0",
-   "tag": 6
+   "tag": 7
   },
   {
    "asin": "B07JF7M9M8",
@@ -429,7 +459,7 @@
    "titel": "Jette Love Set Eau de Parfum 30 ml + Bodylotion 50 ml + Showergel 50 ml",
    "nische": "parfum-damen",
    "link": "https://www.amazon.de/dp/B07JF7M9M8?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 11
+   "tag": 12
   },
   {
    "asin": "B0FFSP7GJM",
@@ -439,47 +469,27 @@
    "titel": "B0FFSP7GJM",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FFSP7GJM",
-   "tag": 10
+   "tag": 11
   },
   {
-   "asin": "B01KMAYKIU",
-   "preis": 64.95,
-   "median": 76.46,
-   "spar_pct": 15,
-   "titel": "B01KMAYKIU",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B01KMAYKIU",
-   "tag": 10
-  },
-  {
-   "asin": "B07TPFW4BG",
-   "preis": 73.94,
-   "median": 85.99,
-   "spar_pct": 14,
-   "titel": "B07TPFW4BG",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B07TPFW4BG",
-   "tag": 28
-  },
-  {
-   "asin": "B0H4TF1V98",
-   "preis": 69.99,
-   "median": 79.99,
+   "asin": "B0F8QSTMZM",
+   "preis": 25.99,
+   "median": 29.99,
    "spar_pct": 13,
-   "titel": "B0H4TF1V98",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H4TF1V98",
-   "tag": 6
+   "titel": "DN DECONATION Herbstdeko Kürbis – Braunem Kürbis Tischdeko mit Geschni",
+   "nische": "weihnachten-advent-selected",
+   "link": "https://www.amazon.de/dp/B0F8QSTMZM",
+   "tag": 17
   },
   {
    "asin": "B004QGXND0",
-   "preis": 34.55,
+   "preis": 34.56,
    "median": 39.9,
    "spar_pct": 13,
    "titel": "B004QGXND0",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B004QGXND0",
-   "tag": 12
+   "tag": 13
   },
   {
    "asin": "B0GLGTHH3Y",
@@ -489,17 +499,7 @@
    "titel": "B0GLGTHH3Y",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0GLGTHH3Y",
-   "tag": 26
-  },
-  {
-   "asin": "B0BG5HX693",
-   "preis": 29.0,
-   "median": 32.99,
-   "spar_pct": 12,
-   "titel": "B0BG5HX693",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0BG5HX693",
-   "tag": 8
+   "tag": 27
   },
   {
    "asin": "B0F1CJD2MD",
@@ -509,7 +509,7 @@
    "titel": "B0F1CJD2MD",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0F1CJD2MD",
-   "tag": 13
+   "tag": 14
   }
  ]
 }
