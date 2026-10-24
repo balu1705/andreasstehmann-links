@@ -1,35 +1,25 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-24",
  "deals": [
-  {
-   "asin": "B0BNYC5VGS",
-   "preis": 20.99,
-   "median": 61.14,
-   "spar_pct": 66,
-   "titel": "Seifenformen-Set mit Holzschneider, Seifenformen, Silikon, 1.3 l, Violett, zum Schmelzen und Ausgießen oder Kaltprozess, 50 Stück Seifenverpackung, Papiertüten, Edelstahlschneider, Hausfrau, Seife",
-   "nische": "quality_diy",
-   "link": "https://www.amazon.de/dp/B0BNYC5VGS?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 27
-  },
   {
    "asin": "B015DR863C",
    "preis": 55.0,
-   "median": 105.98,
+   "median": 105.38,
    "spar_pct": 48,
    "titel": "B015DR863C",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B015DR863C",
-   "tag": 32
+   "tag": 35
   },
   {
-   "asin": "B08JQZ2TT8",
-   "preis": 98.5,
-   "median": 155.0,
-   "spar_pct": 36,
-   "titel": "B08JQZ2TT8",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B08JQZ2TT8",
-   "tag": 6
+   "asin": "B07WK1M96D",
+   "preis": 29.99,
+   "median": 44.99,
+   "spar_pct": 33,
+   "titel": "B07WK1M96D",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B07WK1M96D",
+   "tag": 23
   },
   {
    "asin": "B0H9M8K1M6",
@@ -39,7 +29,7 @@
    "titel": "B0H9M8K1M6",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0H9M8K1M6",
-   "tag": 25
+   "tag": 28
   },
   {
    "asin": "B0C9HQ6FSG",
@@ -49,16 +39,6 @@
    "titel": "B0C9HQ6FSG",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C9HQ6FSG",
-   "tag": 20
-  },
-  {
-   "asin": "B09C1V1J24",
-   "preis": 29.98,
-   "median": 39.99,
-   "spar_pct": 25,
-   "titel": "B09C1V1J24",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B09C1V1J24",
    "tag": 23
   },
   {
@@ -69,7 +49,7 @@
    "titel": "B086RJZKT3",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B086RJZKT3",
-   "tag": 32
+   "tag": 35
   },
   {
    "asin": "B0FQV5NNRN",
@@ -79,17 +59,27 @@
    "titel": "B0FQV5NNRN",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FQV5NNRN",
-   "tag": 26
+   "tag": 29
   },
   {
-   "asin": "B0H8HPLCJC",
-   "preis": 10.79,
-   "median": 13.99,
+   "asin": "B0GLGTHH3Y",
+   "preis": 9.89,
+   "median": 12.89,
    "spar_pct": 23,
-   "titel": "Serviettenringe Herbst, Metall Tischdeko Gold, 6 Stück Set",
-   "nische": "weihnachten-advent-selected",
-   "link": "https://www.amazon.de/dp/B0H8HPLCJC",
-   "tag": 23
+   "titel": "B0GLGTHH3Y",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0GLGTHH3Y",
+   "tag": 32
+  },
+  {
+   "asin": "B0FKH3ZY1R",
+   "preis": 20.38,
+   "median": 25.98,
+   "spar_pct": 22,
+   "titel": "B0FKH3ZY1R",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FKH3ZY1R",
+   "tag": 34
   },
   {
    "asin": "B0F9X14JDC",
@@ -99,27 +89,37 @@
    "titel": "B0F9X14JDC",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0F9X14JDC",
-   "tag": 29
+   "tag": 31
   },
   {
-   "asin": "B0GQ72D3YD",
-   "preis": 18.03,
-   "median": 21.89,
-   "spar_pct": 18,
-   "titel": "Duftkerzen im Glas, Duftkerze Geschenkset aus 12 Düft Kerze für Frauen",
-   "nische": "weihnachten-advent-selected",
-   "link": "https://www.amazon.de/dp/B0GQ72D3YD",
-   "tag": 28
-  },
-  {
-   "asin": "B0CCVX6FSD",
-   "preis": 49.99,
-   "median": 59.99,
-   "spar_pct": 17,
-   "titel": "B0CCVX6FSD",
+   "asin": "B0FDQL9JFL",
+   "preis": 19.99,
+   "median": 24.64,
+   "spar_pct": 19,
+   "titel": "B0FDQL9JFL",
    "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0CCVX6FSD",
-   "tag": 22
+   "link": "https://www.amazon.de/dp/B0FDQL9JFL",
+   "tag": 32
+  },
+  {
+   "asin": "B0GYNKNZ9D",
+   "preis": 10.99,
+   "median": 13.59,
+   "spar_pct": 19,
+   "titel": "B0GYNKNZ9D",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0GYNKNZ9D",
+   "tag": 33
+  },
+  {
+   "asin": "B087LZWSFF",
+   "preis": 59.99,
+   "median": 72.99,
+   "spar_pct": 18,
+   "titel": "B087LZWSFF",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B087LZWSFF",
+   "tag": 24
   },
   {
    "asin": "B0HFW7C3B9",
@@ -129,7 +129,7 @@
    "titel": "B0HFW7C3B9",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0HFW7C3B9",
-   "tag": 22
+   "tag": 25
   },
   {
    "asin": "B0C9X7DSVS",
@@ -139,17 +139,7 @@
    "titel": "B0C9X7DSVS",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0C9X7DSVS",
-   "tag": 22
-  },
-  {
-   "asin": "B0C2ZCVRZN",
-   "preis": 16.99,
-   "median": 19.99,
-   "spar_pct": 15,
-   "titel": "B0C2ZCVRZN",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0C2ZCVRZN",
-   "tag": 32
+   "tag": 25
   },
   {
    "asin": "B0DZT5MXPS",
@@ -159,7 +149,7 @@
    "titel": "B0DZT5MXPS",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0DZT5MXPS",
-   "tag": 32
+   "tag": 35
   },
   {
    "asin": "B0CXPNBFBP",
@@ -169,7 +159,7 @@
    "titel": "B0CXPNBFBP",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0CXPNBFBP",
-   "tag": 32
+   "tag": 35
   },
   {
    "asin": "B079NQNST5",
@@ -179,7 +169,7 @@
    "titel": "B079NQNST5",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B079NQNST5",
-   "tag": 31
+   "tag": 34
   },
   {
    "asin": "B0DR317BFR",
@@ -189,37 +179,7 @@
    "titel": "B0DR317BFR",
    "nische": "niche_asins",
    "link": "https://www.amazon.de/dp/B0DR317BFR",
-   "tag": 30
-  },
-  {
-   "asin": "B0H4F5ZPM7",
-   "preis": 15.29,
-   "median": 17.99,
-   "spar_pct": 15,
-   "titel": "Duftkerzen im Glas,4x Duft Duftkerze Geschenkset für Frauen,Sojawachs Kerze",
-   "nische": "weihnachten-advent-selected",
-   "link": "https://www.amazon.de/dp/B0H4F5ZPM7",
-   "tag": 28
-  },
-  {
-   "asin": "B0FKH3ZY1R",
-   "preis": 22.68,
-   "median": 25.98,
-   "spar_pct": 13,
-   "titel": "B0FKH3ZY1R",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0FKH3ZY1R",
-   "tag": 31
-  },
-  {
-   "asin": "B07L8HH2VW",
-   "preis": 25.17,
-   "median": 28.88,
-   "spar_pct": 13,
-   "titel": "B07L8HH2VW",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B07L8HH2VW",
-   "tag": 26
+   "tag": 32
   }
  ]
 }
