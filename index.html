@@ -49,6 +49,18 @@ a{text-decoration:none;color:inherit}
 .morelist li{break-inside:avoid;padding:5px 0;border-bottom:1px solid #e8e8ed}
 .morelist a{font-size:13px;color:var(--muted)}
 .morelist a:hover{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-size:14px;font-weight:600;padding:10px 20px;border-radius:980px;transition:opacity .18s}
+.btn:hover{opacity:.85}
+.faq{margin-top:34px}
+.faq h2{font-size:20px;font-weight:700;letter-spacing:-.02em;margin-bottom:14px}
+.faq details{background:var(--card);border-radius:14px;padding:14px 18px;margin-bottom:10px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.faq summary{font-size:15px;font-weight:600;cursor:pointer;list-style:none}
+.faq summary::after{content:'+';float:right;color:var(--accent);font-weight:700}
+.faq details[open] summary::after{content:'–'}
+.faq details p{font-size:14px;color:var(--muted);margin-top:10px;line-height:1.6}
+.so-arbeit{margin-top:30px;background:var(--card);border-radius:16px;padding:22px 24px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.so-arbeit h2{font-size:17px;font-weight:700;margin-bottom:10px}
+.so-arbeit p{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:8px}
 .blog{margin-top:22px}
 .blog a.bloglink{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:14px;padding:16px 18px;margin-top:10px;box-shadow:0 1px 3px rgba(0,0,0,.06);font-size:15px;font-weight:600}
 footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 0 60px;font-size:12px;color:var(--muted)}
@@ -200,6 +212,22 @@ footer p{margin-bottom:8px}
     <li><a href="niches/wohnen-traumumfeld/">Wohnen Traumumfeld</a></li>
     <li><a href="niches/buecher-frauen-ue25/">Buecher Frauen Ue25</a></li>
   </ul></section>
+  <section class="group so-arbeit"><h2>So arbeite ich</h2>
+    <p>Für jedes Thema suche ich gezielt nach Produkten, die im Alltag wirklich tragen: funktionieren, halten und preiswert sind. Aus den Funden wähle ich maximal zehn aus — die Reihenfolge richtet sich nach Nutzen und Preis, nicht nach Provision.</p>
+    <p>Die Preise auf dieser Seite stammen aus dem automatischen Preis-Radar und werden täglich aktualisiert. Sie zeigen, was Amazon gerade verlangt; im Kaufmodal kann der Endpreis abweichen. Ein Klick auf Amazon kostet dich nichts — als Amazon-Partner erhalte ich eine Provision, wenn du kaufst.</p>
+  </section>
+  <section class="group faq"><h2>Häufige Fragen</h2>
+    <details><summary>Wie werden die Produkte ausgewählt?</summary>
+      <p>Ich suche pro Thema nach Produkten mit vielen, echten Rezensionen und stabilen Bewertungen. Dann prüfe ich Preis und Verfügbarkeit und sortiere, was im Alltag nutzt. Produkte ohne Mehrwert für dich lasse ich weg — auch wenn sie höhere Provisionen bringen.</p></details>
+    <details><summary>Verdiene ich an den Links?</summary>
+      <p>Nein — das tust du. Als Amazon-Partner erhalte ich eine Provision, wenn du über einen Link kaufst. Der Preis bleibt für dich gleich. Es gibt keine bezahlten Platzierungen: Niemand kann sich eine Position auf dieser Seite kaufen.</p></details>
+    <details><summary>Wie aktuell sind die Preise?</summary>
+      <p>Die Preise werden täglich vom Preis-Radar neu gelesen. Amazon ändert Preise mehrmals täglich, deshalb gilt die Anzeige auf dieser Seite als Orientierung. Der verbindliche Preis steht im Amazon-Kaufmodal.</p></details>
+    <details><summary>Was ist der Preis-Radar?</summary>
+      <p>Der Preis-Radar vergleicht den aktuellen Preis mit dem Median der letzten 90 Tage. Nur Produkte, die mindestens zwölf Prozent unter ihrem Median liegen, erscheinen als echter Deal. Du findest ihn unter „Preis-Radar“.</p></details>
+    <details><summary>Wo finde ich die Geschenke-Guide?</summary>
+      <p>Die Guide „49 Geschenke für Weihnachten 2026“ liegt als PDF bereit: neun Seiten, nach Budget und Interesse sortiert, mit echten Preisen. Kostenlos unter „Geschenke-Guide“ oder direkt im Download-Bereich.</p></details>
+  </section>
   <section class="group blog"><h2>Aus dem Blog</h2>
     <a class="bloglink" href="blog/zimmerpflanzen-dekorieren/"><span>Zimmerpflanzen Dekorieren</span><span>&rsaquo;</span></a>
     <a class="bloglink" href="blog/yoga-meditation/"><span>Yoga Meditation</span><span>&rsaquo;</span></a>
@@ -213,5 +241,75 @@ footer p{margin-bottom:8px}
   <div class="disclaimer"><b>Transparenz:</b> Als Amazon-Partner verdiene ich an qualifizierten Käufen. Die verlinkten Produkte sind eigene, unabhängige Empfehlungen — es gibt keine bezahlten Platzierungen. Der Preis bleibt für dich gleich.</div>
   <p style="margin-top:10px">&copy; 2026 Andreas Stehmann</p>
 </div></footer>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://balu1705.github.io/andreasstehmann-links/#website",
+   "url": "https://balu1705.github.io/andreasstehmann-links/",
+   "name": "Andreas' Empfehlungen",
+   "inLanguage": "de-DE",
+   "description": "Kuratierte Produkt-Empfehlungen rund ums Zuhause: Wohnen, Kueche, Wellness, Fitness & Sport.",
+   "publisher": {
+    "@id": "https://balu1705.github.io/andreasstehmann-links/#person"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://balu1705.github.io/andreasstehmann-links/#person",
+   "name": "Andreas Stehmann",
+   "description": "Kuratiert unabhaengige Produkt-Empfehlungen aus Amazon."
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://balu1705.github.io/andreasstehmann-links/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Wie werden die Produkte ausgewählt?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ich suche pro Thema nach Produkten mit vielen, echten Rezensionen und stabilen Bewertungen. Dann pruefe ich Preis und Verfuegbarkeit und sortiere, was im Alltag nutzt. Produkte ohne Mehrwert fuer dich lasse ich weg — auch wenn sie hoehere Provisionen bringen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Verdiene ich an den Links?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nein — das tust du. Als Amazon-Partner erhalte ich eine Provision, wenn du ueber einen Link kaufst. Der Preis bleibt fuer dich gleich. Es gibt keine bezahlten Platzierungen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wie aktuell sind die Preise?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die Preise werden taeglich vom Preis-Radar neu gelesen. Amazon aendert Preise mehrmals taeglich, deshalb gilt die Anzeige als Orientierung. Der verbindliche Preis steht im Amazon-Kaufmodal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was ist der Preis-Radar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Der Preis-Radar vergleicht den aktuellen Preis mit dem Median der letzten 90 Tage. Nur Produkte, die mindestens zwoelf Prozent unter ihrem Median liegen, erscheinen als echter Deal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wo finde ich die Geschenke-Guide?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Die Guide 49 Geschenke fuer Weihnachten 2026 liegt als PDF bereit: neun Seiten, nach Budget und Interesse sortiert, mit echten Preisen. Kostenlos im Download-Bereich."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
 </body>
 </html>
