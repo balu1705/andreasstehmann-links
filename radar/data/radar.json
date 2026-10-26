@@ -1,55 +1,15 @@
 {
- "updated": "2026-10-24",
+ "updated": "2026-10-26",
  "deals": [
   {
    "asin": "B015DR863C",
    "preis": 55.0,
-   "median": 105.38,
-   "spar_pct": 48,
-   "titel": "B015DR863C",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B015DR863C",
-   "tag": 35
-  },
-  {
-   "asin": "B07WK1M96D",
-   "preis": 29.99,
-   "median": 44.99,
-   "spar_pct": 33,
-   "titel": "B07WK1M96D",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B07WK1M96D",
-   "tag": 23
-  },
-  {
-   "asin": "B0H9M8K1M6",
-   "preis": 5.19,
-   "median": 6.99,
-   "spar_pct": 26,
-   "titel": "B0H9M8K1M6",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0H9M8K1M6",
-   "tag": 28
-  },
-  {
-   "asin": "B0C9HQ6FSG",
-   "preis": 59.98,
-   "median": 79.99,
-   "spar_pct": 25,
-   "titel": "B0C9HQ6FSG",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0C9HQ6FSG",
-   "tag": 23
-  },
-  {
-   "asin": "B086RJZKT3",
-   "preis": 22.52,
-   "median": 29.67,
-   "spar_pct": 24,
-   "titel": "B086RJZKT3",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B086RJZKT3",
-   "tag": 35
+   "median": 79.0,
+   "spar_pct": 30,
+   "titel": "Medisana Massagesitzauflage NM 850, Shiatsu-Massage, Wärme, 3 Programme, Fernbedienung",
+   "nische": "wellness-massage-bestseller",
+   "link": "https://www.amazon.de/dp/B015DR863C?tag=balu17051-21",
+   "tag": 37
   },
   {
    "asin": "B0FQV5NNRN",
@@ -59,127 +19,37 @@
    "titel": "B0FQV5NNRN",
    "nische": "weak_products",
    "link": "https://www.amazon.de/dp/B0FQV5NNRN",
-   "tag": 29
-  },
-  {
-   "asin": "B0GLGTHH3Y",
-   "preis": 9.89,
-   "median": 12.89,
-   "spar_pct": 23,
-   "titel": "B0GLGTHH3Y",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0GLGTHH3Y",
-   "tag": 32
-  },
-  {
-   "asin": "B0FKH3ZY1R",
-   "preis": 20.38,
-   "median": 25.98,
-   "spar_pct": 22,
-   "titel": "B0FKH3ZY1R",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0FKH3ZY1R",
-   "tag": 34
-  },
-  {
-   "asin": "B0F9X14JDC",
-   "preis": 11.99,
-   "median": 14.99,
-   "spar_pct": 20,
-   "titel": "B0F9X14JDC",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0F9X14JDC",
    "tag": 31
   },
   {
-   "asin": "B0FDQL9JFL",
-   "preis": 19.99,
-   "median": 24.64,
-   "spar_pct": 19,
-   "titel": "B0FDQL9JFL",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0FDQL9JFL",
-   "tag": 32
-  },
-  {
-   "asin": "B0GYNKNZ9D",
-   "preis": 10.99,
-   "median": 13.59,
-   "spar_pct": 19,
-   "titel": "B0GYNKNZ9D",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0GYNKNZ9D",
-   "tag": 33
-  },
-  {
-   "asin": "B087LZWSFF",
-   "preis": 59.99,
-   "median": 72.99,
-   "spar_pct": 18,
-   "titel": "B087LZWSFF",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B087LZWSFF",
-   "tag": 24
-  },
-  {
-   "asin": "B0HFW7C3B9",
-   "preis": 49.99,
-   "median": 59.49,
-   "spar_pct": 16,
-   "titel": "B0HFW7C3B9",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0HFW7C3B9",
-   "tag": 25
-  },
-  {
-   "asin": "B0C9X7DSVS",
-   "preis": 84.99,
-   "median": 99.99,
+   "asin": "B0030H0IQ6",
+   "preis": 42.46,
+   "median": 49.95,
    "spar_pct": 15,
-   "titel": "B0C9X7DSVS",
-   "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0C9X7DSVS",
-   "tag": 25
-  },
-  {
-   "asin": "B0DZT5MXPS",
-   "preis": 27.99,
-   "median": 32.99,
-   "spar_pct": 15,
-   "titel": "B0DZT5MXPS",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0DZT5MXPS",
-   "tag": 35
-  },
-  {
-   "asin": "B0CXPNBFBP",
-   "preis": 22.09,
-   "median": 25.99,
-   "spar_pct": 15,
-   "titel": "B0CXPNBFBP",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B0CXPNBFBP",
-   "tag": 35
-  },
-  {
-   "asin": "B079NQNST5",
-   "preis": 35.69,
-   "median": 41.99,
-   "spar_pct": 15,
-   "titel": "B079NQNST5",
-   "nische": "weak_products",
-   "link": "https://www.amazon.de/dp/B079NQNST5",
+   "titel": "STONELINE Bratpfanne 28 cm, Pfanne Induktion geeignet, Pfanne mit echten Steinpartikeln beschichtet, Brat- &amp; Universalpfannen aus Aluguss, große Pfanne, 7361, Grau",
+   "nische": "quality_backen-kochen",
+   "link": "https://www.amazon.de/dp/B0030H0IQ6?tag=balu17051-21&utm_source=site&utm_medium=organic",
    "tag": 34
   },
   {
-   "asin": "B0DR317BFR",
-   "preis": 16.14,
-   "median": 18.99,
+   "asin": "B07N11YB7N",
+   "preis": 59.45,
+   "median": 69.95,
    "spar_pct": 15,
-   "titel": "B0DR317BFR",
+   "titel": "B07N11YB7N",
    "nische": "niche_asins",
-   "link": "https://www.amazon.de/dp/B0DR317BFR",
-   "tag": 32
+   "link": "https://www.amazon.de/dp/B07N11YB7N",
+   "tag": 37
+  },
+  {
+   "asin": "B0H9M8K1M6",
+   "preis": 5.19,
+   "median": 5.94,
+   "spar_pct": 13,
+   "titel": "B0H9M8K1M6",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H9M8K1M6",
+   "tag": 30
   }
  ]
 }
