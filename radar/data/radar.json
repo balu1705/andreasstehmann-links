@@ -1,15 +1,35 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "deals": [
   {
    "asin": "B015DR863C",
-   "preis": 55.0,
+   "preis": 49.0,
    "median": 79.0,
-   "spar_pct": 30,
+   "spar_pct": 38,
    "titel": "Medisana Massagesitzauflage NM 850, Shiatsu-Massage, Wärme, 3 Programme, Fernbedienung",
    "nische": "wellness-massage-bestseller",
    "link": "https://www.amazon.de/dp/B015DR863C?tag=balu17051-21",
-   "tag": 38
+   "tag": 39
+  },
+  {
+   "asin": "B0FQV5NNRN",
+   "preis": 7.64,
+   "median": 9.89,
+   "spar_pct": 23,
+   "titel": "B0FQV5NNRN",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0FQV5NNRN",
+   "tag": 32
+  },
+  {
+   "asin": "B0F1TMKX5C",
+   "preis": 50.99,
+   "median": 59.99,
+   "spar_pct": 15,
+   "titel": "B0F1TMKX5C",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B0F1TMKX5C",
+   "tag": 39
   },
   {
    "asin": "B0030H0IQ6",
@@ -19,7 +39,27 @@
    "titel": "STONELINE Bratpfanne 28 cm, Pfanne Induktion geeignet, Pfanne mit echten Steinpartikeln beschichtet, Brat- &amp; Universalpfannen aus Aluguss, große Pfanne, 7361, Grau",
    "nische": "quality_backen-kochen",
    "link": "https://www.amazon.de/dp/B0030H0IQ6?tag=balu17051-21&utm_source=site&utm_medium=organic",
-   "tag": 35
+   "tag": 36
+  },
+  {
+   "asin": "B07N11YB7N",
+   "preis": 59.45,
+   "median": 69.95,
+   "spar_pct": 15,
+   "titel": "B07N11YB7N",
+   "nische": "niche_asins",
+   "link": "https://www.amazon.de/dp/B07N11YB7N",
+   "tag": 38
+  },
+  {
+   "asin": "B0H9M8K1M6",
+   "preis": 5.19,
+   "median": 5.94,
+   "spar_pct": 13,
+   "titel": "B0H9M8K1M6",
+   "nische": "weak_products",
+   "link": "https://www.amazon.de/dp/B0H9M8K1M6",
+   "tag": 31
   }
  ]
 }
