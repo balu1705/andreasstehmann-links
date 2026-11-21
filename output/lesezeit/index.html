@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B074K9DZ6Y?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B074K9DZ6Y?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B074K9DZ6Y" data-niche="lesezeit" data-position="0" data-price="19,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B074K9DZ6Y._AC_SL1500_.jpg" alt="Tebery 1Paar Edelstahl Man Buchstützen, rutschfest, dekorative Buchstützen für Z..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0DJH254WZ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0DJH254WZ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0DJH254WZ" data-niche="lesezeit" data-position="1" data-price="39,90">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0DJH254WZ._AC_SL1500_.jpg" alt="Grupo Erik Der Herr Der Ringe Argonath Buchstütze Buchständer" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B0DRC1RXTZ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0DRC1RXTZ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0DRC1RXTZ" data-niche="lesezeit" data-position="2" data-price="22,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0DRC1RXTZ._AC_SL1500_.jpg" alt="8 Stück Metall Schwarz Buchstütze, Bücherhalter mit Baummuster" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0DCDL55JY?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0DCDL55JY?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0DCDL55JY" data-niche="lesezeit" data-position="3" data-price="15,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0DCDL55JY._AC_SL1500_.jpg" alt="Schwenkbare Buchstütze kompatibel mit Habersack, Steurrichtlinien und -erlasse, ..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0CBQ1CWQJ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0CBQ1CWQJ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0CBQ1CWQJ" data-niche="lesezeit" data-position="4" data-price="19,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0CBQ1CWQJ._AC_SL1500_.jpg" alt="Buchstütze, Hiziwimi 8PCS Transparente Acryl Buchstützen mit rutschfesten Aufkle..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

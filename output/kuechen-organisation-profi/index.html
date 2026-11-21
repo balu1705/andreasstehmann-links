@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0FDVZL6NC?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0FDVZL6NC?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0FDVZL6NC" data-niche="kuechen-organisation-profi" data-position="0" data-price="62,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0FDVZL6NC._AC_SL1500_.jpg" alt="SAYZH Küchenregal 5 Etagen, Rollen 360° drehbar, für Küche" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B08MV5N3J2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B08MV5N3J2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B08MV5N3J2" data-niche="kuechen-organisation-profi" data-position="1" data-price="74,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B08MV5N3J2._AC_SL1500_.jpg" alt="Rotho Albula Mülleimer Küche 3 x 40 L Mülleimer 3 Fächer stapelbar 3er Set" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B0F4K15XRG?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0F4K15XRG?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0F4K15XRG" data-niche="kuechen-organisation-profi" data-position="2" data-price="55,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0F4K15XRG._AC_SL1500_.jpg" alt="VASAGLE Küchewagen mit Rollen, 1 Schublade, 2 Haken, 60 x 45 x 90 cm" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0D5LJ6M3N?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0D5LJ6M3N?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0D5LJ6M3N" data-niche="kuechen-organisation-profi" data-position="3" data-price="69,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0D5LJ6M3N._AC_SL1500_.jpg" alt="SONGMICS HOME Mülleimer Küche, Mülltrennsystem, 3 x 15 L Fächer, Stahl" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B003I5BB4I?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B003I5BB4I?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B003I5BB4I" data-niche="kuechen-organisation-profi" data-position="4" data-price="89,00">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B003I5BB4I._AC_SL1500_.jpg" alt="Royal Catering Servierwagen mit Rollen, 3 Tabletts RCSW 3 (101 x 55 x 96,5 cm, T..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

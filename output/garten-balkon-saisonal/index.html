@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0DF6HFV9W?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0DF6HFV9W?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0DF6HFV9W" data-niche="garten-balkon-saisonal" data-position="0" data-price="106,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0DF6HFV9W._AC_SL1500_.jpg" alt="Pflanzkübel Holz – imprägniert wetterfest – mit herausnehmbarem Kunststoffeinsat..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0F1Z25JY2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0F1Z25JY2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0F1Z25JY2" data-niche="garten-balkon-saisonal" data-position="1" data-price="59,90">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0F1Z25JY2._AC_SL1500_.jpg" alt="Arebos Hochbeet aus Holz mit Ablagefach | 119 x 53 x 90 cm | Balkon" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B09SP5Z7ZP?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B09SP5Z7ZP?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B09SP5Z7ZP" data-niche="garten-balkon-saisonal" data-position="2" data-price="69,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B09SP5Z7ZP._AC_SL1500_.jpg" alt="Yaheetech Hochbeet mit Rollen &amp;amp; Ablageboden aus FSC Holz 87x47x83,5cm" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B07W8VGSRZ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B07W8VGSRZ?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B07W8VGSRZ" data-niche="garten-balkon-saisonal" data-position="3" data-price="72,79">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B07W8VGSRZ._AC_SL1500_.jpg" alt="tectake® Hochbeet aus Holz mit Ablagefach, für Garten, Balkon und Terrasse, Inne..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0GK7HCP83?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0GK7HCP83?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0GK7HCP83" data-niche="garten-balkon-saisonal" data-position="4" data-price="179,00">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0GK7HCP83._AC_SL1500_.jpg" alt="Hochbeet mit Sichtschutz, Metall Pflanzkasten mit Rankgitter und Rollen, freiste..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B017KPIFL8?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B017KPIFL8?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B017KPIFL8" data-niche="duftkerzen" data-position="0" data-price="34,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B017KPIFL8._AC_SL1500_.jpg" alt="Yankee Candle Duftkerze im Glas (groß) | Balsam &amp;amp; Cedar | Kerze mit lang..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B004QOKYCU?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B004QOKYCU?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B004QOKYCU" data-niche="duftkerzen" data-position="1" data-price="22,50">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B004QOKYCU._AC_SL1500_.jpg" alt="Yankee Candle Duftkerze im Glas (groß) | Cinnamon Stick | Kerze mit langer Brenn..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B0BVQP4VCL?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0BVQP4VCL?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0BVQP4VCL" data-niche="duftkerzen" data-position="2" data-price="23,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0BVQP4VCL._AC_SL1500_.jpg" alt="La Jolíe Muse Duftkerze im Glas Rose Sandelholz, Kerzengeschenk für Frauen Sande..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0H4F5ZPM7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H4F5ZPM7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H4F5ZPM7" data-niche="duftkerzen" data-position="3" data-price="17,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H4F5ZPM7._AC_SL1500_.jpg" alt="Duftkerzen im Glas,4x Duft Duftkerze Geschenkset für Frauen,Sojawachs Kerze" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0GQ72D3YD?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0GQ72D3YD?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0GQ72D3YD" data-niche="duftkerzen" data-position="4" data-price="18,04">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0GQ72D3YD._AC_SL1500_.jpg" alt="Duftkerzen im Glas, Duftkerze Geschenkset aus 12 Düft Kerze für Frauen" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

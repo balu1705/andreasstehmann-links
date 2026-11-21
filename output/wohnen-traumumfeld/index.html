@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0CLTRGMJ2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0CLTRGMJ2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0CLTRGMJ2" data-niche="wohnen-traumumfeld" data-position="0" data-price="50,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0CLTRGMJ2._AC_SL1500_.jpg" alt="VASAGLE Regal mit 2 Ebenen, Bücherregal, Standregal mit 6 Fächern" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B07PHCJMMW?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B07PHCJMMW?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B07PHCJMMW" data-niche="wohnen-traumumfeld" data-position="1" data-price="66,29">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B07PHCJMMW._AC_SL1500_.jpg" alt="VASAGLE Bücherregal, Standregal mit 14 Ablagen, Metallrahmen" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B09KXM6L9S?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B09KXM6L9S?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B09KXM6L9S" data-niche="wohnen-traumumfeld" data-position="2" data-price="59,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B09KXM6L9S._AC_SL1500_.jpg" alt="Hzuaneri Bücherregal, Standregal mit 6 Ebenen 15 Ablagen" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0CC1Q77BS?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0CC1Q77BS?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0CC1Q77BS" data-niche="wohnen-traumumfeld" data-position="3" data-price="72,24">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0CC1Q77BS._AC_SL1500_.jpg" alt="Hzuaneri Standregal, Bücherregal 202 cm, 7 Ebenen, Vintagebraun-Schwarz" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0BM98FRFN?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0BM98FRFN?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0BM98FRFN" data-niche="wohnen-traumumfeld" data-position="4" data-price="142,49">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0BM98FRFN._AC_SL1500_.jpg" alt="5 Ebenen Eckregal Stehend mit LED und 4 Schubladen, Vintagebraun" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

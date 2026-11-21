@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0BD64NN9D?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0BD64NN9D?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0BD64NN9D" data-niche="flur-ordnung-stauraum" data-position="0" data-price="119,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0BD64NN9D._AC_SL1500_.jpg" alt="Schuhschrank mit 4 Klappschubladen，120x81x23cm，Schmaler freistehender Schuh-Orga..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0DMPBFYH7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0DMPBFYH7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0DMPBFYH7" data-niche="flur-ordnung-stauraum" data-position="1" data-price="54,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0DMPBFYH7._AC_SL1500_.jpg" alt="Designfabrik Hamburg Wandgarderobe | 80 cm Schwarz | verdeckte Haken" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B0CDL24MLN?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0CDL24MLN?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0CDL24MLN" data-niche="flur-ordnung-stauraum" data-position="2" data-price="84,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0CDL24MLN._AC_SL1500_.jpg" alt="VASAGLE Konsolentisch Schmal, mit Schubladen, 100 x 24 x 76 cm" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B09P9SVYS2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B09P9SVYS2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B09P9SVYS2" data-niche="flur-ordnung-stauraum" data-position="3" data-price="54,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B09P9SVYS2._AC_SL1500_.jpg" alt="CKEYURE Premium XL Graue PU Leder Faraday Box für Autoschlüssel Wandmontage mit ..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0H3GRY33G?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H3GRY33G?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H3GRY33G" data-niche="flur-ordnung-stauraum" data-position="4" data-price="109,00">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H3GRY33G._AC_SL1500_.jpg" alt="FLEXISTYLE Wandgarderobe Eichenbaum Holz Eiche mit Metallhaken Flurgarderobe mod..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

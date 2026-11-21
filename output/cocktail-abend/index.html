@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0D6KF7XWW?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0D6KF7XWW?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0D6KF7XWW" data-niche="cocktail-abend" data-position="0" data-price="54,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0D6KF7XWW._AC_SL1500_.jpg" alt="Magcheer Cocktail Shaker Set mit Integrierter Maßskala 900ml Premium Edelstahl F..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0C9HQ6FSG?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0C9HQ6FSG?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0C9HQ6FSG" data-niche="cocktail-abend" data-position="1" data-price="79,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0C9HQ6FSG._AC_SL1500_.jpg" alt="5-in-1 Elektrischer wein-dekanter &amp;amp; Liquor-Spender,Alkohol pourer-schwar..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B07N7V3B8C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B07N7V3B8C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B07N7V3B8C" data-niche="cocktail-abend" data-position="2" data-price="54,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B07N7V3B8C._AC_SL1500_.jpg" alt="WMF Stelio Milchaufschäumer elektrisch, 500 Watt, 150-250 ml, Antihaftbeschichtu..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0CY2XPKST?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0CY2XPKST?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0CY2XPKST" data-niche="cocktail-abend" data-position="3" data-price="89,90">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0CY2XPKST._AC_SL1500_.jpg" alt="Cocktail Gläser Set 14-teiliges Set mit verschiedenen Gläsern | Hochwertig und l..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B07KSW21HY?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B07KSW21HY?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B07KSW21HY" data-niche="cocktail-abend" data-position="4" data-price="67,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B07KSW21HY._AC_SL1500_.jpg" alt="Edelstahl Cocktail Set 11tlg. – 700 ml Cocktail Shaker Set mit Ständer und Bar Z..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

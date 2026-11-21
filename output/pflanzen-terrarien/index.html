@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0041P5PBE?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0041P5PBE?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0041P5PBE" data-niche="pflanzen-terrarien" data-position="0" data-price="56,93">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0041P5PBE._AC_SL1500_.jpg" alt="Exo Terra Terrarium aus Glas, mit einzigartiger Front Belüftung, 20 x 20 x 30cm" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0H1BR2Y6V?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H1BR2Y6V?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H1BR2Y6V" data-niche="pflanzen-terrarien" data-position="1" data-price="167,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H1BR2Y6V._AC_SL1500_.jpg" alt="Herture Großes Terrarium mit Unterschrank 450 L, 120 x 60 x 60 cm" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B09K3Z57G7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B09K3Z57G7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B09K3Z57G7" data-niche="pflanzen-terrarien" data-position="2" data-price="55,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B09K3Z57G7._AC_SL1500_.jpg" alt="Reptile Growth Terrarium Komplettset, 50 x 25 x 27cm Faunarium für,Schnecken,Ins..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0H361RD77?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H361RD77?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H361RD77" data-niche="pflanzen-terrarien" data-position="3" data-price="70,11">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H361RD77._AC_SL1500_.jpg" alt="PawHut Terrarium für Reptilien für Amphibien 48L 50 x 30 x 35 cm Schwarz" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B09KMRDQ9B?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B09KMRDQ9B?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B09KMRDQ9B" data-niche="pflanzen-terrarien" data-position="4" data-price="59,95">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B09KMRDQ9B._AC_SL1500_.jpg" alt="vdvelde.com - Pflanzen Terrarium - Wartungsfreies Ökosystem - Ø 25 cm ↥ 28 cm - ..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

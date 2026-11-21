@@ -3,123 +3,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andreas Stehmann Links - Deine kuratierte Produktauswahl</title>
-    <meta name="description" content="Handverlesene Amazon-Produktempfehlungen in über 90 Kategorien. Smarte Kaufentscheidungen mit echten Preisen, Bewertungen und Experten-Tipps.">
+    <title>Andreas Stehmann Links – Kuratierte Produktempfehlungen für dein Zuhause</title>
+    <meta name="description" content="Handverlesene Amazon-Produkte für Wohnen, Küche, Smart Home, Wellness & mehr. Echte Empfehlungen, keine Algorithmen. Als Amazon-Partner verdiene ich an qualifizierten Käufen.">
     <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/">
-    <meta property="og:title" content="Andreas Stehmann Links - Deine kuratierte Produktauswahl">
-    <meta property="og:description" content="Handverlesene Amazon-Produktempfehlungen in über 90 Kategorien.">
+    <meta property="og:title" content="Andreas Stehmann Links – Kuratierte Produktempfehlungen für dein Zuhause">
+    <meta property="og:description" content="Handverlesene Amazon-Produkte für Wohnen, Küche, Smart Home, Wellness & mehr. Echte Empfehlungen, keine Algorithmen.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://balu1705.github.io/andreasstehmann-links/">
+    <meta property="og:image" content="https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL1500_.jpg">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Andreas Stehmann Links – Kuratierte Produktempfehlungen">
+    <meta name="twitter:description" content="Handverlesene Amazon-Produkte für dein Zuhause. Echte Empfehlungen, keine Algorithmen.">
+    <meta name="twitter:image" content="https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL1500_.jpg">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <link rel="preconnect" href="https://images-na.ssl-images-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
+    <!-- JSON-LD WebSite Schema -->
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Andreas Stehmann Links", "url": "https://balu1705.github.io/andreasstehmann-links/", "potentialAction": {"@type": "SearchAction", "target": "https://balu1705.github.io/andreasstehmann-links/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
 </head>
 <body>
     <header class="site-header">
         <div class="container">
-            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">
-                <span class="logo-icon">🔗</span>
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links – Startseite">
+                <span class="logo-icon" aria-hidden="true">🔗</span>
                 <span class="logo-text">Andreas Stehmann Links</span>
             </a>
             <nav class="main-nav" aria-label="Hauptnavigation">
-                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
-                <ul id="nav-menu" class="nav-menu">
-                    <li><a href="/kategorie/wohnen-haushalt/">Wohnen & Haushalt</a></li><li><a href="/kategorie/kueche-kochen/">Küche & Kochen</a></li><li><a href="/kategorie/beauty-pflege/">Beauty & Pflege</a></li><li><a href="/kategorie/baby-familie/">Baby & Familie</a></li><li><a href="/kategorie/fitness-sport/">Fitness & Sport</a></li><li><a href="/kategorie/technik-gaming/">Technik & Gaming</a></li><li><a href="/kategorie/lifestyle-mehr/">Lifestyle & Mehr</a></li>
-                    <li><a href="/ueber-uns/">Über uns</a></li>
-                    <li><a href="/impressum/">Impressum</a></li>
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="/kategorie/wohnen-haushalt/" role="menuitem">Wohnen & Haushalt</a></li><li role="none"><a href="/kategorie/kueche-kochen/" role="menuitem">Küche & Kochen</a></li><li role="none"><a href="/kategorie/beauty-pflege/" role="menuitem">Beauty & Pflege</a></li><li role="none"><a href="/kategorie/baby-familie/" role="menuitem">Baby & Familie</a></li><li role="none"><a href="/kategorie/fitness-sport/" role="menuitem">Fitness & Sport</a></li><li role="none"><a href="/kategorie/technik-gaming/" role="menuitem">Technik & Gaming</a></li><li role="none"><a href="/kategorie/lifestyle-mehr/" role="menuitem">Lifestyle & Mehr</a></li>
+                    <li role="none"><a href="/ueber-uns/" role="menuitem">Über uns</a></li>
+                    <li role="none"><a href="/impressum/" role="menuitem">Impressum</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="site-main">
-        <section class="hero">
-            <div class="container">
-                <h1>Smarte Kaufentscheidungen leicht gemacht</h1>
-                <p class="hero-tagline">Handverlesene Amazon-Produkte • Echte Bewertungen • Aktuelle Preise</p>
-                <p class="hero-disclaimer">Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
-                <a href="#categories" class="btn btn-primary btn-large">Kategorien entdecken</a>
+        <!-- 1. HERO SECTION -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-background" style="background-image: url('https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL1500_.jpg')"></div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 id="hero-title">Produkte, die dein Zuhause besser machen</h1>
+                <p class="hero-subtitle">Handverlesene Empfehlungen für Wohnen, Küche, Smart Home, Wellness & mehr. Keine Algorithmen – nur echte Auswahl.</p>
+                <div class="hero-cta-group">
+                    <a href="#theme-worlds" class="btn btn-primary btn-large">Entdecke unsere Empfehlungen</a>
+                    <a href="#highlights" class="btn btn-secondary btn-large">Unsere beliebtesten Produkte</a>
+                </div>
+                <p class="hero-disclaimer" aria-live="polite">Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
             </div>
         </section>
 
-        <section id="categories" class="home-categories">
+        <!-- 2. THEME WORLDS - 7 Themenwelten -->
+        <section id="theme-worlds" class="theme-worlds" aria-labelledby="theme-worlds-title">
             <div class="container">
-                <h2>Beliebte Kategorien</h2>
-                <div class="home-category-grid" role="list">
+                <header class="section-header">
+                    <h2 id="theme-worlds-title">Unsere Themenwelten</h2>
+                    <p class="section-subtitle">Sieben kuratierte Bereiche – finde genau das, was du suchst</p>
+                </header>
+                <div class="theme-worlds-grid" role="list">
                     
+        <article class="theme-world-card" data-category="Wohnen & Haushalt">
+            <a href="/kategorie/wohnen-haushalt/" class="theme-world-link" aria-label="Wohnen & Haushalt - 36 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">374 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Wohnen & Haushalt</h3>
+                    <p>36 Kategorien, 374 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
+        <article class="theme-world-card" data-category="Küche & Kochen">
+            <a href="/kategorie/kueche-kochen/" class="theme-world-link" aria-label="Küche & Kochen - 9 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0GX5H49DW._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">72 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Küche & Kochen</h3>
+                    <p>9 Kategorien, 72 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
+        <article class="theme-world-card" data-category="Beauty & Pflege">
+            <a href="/kategorie/beauty-pflege/" class="theme-world-link" aria-label="Beauty & Pflege - 13 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B002RBTB8C._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">136 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Beauty & Pflege</h3>
+                    <p>13 Kategorien, 136 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
+        <article class="theme-world-card" data-category="Baby & Familie">
+            <a href="/kategorie/baby-familie/" class="theme-world-link" aria-label="Baby & Familie - 7 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0CC98XC28._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">51 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Baby & Familie</h3>
+                    <p>7 Kategorien, 51 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
+        <article class="theme-world-card" data-category="Fitness & Sport">
+            <a href="/kategorie/fitness-sport/" class="theme-world-link" aria-label="Fitness & Sport - 9 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0DY6X2ZJ7._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">67 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Fitness & Sport</h3>
+                    <p>9 Kategorien, 67 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
+        <article class="theme-world-card" data-category="Technik & Gaming">
+            <a href="/kategorie/technik-gaming/" class="theme-world-link" aria-label="Technik & Gaming - 7 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">73 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Technik & Gaming</h3>
+                    <p>7 Kategorien, 73 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
+        <article class="theme-world-card" data-category="Lifestyle & Mehr">
+            <a href="/kategorie/lifestyle-mehr/" class="theme-world-link" aria-label="Lifestyle & Mehr - 9 Kategorien entdecken">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0CCVX6FSD._AC_SL500_.jpg')">
+                    <span class="theme-world-overlay">
+                        <span class="theme-world-count">114 Produkte</span>
+                    </span>
+                </div>
+                <div class="theme-world-content">
+                    <h3>Lifestyle & Mehr</h3>
+                    <p>9 Kategorien, 114 kuratierte Produkte</p>
+                    <span class="theme-world-cta">Entdecken →</span>
+                </div>
+            </a>
+        </article>
                 </div>
             </div>
         </section>
 
-        <section class="home-all-categories">
+        <!-- 3. SEASONAL RECOMMENDATIONS -->
+        <section id="seasonal" class="seasonal" aria-labelledby="seasonal-title">
             <div class="container">
-                <h2>Alle Kategorien</h2>
-                <div class="all-categories-grid">
-                    <ul class="all-categories-list" role="list">
-                        <li><a href="/kategorie/wohnen-haushalt/">Wohnen & Haushalt</a></li><li><a href="/kategorie/kueche-kochen/">Küche & Kochen</a></li><li><a href="/kategorie/beauty-pflege/">Beauty & Pflege</a></li><li><a href="/kategorie/baby-familie/">Baby & Familie</a></li><li><a href="/kategorie/fitness-sport/">Fitness & Sport</a></li><li><a href="/kategorie/technik-gaming/">Technik & Gaming</a></li><li><a href="/kategorie/lifestyle-mehr/">Lifestyle & Mehr</a></li>
-                    </ul>
+                <header class="section-header">
+                    <h2 id="seasonal-title">🍂 Herbst-Highlights</h2>
+                    <p class="section-subtitle">Warme Herbst-Favoriten für drinnen & draußen</p>
+                </header>
+                <div class="product-grid seasonal-grid" role="list">
+                    
+        <article class="product-card seasonal-card">
+            <a href="https://www.amazon.de/dp/B0H87Q4GB6?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="8 Bündel Kunstblumen Herbst Künstliche Blumen Chrysanthemen  bei Amazon ansehen" data-asin="B0H87Q4GB6" data-niche="Herbst Deko" data-position="0" data-price="14,44">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0H87Q4GB6._AC_SL500_.jpg" alt="8 Bündel Kunstblumen Herbst Künstliche Blumen Chrysanthemen " loading="lazy" width="400" height="400">
+                    <span class="product-badge">🍂 Herbst</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Herbst Deko</p>
+                    <h4 class="product-title">8 Bündel Kunstblumen Herbst Künstliche Blumen Chrysanthemen </h4>
+                    <p class="product-price">14,44</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">*</p>
+        </article>
+        <article class="product-card seasonal-card">
+            <a href="https://www.amazon.de/dp/B0GKVPZBSL?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="2-in-1 Aroma Diffuser &amp; Salzkristall Lampe - 300ml Ultra bei Amazon ansehen" data-asin="B0GKVPZBSL" data-niche="Herbst & Winter Deko" data-position="0" data-price="18,99">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0GKVPZBSL._AC_SL500_.jpg" alt="2-in-1 Aroma Diffuser &amp; Salzkristall Lampe - 300ml Ultra" loading="lazy" width="400" height="400">
+                    <span class="product-badge">🍂 Herbst</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Herbst & Winter Deko</p>
+                    <h4 class="product-title">2-in-1 Aroma Diffuser &amp; Salzkristall Lampe - 300ml Ultra</h4>
+                    <p class="product-price">18,99</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">*</p>
+        </article>
+        <article class="product-card seasonal-card">
+            <a href="https://www.amazon.de/dp/B0019M4H16?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="Bialetti - Moka Express: Ikonische Espressomaschine für die  bei Amazon ansehen" data-asin="B0019M4H16" data-niche="Kaffee Genuss" data-position="0" data-price="19,89">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0019M4H16._AC_SL500_.jpg" alt="Bialetti - Moka Express: Ikonische Espressomaschine für die " loading="lazy" width="400" height="400">
+                    <span class="product-badge">🍂 Herbst</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Kaffee Genuss</p>
+                    <h4 class="product-title">Bialetti - Moka Express: Ikonische Espressomaschine für die </h4>
+                    <p class="product-price">19,89</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">*</p>
+        </article>
+        <article class="product-card seasonal-card">
+            <a href="https://www.amazon.de/dp/B09Y4THK98?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="Tee Selber Mischen Set Geschenk mit 14 aufregenden Tee-Sorte bei Amazon ansehen" data-asin="B09Y4THK98" data-niche="Tee Lounge" data-position="0" data-price="59,99">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B09Y4THK98._AC_SL500_.jpg" alt="Tee Selber Mischen Set Geschenk mit 14 aufregenden Tee-Sorte" loading="lazy" width="400" height="400">
+                    <span class="product-badge">🍂 Herbst</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Tee Lounge</p>
+                    <h4 class="product-title">Tee Selber Mischen Set Geschenk mit 14 aufregenden Tee-Sorte</h4>
+                    <p class="product-price">59,99</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">*</p>
+        </article>
+                </div>
+                <div class="section-footer">
+                    <a href="/kategorie/kategorie/lifestyle-mehr/" class="btn btn-outline">Alle Herbst-Produkte entdecken</a>
                 </div>
             </div>
         </section>
 
-        <section class="home-cta">
+        <!-- 4. BUYING GUIDES -->
+        <section id="guides" class="guides" aria-labelledby="guides-title">
             <div class="container">
-                <h2>Warum Andreas Stehmann Links?</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <span class="feature-icon">✨</span>
-                        <h3>Kuratierte Auswahl</h3>
-                        <p>Nur Produkte, die wirklich überzeugen – keine Algorithmen, sondern Handverlesung.</p>
+                <header class="section-header">
+                    <h2 id="guides-title">Aktuelle Kaufberatungen</h2>
+                    <p class="section-subtitle">Fundierte Entscheidungs-Hilfen für wichtige Anschaffungen</p>
+                </header>
+                <div class="guides-grid" role="list">
+                    
+        <article class="guide-card">
+            <div class="guide-content">
+                <span class="guide-category">Wohnen & Haushalt</span>
+                <h3><a href="/kaufberatung/moebel-kleine-wohnungen/">Die besten Möbel für kleine Wohnungen</a></h3>
+                <p>Platzsparende Lösungen, die funktionieren – getestet & verglichen.</p>
+                <a href="/kaufberatung/moebel-kleine-wohnungen/" class="guide-cta">Zum Ratgeber →</a>
+            </div>
+        </article>
+        <article class="guide-card">
+            <div class="guide-content">
+                <span class="guide-category">Technik & Gaming</span>
+                <h3><a href="/kaufberatung/smart-home-einsteiger/">Smart Home für Einsteiger: Der komplette Guide</a></h3>
+                <p>Von smarter Beleuchtung bis Sicherheit – alles was du brauchst.</p>
+                <a href="/kaufberatung/smart-home-einsteiger/" class="guide-cta">Zum Ratgeber →</a>
+            </div>
+        </article>
+        <article class="guide-card">
+            <div class="guide-content">
+                <span class="guide-category">Küche & Kochen</span>
+                <h3><a href="/kaufberatung/kuechengadgets-zeit-sparen/">Praktische Küchengadgets, die Zeit sparen</a></h3>
+                <p>Clevere Helfer für den Alltag – unsere Top-Empfehlungen 2026.</p>
+                <a href="/kaufberatung/kuechengadgets-zeit-sparen/" class="guide-cta">Zum Ratgeber →</a>
+            </div>
+        </article>
+                </div>
+                <div class="section-footer">
+                    <a href="/kaufberatungen/" class="btn btn-outline">Alle Kaufberatungen anzeigen</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PRODUCT HIGHLIGHTS -->
+        <section id="highlights" class="highlights" aria-labelledby="highlights-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="highlights-title">Besonders empfehlenswert</h2>
+                    <p class="section-subtitle">Unsere Favoriten über alle Kategorien hinweg</p>
+                </header>
+                <div class="product-grid highlights-grid" role="list">
+                    
+        <article class="product-card highlight-card">
+            <a href="https://www.amazon.de/dp/B0H1CMGNHR?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="Produkt 1 bei Amazon ansehen" data-asin="B0H1CMGNHR" data-niche="Wohnen & Haushalt" data-position="0" data-price="">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg" alt="Produkt 1" loading="lazy" width="400" height="400">
+                    <span class="product-badge highlight-badge">Empfehlung</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Wohnen & Haushalt</p>
+                    <h4 class="product-title">Produkt 1</h4>
+                    
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
+        </article>
+        <article class="product-card highlight-card">
+            <a href="https://www.amazon.de/dp/B0GX5H49DW?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="1500W Küchenmaschine und Mixer Kombination, 2,5L Zerkle bei Amazon ansehen" data-asin="B0GX5H49DW" data-niche="Küche & Kochen" data-position="0" data-price="64,50">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0GX5H49DW._AC_SL500_.jpg" alt="1500W Küchenmaschine und Mixer Kombination, 2,5L Zerkle" loading="lazy" width="400" height="400">
+                    <span class="product-badge highlight-badge">Empfehlung</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Küche & Kochen</p>
+                    <h4 class="product-title">1500W Küchenmaschine und Mixer Kombination, 2,5L Zerkle</h4>
+                    <p class="product-price">64,50</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
+        </article>
+        <article class="product-card highlight-card">
+            <a href="https://www.amazon.de/dp/B002RBTB8C?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="Clinique All About Clean™ Liquid Facial Soap | Gesichts bei Amazon ansehen" data-asin="B002RBTB8C" data-niche="Beauty & Pflege" data-position="0" data-price="40,50">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B002RBTB8C._AC_SL500_.jpg" alt="Clinique All About Clean™ Liquid Facial Soap | Gesichts" loading="lazy" width="400" height="400">
+                    <span class="product-badge highlight-badge">Empfehlung</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Beauty & Pflege</p>
+                    <h4 class="product-title">Clinique All About Clean™ Liquid Facial Soap | Gesichts</h4>
+                    <p class="product-price">40,50</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
+        </article>
+        <article class="product-card highlight-card">
+            <a href="https://www.amazon.de/dp/B0CC98XC28?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="HelloBaby Babyphone mit Kamera, Kein WLAN, 5&amp;quot;  bei Amazon ansehen" data-asin="B0CC98XC28" data-niche="Baby & Familie" data-position="0" data-price="79,99">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0CC98XC28._AC_SL500_.jpg" alt="HelloBaby Babyphone mit Kamera, Kein WLAN, 5&amp;quot; " loading="lazy" width="400" height="400">
+                    <span class="product-badge highlight-badge">Empfehlung</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Baby & Familie</p>
+                    <h4 class="product-title">HelloBaby Babyphone mit Kamera, Kein WLAN, 5&amp;quot; </h4>
+                    <p class="product-price">79,99</p>
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
+        </article>
+        <article class="product-card highlight-card">
+            <a href="https://www.amazon.de/dp/B0DY6X2ZJ7?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="Produkt 1 bei Amazon ansehen" data-asin="B0DY6X2ZJ7" data-niche="Fitness & Sport" data-position="0" data-price="">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0DY6X2ZJ7._AC_SL500_.jpg" alt="Produkt 1" loading="lazy" width="400" height="400">
+                    <span class="product-badge highlight-badge">Empfehlung</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Fitness & Sport</p>
+                    <h4 class="product-title">Produkt 1</h4>
+                    
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
+        </article>
+        <article class="product-card highlight-card">
+            <a href="https://www.amazon.de/dp/B0C81Z7BBM?tag=balu17051-21" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="Produkt 1 bei Amazon ansehen" data-asin="B0C81Z7BBM" data-niche="Technik & Gaming" data-position="0" data-price="">
+                <div class="product-image-wrapper">
+                    <img src="https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg" alt="Produkt 1" loading="lazy" width="400" height="400">
+                    <span class="product-badge highlight-badge">Empfehlung</span>
+                </div>
+                <div class="product-content">
+                    <p class="product-category">Technik & Gaming</p>
+                    <h4 class="product-title">Produkt 1</h4>
+                    
+                    <span class="product-cta">Bei Amazon ansehen →</span>
+                </div>
+            </a>
+            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
+        </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TRUST SECTION -->
+        <section id="trust" class="trust" aria-labelledby="trust-title">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-content">
+                        <h2 id="trust-title">Vertrauen durch Transparenz</h2>
+                        <p><strong>Andreas Stehmann</strong> kuratiert diese Empfehlungen seit 2024. Das Ziel: Dir die Recherche abnehmen und dir Produkte zeigen, die wirklich überzeugen.</p>
+                        <div class="trust-points">
+                            <div class="trust-point">
+                                <span class="trust-icon" aria-hidden="true">✋</span>
+                                <div>
+                                    <h4>Handverlesen</h4>
+                                    <p>Keine automatisierten Feeds. Jedes Produkt wird einzeln geprüft.</p>
+                                </div>
+                            </div>
+                            <div class="trust-point">
+                                <span class="trust-icon" aria-hidden="true">💬</span>
+                                <div>
+                                    <h4>Echte Bewertungen</h4>
+                                    <p>Wir gewichten Kundenrezensionen stärker als Marketing-Versprechen.</p>
+                                </div>
+                            </div>
+                            <div class="trust-point">
+                                <span class="trust-icon" aria-hidden="true">🔄</span>
+                                <div>
+                                    <h4>Regelmäßige Updates</h4>
+                                    <p>Preise, Verfügbarkeit & Sortiment werden wöchentlich geprüft.</p>
+                                </div>
+                            </div>
+                            <div class="trust-point">
+                                <span class="trust-icon" aria-hidden="true">🔗</span>
+                                <div>
+                                    <h4>Transparent finanziert</h4>
+                                    <p>Affiliate-Links kennzeichnen wir offen. Dein Preis bleibt gleich.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="/ueber-uns/" class="btn btn-secondary">Mehr über uns erfahren</a>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">💰</span>
-                        <h3>Beste Preise</h3>
-                        <p>Direkt zu Amazon – du zahlst nicht mehr, wir erhalten eine kleine Provision.</p>
+                    <div class="trust-image" aria-hidden="true">
+                        <div class="trust-stats">
+                            <div class="stat"><strong>90+</strong><span>Kategorien</span></div>
+                            <div class="stat"><strong>700+</strong><span>Produkte</span></div>
+                            <div class="stat"><strong>7</strong><span>Themenwelten</span></div>
+                            <div class="stat"><strong>wöchentlich</strong><span>aktualisiert</span></div>
+                        </div>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">⭐</span>
-                        <h3>Echte Bewertungen</h3>
-                        <p>Produkte mit hohen Kundenbewertungen und vielen Rezensionen bevorzugt.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. NEWSLETTER SECTION -->
+        <section id="newsletter" class="newsletter" aria-labelledby="newsletter-title">
+            <div class="container">
+                <div class="newsletter-card">
+                    <div class="newsletter-content">
+                        <h2 id="newsletter-title">Wöchentlich Inspiration für dein Zuhause</h2>
+                        <p>Keine Werbung. Nur kuratierte Produkt-Tipps, saisonale Ideen & exklusive Fundstücke – jeden Sonntag in deinem Postfach.</p>
+                        <ul class="newsletter-benefits">
+                            <li><span aria-hidden="true">✓</span> 3-5 handverlesene Empfehlungen pro Woche</li>
+                            <li><span aria-hidden="true">✓</span> Saisonale Guides (Weihnachten, Balkon-Saison, etc.)</li>
+                            <li><span aria-hidden="true">✓</span> Exklusive Preis-Drops & Lightning Deals</li>
+                            <li><span aria-hidden="true">✓</span> Jederzeit abbestellbar, DSGVO-konform</li>
+                        </ul>
                     </div>
-                    <div class="feature">
-                        <span class="feature-icon">🔄</span>
-                        <h3>Immer aktuell</h3>
-                        <p>Preise und Verfügbarkeit werden regelmäßig geprüft und aktualisiert.</p>
-                    </div>
+                    <form class="newsletter-form" action="#" method="POST" aria-label="Newsletter anmelden">
+                        <div class="form-group">
+                            <label for="email" class="visually-hidden">E-Mail-Adresse</label>
+                            <input type="email" id="email" name="email" placeholder="deine@email.de" required autocomplete="email" aria-describedby="newsletter-privacy">
+                            <button type="submit" class="btn btn-primary">Kostenlos abonnieren</button>
+                        </div>
+                        <p id="newsletter-privacy" class="form-hint">Kein Spam. Datenschutz <a href="/datenschutz/">hier</a>. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer">
+    <!-- 8. PROFESSIONAL FOOTER -->
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-main">
                 <div class="footer-brand">
-                    <span class="logo-icon">🔗</span>
-                    <span>Andreas Stehmann Links</span>
-                    <p>Deine kuratierte Produktauswahl für smarte Kaufentscheidungen.</p>
+                    <a href="/" class="logo" aria-label="Andreas Stehmann Links – Startseite">
+                        <span class="logo-icon" aria-hidden="true">🔗</span>
+                        <span class="logo-text">Andreas Stehmann Links</span>
+                    </a>
+                    <p class="footer-tagline">Kuratierte Produktempfehlungen für smarte Kaufentscheidungen.</p>
+                    <p class="footer-disclaimer">Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
                 </div>
-                <nav class="footer-nav">
-                    <h4>Kategorien</h4>
+                <nav class="footer-nav" aria-label="Themenwelten">
+                    <h4>Themenwelten</h4>
                     <ul>
                         <li><a href="/kategorie/wohnen-haushalt/">Wohnen & Haushalt</a></li><li><a href="/kategorie/kueche-kochen/">Küche & Kochen</a></li><li><a href="/kategorie/beauty-pflege/">Beauty & Pflege</a></li><li><a href="/kategorie/baby-familie/">Baby & Familie</a></li><li><a href="/kategorie/fitness-sport/">Fitness & Sport</a></li><li><a href="/kategorie/technik-gaming/">Technik & Gaming</a></li><li><a href="/kategorie/lifestyle-mehr/">Lifestyle & Mehr</a></li>
                     </ul>
                 </nav>
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Hilfe & Info">
+                    <h4>Hilfe & Info</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/kaufberatungen/">Alle Kaufberatungen</a></li>
+                        <li><a href="/newsletter/">Newsletter-Archiv</a></li>
+                        <li><a href="/kontakt/">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Rechtliches">
                     <h4>Rechtliches</h4>
                     <ul>
                         <li><a href="/impressum/">Impressum</a></li>
                         <li><a href="/datenschutz/">Datenschutz</a></li>
                         <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/cookie-einstellungen/">Cookie-Einstellungen</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Andreas Stehmann Links. Alle Rechte vorbehalten.</p>
+                <p>&copy; 2026 Andreas Stehmann Links. Alle Rechte vorbehalten.</p>
+                <div class="footer-social" aria-label="Social Media">
+                    <a href="https://www.threads.net/@gamerbrosis14" target="_blank" rel="noopener noreferrer" aria-label="Threads">🧵</a>
+                    <a href="https://www.tiktok.com/@gamerbrosis14" target="_blank" rel="noopener noreferrer" aria-label="TikTok">🎵</a>
+                    <a href="https://www.youtube.com/@Gamerbrosis" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶️</a>
+                </div>
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0FH4CHLZS?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0FH4CHLZS?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0FH4CHLZS" data-niche="schmuck-aufbewahrung" data-position="0" data-price="18,69">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0FH4CHLZS._AC_SL1500_.jpg" alt="3 Schichten Schmuckkästchen mit 2 Schubladen, Elegante Schmuckkasten, Leder Schm..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0C8HW9V7C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0C8HW9V7C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0C8HW9V7C" data-niche="schmuck-aufbewahrung" data-position="1" data-price="41,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0C8HW9V7C._AC_SL1500_.jpg" alt="Schmuckkästchen Groß, mit 4 Ebenen 3 Schubladen Schmuckschatulle PU Leder" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B0FNMTDNJ2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0FNMTDNJ2?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0FNMTDNJ2" data-niche="schmuck-aufbewahrung" data-position="2" data-price="39,09">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0FNMTDNJ2._AC_SL1500_.jpg" alt="Schmuckkästchen 5 Ebenen, mit 4 Schubladen, abschließbar" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0BWJPL32C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0BWJPL32C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0BWJPL32C" data-niche="schmuck-aufbewahrung" data-position="3" data-price="40,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0BWJPL32C._AC_SL1500_.jpg" alt="Große Schmuckaufbewahrung, 6 Ebenen mit Spiegel 5 Schubladen Beige" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0F5WHMPML?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0F5WHMPML?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0F5WHMPML" data-niche="schmuck-aufbewahrung" data-position="4" data-price="49,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0F5WHMPML._AC_SL1500_.jpg" alt="Groß Schmuckaufbewahrung, Schmuckkästchen mit 5 Schubladen, 6 Ebenen Schmuckkast..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>

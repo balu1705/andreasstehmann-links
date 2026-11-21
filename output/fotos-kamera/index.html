@@ -13,6 +13,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="preconnect" href="https://m.media-amazon.com">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPCSF9BFH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YPCSF9BFH2');
+    </script>
 </head>
 <body>
     <header class="site-header">
@@ -50,7 +58,7 @@
                 <div class="product-grid" role="list">
                     
     <article class="product-card" data-index="0">
-        <a href="https://www.amazon.de/dp/B0H11FLX7C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H11FLX7C?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H11FLX7C" data-niche="fotos-kamera" data-position="0" data-price="129,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H11FLX7C._AC_SL1500_.jpg" alt="Digitalkamera 8K 96MP mit WLAN, 20X Digitalzoom, Autofokus-Fotokamera mit Anti-S..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -62,7 +70,7 @@
         </a>
     </article>
     <article class="product-card" data-index="1">
-        <a href="https://www.amazon.de/dp/B0H4ZM9CRF?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H4ZM9CRF?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H4ZM9CRF" data-niche="fotos-kamera" data-position="1" data-price="109,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H4ZM9CRF._AC_SL1500_.jpg" alt="Digitalkamera 4K 64MP mit WLAN, Autofokus Vlogging-Kamera &amp;amp; Webcam, 3″ 1..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -74,7 +82,7 @@
         </a>
     </article>
     <article class="product-card" data-index="2">
-        <a href="https://www.amazon.de/dp/B0H7JR8C2Q?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H7JR8C2Q?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H7JR8C2Q" data-niche="fotos-kamera" data-position="2" data-price="99,99">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H7JR8C2Q._AC_SL1500_.jpg" alt="2026 Neueste Digitalkamera 8K 96MP Vlogging Kamera mit WLAN, Dual-Display Autofo..." loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -86,7 +94,7 @@
         </a>
     </article>
     <article class="product-card" data-index="3">
-        <a href="https://www.amazon.de/dp/B0H39CL837?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0H39CL837?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0H39CL837" data-niche="fotos-kamera" data-position="3" data-price="119,98">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0H39CL837._AC_SL1500_.jpg" alt="NBD 5K Digitalkamera 64MP mit Autofokus, 18X Digitalzoom (Schwarz)" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -98,7 +106,7 @@
         </a>
     </article>
     <article class="product-card" data-index="4">
-        <a href="https://www.amazon.de/dp/B0C783YNW7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link">
+        <a href="https://www.amazon.de/dp/B0C783YNW7?tag=balu17051-21&linkCode=ogi&th=1&psc=1" target="_blank" rel="noopener sponsored" class="product-link" data-asin="B0C783YNW7" data-niche="fotos-kamera" data-position="4" data-price="194,95">
             <div class="product-image-wrapper">
                 <img src="https://m.media-amazon.com/images/I/B0C783YNW7._AC_SL1500_.jpg" alt="DJI Osmo Action 4 Standard-Combo, 4K/120fps Action-Kamera" loading="lazy" class="product-image">
                 <span class="product-badge">Zum Angebot</span>
@@ -150,7 +158,30 @@
             </div>
         </div>
     </footer>
-
+    <!-- GA4 Affiliate Click Tracking -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
+                link.addEventListener("click", function(e) {
+                    var asin = this.getAttribute("data-asin");
+                    var niche = this.getAttribute("data-niche");
+                    var position = this.getAttribute("data-position");
+                    var price = this.getAttribute("data-price");
+                    if (asin && typeof gtag === "function") {
+                        gtag("event", "affiliate_click", {
+                            "asin": asin,
+                            "niche": niche || "",
+                            "position": parseInt(position) || 0,
+                            "price": parseFloat(price) || 0,
+                            "currency": "EUR",
+                            "affiliate_tag": "balu17051-21",
+                            "link_domain": "amazon.de"
+                        });
+                    }
+                });
+            });
+        });
+    </script>
     <script src="/assets/main.js"></script>
 </body>
 </html>
