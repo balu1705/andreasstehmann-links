@@ -976,6 +976,11 @@ def generate_homepage(all_products):
                         </div>
                         <p id="newsletter-privacy" class="form-hint">Kein Spam. Datenschutz <a href="/datenschutz/">hier</a>. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
                     </form>
+                    <p class="newsletter-whatsapp">
+                        <a href="https://whatsapp.com/channel/0029VbE6HFZDjiOZFNBfRC2h" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kanal für tägliche Deals">
+                            💬 Auch auf WhatsApp: Tägliche Amazon-Deals folgen
+                        </a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -1024,6 +1029,7 @@ def generate_homepage(all_products):
                     <a href="https://www.threads.net/@gamerbrosis14" target="_blank" rel="noopener noreferrer" aria-label="Threads">🧵</a>
                     <a href="https://www.tiktok.com/@gamerbrosis14" target="_blank" rel="noopener noreferrer" aria-label="TikTok">🎵</a>
                     <a href="https://www.youtube.com/@Gamerbrosis" target="_blank" rel="noopener noreferrer" aria-label="YouTube">▶️</a>
+                    <a href="https://whatsapp.com/channel/0029VbE6HFZDjiOZFNBfRC2h" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kanal">💬</a>
                 </div>
             </div>
         </div>
@@ -1279,6 +1285,23 @@ img { max-width: 100%; height: auto; display: block; }
 .cta-section { padding: 60px 0; text-align: center; background: var(--color-bg-alt); }
 .cta-section h2 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
 .cta-section p { color: var(--color-text-muted); margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto; }
+
+/* ===== NEWSLETTER ===== */
+.newsletter { padding: 60px 0; background: var(--color-bg); }
+.newsletter-card { display: grid; grid-template-columns: 1fr 400px; gap: 40px; align-items: start; max-width: 900px; margin: 0 auto; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 40px; }
+.newsletter-content h2 { font-size: 24px; font-weight: 700; margin-bottom: 12px; }
+.newsletter-content p { color: var(--color-text-muted); margin-bottom: 24px; }
+.newsletter-benefits { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px; }
+.newsletter-benefits li { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--color-text); }
+.newsletter-benefits span { color: var(--color-success); font-weight: 600; }
+.newsletter-form { display: flex; flex-direction: column; gap: 12px; }
+.newsletter-form .form-group { display: flex; gap: 8px; }
+.newsletter-form input { flex: 1; padding: 12px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 15px; }
+.newsletter-form input:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-light); }
+.form-hint { font-size: 13px; color: var(--color-text-muted); text-align: center; }
+.newsletter-whatsapp { text-align: center; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--color-border); }
+.newsletter-whatsapp a { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: var(--color-primary); transition: color var(--transition-fast); }
+.newsletter-whatsapp a:hover { color: var(--color-primary-hover); }
 
 /* ===== FOOTER ===== */
 .site-footer { background: var(--color-text); color: white; margin-top: auto; }
