@@ -1105,7 +1105,35 @@ def generate_legal_pages():
 </head>
 <body>
     <header class="site-header"><div class="container"><a href="/" class="logo"><span class="logo-icon">🔗</span><span class="logo-text">Andreas Stehmann Links</span></a></div></header>
-    <main class="site-main"><div class="container"><h1>Affiliate-Hinweis</h1><div class="legal-content"><h2>Transparenz bei Empfehlungen</h2><p>Auf dieser Website verwenden wir Affiliate-Links (markiert mit * oder durch den Hinweis "Als Amazon-Partner verdiene ich an qualifizierten Käufen").</p><h2>Was bedeutet das für dich?</h2><ul><li>Du klickst auf einen Produktlink und wirst zu Amazon weitergeleitet</li><li>Kaufst du dort etwas, erhalten wir eine kleine Provision</li><li><strong>Für dich ändert sich der Preis nicht</strong> – du zahlst den regulären Amazon-Preis</li></ul><h2>Warum Affiliate-Links?</h2><p>Die Provisionen decken die Betriebskosten dieser Website (Hosting, Domain, Wartung) und ermöglichen es uns, weiterhin unabhängige Produktempfehlungen zu recherchieren und zu veröffentlichen.</p><h2>Unsere Unabhängigkeit</h2><p>Die Provision beeinflusst <strong>nicht</strong> unsere Produktauswahl. Wir empfehlen nur Produkte, von denen wir überzeugt sind – basierend auf Kundenbewertungen, Testergebnissen und Preis-Leistungs-Verhältnis.</p></div></div></main>
+    <main class="site-main"><div class="container"><h1>Affiliate-Hinweis</h1><div class="legal-content">
+        <section class="transparency-box" aria-labelledby="transparency-title">
+            <h2 id="transparency-title">❓ Verdiene ich an den Links?</h2>
+            <p><strong>Ja.</strong> Als Amazon-Partner verdiene ich an qualifizierten Käufen. Das bedeutet: Wenn du über einen Produktlink auf dieser Seite bei Amazon einkaufe, erhalte ich eine kleine Provision.</p>
+            <div class="transparency-grid">
+                <div class="transparency-item">
+                    <span class="transparency-icon" aria-hidden="true">💰</span>
+                    <div>
+                        <h3>Keine Mehrkosten für dich</h3>
+                        <p>Du zahlst den regulären Amazon-Preis. Die Provision wird vom Händler getragen, nicht von dir.</p>
+                    </div>
+                </div>
+                <div class="transparency-item">
+                    <span class="transparency-icon" aria-hidden="true">🔍</span>
+                    <div>
+                        <h3>Unabhängige Auswahl</h3>
+                        <p>Die Provision beeinflusst <strong>nicht</strong> unsere Empfehlungen. Wir wählen Produkte nach Kundenbewertungen, Tests & Preis-Leistung.</p>
+                    </div>
+                </div>
+                <div class="transparency-item">
+                    <span class="transparency-icon" aria-hidden="true">🏠</span>
+                    <div>
+                        <h3>Finanziert den Betrieb</h3>
+                        <p>Die Einnahmen decken Hosting, Domain, Wartung & Recherche – damit diese Seite unabhängig bleibt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2>Transparenz bei Empfehlungen</h2><p>Auf dieser Website verwenden wir Affiliate-Links (markiert mit * oder durch den Hinweis "Als Amazon-Partner verdiene ich an qualifizierten Käufen").</p><h2>Was bedeutet das für dich?</h2><ul><li>Du klickst auf einen Produktlink und wirst zu Amazon weitergeleitet</li><li>Kaufst du dort etwas, erhalten wir eine kleine Provision</li><li><strong>Für dich ändert sich der Preis nicht</strong> – du zahlst den regulären Amazon-Preis</li></ul><h2>Warum Affiliate-Links?</h2><p>Die Provisionen decken die Betriebskosten dieser Website (Hosting, Domain, Wartung) und ermöglichen es uns, weiterhin unabhängige Produktempfehlungen zu recherchieren und zu veröffentlichen.</p><h2>Unsere Unabhängigkeit</h2><p>Die Provision beeinflusst <strong>nicht</strong> unsere Produktauswahl. Wir empfehlen nur Produkte, von denen wir überzeugt sind – basierend auf Kundenbewertungen, Testergebnissen und Preis-Leistungs-Verhältnis.</p></div></div></main>
     <footer class="site-footer"><div class="container"><p>&copy; 2024 Andreas Stehmann Links.</p></div></footer>
 </body>
 </html>'''
@@ -1322,6 +1350,16 @@ img { max-width: 100%; height: auto; display: block; }
 .legal-content h2:first-child { border-top: none; padding-top: 0; margin-top: 0; }
 .legal-content ul { margin: 16px 0; padding-left: 24px; }
 .legal-content li { margin-bottom: 8px; }
+
+/* Transparency Box */
+.transparency-box { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 32px; }
+.transparency-box h2 { font-size: 24px; font-weight: 700; margin-bottom: 16px; color: var(--color-text); border: none; padding: 0; }
+.transparency-box > p { font-size: 16px; color: var(--color-text-muted); margin-bottom: 24px; }
+.transparency-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+.transparency-item { display: flex; gap: 16px; }
+.transparency-icon { font-size: 28px; flex-shrink: 0; }
+.transparency-item h3 { font-size: 16px; font-weight: 600; margin: 0 0 8px; color: var(--color-text); }
+.transparency-item p { font-size: 14px; color: var(--color-text-muted); margin: 0; line-height: 1.6; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
