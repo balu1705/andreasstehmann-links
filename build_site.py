@@ -1020,6 +1020,7 @@ def generate_homepage(all_products):
                         <li><a href="/impressum/">Impressum</a></li>
                         <li><a href="/datenschutz/">Datenschutz</a></li>
                         <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/preischeck/">Preisprüfung & Methodik</a></li>
                         <li><a href="/cookie-einstellungen/">Cookie-Einstellungen</a></li>
                     </ul>
                 </nav>
@@ -1095,6 +1096,65 @@ def generate_legal_pages():
 </body>
 </html>'''
 
+    preischeck = '''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preisprüfung & Methodik - Andreas Stehmann Links</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header"><div class="container"><a href="/" class="logo"><span class="logo-icon">🔗</span><span class="logo-text">Andreas Stehmann Links</span></a></div></header>
+    <main class="site-main"><div class="container"><h1>Wie wir Preise prüfen</h1><div class="legal-content">
+        <section class="transparency-box" aria-labelledby="preischeck-title">
+            <h2 id="preischeck-title">🔄 Unsere Preisprüfung im Überblick</h2>
+            <p>Wir aktualisieren Preise, Verfügbarkeit und Sortiment <strong>wöchentlich automatisiert</strong> über die Amazon Product Advertising API. Die angezeigten Preise sind Momentaufnahmen und können sich kurzfristig ändern.</p>
+            <div class="transparency-grid">
+                <div class="transparency-item">
+                    <span class="transparency-icon" aria-hidden="true">🤖</span>
+                    <div>
+                        <h3>Automatisierter Abgleich</h3>
+                        <p>Preise werden via Amazon API wöchentlich abgeglichen. Manuelle Prüfung bei Auffälligkeiten.</p>
+                    </div>
+                </div>
+                <div class="transparency-item">
+                    <span class="transparency-icon" aria-hidden="true">⏰</span>
+                    <div>
+                        <h3>Momentaufnahme</h3>
+                        <p>Der angezeigte Preis ist der Zeitpunkt des letzten API-Abgleichs. Auf Amazon kann er abweichen.</p>
+                    </div>
+                </div>
+                <div class="transparency-item">
+                    <span class="transparency-icon" aria-hidden="true">🔗</span>
+                    <div>
+                        <h3>Live-Preis auf Amazon</h3>
+                        <p>Ein Klick auf den Produktlink zeigt dir immer den aktuellen Preis direkt bei Amazon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2>Methodik der Produktauswahl</h2>
+        <ul>
+            <li><strong>Datenbasis:</strong> Amazon Product Advertising API (offizielle Schnittstelle)</li>
+            <li><strong>Aktualisierungszyklus:</strong> Wöchentlich (montags) + bei saisonalen Events (Prime Day, Black Friday) täglich</li>
+            <li><strong>Qualitätskriterien:</strong> Mindestbewertung 4,0 Sterne, mind. 50 Bewertungen, Lieferbarkeit</li>
+            <li><strong>Preisvalidierung:</strong> Plausibilitätsprüfung gegen historische Preisspannen (Ausreißer werden geflaggt)</li>
+        </ul>
+        <h2>Hinweis zu Preisangaben</h2>
+        <p>Alle Preise in EUR, inkl. MwSt., zzgl. ggf. Versandkosten. Der finale Preis wird auf der Amazon-Produktseite angezeigt. Preisänderungen seit dem letzten API-Abgleich sind möglich.</p>
+        <h2>Legal-TODO (für Anwalt prüfen)</h2>
+        <ul>
+            <li>§ 5a UWG: Angabe des Grundpreises bei Mengenware prüfen</li>
+            <li>PAngV: Preisangabenverordnung-Konformität bei Aktionspreisen sicherstellen</li>
+            <li>Kennzeichnungspflicht bei „Streichpreisen“ (UVP vs. Verkaufspreis) klären</li>
+            <li>Haftungsausschluss für Preisabweichungen zwischen API und Amazon-Webseite formulieren</li>
+        </ul>
+</div></div></main>
+    <footer class="site-footer"><div class="container"><p>&copy; 2024 Andreas Stehmann Links.</p></div></footer>
+</body>
+</html>'''
+
     affiliate_hinweis = '''<!DOCTYPE html>
 <html lang="de">
 <head>
@@ -1141,7 +1201,8 @@ def generate_legal_pages():
     return {
         'impressum': impressum,
         'datenschutz': datenschutz,
-        'affiliate-hinweis': affiliate_hinweis
+        'affiliate-hinweis': affiliate_hinweis,
+        'preischeck': preischeck
     }
 
 def generate_sitemap(all_products):
@@ -1161,7 +1222,7 @@ def generate_sitemap(all_products):
             urls.append((f'https://balu1705.github.io/andreasstehmann-links/{niche_slug}/', '0.6', 'weekly'))
     
     # Legal pages
-    for page in ['impressum', 'datenschutz', 'affiliate-hinweis', 'ueber-uns']:
+    for page in ['impressum', 'datenschutz', 'affiliate-hinweis', 'ueber-uns', 'preischeck']:
         urls.append((f'https://balu1705.github.io/andreasstehmann-links/{page}/', '0.3', 'monthly'))
     
     xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
