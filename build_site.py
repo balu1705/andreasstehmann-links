@@ -827,6 +827,7 @@ def generate_homepage(all_products):
             <div class="container hero-content">
                 <h1 id="hero-title">Produkte, die dein Zuhause besser machen</h1>
                 <p class="hero-subtitle">Handverlesene Empfehlungen für Wohnen, Küche, Smart Home, Wellness & mehr. Keine Algorithmen – nur echte Auswahl.</p>
+                <p class="hero-date" aria-live="polite">Stand: {datetime.now().strftime('%d. %B %Y')}</p>
                 <div class="hero-cta-group">
                     <a href="#theme-worlds" class="btn btn-primary btn-large">Entdecke unsere Empfehlungen</a>
                     <a href="#highlights" class="btn btn-secondary btn-large">Unsere beliebtesten Produkte</a>
@@ -1212,6 +1213,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; line-height: 1.2; margin-bottom: 16px; color: var(--color-text); }
 .hero-tagline { font-size: clamp(18px, 2.5vw, 22px); color: var(--color-text-muted); margin-bottom: 12px; max-width: 700px; margin-left: auto; margin-right: auto; }
 .hero-disclaimer { font-size: 14px; color: var(--color-text-light); margin-bottom: 32px; }
+.hero-date { font-size: 14px; color: var(--color-text-muted); font-weight: 500; margin-bottom: 24px; padding: 8px 16px; background: var(--color-bg); border-radius: var(--radius-md); display: inline-block; border: 1px solid var(--color-border); }
 .niche-hero, .category-hero { padding: 60px 0; background: var(--color-bg-alt); border-bottom: 1px solid var(--color-border); }
 .niche-hero h1, .category-hero h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; margin-bottom: 8px; }
 .hero-subtitle { font-size: 18px; color: var(--color-text-muted); }
