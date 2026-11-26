@@ -2298,7 +2298,7 @@ def generate_sitemap(all_products):
     urls.append(('https://balu1705.github.io/andreasstehmann-links/shopping-feed.xml', '0.5', 'daily'))
     
     # Legal pages
-    for page in ['impressum', 'datenschutz', 'affiliate-hinweis', 'ueber-uns', 'preischeck']:
+    for page in ['impressum', 'datenschutz', 'affiliate-hinweis', 'ueber-uns', 'preischeck', 'kaufberatungen', 'kontakt']:
         urls.append((f'https://balu1705.github.io/andreasstehmann-links/{page}/', '0.3', 'monthly'))
     
     xml = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
