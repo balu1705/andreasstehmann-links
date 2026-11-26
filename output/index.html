@@ -23,6 +23,12 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied'
+        });
         gtag('js', new Date());
         gtag('config', 'G-YPCSF9BFH2');
     </script>
@@ -42,6 +48,7 @@
                 </button>
                 <ul id="nav-menu" class="nav-menu" role="menubar">
                     <li role="none"><a href="/kategorie/wohnen-haushalt/" role="menuitem">Wohnen & Haushalt</a></li><li role="none"><a href="/kategorie/kueche-kochen/" role="menuitem">Küche & Kochen</a></li><li role="none"><a href="/kategorie/beauty-pflege/" role="menuitem">Beauty & Pflege</a></li><li role="none"><a href="/kategorie/baby-familie/" role="menuitem">Baby & Familie</a></li><li role="none"><a href="/kategorie/fitness-sport/" role="menuitem">Fitness & Sport</a></li><li role="none"><a href="/kategorie/technik-gaming/" role="menuitem">Technik & Gaming</a></li><li role="none"><a href="/kategorie/lifestyle-mehr/" role="menuitem">Lifestyle & Mehr</a></li>
+                    <li role="none"><a href="/deals/" role="menuitem">Deals</a></li>
                     <li role="none"><a href="/ueber-uns/" role="menuitem">Über uns</a></li>
                     <li role="none"><a href="/impressum/" role="menuitem">Impressum</a></li>
                 </ul>
@@ -57,7 +64,7 @@
             <div class="container hero-content">
                 <h1 id="hero-title">Produkte, die dein Zuhause besser machen</h1>
                 <p class="hero-subtitle">Handverlesene Empfehlungen für Wohnen, Küche, Smart Home, Wellness & mehr. Keine Algorithmen – nur echte Auswahl.</p>
-                <p class="hero-date" aria-live="polite">Stand: 23. November 2026</p>
+                <p class="hero-date" aria-live="polite">Stand: 26. November 2026</p>
                 <div class="hero-cta-group">
                     <a href="#theme-worlds" class="btn btn-primary btn-large">Entdecke unsere Empfehlungen</a>
                     <a href="#highlights" class="btn btn-secondary btn-large">Unsere beliebtesten Produkte</a>
@@ -131,12 +138,12 @@
             <a href="/kategorie/baby-familie/" class="theme-world-link" aria-label="Baby & Familie - 7 Kategorien entdecken">
                 <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0CC98XC28._AC_SL500_.jpg')">
                     <span class="theme-world-overlay">
-                        <span class="theme-world-count">51 Produkte</span>
+                        <span class="theme-world-count">52 Produkte</span>
                     </span>
                 </div>
                 <div class="theme-world-content">
                     <h3>Baby & Familie</h3>
-                    <p>7 Kategorien, 51 kuratierte Produkte</p>
+                    <p>7 Kategorien, 52 kuratierte Produkte</p>
                     <span class="theme-world-cta">Entdecken →</span>
                 </div>
             </a>
@@ -159,26 +166,26 @@
             <a href="/kategorie/technik-gaming/" class="theme-world-link" aria-label="Technik & Gaming - 7 Kategorien entdecken">
                 <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg')">
                     <span class="theme-world-overlay">
-                        <span class="theme-world-count">73 Produkte</span>
+                        <span class="theme-world-count">74 Produkte</span>
                     </span>
                 </div>
                 <div class="theme-world-content">
                     <h3>Technik & Gaming</h3>
-                    <p>7 Kategorien, 73 kuratierte Produkte</p>
+                    <p>7 Kategorien, 74 kuratierte Produkte</p>
                     <span class="theme-world-cta">Entdecken →</span>
                 </div>
             </a>
         </article>
         <article class="theme-world-card" data-category="Lifestyle & Mehr">
             <a href="/kategorie/lifestyle-mehr/" class="theme-world-link" aria-label="Lifestyle & Mehr - 9 Kategorien entdecken">
-                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0CCVX6FSD._AC_SL500_.jpg')">
+                <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0GK9WHMKP._AC_SL500_.jpg')">
                     <span class="theme-world-overlay">
-                        <span class="theme-world-count">114 Produkte</span>
+                        <span class="theme-world-count">115 Produkte</span>
                     </span>
                 </div>
                 <div class="theme-world-content">
                     <h3>Lifestyle & Mehr</h3>
-                    <p>9 Kategorien, 114 kuratierte Produkte</p>
+                    <p>9 Kategorien, 115 kuratierte Produkte</p>
                     <span class="theme-world-cta">Entdecken →</span>
                 </div>
             </a>
@@ -539,7 +546,92 @@
         </div>
     </footer>
     <!-- GA4 Affiliate Click Tracking -->
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie-Einwilligung" hidden>
+        <div class="cookie-banner-content">
+            <div class="cookie-banner-text">
+                <h3>🍪 Cookie-Einstellungen</h3>
+                <p>Wir nutzen Cookies für Analyse (GA4) und Affiliate-Tracking. Essentielle Funktionen laufen immer. <a href="/cookie-einstellungen/">Details & individuelle Einstellung</a></p>
+            </div>
+            <div class="cookie-banner-actions">
+                <button class="btn btn-secondary" id="cookie-reject">Nur essentiell</button>
+                <button class="btn btn-primary" id="cookie-accept">Alle akzeptieren</button>
+            </div>
+        </div>
+    </div>
+    <!-- GA4 Affiliate Click Tracking (Consent-gated) -->
     <script>
+        // Cookie Consent Management
+        (function() {
+            var CONSENT_COOKIE = 'cookie_consent';
+            var CONSENT_EXPIRY_DAYS = 365;
+            
+            function getConsent() {
+                var match = document.cookie.match(new RegExp('(^| )' + CONSENT_COOKIE + '=([^;]+)'));
+                return match ? JSON.parse(decodeURIComponent(match[2])) : null;
+            }
+            
+            function setConsent(consent) {
+                var date = new Date();
+                date.setTime(date.getTime() + (CONSENT_EXPIRY_DAYS * 24 * 60 * 60 * 1000));
+                document.cookie = CONSENT_COOKIE + '=' + encodeURIComponent(JSON.stringify(consent)) + ';expires=' + date.toUTCString() + ';path=/;SameSite=Lax';
+            }
+            
+            function updateGtagConsent(consent) {
+                if (typeof gtag !== 'function') return;
+                gtag('consent', 'update', {
+                    'analytics_storage': consent.analytics ? 'granted' : 'denied',
+                    'ad_storage': consent.marketing ? 'granted' : 'denied',
+                    'ad_user_data': consent.marketing ? 'granted' : 'denied',
+                    'ad_personalization': consent.marketing ? 'granted' : 'denied'
+                });
+            }
+            
+            function showBanner() {
+                var banner = document.getElementById('cookie-banner');
+                if (banner) banner.hidden = false;
+            }
+            
+            function hideBanner() {
+                var banner = document.getElementById('cookie-banner');
+                if (banner) banner.hidden = true;
+            }
+            
+            // Initialize on DOM ready
+            document.addEventListener('DOMContentLoaded', function() {
+                var consent = getConsent();
+                if (consent) {
+                    // Consent exists - apply to GA4
+                    updateGtagConsent(consent);
+                } else {
+                    // No consent - show banner
+                    showBanner();
+                }
+                
+                // Button handlers
+                var acceptBtn = document.getElementById('cookie-accept');
+                var rejectBtn = document.getElementById('cookie-reject');
+                
+                if (acceptBtn) {
+                    acceptBtn.addEventListener('click', function() {
+                        var consent = { analytics: true, marketing: true, essential: true, timestamp: Date.now() };
+                        setConsent(consent);
+                        updateGtagConsent(consent);
+                        hideBanner();
+                    });
+                }
+                if (rejectBtn) {
+                    rejectBtn.addEventListener('click', function() {
+                        var consent = { analytics: false, marketing: false, essential: true, timestamp: Date.now() };
+                        setConsent(consent);
+                        updateGtagConsent(consent);
+                        hideBanner();
+                    });
+                }
+            });
+        })();
+        
+        // Affiliate Click Tracking - only fires with marketing consent
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelectorAll("a.product-link[data-asin]").forEach(function(link) {
                 link.addEventListener("click", function(e) {
@@ -547,7 +639,14 @@
                     var niche = this.getAttribute("data-niche");
                     var position = this.getAttribute("data-position");
                     var price = this.getAttribute("data-price");
-                    if (asin && typeof gtag === "function") {
+                    
+                    // Check marketing consent before firing
+                    var consent = (function() {
+                        var match = document.cookie.match(new RegExp('(^| )cookie_consent=([^;]+)'));
+                        return match ? JSON.parse(decodeURIComponent(match[2])) : null;
+                    })();
+                    
+                    if (asin && typeof gtag === "function" && consent && consent.marketing) {
                         gtag("event", "affiliate_click", {
                             "asin": asin,
                             "niche": niche || "",
