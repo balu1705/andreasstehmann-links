@@ -1468,18 +1468,22 @@ def generate_homepage(all_products):
         season = "Winter"
         season_emoji = "❄️"
         season_desc = "Gemütliche Winter-Essentials für kalte Tage"
+        seasonal_cat_slug = "kategorie/wohnen-haushalt"  # Weihnachtsdeko, Heizung, Wellness
     elif month in [3, 4, 5]:
         season = "Frühling"
         season_emoji = "🌱"
         season_desc = "Frische Frühlings-Ideen für dein Zuhause"
+        seasonal_cat_slug = "kategorie/wohnen-haushalt"  # Balkon, Garten, Pflanzen
     elif month in [6, 7, 8]:
         season = "Sommer"
         season_emoji = "☀️"
         season_desc = "Sommer-Highlights für Balkon, Garten & Reisen"
+        seasonal_cat_slug = "kategorie/wohnen-haushalt"  # Outdoor, Grillen, Reisen
     else:
         season = "Herbst"
         season_emoji = "🍂"
         season_desc = "Warme Herbst-Favoriten für drinnen & draußen"
+        seasonal_cat_slug = "kategorie/wohnen-haushalt"  # Herbstdeko, Kerzen, Wohlfühlen
     
     # 1. HERO SECTION - Emotionales Wohnbild mit starker Headline
     # Find a good hero product from Wohnen categories
@@ -1783,7 +1787,7 @@ def generate_homepage(all_products):
                     {seasonal_html}
                 </div>
                 <div class="section-footer">
-                    <a href="/kategorie/{cat_slug}/" class="btn btn-outline">Alle {season}-Produkte entdecken</a>
+                    <a href="/{seasonal_cat_slug}/" class="btn btn-outline">Alle {season}-Produkte entdecken</a>
                 </div>
             </div>
         </section>
@@ -2935,6 +2939,76 @@ img { max-width: 100%; height: auto; display: block; }
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
 
+/* ===== KAUFBERATUNGEN PAGE ===== */
+.guides-overview { padding: 60px 0; background: var(--color-bg); }
+.section-header { text-align: center; margin-bottom: 40px; }
+.section-header h2 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: var(--color-text); }
+.section-subtitle { color: var(--color-text-muted); font-size: 16px; }
+
+.guides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+.guide-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--transition-base); }
+.guide-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); border-color: var(--color-border-hover); }
+.guide-content { padding: 24px; }
+.guide-category { display: inline-block; font-size: 12px; font-weight: 600; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+.guide-content h3 { font-size: 20px; font-weight: 700; margin-bottom: 12px; line-height: 1.3; }
+.guide-content h3 a { color: var(--color-text); text-decoration: none; transition: color var(--transition-fast); }
+.guide-content h3 a:hover { color: var(--color-primary); }
+.guide-content p { color: var(--color-text-muted); margin-bottom: 16px; font-size: 15px; line-height: 1.6; }
+.guide-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--color-primary); text-decoration: none; transition: all var(--transition-fast); }
+.guide-cta:hover { gap: 10px; color: var(--color-primary-hover); }
+
+.guide-categories { padding: 60px 0; background: var(--color-bg-alt); }
+.guide-categories h2 { font-size: 28px; font-weight: 700; text-align: center; margin-bottom: 8px; }
+.guide-categories .section-subtitle { text-align: center; margin-bottom: 40px; }
+
+/* ===== CONTACT PAGE ===== */
+.contact-section { padding: 60px 0; background: var(--color-bg); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; max-width: 1000px; margin: 0 auto; }
+.contact-info h2 { font-size: 28px; font-weight: 700; margin-bottom: 16px; color: var(--color-text); }
+.contact-info > p { color: var(--color-text-muted); font-size: 16px; line-height: 1.7; margin-bottom: 32px; }
+
+.contact-methods { display: flex; flex-direction: column; gap: 24px; margin-bottom: 32px; }
+.contact-method { display: flex; gap: 16px; padding: 20px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-lg); transition: all var(--transition-base); }
+.contact-method:hover { border-color: var(--color-border-hover); box-shadow: var(--shadow-md); }
+.contact-icon { font-size: 28px; flex-shrink: 0; }
+.contact-method h3 { font-size: 16px; font-weight: 600; margin-bottom: 4px; color: var(--color-text); }
+.contact-method p { margin: 0; color: var(--color-text-muted); }
+.contact-method a { color: var(--color-primary); text-decoration: none; transition: color var(--transition-fast); }
+.contact-method a:hover { color: var(--color-primary-hover); text-decoration: underline; }
+
+.contact-info h3 { font-size: 18px; font-weight: 600; margin: 32px 0 16px; color: var(--color-text); }
+.contact-info ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.contact-info li { padding: 16px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 15px; line-height: 1.6; color: var(--color-text); }
+.contact-info li strong { color: var(--color-text); }
+.contact-note { margin-top: 24px; padding: 20px; background: var(--color-primary-light); border: 1px solid var(--color-primary); border-radius: var(--radius-lg); border-left: 4px solid var(--color-primary); }
+.contact-note p { margin: 8px 0; font-size: 14px; color: var(--color-text); }
+.contact-note a { color: var(--color-primary); font-weight: 500; }
+
+.contact-form-wrapper { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-xl); padding: 32px; height: fit-content; }
+.contact-form { display: flex; flex-direction: column; gap: 20px; }
+.form-group { display: flex; flex-direction: column; gap: 8px; }
+.form-group label { font-size: 14px; font-weight: 500; color: var(--color-text); }
+.form-group input,
+.form-group select,
+.form-group textarea { padding: 12px 16px; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 15px; font-family: inherit; background: var(--color-bg); color: var(--color-text); transition: all var(--transition-fast); }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-light); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-hint { font-size: 13px; color: var(--color-text-muted); text-align: center; margin-top: 8px; }
+.btn-large { padding: 14px 28px; font-size: 16px; font-weight: 600; }
+
+/* ===== RESPONSIVE KAUFBERATUNGEN / CONTACT ===== */
+@media (max-width: 768px) {
+    .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+    .contact-form-wrapper { padding: 24px; }
+    .guides-grid { grid-template-columns: 1fr; }
+    .guide-categories .theme-worlds-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+    .contact-method { flex-direction: column; text-align: center; gap: 8px; }
+}
+
 /* ===== ACCESSIBILITY ===== */
 :focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
@@ -3692,6 +3766,364 @@ def main():
     ueber_dir = output_path / "ueber-uns"
     ueber_dir.mkdir(parents=True)
     (ueber_dir / "index.html").write_text(ueber_uns, encoding='utf-8')
+
+    # Generate Kaufberatungen overview page (Phase 3 prep)
+    kaufberatungen = '''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaufberatungen - Andreas Stehmann Links</title>
+    <meta name="description" content="Fundierte Kaufberatungen für wichtige Anschaffungen. Vergleiche, Checklisten und Empfehlungen für Möbel, Smart Home, Küche & mehr.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/kaufberatungen/">
+    <meta property="og:title" content="Kaufberatungen - Andreas Stehmann Links">
+    <meta property="og:description" content="Fundierte Kaufberatungen für wichtige Anschaffungen. Vergleiche, Checklisten und Empfehlungen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://balu1705.github.io/andreasstehmann-links/kaufberatungen/">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links – Startseite">
+                <span class="logo-icon" aria-hidden="true">🔗</span>
+                <span class="logo-text">Andreas Stehmann Links</span>
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="/kategorie/wohnen-haushalt/" role="menuitem">Wohnen & Haushalt</a></li>
+                    <li role="none"><a href="/kategorie/kueche-kochen/" role="menuitem">Küche & Kochen</a></li>
+                    <li role="none"><a href="/kategorie/beauty-pflege/" role="menuitem">Beauty & Pflege</a></li>
+                    <li role="none"><a href="/kategorie/baby-familie/" role="menuitem">Baby & Familie</a></li>
+                    <li role="none"><a href="/kategorie/fitness-sport/" role="menuitem">Fitness & Sport</a></li>
+                    <li role="none"><a href="/kategorie/technik-gaming/" role="menuitem">Technik & Gaming</a></li>
+                    <li role="none"><a href="/kategorie/lifestyle-mehr/" role="menuitem">Lifestyle & Mehr</a></li>
+                    <li role="none"><a href="/deals/" role="menuitem">Deals</a></li>
+                    <li role="none"><a href="/ueber-uns/" role="menuitem">Über uns</a></li>
+                    <li role="none"><a href="/impressum/" role="menuitem">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Kaufberatungen</h1>
+                <p class="page-subtitle">Fundierte Entscheidungs-Hilfen für wichtige Anschaffungen – vergleichen, verstehen, richtig kaufen</p>
+            </div>
+        </section>
+
+        <section class="guides-overview" aria-labelledby="guides-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="guides-title">Unsere Kaufberatungen</h2>
+                    <p class="section-subtitle">In Arbeit – neue Ratgeber erscheinen regelmäßig</p>
+                </header>
+                <div class="guides-grid" role="list">
+                    <article class="guide-card">
+                        <div class="guide-content">
+                            <span class="guide-category">Wohnen & Haushalt</span>
+                            <h3><a href="/kaufberatung/moebel-kleine-wohnungen/">Die besten Möbel für kleine Wohnungen</a></h3>
+                            <p>Platzsparende Lösungen, die funktionieren – getestet & verglichen.</p>
+                            <a href="/kaufberatung/moebel-kleine-wohnungen/" class="guide-cta">Zum Ratgeber →</a>
+                        </div>
+                    </article>
+                    <article class="guide-card">
+                        <div class="guide-content">
+                            <span class="guide-category">Technik & Gaming</span>
+                            <h3><a href="/kaufberatung/smart-home-einsteiger/">Smart Home für Einsteiger: Der komplette Guide</a></h3>
+                            <p>Von smarter Beleuchtung bis Sicherheit – alles was du brauchst.</p>
+                            <a href="/kaufberatung/smart-home-einsteiger/" class="guide-cta">Zum Ratgeber →</a>
+                        </div>
+                    </article>
+                    <article class="guide-card">
+                        <div class="guide-content">
+                            <span class="guide-category">Küche & Kochen</span>
+                            <h3><a href="/kaufberatung/kuechengadgets-zeit-sparen/">Praktische Küchengadgets, die Zeit sparen</a></h3>
+                            <p>Clevere Helfer für den Alltag – unsere Top-Empfehlungen 2026.</p>
+                            <a href="/kaufberatung/kuechengadgets-zeit-sparen/" class="guide-cta">Zum Ratgeber →</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="section-footer">
+                    <p style="text-align: center; color: var(--muted); margin-top: 1rem;">Weitere Kaufberatungen in Vorbereitung. <a href="/newsletter/">Newsletter abonnieren</a> für Updates.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide-categories" aria-labelledby="cat-title">
+            <div class="container">
+                <h2 id="cat-title">Nach Kategorien stöbern</h2>
+                <p class="section-subtitle">Alle Produktkategorien mit kuratierten Empfehlungen</p>
+                <div class="theme-worlds-grid" role="list">
+                    <article class="theme-world-card">
+                        <a href="/kategorie/wohnen-haushalt/" class="theme-world-link">
+                            <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg')">
+                                <span class="theme-world-overlay"><span class="theme-world-count">36 Kategorien</span></span>
+                            </div>
+                            <div class="theme-world-content">
+                                <h3>Wohnen & Haushalt</h3>
+                                <p>Bad, Balkon, Schlafzimmer, Organisation & mehr</p>
+                                <span class="theme-world-cta">Entdecken →</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="theme-world-card">
+                        <a href="/kategorie/kueche-kochen/" class="theme-world-link">
+                            <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0GX5H49DW._AC_SL500_.jpg')">
+                                <span class="theme-world-overlay"><span class="theme-world-count">9 Kategorien</span></span>
+                            </div>
+                            <div class="theme-world-content">
+                                <h3>Küche & Kochen</h3>
+                                <p>Kaffee, Heißluftfritteuse, Backen, Tischkultur</p>
+                                <span class="theme-world-cta">Entdecken →</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="theme-world-card">
+                        <a href="/kategorie/technik-gaming/" class="theme-world-link">
+                            <div class="theme-world-image" style="background-image: url('https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg')">
+                                <span class="theme-world-overlay"><span class="theme-world-count">7 Kategorien</span></span>
+                            </div>
+                            <div class="theme-world-content">
+                                <h3>Technik & Gaming</h3>
+                                <p>Smart Home, Gaming, Audio, Zubehör</p>
+                                <span class="theme-world-cta">Entdecken →</span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">🔗</span><span class="logo-text">Andreas Stehmann Links</span></a>
+                    <p>Kuratierte Produktempfehlungen für dein Zuhause. Handverlesen, nicht algorithmisch.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Produktkategorien">
+                    <h4>Kategorien</h4>
+                    <ul>
+                        <li><a href="/kategorie/wohnen-haushalt/">Wohnen & Haushalt</a></li>
+                        <li><a href="/kategorie/kueche-kochen/">Küche & Kochen</a></li>
+                        <li><a href="/kategorie/beauty-pflege/">Beauty & Pflege</a></li>
+                        <li><a href="/kategorie/baby-familie/">Baby & Familie</a></li>
+                        <li><a href="/kategorie/fitness-sport/">Fitness & Sport</a></li>
+                        <li><a href="/kategorie/technik-gaming/">Technik & Gaming</a></li>
+                        <li><a href="/kategorie/lifestyle-mehr/">Lifestyle & Mehr</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service & Info">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/deals/">Tagesaktuelle Deals</a></li>
+                        <li><a href="/kaufberatungen/">Kaufberatungen</a></li>
+                        <li><a href="/newsletter/">Newsletter</a></li>
+                        <li><a href="/kontakt/">Kontakt</a></li>
+                        <li><a href="/preischeck/">Preisprüfung & Methodik</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Rechtliches">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="/impressum/">Impressum</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+    kb_dir = output_path / "kaufberatungen"
+    kb_dir.mkdir(parents=True)
+    (kb_dir / "index.html").write_text(kaufberatungen, encoding='utf-8')
+
+    # Generate Kontakt page
+    kontakt = '''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Andreas Stehmann Links</title>
+    <meta name="description" content="Kontakt zu Andreas Stehmann Links. Fragen, Anregungen, Kooperationen.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/kontakt/">
+    <meta property="og:title" content="Kontakt - Andreas Stehmann Links">
+    <meta property="og:description" content="Kontakt zu Andreas Stehmann Links. Fragen, Anregungen, Kooperationen.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://balu1705.github.io/andreasstehmann-links/kontakt/">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links – Startseite">
+                <span class="logo-icon" aria-hidden="true">🔗</span>
+                <span class="logo-text">Andreas Stehmann Links</span>
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="/kategorie/wohnen-haushalt/" role="menuitem">Wohnen & Haushalt</a></li>
+                    <li role="none"><a href="/kategorie/kueche-kochen/" role="menuitem">Küche & Kochen</a></li>
+                    <li role="none"><a href="/kategorie/beauty-pflege/" role="menuitem">Beauty & Pflege</a></li>
+                    <li role="none"><a href="/kategorie/baby-familie/" role="menuitem">Baby & Familie</a></li>
+                    <li role="none"><a href="/kategorie/fitness-sport/" role="menuitem">Fitness & Sport</a></li>
+                    <li role="none"><a href="/kategorie/technik-gaming/" role="menuitem">Technik & Gaming</a></li>
+                    <li role="none"><a href="/kategorie/lifestyle-mehr/" role="menuitem">Lifestyle & Mehr</a></li>
+                    <li role="none"><a href="/deals/" role="menuitem">Deals</a></li>
+                    <li role="none"><a href="/ueber-uns/" role="menuitem">Über uns</a></li>
+                    <li role="none"><a href="/impressum/" role="menuitem">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <h1 id="page-title">Kontakt</h1>
+                <p class="page-subtitle">Du hast Fragen, Anregungen oder möchtest kooperieren?</p>
+            </div>
+        </section>
+
+        <section class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 id="contact-title">Schreib uns</h2>
+                        <p>Ob Produktvorschlag, Korrekturhinweis, Kooperationsanfrage oder einfach Feedback – wir freuen uns über deine Nachricht.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <span class="contact-icon" aria-hidden="true">✉️</span>
+                                <div>
+                                    <h3>E-Mail</h3>
+                                    <p><a href="mailto:andreas@stehmann-links.de">andreas@stehmann-links.de</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon" aria-hidden="true">💬</span>
+                                <div>
+                                    <h3>Telegram</h3>
+                                    <p><a href="https://t.me/andreasstehmann" target="_blank" rel="noopener">@andreasstehmann</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Was du uns schreiben kannst</h3>
+                        <ul>
+                            <li><strong>Produktvorschläge:</strong> Fehlt ein gutes Produkt? Schick uns den ASIN oder Link.</li>
+                            <li><strong>Korrekturen:</strong> Preis falsch, Link kaputt, Info veraltet? Danke für den Hinweis!</li>
+                            <li><strong>Kooperationen:</strong> Du bist Marke, Agentur oder Creator? Gerne per Mail mit Details.</li>
+                            <li><strong>Feedback:</strong> Was gefällt, was fehlt, was nervt? Wir lesen alles.</li>
+                        </ul>
+
+                        <div class="contact-note">
+                            <p><strong>Antwortzeit:</strong> Meist innerhalb 24–48h (werktags).</p>
+                            <p><strong>Technischer Support für Amazon-Bestellungen:</strong> Bitte direkt an <a href="https://www.amazon.de/gp/help/customer/display.html" target="_blank" rel="noopener">Amazon Kundenservice</a> wenden – wir haben keinen Zugriff auf Bestellungen.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST" aria-label="Kontaktformular">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Dein Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Mail</label>
+                                <input type="email" id="email" name="email" required placeholder="deine@email.de">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Betreff</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Bitte wählen</option>
+                                    <option value="product">Produktvorschlag / Korrektur</option>
+                                    <option value="cooperation">Kooperationsanfrage</option>
+                                    <option value="feedback">Feedback / Sonstiges</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nachricht</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Deine Nachricht..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-large">Absenden</button>
+                            <p class="form-hint">Das Formular nutzt Formspree – keine Daten werden auf diesem Server gespeichert.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="logo"><span class="logo-icon">🔗</span><span class="logo-text">Andreas Stehmann Links</span></a>
+                    <p>Kuratierte Produktempfehlungen für dein Zuhause. Handverlesen, nicht algorithmisch.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Produktkategorien">
+                    <h4>Kategorien</h4>
+                    <ul>
+                        <li><a href="/kategorie/wohnen-haushalt/">Wohnen & Haushalt</a></li>
+                        <li><a href="/kategorie/kueche-kochen/">Küche & Kochen</a></li>
+                        <li><a href="/kategorie/beauty-pflege/">Beauty & Pflege</a></li>
+                        <li><a href="/kategorie/baby-familie/">Baby & Familie</a></li>
+                        <li><a href="/kategorie/fitness-sport/">Fitness & Sport</a></li>
+                        <li><a href="/kategorie/technik-gaming/">Technik & Gaming</a></li>
+                        <li><a href="/kategorie/lifestyle-mehr/">Lifestyle & Mehr</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service & Info">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/deals/">Tagesaktuelle Deals</a></li>
+                        <li><a href="/kaufberatungen/">Kaufberatungen</a></li>
+                        <li><a href="/newsletter/">Newsletter</a></li>
+                        <li><a href="/kontakt/">Kontakt</a></li>
+                        <li><a href="/preischeck/">Preisprüfung & Methodik</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Rechtliches">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="/impressum/">Impressum</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+    kontakt_dir = output_path / "kontakt"
+    kontakt_dir.mkdir(parents=True)
+    (kontakt_dir / "index.html").write_text(kontakt, encoding='utf-8')
 
     # Generate sitemap & robots.txt
     print("🗺️ Generating sitemap & robots.txt...")
