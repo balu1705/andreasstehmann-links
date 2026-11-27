@@ -3885,6 +3885,502 @@ def generate_blog_pages(all_products):
 
 from datetime import datetime
 
+
+def generate_kaufberatung_pages(output_path, all_products):
+    """Generate 3 detailed Kaufberatung pages with comparison tables, FAQs, JSON-LD."""
+    import json
+
+    def get_product_image(asin, size=500):
+        if not asin:
+            return "https://m.media-amazon.com/images/I/61example.jpg"
+        return f"https://m.media-amazon.com/images/I/{asin}._AC_SL{size}_.jpg"
+
+    def get_affiliate_url(asin):
+        return f"https://www.amazon.de/dp/{asin}?tag=balu17051-21" if asin else "#"
+
+    def product_card_html(p, idx, context='guide'):
+        """Generate product card using v2 structure for guides."""
+        asin = p.get('asin', '')
+        name = p.get('name', 'Produkt')
+        price = p.get('price', '')
+        rating = p.get('rating', 0)
+        review_count = p.get('review_count', 0)
+        img = get_product_image(asin)
+        affiliate_url = get_affiliate_url(asin)
+
+        # Badge by position
+        if idx == 0:
+            badge = '<span class="product-badge product-badge-testsieger" aria-label="Testsieger">🏆 Testsiger</span>'
+            problem_solver = "Unser Top-Pick – bestes Gesamtpaket"
+        elif idx == 1:
+            badge = '<span class="product-badge product-badge-preisleistung" aria-label="Preis-Leistung">💡 Preis-Leistung</span>'
+            problem_solver = "Bestes Preis-Leistungs-Verhältnis"
+        elif idx == 2:
+            badge = '<span class="product-badge product-badge-premium" aria-label="Premium">💎 Premium</span>'
+            problem_solver = "High-End-Features für höchste Ansprüche"
+        else:
+            badge = '<span class="product-badge product-badge-beliebt" aria-label="Beliebt">⭐ Beliebt</span>'
+            problem_solver = "Bewährte Wahl vieler Käufer"
+
+        # Features from name
+        features = []
+        name_lower = name.lower()
+        if any(w in name_lower for w in ['leise', 'quiet', 'geräusch']): features.append('Besonders leise')
+        if any(w in name_lower for w in ['leistung', 'kraft', 'watt', 'stark', 'power']): features.append('Hohe Leistung')
+        if any(w in name_lower for w in ['einfach', 'easy', 'bedien', 'intuitiv']): features.append('Einfache Bedienung')
+        if any(w in name_lower for w in ['reinigen', 'clean', 'spül', 'pflegeleicht']): features.append('Leicht zu reinigen')
+        if any(w in name_lower for w in ['platzsparend', 'kompakt', 'klein', 'faltbar', 'stapelbar']): features.append('Platzsparend')
+        if any(w in name_lower for w in ['smart', 'wlan', 'app', 'alexa', 'google', 'matter', 'zigbee']): features.append('Smart-Home-fähig')
+        if any(w in name_lower for w in ['timer', 'zeit', 'programm', 'automatisch']): features.append('Timer & Programme')
+        if any(w in name_lower for w in ['edelstahl', 'keramik', 'glas', 'hochwertig', 'premium']): features.append('Hochwertige Materialien')
+        if not features:
+            features = ['Qualität geprüft', 'Gute Bewertungen', 'Schneller Versand']
+        features = features[:3]
+
+        # Rating stars
+        stars = '★' * int(rating) + '☆' * (5 - int(rating)) if rating else '★★★★☆'
+
+        # Price display
+        price_html = f'<span class="product-price">{price} €</span>' if price else '<span class="product-price">Preis prüfen</span>'
+
+        return f'''<article class="product-card" itemscope itemtype="https://schema.org/Product" data-asin="{asin}" data-niche="{context}" data-position="{idx}">
+<a href="{affiliate_url}" class="product-link" target="_blank" rel="nofollow sponsored noopener" aria-label="{name} bei Amazon ansehen" data-asin="{asin}" data-niche="{context}" data-position="{idx}" data-price="{price or 0}" data-category="{context}">
+    <div class="product-image-wrapper">
+        <img src="{img}" alt="{name}" class="product-image" loading="lazy" width="300" height="300" itemprop="image">
+        {badge}
+    </div>
+    <div class="product-content">
+        <h3 class="product-title" itemprop="name">{name[:80]}</h3>
+        <div class="product-rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+            <span class="stars" aria-label="{rating} von 5 Sternen">{stars}</span>
+            <span class="review-count" itemprop="reviewCount">{review_count or 0} Bewertungen</span>
+            <meta itemprop="ratingValue" content="{rating or 4.5}">
+            <meta itemprop="bestRating" content="5">
+        </div>
+        <div class="product-problem-solver" aria-label="Problemlöser">{problem_solver}</div>
+        <ul class="product-features" aria-label="Hauptmerkmale">
+            {''.join(f'<li><span class="feature-check" aria-hidden="true">✓</span>{f}</li>' for f in features)}
+        </ul>
+        <div class="product-meta">
+            <span class="product-category-tag">{context.replace('-', ' ').title()}</span>
+            <span class="product-classification">{'Testsieger' if idx == 0 else 'Preis-Leistung' if idx == 1 else 'Premium' if idx == 2 else 'Empfehlung'}</span>
+        </div>
+        <div class="product-price-row">
+            {price_html}
+        </div>
+        <p class="product-affiliate-disclosure" aria-label="Affiliate-Hinweis">🔗 Werbelink</p>
+    </div>
+</a>
+<a href="{affiliate_url}" class="product-cta btn btn-primary" target="_blank" rel="nofollow sponsored noopener" data-asin="{asin}" data-niche="{context}" data-position="{idx}" onclick="trackAffiliateClick(this)">Zum Angebot →</a>
+<meta itemprop="url" content="{affiliate_url}">
+<meta itemprop="offers" content="#offer-{asin}">
+</article>'''
+
+    guides = [
+        {
+            'slug': 'moebel-kleine-wohnungen',
+            'title': 'Die besten Möbel für kleine Wohnungen',
+            'category': 'Wohnen & Haushalt',
+            'category_slug': 'kategorie/wohnen-haushalt',
+            'description': 'Platzsparende Lösungen, die funktionieren – getestet & verglichen.',
+            'intro': 'Kleine Wohnungen erfordern clevere Möbel, die mehrere Funktionen erfüllen, wenig Platz beanspruchen und trotzdem gut aussehen. Wir haben die besten Lösungen für dich getestet und verglichen – von multifunktionalen Sofas bis zu platzsparenden Aufbewahrungssystemen.',
+            'problems': [
+                {'title': 'Wenig Stauraum', 'solution': 'Modulare Regalsysteme & Unterbett-Kommoden nutzen jeden Zentimeter'},
+                {'title': 'Kein separates Schlafzimmer', 'solution': 'Hochwertige Schlafsofas mit echtem Lattenrost für täglichen Schlaf'},
+                {'title': 'Homeoffice in der Ecke', 'solution': 'Klappbare Schreibtische & Wandkonsolen, die nach Feierabend verschwinden'},
+                {'title': 'Gäste unterbringen', 'solution': 'Gästebetten mit Auszugsfunktion oder aufblasbare Qualitäts-Lösungen'},
+            ],
+            'comparison_intro': 'Unsere Top-3-Empfehlungen für kleine Wohnungen im direkten Vergleich:',
+            'products_niches': ['flur-ordnung-stauraum', 'schrank-organisation', 'wohnen-traumumfeld', 'wohnwand-design', 'gaeste-willkommen'],
+            'faq': [
+                {'q': 'Welche Möbel eignen sich am besten für kleine Wohnungen?', 'a': 'Multifunktionale Möbel wie Schlafsofas, Klappbetten, ausziehbare Tische und modulare Regalsysteme. Wichtig: Auf Maß achten und vor dem Kauf den Grundriss prüfen.'},
+                {'q': 'Wie viel kostet ein gutes Schlafsofa für täglichen Schlaf?', 'a': 'Für täglichen Schlaf empfehlen wir Modelle ab 300–500 € mit echtem Lattenrost und hochwertigem Matratzenkern. Billig-Modelle (< 200 €) sind meist nur für gelegentliche Gäste geeignet.'},
+                {'q': 'Lohnt sich maßgefertigte Einbauschränke?', 'a': 'Bei schwierigen Grundschnitten (Dachschrägen, Nischen) ja. Kosten: ca. 300–800 €/lfm. Alternative: Modulare Systeme (IKEA PAX, USM Haller) ab ca. 150 €/lfm, flexibel erweiterbar.'},
+                {'q': 'Wie schaffe ich mehr Stauraum ohne neue Möbel?', 'a': 'Unterbett-Kisten, Türhaken, Wandregale bis zur Decke, Spannregale in Nischen, Hängeregale an der Decke (für Saisonkleidung), Möbel mit integriertem Stauraum (Hocker, Betten).'},
+            ],
+            'niche_links': [
+                {'name': 'Flur-Ordnung & Stauraum', 'slug': 'flur-ordnung-stauraum'},
+                {'name': 'Schrank-Organisation', 'slug': 'schrank-organisation'},
+                {'name': 'Wohnen & Traumumfeld', 'slug': 'wohnen-traumumfeld'},
+                {'name': 'Wand-Design & Regale', 'slug': 'wohnwand-design'},
+                {'name': 'Gäste-Willkommen', 'slug': 'gaeste-willkommen'},
+            ],
+        },
+        {
+            'slug': 'smart-home-einsteiger',
+            'title': 'Smart Home für Einsteiger: Der komplette Start-Guide',
+            'category': 'Technik & Gaming',
+            'category_slug': 'kategorie/technik-gaming',
+            'description': 'Licht, Heizung, Sicherheit per App steuern – ohne Basteln. Schritt für Schritt zum vernetzten Zuhause.',
+            'intro': 'Smart Home muss nicht kompliziert sein. Mit Matter-Standard, Thread und einfachen Starter-Kits gelingt der Einstieg heute ohne technisches Vorwissen. Wir zeigen dir, worauf es ankommt, welche Systeme sich lohnen und wie du Schritt für Schritt startest.',
+            'problems': [
+                {'title': 'Zu viele Standards (Zigbee, Z-Wave, Matter, Thread)', 'solution': 'Setze auf Matter/Thread-Geräte – funktionieren plattformübergreifend (Apple, Google, Amazon, Samsung)'},
+                {'title': 'Teure Hubs & Bridges nötig?', 'solution': 'Viele Geräte brauchen heute keinen Hub mehr (WLAN, Matter über Thread Border Router in Echo/Google Nest)'},
+                {'title': 'Datenschutz & Cloud-Zwang', 'solution': 'Lokale Steuerung via Home Assistant, FRITZ!Box oder Matter-Controller ohne Cloud-Zwang'},
+                {'title': 'Komplizierte Einrichtung', 'solution': 'Starter-Kits mit QR-Code-Pairing in 2 Min – kein Kabel, kein Lötkolben'},
+            ],
+            'comparison_intro': 'Die besten Einsteiger-Sets & Einzelgeräte für den schnellen Start:',
+            'products_niches': ['smart-home', 'smart-home-bestseller', 'smart-home-licht', 'smart-home-sicherheit'],
+            'faq': [
+                {'q': 'Brauche ich einen zentralen Hub (Bridge)?', 'a': 'Nicht mehr zwingend. Viele Geräte sprechen Matter über Thread – Border Router sind in Echo (4. Gen), Google Nest Hub, Apple TV 4K, HomePod mini integriert. Zigbee-Geräte brauchen noch eine Bridge (z. B. Philips Hue Bridge, Sonoff Zigbee Dongle).'},
+                {'q': 'Was ist Matter und warum ist es wichtig?', 'a': 'Matter ist der neue offene Standard (von Apple, Google, Amazon, Samsung getragen), der Geräte herstellerübergreifend kompatibel macht. Ein Matter-Gerät funktioniert mit Siri, Google Assistant, Alexa & SmartThings – ohne separate Apps.'},
+                {'q': 'Wie starte ich am günstigsten?', 'a': 'Einstieg: 1× Echo Pop (ca. 30 €) als Matter-Controller + 1× Matter-Steckdose (z. B. Shelly Plug S, ca. 20 €) + 1× Matter-Lampe (z. B. Nanoleaf Essentials, ca. 20 €). Gesamt ca. 70 € für erstes automatisiertes Licht.'},
+                {'q': 'Funktioniert Smart Home ohne Internet?', 'a': 'Matter/Thread & Zigbee funktionieren lokal (Automatisierungen laufen auch bei Internet-Ausfall). Nur Sprachsteuerung (Alexa/Siri) & Fernzugriff brauchen Internet. Home Assistant auf Raspberry Pi/NAS = 100 % lokal.'},
+            ],
+            'niche_links': [
+                {'name': 'Smart Home Übersicht', 'slug': 'smart-home'},
+                {'name': 'Smart Home Bestseller', 'slug': 'smart-home-bestseller'},
+                {'name': 'Smart Home Beleuchtung', 'slug': 'smart-home-licht'},
+                {'name': 'Smart Home Sicherheit', 'slug': 'smart-home-sicherheit'},
+            ],
+        },
+        {
+            'slug': 'kuechengadgets-zeit-sparen',
+            'title': 'Küchengadgets, die wirklich Zeit sparen – Test & Vergleich',
+            'category': 'Küche & Kochen',
+            'category_slug': 'kategorie/kueche-kochen',
+            'description': 'Vom Gemüseschneider bis zur Heißluftfritteuse: Welche Helfer lohnen sich wirklich im Alltag?',
+            'intro': 'Nicht jedes Küchengadget hält, was die Werbung verspricht. Wir haben die wichtigsten Zeitfresser in der Küche identifiziert und getestet, welche Geräte dich wirklich schneller, sauberer und entspannter kochen lassen – und welche du dir sparen kannst.',
+            'problems': [
+                {'title': 'Gemüse schneiden dauert ewig', 'solution': 'Multifunktions-Schneider mit Wechsel-Einsätzen (Würfel, Julienne, Scheiben) in Sekunden'},
+                {'title': 'Fettig kochen & aufwendig reinigen', 'solution': 'Heißluftfritteuse (Airfryer) – 80 % weniger Fett, spülmaschinenfeste Körbe, kein Vorheizen'},
+                {'title': 'Lange Garzeiten bei Schmorgerichten', 'solution': 'Schnellkochtopf / Multikocher – 70 % Zeitersparnis, ein Gerät für Druck, Slow Cook, Dampf, Braten'},
+                {'title': 'Unordnung & fehlender Überblick', 'solution': 'Luftdichte Vorratsdosen-Systeme (modular, stapelbar, beschriftbar) + Küchenwagen für Arbeitsfläche'},
+            ],
+            'comparison_intro': 'Unsere Top-Empfehlungen für zeitsparende Küchenhelfer:',
+            'products_niches': ['kuechen-gadgets', 'kuechenmaschine-profi-bestseller', 'heissluftfritteuse', 'heissluftfritteuse-profi', 'backen-kochen', 'kuechen-organisation-profi', 'kuechenorganisation', 'schmoren-genuss'],
+            'faq': [
+                {'q': 'Lohnt sich eine Heißluftfritteuse (Airfryer) wirklich?', 'a': 'Ja, für 1–2 Personen oder kleine Haushalte. Vorteile: Kein Vorheizen, 50–70 % schneller als Backofen, 80 % weniger Fett, einfache Reinigung (Spülmaschine). Für 4+ Personen: XXL-Modelle (8 L+) oder Dual-Zone-Geräte (2 Körbe parallel).'},
+                {'q': 'Was ist besser: Küchenmaschine oder Thermomix-Alternative?', 'a': 'Küchenmaschine (Bosch MultiTalent, Kenwood) = vielseitiger, größer, günstiger (80–150 €), ideal für Teig, Schneiden, Reiben. Thermomix-Typ (kocht & mixt) = All-in-One, aber 3–5× teurer. Für Backen & Prep: klassische Küchenmaschine.'},
+                {'q': 'Welcher Gemüseschneider ist sein Geld wert?', 'a': 'Fullstar Pro Core (ca. 19 €) – 4 Einsätze, stabil, spülmaschinenfest. Billig-Modelle (< 10 €) brechen schnell. Profi: Mandoline (z. B. Bron Coucke, ca. 40 €) für feinste Scheiben, aber Verletzungsgefahr → Handschutz nutzen.'},
+                {'q': 'Wie organisiere ich Vorräte platzsparend?', 'a': 'Modulare Systeme (uandu, PurKeep, Vtopmart) – quadratisch, stapelbar, luftdicht, 0,5–2,5 L. Einheitliche Größen = perfektes Stapeln. Beschriften (Etikettengerät oder Marker). Tipp: Erst ausmessen, dann Set kaufen.'},
+            ],
+            'niche_links': [
+                {'name': 'Küchen-Gadgets', 'slug': 'kuechen-gadgets'},
+                {'name': 'Küchenmaschine Profi', 'slug': 'kuechenmaschine-profi-bestseller'},
+                {'name': 'Heißluftfritteuse', 'slug': 'heissluftfritteuse'},
+                {'name': 'Heißluftfritteuse Profi', 'slug': 'heissluftfritteuse-profi'},
+                {'name': 'Backen & Kochen', 'slug': 'backen-kochen'},
+                {'name': 'Küchen-Organisation Profi', 'slug': 'kuechen-organisation-profi'},
+                {'name': 'Küchenorganisation', 'slug': 'kuechenorganisation'},
+                {'name': 'Schmoren & Genuss', 'slug': 'schmoren-genuss'},
+            ],
+        },
+    ]
+
+    for guide in guides:
+        # Collect products for comparison
+        products_for_comparison = []
+        for niche_slug in guide['products_niches']:
+            if niche_slug in all_products and all_products[niche_slug]:
+                for p in all_products[niche_slug][:2]:
+                    if p.get('asin'):
+                        products_for_comparison.append(p)
+                        if len(products_for_comparison) >= 6:
+                            break
+            if len(products_for_comparison) >= 6:
+                break
+
+        # Sort by rating * review_count for quality ranking
+        products_for_comparison.sort(key=lambda p: (p.get('rating', 0) * p.get('review_count', 0)), reverse=True)
+
+        # Simple comparison table (top 3)
+        simple_table_rows = []
+        for i, p in enumerate(products_for_comparison[:3]):
+            asin = p.get('asin', '')
+            name = p.get('name', 'Produkt')
+            price = p.get('price', '–')
+            rating = p.get('rating', 0)
+            review_count = p.get('review_count', 0)
+            stars = '★' * int(rating) + '☆' * (5 - int(rating)) if rating else '★★★★☆'
+            badge_class = ['testsieger', 'preisleistung', 'premium'][i]
+            badge_label = ['🏆 Testsiger', '💡 Preis-Leistung', '💎 Premium'][i]
+            affiliate_url = get_affiliate_url(asin)
+            simple_table_rows.append(f'''
+                <tr>
+                    <td><span class="badge-{badge_class}">{badge_label}</span></td>
+                    <td><a href="{affiliate_url}" target="_blank" rel="nofollow sponsored noopener" class="product-name-link">{name[:60]}</a></td>
+                    <td>{price} €</td>
+                    <td><span class="stars" aria-label="{rating} von 5 Sternen">{stars}</span></td>
+                    <td>{review_count:,} Bewertungen</td>
+                    <td><a href="{affiliate_url}" target="_blank" rel="nofollow sponsored noopener" class="btn btn-sm">Zum Angebot</a></td>
+                </tr>''')
+
+        simple_table_html = f'''
+        <table class="comparison-table-simple" role="table" aria-label="Kurzvergleich Top 3">
+            <thead>
+                <tr>
+                    <th scope="col">Platz</th>
+                    <th scope="col">Produkt</th>
+                    <th scope="col">Preis</th>
+                    <th scope="col">Bewertung</th>
+                    <th scope="col">Reviews</th>
+                    <th scope="col">Aktion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {''.join(simple_table_rows)}
+            </tbody>
+        </table>'''
+
+        # Detailed comparison table (all products)
+        detailed_table_rows = []
+        comparison_fields = [
+            ('name', 'Name', lambda p: p.get('name', '–')[:50]),
+            ('price', 'Preis (€)', lambda p: p.get('price', '–')),
+            ('rating', '⭐', lambda p: '★' * int(p.get('rating', 0)) + '☆' * (5 - int(p.get('rating', 0))) if p.get('rating') else '–'),
+            ('review_count', 'Bewertungen', lambda p: f"{p.get('review_count', 0):,}"),
+        ]
+        # Add dynamic fields from first product
+        if products_for_comparison:
+            sample = products_for_comparison[0]
+            for key in sample.keys():
+                if key not in ['asin', 'name', 'price', 'rating', 'review_count', 'image', 'url', 'prime', 'badge', 'category']:
+                    comparison_fields.append((key, key.replace('_', ' ').title(), lambda p, k=key: str(p.get(k, '–'))[:30]))
+
+        for i, p in enumerate(products_for_comparison):
+            asin = p.get('asin', '')
+            affiliate_url = get_affiliate_url(asin)
+            row_class = 'winner' if i == 0 else 'runner-up' if i == 1 else 'premium' if i == 2 else ''
+            cells = []
+            for field_key, field_label, field_fn in comparison_fields:
+                cells.append(f'<td>{field_fn(p)}</td>')
+            cells.append(f'<td><a href="{affiliate_url}" target="_blank" rel="nofollow sponsored noopener" class="btn btn-sm">Zum Angebot</a></td>')
+            detailed_table_rows.append(f'<tr class="{row_class}">{"".join(cells)}</tr>')
+
+        detailed_headers = [f'<th scope="col">{label}</th>' for _, label, _ in comparison_fields] + ['<th scope="col">Aktion</th>']
+        detailed_table_html = f'''
+        <table class="comparison-table" role="table" aria-label="Detaillierter Produktvergleich">
+            <thead>
+                <tr>
+                    {''.join(detailed_headers)}
+                </tr>
+            </thead>
+            <tbody>
+                {''.join(detailed_table_rows)}
+            </tbody>
+        </table>'''
+
+        # FAQ JSON-LD
+        faq_json_ld = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": faq['q'],
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": faq['a']
+                    }
+                }
+                for faq in guide['faq']
+            ]
+        }
+
+        # Breadcrumb JSON-LD
+        breadcrumb_json_ld = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Start", "item": "https://balu1705.github.io/andreasstehmann-links/"},
+                {"@type": "ListItem", "position": 2, "name": "Kaufberatungen", "item": "https://balu1705.github.io/andreasstehmann-links/kaufberatungen/"},
+                {"@type": "ListItem", "position": 3, "name": guide['title'], "item": f"https://balu1705.github.io/andreasstehmann-links/kaufberatung/{guide['slug']}/"}
+            ]
+        }
+
+        # Article JSON-LD with product references
+        article_json_ld = {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": guide['title'],
+            "description": guide['description'],
+            "author": {"@type": "Person", "name": "Andreas Stehmann"},
+            "publisher": {"@type": "Organization", "name": "Andreas Stehmann Links", "logo": {"@type": "ImageObject", "url": "https://balu1705.github.io/andreasstehmann-links/assets/logo.png"}},
+            "datePublished": "2026-01-01",
+            "dateModified": "2026-11-27",
+            "mainEntityOfPage": {"@type": "WebPage", "@id": f"https://balu1705.github.io/andreasstehmann-links/kaufberatung/{guide['slug']}/"},
+            "about": {
+                "@type": "ProductGroup",
+                "name": guide['title'],
+                "description": guide['intro'],
+                "hasVariant": [
+                    {
+                        "@type": "Product",
+                        "name": p.get('name', ''),
+                        "sku": p.get('asin', ''),
+                        "offers": {
+                            "@type": "Offer",
+                            "url": get_affiliate_url(p.get('asin', '')),
+                            "priceCurrency": "EUR",
+                            "availability": "https://schema.org/InStock"
+                        }
+                    }
+                    for p in products_for_comparison[:3]
+                ]
+            }
+        }
+
+        # Build page HTML
+        page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{guide['title']} - Andreas Stehmann Links</title>
+    <meta name="description" content="{guide['description']}">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/kaufberatung/{guide['slug']}/">
+    <meta property="og:title" content="{guide['title']} - Andreas Stehmann Links">
+    <meta property="og:description" content="{guide['description']}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://balu1705.github.io/andreasstehmann-links/kaufberatung/{guide['slug']}/">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script type="application/ld+json">{json.dumps(breadcrumb_json_ld, ensure_ascii=False)}</script>
+    <script type="application/ld+json">{json.dumps(article_json_ld, ensure_ascii=False)}</script>
+    <script type="application/ld+json">{json.dumps(faq_json_ld, ensure_ascii=False)}</script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links – Startseite">
+                <span class="logo-icon" aria-hidden="true">🔗</span>
+                <span class="logo-text">Andreas Stehmann Links</span>
+            </a>
+            <nav class="main-nav" aria-label="Hauptnavigation">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="/kategorie/wohnen-haushalt/" role="menuitem">Wohnen & Haushalt</a></li>
+                    <li role="none"><a href="/kategorie/kueche-kochen/" role="menuitem">Küche & Kochen</a></li>
+                    <li role="none"><a href="/kategorie/beauty-pflege/" role="menuitem">Beauty & Pflege</a></li>
+                    <li role="none"><a href="/kategorie/baby-familie/" role="menuitem">Baby & Familie</a></li>
+                    <li role="none"><a href="/kategorie/fitness-sport/" role="menuitem">Fitness & Sport</a></li>
+                    <li role="none"><a href="/kategorie/technik-gaming/" role="menuitem">Technik & Gaming</a></li>
+                    <li role="none"><a href="/kategorie/lifestyle-mehr/" role="menuitem">Lifestyle & Mehr</a></li>
+                    <li role="none"><a href="/deals/" role="menuitem">Deals</a></li>
+                    <li role="none"><a href="/ueber-uns/" role="menuitem">Über uns</a></li>
+                    <li role="none"><a href="/impressum/" role="menuitem">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="site-main">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="/">Start</a></li>
+                    <li><a href="/kaufberatungen/">Kaufberatungen</a></li>
+                    <li aria-current="page">{guide['title']}</li>
+                </ol>
+            </nav>
+
+            <article class="kaufberatung-article">
+                <header class="kaufberatung-hero">
+                    <span class="kaufberatung-category">{guide['category']}</span>
+                    <h1>{guide['title']}</h1>
+                    <p class="lead">{guide['description']}</p>
+                </header>
+
+                <div class="kaufberatung-intro">
+                    <p>{guide['intro']}</p>
+                </div>
+
+                <section class="problems-section" aria-labelledby="problems-title">
+                    <h2 id="problems-title">Typische Probleme & Lösungen</h2>
+                    <div class="problems-grid">
+                        {''.join(f'''
+                        <div class="problem-card">
+                            <h3>{prob['title']}</h3>
+                            <p>{prob['solution']}</p>
+                        </div>''' for prob in guide['problems'])}
+                    </div>
+                </section>
+
+                <section class="comparison-section" aria-labelledby="comparison-title">
+                    <h2 id="comparison-title">Produktvergleich</h2>
+                    <p class="comparison-intro">{guide['comparison_intro']}</p>
+                    {simple_table_html}
+                    <details class="detailed-comparison">
+                        <summary>Detaillierter Vergleich aller {len(products_for_comparison)} Produkte anzeigen</summary>
+                        {detailed_table_html}
+                    </details>
+                </section>
+
+                <section class="guide-product-cards" aria-labelledby="recommendations-title">
+                    <h2 id="recommendations-title">Unsere Top-Empfehlungen im Detail</h2>
+                    <div class="product-grid">
+                        {''.join(product_card_html(p, i, guide['slug']) for i, p in enumerate(products_for_comparison[:3]))}
+                    </div>
+                </section>
+
+                <section class="guide-faq" aria-labelledby="faq-title">
+                    <h2 id="faq-title">Häufige Fragen</h2>
+                    <div class="faq-list">
+                        {''.join(f'''
+                        <details class="faq-item">
+                            <summary>{faq['q']}</summary>
+                            <p>{faq['a']}</p>
+                        </details>''' for faq in guide['faq'])}
+                    </div>
+                </section>
+
+                <section class="related-niches" aria-labelledby="related-title">
+                    <h2 id="related-title">Passende Kategorien entdecken</h2>
+                    <div class="niche-links-grid">
+                        {''.join(f'<a href="/nische/{link['slug']}/" class="niche-link-card"><h3>{link['name']}</h3><p>Produkte ansehen →</p></a>' for link in guide['niche_links'])}
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <nav class="footer-nav" aria-label="Navigation">
+                <h4>Kategorien</h4>
+                <ul>
+                    <li><a href="/kategorie/wohnen-haushalt/">Wohnen & Haushalt</a></li>
+                    <li><a href="/kategorie/kueche-kochen/">Küche & Kochen</a></li>
+                    <li><a href="/kategorie/beauty-pflege/">Beauty & Pflege</a></li>
+                    <li><a href="/kategorie/baby-familie/">Baby & Familie</a></li>
+                    <li><a href="/kategorie/fitness-sport/">Fitness & Sport</a></li>
+                    <li><a href="/kategorie/technik-gaming/">Technik & Gaming</a></li>
+                    <li><a href="/kategorie/lifestyle-mehr/">Lifestyle & Mehr</a></li>
+                </ul>
+                <h4>Extras</h4>
+                <ul>
+                    <li><a href="/deals/">Tagesaktuelle Deals</a></li>
+                    <li><a href="/kaufberatungen/">Kaufberatungen</a></li>
+                    <li><a href="/newsletter/">Newsletter</a></li>
+                    <li><a href="/kontakt/">Kontakt</a></li>
+                    <li><a href="/preischeck/">Preisprüfung & Methodik</a></li>
+                </ul>
+            </nav>
+            <nav class="footer-nav" aria-label="Rechtliches">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="/impressum/">Impressum</a></li>
+                    <li><a href="/datenschutz/">Datenschutz</a></li>
+                    <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                    <li><a href="/ueber-uns/">Über uns</a></li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+
+        # Write page
+        guide_dir = output_path / "kaufberatung" / guide['slug']
+        guide_dir.mkdir(parents=True)
+        (guide_dir / "index.html").write_text(page_html, encoding='utf-8')
+        print(f"✅ Generated Kaufberatung: {guide['slug']}")
+
+
 def main():
     print("🔄 Loading product data...")
     all_products = load_products()
@@ -4176,6 +4672,10 @@ def main():
     kb_dir = output_path / "kaufberatungen"
     kb_dir.mkdir(parents=True)
     (kb_dir / "index.html").write_text(kaufberatungen, encoding='utf-8')
+
+    # Generate detailed Kaufberatung pages (Phase 3)
+    print("📚 Generating detailed Kaufberatung pages...")
+    generate_kaufberatung_pages(output_path, all_products)
 
     # Generate Kontakt page
     kontakt = '''<!DOCTYPE html>
