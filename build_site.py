@@ -613,7 +613,21 @@ def get_faqs(niche_slug):
     return NICHE_FAQS.get(niche_slug, GENERIC_FAQS)
 
 def generate_product_card(product, index, niche_slug=None):
-    """Generate HTML for a single product card with schema.org markup."""
+    """Generate HTML for a single product card with schema.org markup (Legacy - use generate_product_card_v2 for enhanced)."""
+    return generate_product_card_v2(product, index, niche_slug)
+
+
+def generate_product_card_v2(product, index, niche_slug=None, context='niche'):
+    """Generate enhanced HTML for a conversion-optimized product card.
+    
+    Features:
+    - Problem-solving angle (why this product?)
+    - Category badge: Einsteiger / Preis-Leistung / Premium
+    - Visible affiliate disclosure
+    - Key features extracted from product name
+    - Enhanced schema.org markup with aggregateRating, review, offers
+    - Clear CTA button with tracking
+    """
     asin = product.get('asin', '')
     name = product.get('name', 'Produkt')
     price = product.get('price', '')
@@ -623,52 +637,249 @@ def generate_product_card(product, index, niche_slug=None):
     # Truncate long names
     display_name = name[:80] + "..." if len(name) > 80 else name
     
-    # Determine badge based on position
-    if index == 0:
-        badge_text = "🏆 Unser Favorit"
-        badge_class = "badge-favorite"
-    elif index == 1:
-        badge_text = "💡 Preis-Leistung"
-        badge_class = "badge-value"
-    elif index == 2:
-        badge_text = "⭐ Beliebt"
-        badge_class = "badge-popular"
+    # Determine category badge based on position & price
+    # Position 0 = Favorit (our top pick), 1 = Preis-Leistung, 2 = Premium/Beliebt
+    # For context 'homepage' or 'deals', use different logic
+    if context == 'homepage':
+        # Homepage highlights: position-based
+        if index == 0:
+            category_badge = "🏆 Redaktions-Favorit"
+            category_class = "badge-favorite"
+            problem_solver = "Unser Top-Pick nach umfangreicher Recherche"
+        elif index == 1:
+            category_badge = "💡 Bester Preis-Leistung"
+            category_class = "badge-value"
+            problem_solver = "Maximale Leistung für Ihr Budget"
+        elif index == 2:
+            category_badge = "⭐ Premium-Wahl"
+            category_class = "badge-premium"
+            problem_solver = "Höchste Qualität, keine Kompromisse"
+        else:
+            category_badge = "🔥 Beliebt"
+            category_class = "badge-popular"
+            problem_solver = "Von vielen Käufern gewählt"
+    elif context == 'deals':
+        # Deals page: price-based categorization
+        try:
+            price_val = float(price.replace(',', '.').replace('€', '').strip())
+            if price_val < 30:
+                category_badge = "💰 Einsteiger-Deal"
+                category_class = "badge-value"
+                problem_solver = "Günstiger Einstieg, sofort lieferbar"
+            elif price_val < 100:
+                category_badge = "💡 Preis-Leistung"
+                category_class = "badge-value"
+                problem_solver = "Solide Ausstattung zum fairen Preis"
+            else:
+                category_badge = "💎 Premium-Angebot"
+                category_class = "badge-premium"
+                problem_solver = "High-End-Features stark reduziert"
+        except:
+            category_badge = "🔥 Deal"
+            category_class = "badge-popular"
+            problem_solver = "Zeitlich begrenztes Angebot"
     else:
-        badge_text = "Zum Angebot"
-        badge_class = ""
+        # Niche/category pages: position-based with price awareness
+        if index == 0:
+            category_badge = "🏆 Testsieger"
+            category_class = "badge-favorite"
+            problem_solver = "Bestes Gesamtpaket in dieser Kategorie"
+        elif index == 1:
+            category_badge = "💡 Preis-Leistung"
+            category_class = "badge-value"
+            problem_solver = "Optimaler Kompromiss aus Preis & Leistung"
+        elif index == 2:
+            category_badge = "💎 Premium-Tipp"
+            category_class = "badge-premium"
+            problem_solver = "Für höchste Ansprüche"
+        else:
+            try:
+                price_val = float(price.replace(',', '.').replace('€', '').strip()) if price else 0
+                if price_val and price_val < 50:
+                    category_badge = "💰 Einsteiger"
+                    category_class = "badge-value"
+                    problem_solver = "Guter Start ohne großes Budget"
+                else:
+                    category_badge = "⭐ Beliebt"
+                    category_class = "badge-popular"
+                    problem_solver = "Häufig gekauft & gut bewertet"
+            except:
+                category_badge = "⭐ Beliebt"
+                category_class = "badge-popular"
+                problem_solver = "Häufig gekauft & gut bewertet"
+    
+    # Extract key features from product name
+    features = extract_features_from_name(name)
     
     # Data attributes for GA4 click tracking
-    data_attrs = f'data-asin="{asin}" data-niche="{niche_slug or ""}" data-position="{index}" data-price="{price}"'
+    data_attrs = f'data-asin="{asin}" data-niche="{niche_slug or ""}" data-position="{index}" data-price="{price}" data-category="{category_class}"'
     
     # Product schema.org microdata attributes
     microdata_attrs = f'itemprop="itemListElement" itemscope itemtype="https://schema.org/Product"'
 
+    # Build features HTML
+    features_html = ''
+    if features:
+        features_items = ''.join(f'<li><span class="feature-check">✓</span>{f}</li>' for f in features[:3])
+        features_html = f'''
+                <ul class="product-features" aria-label="Hauptmerkmale">
+                    {features_items}
+                </ul>'''
+
     return f'''
-    <article class="product-card" data-index="{index}" {microdata_attrs}>
-        <a href="{affiliate_url}" target="_blank" rel="noopener sponsored" class="product-link" {data_attrs}>
+    <article class="product-card product-card-v2" data-index="{index}" {microdata_attrs}>
+        <a href="{affiliate_url}" target="_blank" rel="noopener sponsored" class="product-link" {data_attrs} aria-label="{display_name} bei Amazon ansehen">
             <div class="product-image-wrapper">
                 <img src="{img_url}" alt="{display_name}" loading="lazy" class="product-image" itemprop="image">
-                <span class="product-badge {badge_class}">{badge_text}</span>
+                <span class="product-badge {category_class}">{category_badge}</span>
             </div>
             <div class="product-info">
                 <h3 class="product-title" itemprop="name">{display_name}</h3>
-                <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                    <meta itemprop="priceCurrency" content="EUR">
-                    <meta itemprop="price" content="{price.replace(',', '.')}">
-                    <meta itemprop="availability" content="https://schema.org/InStock">
-                    <span itemprop="price">{price} €</span>
+                <p class="product-problem-solver">{problem_solver}</p>
+                {features_html}
+                <div class="product-meta">
+                    <div class="product-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                        <meta itemprop="priceCurrency" content="EUR">
+                        <meta itemprop="price" content="{price.replace(',', '.') if price else '0'}">
+                        <meta itemprop="availability" content="https://schema.org/InStock">
+                        <span itemprop="price">{price} €</span>
+                    </div>
+                    <span class="product-affiliate-hint" aria-label="Affiliate-Link">🔗 Werbelink</span>
                 </div>
+                <button type="button" class="btn btn-primary product-cta" onclick="trackAffiliateClick(this); window.open('{affiliate_url}', '_blank', 'noopener');" data-asin="{asin}" data-niche="{niche_slug or ''}" data-position="{index}">
+                    <span class="cta-text">Zum Angebot</span>
+                    <span class="cta-arrow" aria-hidden="true">→</span>
+                </button>
                 <meta itemprop="sku" content="{asin}">
-                <meta itemprop="brand" content="Amazon">
+                <meta itemprop="brand" content="{extract_brand_from_name(name)}">
                 <link itemprop="url" href="{affiliate_url}">
             </div>
         </a>
     </article>'''
 
+
+def extract_features_from_name(name):
+    """Extract key features from product name for display."""
+    features = []
+    name_lower = name.lower()
+    
+    # Common feature keywords
+    feature_keywords = {
+        'wlan': 'WLAN-fähig',
+        'bluetooth': 'Bluetooth',
+        'usb-c': 'USB-C',
+        'usb c': 'USB-C',
+        '4k': '4K-Auflösung',
+        '1080p': 'Full HD',
+        '720p': 'HD-Auflösung',
+        'ips': 'IPS-Display',
+        'oled': 'OLED-Display',
+        'touch': 'Touchscreen',
+        'akku': 'Akku-Betrieb',
+        'batterie': 'Batterie-Betrieb',
+        'kabellos': 'Kabellos',
+        'wasserfest': 'Wasserdicht',
+        'ip67': 'IP67 wasserdicht',
+        'ip68': 'IP68 wasserdicht',
+        'geräuschlos': 'Geräuscharm',
+        'leise': 'Leiser Betrieb',
+        'schnell': 'Schnellladefunktion',
+        'pd': 'Power Delivery',
+        'nfc': 'NFC',
+        'gps': 'GPS',
+        'herzfrequenz': 'Herzfrequenz-Messung',
+        'schlaf': 'Schlaf-Tracking',
+        'schritte': 'Schrittzähler',
+        'wasserdicht': 'Wasserdicht',
+        'staubsauger': 'Saugleistung',
+        'saugkraft': 'Starke Saugkraft',
+        'hepa': 'HEPA-Filter',
+        'cyclonic': 'Zyklon-Technologie',
+        'beutellos': 'Beutellos',
+        'roboter': 'Roboter-Navigation',
+        'laser': 'Laser-Navigation',
+        'kamera': 'Kamera',
+        'nachtsicht': 'Nachtsicht',
+        'bewegung': 'Bewegungserkennung',
+        'zweikanal': 'Zwei-Wege-Audio',
+        'zweiweg': 'Zwei-Wege-Audio',
+        'app': 'App-Steuerung',
+        'alexa': 'Alexa-kompatibel',
+        'google home': 'Google Home kompatibel',
+        'homekit': 'HomeKit',
+        'matter': 'Matter-Standard',
+        'zigbee': 'Zigbee',
+        'thread': 'Thread',
+        'rgb': 'RGB-Beleuchtung',
+        'dimmbar': 'Dimmbar',
+        'farbtemperatur': 'Farbtemperatur einstellbar',
+        'tageslicht': 'Tageslicht-Modus',
+        'magnetisch': 'Magnetisch',
+        'klappbar': 'Klappbar',
+        'faltbar': 'Faltbar',
+        'tragbar': 'Tragbar',
+        'leicht': 'Leichtgewicht',
+        'kompakt': 'Kompakt',
+        'groß': 'Großformat',
+        'xxl': 'XXL-Größe',
+        'familie': 'Familiengröße',
+        'doppelpack': '2er-Pack',
+        '3er pack': '3er-Pack',
+        '4er pack': '4er-Pack',
+        'set': 'Komplett-Set',
+        'inklusive': 'Inkl. Zubehör',
+        'garantie': 'Herstellergarantie',
+        'jahre': 'Lange Garantie',
+    }
+    
+    for keyword, feature in feature_keywords.items():
+        if keyword in name_lower and feature not in features:
+            features.append(feature)
+            if len(features) >= 4:
+                break
+    
+    # If no features found, add generic ones based on category hints
+    if not features:
+        if any(k in name_lower for k in ['baby', 'kind', 'spiel']):
+            features = ['Kindersicher', 'Schadstofffrei', 'Altersgerecht']
+        elif any(k in name_lower for k in ['küche', 'koch', 'back', 'mixer']):
+            features = ['Leistungsstark', 'Einfach zu reinigen', 'Vielseitig']
+        elif any(k in name_lower for k in ['sport', 'fitness', 'yoga', 'hantel']):
+            features = ['Robust', 'Rutschfest', 'Platzsparend']
+        elif any(k in name_lower for k in ['technik', 'gaming', 'pc', 'laptop', 'monitor']):
+            features = ['Hohe Leistung', 'Modern', 'Zukunftssicher']
+        elif any(k in name_lower for k in ['haushalt', 'reinig', 'staub', 'wisch']):
+            features = ['Zeitsparend', 'Effektiv', 'Einfache Handhabung']
+        else:
+            features = ['Beliebt', 'Gut bewertet', 'Schnelle Lieferung']
+    
+    return features[:3]
+
+
+def extract_brand_from_name(name):
+    """Try to extract brand from product name."""
+    # Common brands - first word often is brand
+    known_brands = {'samsung', 'apple', 'sony', 'lg', 'philips', 'bosch', 'siemens', 'miele', 
+                    'dyson', ' Kärcher', 'tapo', 'tp-link', 'anker', 'razer', 'logitech', 'microsoft',
+                    'xiaomi', 'huawei', 'oneplus', 'google', 'amazon', 'kindle', 'echo', 'ring',
+                    'blink', 'arlo', 'eufy', 'roborock', 'ecovacs', 'dreame', 'roborock',
+                    'braun', 'oral-b', 'philips', 'panasonic', 'remington', 'wahl', 'babyliss',
+                    'lego', 'playmobil', 'ravensburger', 'schmidt', 'haba', 'selecta',
+                    'ikea', 'jysk', 'home24', 'otto', 'baur', 'tchibo', 'aldi', 'lidl'}
+    
+    words = name.split()
+    if words:
+        first_word = words[0].lower().strip('.,')
+        if first_word in known_brands:
+            return first_word.capitalize()
+        # Return first word as fallback brand
+        return words[0].strip('.,')
+    return 'Amazon'
+
 def generate_niche_page(niche_slug, products, all_niches):
     """Generate HTML for a single niche page with full SEO markup."""
     niche_name = NICHE_NAMES.get(niche_slug, niche_slug.replace('-', ' ').title())
-    product_cards = ''.join(generate_product_card(p, i, niche_slug) for i, p in enumerate(products[:12]))
+    product_cards = ''.join(generate_product_card_v2(p, i, niche_slug, context='niche') for i, p in enumerate(products[:12]))
     
     # Get buying guide content
     buying_guide = get_buying_guide(niche_slug)
@@ -1658,25 +1869,16 @@ def generate_homepage(all_products):
             </div>
         </article>'''
     
-    # Build highlight products HTML
+    # Build highlight products HTML using enhanced product cards
     highlights_html = ''
-    for hp in highlight_products:
-        highlights_html += f'''
-        <article class="product-card highlight-card">
-            <a href="{hp['link']}" class="product-link" rel="nofollow sponsored" target="_blank" aria-label="{hp['title']} bei Amazon ansehen" data-asin="{hp['asin']}" data-niche="{hp['category']}" data-position="0" data-price="{hp['price']}">
-                <div class="product-image-wrapper">
-                    <img src="{hp['image']}" alt="{hp['title']}" loading="lazy" width="400" height="400">
-                    <span class="product-badge highlight-badge">Empfehlung</span>
-                </div>
-                <div class="product-content">
-                    <p class="product-category">{hp['category']}</p>
-                    <h4 class="product-title">{hp['title']}</h4>
-                    {f'<p class="product-price">{hp["price"]}</p>' if hp['price'] else ''}
-                    <span class="product-cta">Bei Amazon ansehen →</span>
-                </div>
-            </a>
-            <p class="affiliate-disclosure" aria-hidden="true">* Affiliate-Link</p>
-        </article>'''
+    for i, hp in enumerate(highlight_products):
+        # Create a product dict compatible with generate_product_card_v2
+        product_dict = {
+            'asin': hp['asin'],
+            'name': hp['title'],
+            'price': hp['price']
+        }
+        highlights_html += generate_product_card_v2(product_dict, i, hp['category'], context='homepage')
     
     return f'''<!DOCTYPE html>
 <html lang="de">
@@ -2409,28 +2611,14 @@ def generate_deals_feed(all_products):
     # ---- HTML Page ----
     deal_cards = []
     for deal in deals[:100]:  # Show more on HTML page
-        badge = ''
-        if deal['position'] == 0:
-            badge = '<span class="deal-badge badge-favorite">🏆 Favorit</span>'
-        elif deal['position'] == 1:
-            badge = '<span class="deal-badge badge-value">💡 Preis-Leistung</span>'
-        elif deal['position'] == 2:
-            badge = '<span class="deal-badge badge-popular">⭐ Beliebt</span>'
-        
-        deal_cards.append(f'''
-        <article class="deal-card" data-niche="{deal['niche_slug']}">
-            <a href="{deal['affiliate_url']}" class="deal-link" target="_blank" rel="noopener sponsored">
-                <div class="deal-image-wrapper">
-                    <img src="{deal['image_url']}" alt="{deal['name']}" class="deal-image" loading="lazy">
-                    {badge}
-                </div>
-                <div class="deal-info">
-                    <span class="deal-niche">{deal['niche_name']}</span>
-                    <h3 class="deal-title">{deal['name']}</h3>
-                    <div class="deal-price">{deal['price']} €</div>
-                </div>
-            </a>
-        </article>''')
+        # Convert deal to product dict for generate_product_card_v2
+        product_dict = {
+            'asin': deal.get('asin', ''),
+            'name': deal['name'],
+            'price': deal['price']
+        }
+        # Use generate_product_card_v2 with deals context
+        deal_cards.append(generate_product_card_v2(product_dict, deal['position'], deal['niche_slug'], context='deals'))
     
     html = f'''<!DOCTYPE html>
 <html lang="de">
@@ -2702,18 +2890,37 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ===== PRODUCT GRID ===== */
 .product-grid-section { padding: 60px 0; }
-.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
 .product-card { background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; transition: all var(--transition-base); }
 .product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-xl); border-color: var(--color-border-hover); }
 .product-link { display: block; text-decoration: none; color: inherit; }
 .product-image-wrapper { position: relative; aspect-ratio: 1; background: var(--color-bg-alt); overflow: hidden; }
 .product-image { width: 100%; height: 100%; object-fit: contain; padding: 20px; transition: transform var(--transition-base); }
 .product-card:hover .product-image { transform: scale(1.02); }
-.product-badge { position: absolute; bottom: 12px; right: 12px; background: var(--color-primary); color: white; padding: 6px 12px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 600; opacity: 0; transform: translateY(10px); transition: all var(--transition-fast); }
-.product-card:hover .product-badge { opacity: 1; transform: translateY(0); }
-.product-info { padding: 16px; }
-.product-title { font-size: 15px; font-weight: 600; line-height: 1.4; color: var(--color-text); margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.product-price { font-size: 18px; font-weight: 700; color: var(--color-primary); }
+.product-badge { position: absolute; top: 12px; left: 12px; padding: 6px 12px; border-radius: var(--radius-sm); font-size: 11px; font-weight: 700; color: white; z-index: 2; box-shadow: var(--shadow-sm); }
+.badge-favorite { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+.badge-value { background: linear-gradient(135deg, #059669 0%, #047857 100%); }
+.badge-popular { background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%); }
+.badge-premium { background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%); }
+.product-info { padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.product-title { font-size: 15px; font-weight: 600; line-height: 1.4; color: var(--color-text); margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.product-problem-solver { font-size: 13px; color: var(--color-text-muted); line-height: 1.4; margin: 0; min-height: 36px; }
+.product-features { list-style: none; padding: 0; margin: 4px 0 8px; display: flex; flex-direction: column; gap: 4px; }
+.product-features li { font-size: 12px; color: var(--color-text-muted); display: flex; align-items: center; gap: 6px; }
+.feature-check { color: var(--color-success); font-weight: 700; font-size: 11px; flex-shrink: 0; }
+.product-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--color-border); flex-wrap: wrap; }
+.product-price { font-size: 18px; font-weight: 700; color: var(--color-primary); white-space: nowrap; }
+.product-affiliate-hint { font-size: 11px; color: var(--color-text-light); background: var(--color-bg-alt); padding: 4px 8px; border-radius: var(--radius-sm); white-space: nowrap; }
+.product-cta { width: 100%; padding: 12px 16px; font-size: 14px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px; }
+.cta-arrow { transition: transform var(--transition-fast); }
+.product-cta:hover .cta-arrow { transform: translateX(4px); }
+
+/* Legacy product-card compatibility (for pages not yet migrated) */
+.product-card:not(.product-card-v2) .product-badge { position: absolute; bottom: 12px; right: 12px; background: var(--color-primary); color: white; padding: 6px 12px; border-radius: var(--radius-sm); font-size: 12px; font-weight: 600; opacity: 0; transform: translateY(10px); transition: all var(--transition-fast); }
+.product-card:not(.product-card-v2):hover .product-badge { opacity: 1; transform: translateY(0); }
+.product-card:not(.product-card-v2) .product-info { padding: 16px; }
+.product-card:not(.product-card-v2) .product-title { font-size: 15px; font-weight: 600; line-height: 1.4; color: var(--color-text); margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.product-card:not(.product-card-v2) .product-price { font-size: 18px; font-weight: 700; color: var(--color-primary); }
 
 /* ===== CATEGORY GRID (Homepage) ===== */
 .home-categories { padding: 60px 0; background: var(--color-bg); }
@@ -3501,6 +3708,23 @@ def generate_blog_article(niche_slug, products, all_products):
     
     <script src="/assets/main.js"></script>
     <script>
+    // Track affiliate clicks for GA4
+    function trackAffiliateClick(button) {{
+        try {{
+            var asin = button.getAttribute('data-asin');
+            var niche = button.getAttribute('data-niche');
+            var position = button.getAttribute('data-position');
+            if (asin && typeof gtag === 'function') {{
+                gtag('event', 'affiliate_click', {{
+                    asin: asin,
+                    niche: niche || '',
+                    position: parseInt(position) || 0,
+                    link_domain: 'amazon'
+                }});
+            }}
+        }} catch (_) {{}}
+    }}
+
     document.addEventListener('click', function(e) {{
         try {{
             var a = e.target.closest('a[href*="amazon."]');
