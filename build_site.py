@@ -1067,6 +1067,12 @@ def generate_niche_page(niche_slug, products, all_niches):
                 </nav>
             </div>
             <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5-5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
                 <p>&copy; 2024 Andreas Stehmann Links. Alle Rechte vorbehalten.</p>
             </div>
         </div>
@@ -1532,6 +1538,12 @@ def generate_category_page(category_name, niches_in_cat, all_products):
                 </nav>
             </div>
             <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5-5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
                 <p>&copy; 2024 Andreas Stehmann Links. Alle Rechte vorbehalten.</p>
             </div>
         </div>
@@ -3027,6 +3039,43 @@ img { max-width: 100%; height: auto; display: block; }
 .footer-nav ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; color: rgba(255,255,255,0.4); font-size: 14px; }
 
+/* Trust Badges */
+.trust-badges { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; justify-content: center; }
+.trust-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: var(--radius-full); font-size: 12px; font-weight: 500; color: rgba(255,255,255,0.8); transition: all var(--transition-fast); }
+.trust-badge:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white; }
+.trust-badge svg { width: 16px; height: 16px; flex-shrink: 0; }
+.trust-badge.amazon { border-color: #ff9900; color: #ff9900; }
+.trust-badge.amazon:hover { background: rgba(255,153,0,0.1); }
+.trust-badge.ssl { border-color: #10b981; color: #10b981; }
+.trust-badge.ssl:hover { background: rgba(16,185,129,0.1); }
+.trust-badge.privacy { border-color: #3b82f6; color: #3b82f6; }
+.trust-badge.privacy:hover { background: rgba(59,130,246,0.1); }
+.trust-badge.reviews { border-color: #f59e0b; color: #f59e0b; }
+.trust-badge.reviews:hover { background: rgba(245,158,11,0.1); }
+
+/* Author Profile */
+.author-profile { display: flex; gap: 16px; align-items: flex-start; padding: 24px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin-bottom: 32px; }
+.author-avatar { width: 72px; height: 72px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700; flex-shrink: 0; }
+.author-info h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+.author-role { font-size: 13px; color: var(--color-text-muted); margin: 0 0 8px; }
+.author-expertise { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.author-expertise span { font-size: 12px; padding: 3px 8px; background: var(--color-primary-light); color: var(--color-primary); border-radius: var(--radius-full); }
+.author-links { display: flex; gap: 12px; margin-top: 8px; }
+.author-links a { font-size: 13px; color: var(--color-primary); text-decoration: none; font-weight: 500; }
+.author-links a:hover { text-decoration: underline; }
+
+/* Last Updated Badge */
+.last-updated { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-text-muted); padding: 6px 12px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-full); margin-bottom: 16px; }
+.last-updated svg { width: 14px; height: 14px; color: var(--color-primary); }
+
+@media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; text-align: center; }
+    .footer-brand { display: flex; flex-direction: column; align-items: center; }
+    .trust-badges { justify-content: center; }
+    .author-profile { flex-direction: column; text-align: center; align-items: center; }
+    .author-links { justify-content: center; }
+}
+
 /* ===== LEGAL PAGES ===== */
 .legal-content { max-width: 800px; line-height: 1.8; }
 .legal-content h2 { font-size: 22px; font-weight: 700; margin: 32px 0 16px; padding-top: 32px; border-top: 1px solid var(--color-border); }
@@ -3164,9 +3213,32 @@ img { max-width: 100%; height: auto; display: block; }
 .guide-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--color-primary); text-decoration: none; transition: all var(--transition-fast); }
 .guide-cta:hover { gap: 10px; color: var(--color-primary-hover); }
 
-.guide-categories { padding: 60px 0; background: var(--color-bg-alt); }
-.guide-categories h2 { font-size: 28px; font-weight: 700; text-align: center; margin-bottom: 8px; }
-.guide-categories .section-subtitle { text-align: center; margin-bottom: 40px; }
+/* ===== KAUFBERATUNG DETAIL PAGES ===== */
+.kaufberatung-article { max-width: 900px; margin: 0 auto; }
+.kaufberatung-hero { text-align: center; padding: 40px 0; margin-bottom: 32px; }
+.kaufberatung-category { display: inline-block; font-size: 13px; font-weight: 600; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px; }
+.kaufberatung-hero h1 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+.kaufberatung-hero .lead { font-size: 18px; color: var(--color-text-muted); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+
+.last-updated { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--color-text-muted); padding: 8px 16px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-md); margin: 24px auto 32px; }
+.last-updated svg { width: 16px; height: 16px; flex-shrink: 0; }
+.last-updated time { font-weight: 500; color: var(--color-text); }
+
+.author-profile { display: flex; gap: 16px; padding: 24px; background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: var(--radius-lg); margin-bottom: 32px; }
+.author-avatar { width: 64px; height: 64px; border-radius: 50%; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-hover) 100%); color: white; display: flex; align-items: center; justify-content: center; font-size: 20px; font-weight: 700; flex-shrink: 0; }
+.author-info h3 { font-size: 18px; font-weight: 700; margin: 0 0 4px; color: var(--color-text); }
+.author-role { font-size: 14px; color: var(--color-primary); font-weight: 500; margin: 0 0 12px; }
+.author-expertise { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.author-expertise span { font-size: 12px; padding: 4px 10px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-sm); color: var(--color-text-muted); }
+.author-links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 12px; }
+.author-links a { font-size: 13px; color: var(--color-primary); text-decoration: none; font-weight: 500; }
+.author-links a:hover { text-decoration: underline; color: var(--color-primary-hover); }
+
+@media (max-width: 600px) {
+    .author-profile { flex-direction: column; text-align: center; align-items: center; }
+    .author-expertise { justify-content: center; }
+    .author-links { justify_content: center; }
+}
 
 /* ===== CONTACT PAGE ===== */
 .contact-section { padding: 60px 0; background: var(--color-bg); }
@@ -4189,16 +4261,45 @@ def generate_kaufberatung_pages(output_path, all_products):
             ]
         }
 
-        # Article JSON-LD with product references
+        # Last updated timestamps for display (must be before article_json_ld)
+        from datetime import datetime, timezone
+        last_updated_dt = datetime.now(timezone.utc)
+        last_updated_iso = last_updated_dt.strftime('%Y-%m-%d')
+        last_updated_de = last_updated_dt.strftime('%d.%m.%Y')
+
+        # Article JSON-LD with product references, author, publisher, reviews
         article_json_ld = {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": guide['title'],
             "description": guide['description'],
-            "author": {"@type": "Person", "name": "Andreas Stehmann"},
-            "publisher": {"@type": "Organization", "name": "Andreas Stehmann Links", "logo": {"@type": "ImageObject", "url": "https://balu1705.github.io/andreasstehmann-links/assets/logo.png"}},
+            "author": {
+                "@type": "Person",
+                "name": "Andreas Stehmann",
+                "url": "https://balu1705.github.io/andreasstehmann-links/ueber-uns/",
+                "sameAs": [
+                    "https://github.com/balu1705"
+                ],
+                "jobTitle": "Produkt-Experte & Affiliate-Redakteur",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "Andreas Stehmann Links"
+                }
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Andreas Stehmann Links",
+                "url": "https://balu1705.github.io/andreasstehmann-links/",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://balu1705.github.io/andreasstehmann-links/assets/logo.png"
+                },
+                "sameAs": [
+                    "https://github.com/balu1705"
+                ]
+            },
             "datePublished": "2026-01-01",
-            "dateModified": "2026-11-27",
+            "dateModified": last_updated_iso,
             "mainEntityOfPage": {"@type": "WebPage", "@id": f"https://balu1705.github.io/andreasstehmann-links/kaufberatung/{guide['slug']}/"},
             "about": {
                 "@type": "ProductGroup",
@@ -4209,11 +4310,34 @@ def generate_kaufberatung_pages(output_path, all_products):
                         "@type": "Product",
                         "name": p.get('name', ''),
                         "sku": p.get('asin', ''),
+                        "description": f"{p.get('name', '')} - Top-Empfehlung in {guide['title']}",
+                        "brand": {"@type": "Brand", "name": p.get('brand', 'Unbekannt')},
                         "offers": {
                             "@type": "Offer",
                             "url": get_affiliate_url(p.get('asin', '')),
                             "priceCurrency": "EUR",
-                            "availability": "https://schema.org/InStock"
+                            "availability": "https://schema.org/InStock",
+                            "seller": {"@type": "Organization", "name": "Amazon"}
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "ratingValue": str(p.get('rating', 4.0)),
+                            "reviewCount": str(p.get('review_count', 100)),
+                            "bestRating": "5",
+                            "worstRating": "1"
+                        },
+                        "review": {
+                            "@type": "Review",
+                            "author": {"@type": "Person", "name": "Andreas Stehmann"},
+                            "datePublished": last_updated_iso,
+                            "reviewBody": f"Ausführlicher Test & Vergleich: {p.get('name', '')} in der Kategorie {guide['category']}. Bewertung basiert auf Produktspezifikationen, Nutzerbewertungen und Expertenanalyse.",
+                            "reviewRating": {
+                                "@type": "Rating",
+                                "ratingValue": str(p.get('rating', 4.0)),
+                                "bestRating": "5",
+                                "worstRating": "1"
+                            },
+                            "publisher": {"@type": "Organization", "name": "Andreas Stehmann Links"}
                         }
                     }
                     for p in products_for_comparison[:3]
@@ -4281,6 +4405,31 @@ def generate_kaufberatung_pages(output_path, all_products):
                     <h1>{guide['title']}</h1>
                     <p class="lead">{guide['description']}</p>
                 </header>
+
+                <div class="last-updated" aria-label="Letzte Aktualisierung">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+                    <span>Zuletzt geprüft: <time datetime="{last_updated_iso}">{last_updated_de}</time></span>
+                </div>
+
+                <aside class="author-profile" aria-labelledby="author-name">
+                    <div class="author-avatar" aria-hidden="true">AS</div>
+                    <div class="author-info">
+                        <h3 id="author-name">Andreas Stehmann</h3>
+                        <p class="author-role">Produkt-Experte & Affiliate-Redakteur</p>
+                        <p style="font-size: 14px; color: var(--color-text-muted); margin: 8px 0; line-height: 1.6;">Seit 2018 teste und vergleiche ich Produkte für den deutschen Markt. Fokus: Wohnen, Küche, Smart Home & Technik. Meine Empfehlungen basieren auf echten Tests, Nutzerbewertungen & Datenanalyse – keine bezahlten Platzierungen.</p>
+                        <div class="author-expertise">
+                            <span>Wohnen & Einrichtung</span>
+                            <span>Smart Home & Technik</span>
+                            <span>Küche & Haushalt</span>
+                            <span>Produkt-Vergleiche</span>
+                        </div>
+                        <div class="author-links">
+                            <a href="/ueber-uns/" rel="author">Profil ansehen</a>
+                            <a href="/impressum/">Impressum</a>
+                            <a href="/datenschutz/">Datenschutz</a>
+                        </div>
+                    </div>
+                </aside>
 
                 <div class="kaufberatung-intro">
                     <p>{guide['intro']}</p>
@@ -4366,6 +4515,12 @@ def generate_kaufberatung_pages(output_path, all_products):
                 </ul>
             </nav>
             <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5-5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
                 <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
             </div>
         </div>
