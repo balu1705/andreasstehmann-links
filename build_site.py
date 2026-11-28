@@ -226,6 +226,198 @@ CATEGORY_FAQS = {
     ]
 }
 
+# ============ PHASE 5: CONVERSION STRATEGY DATA ============
+
+# Seasonal worlds - map seasons to relevant niches + curated intro
+SEASONAL_WORLDS = {
+    "fruehling": {
+        "title": "Frühlings-Favoriten",
+        "subtitle": "Alles für den Neustart: Balkon, Garten, Frühjahrsputz & Leichtes für die Küche",
+        "hero_image": "https://m.media-amazon.com/images/I/B0GX5H49DW._AC_SL500_.jpg",
+        "niches": ["balkon-garten", "balkon-moebel-lounge", "garten-helfer", "garten-pflanzen", "gartengerate", "haushaltshelfer", "nachhaltige-haushaltsprodukte", "pflanzen", "kaffee-genuss", "gesundes-fruehstueck"],
+        "intro": "Die Tage werden länger, die Temperaturen steigen – Zeit, Balkon & Garten fit für die Saison zu machen, die Wohnung gründlich zu reinigen und leichtere Küche zu genießen. Wir haben die besten Produkte für den Frühlings-Start kuratiert.",
+        "highlight": "🌱 Jetzt: Balkonmöbel, Pflanzenerde, Hochdruckreiniger, leichte Sommerküche"
+    },
+    "sommer": {
+        "title": "Sommer-Highlights",
+        "subtitle": "Grillen, Kühlen, Outdoor-Spaß, Reise-Gadgets & Sonnenschutz",
+        "hero_image": "https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg",
+        "niches": ["balkon-moebel-lounge", "outdoor-abenteuer", "reiseausruestung-leicht", "kaffee-eeis", "eiswuerfelbereiter", "tragbare-klimaanlage", "ventilatoren", "sonnenschirm", "grill-zubehoer", "picknick-decken"],
+        "intro": "Sommerzeit ist Outdoor-Zeit: Grillen mit Freunden, kühle Drinks, entspannte Reisen und erholsame Nächte trotz Hitze. Unsere Sommer-Empfehlungen decken alles ab – vom portablen Klimagerät bis zum perfekten Grill-Zubehör.",
+        "highlight": "☀️ Jetzt: Mobile Klimaanlagen, Grill-Equipment, Reise-Organisation, Sonnenschutz"
+    },
+    "herbst": {
+        "title": "Herbst-Essentials",
+        "subtitle": "Gemütlich einrichten, Heizen & Lüften, Herbst-Deko, Warme Getränke",
+        "hero_image": "https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg",
+        "niches": ["herbst-deko", "herbst-winter-deko", "heizung-waerme", "kaffee", "kaffee-genuss", "kaffeevollautomat-bestseller", "tee-lounge", "duftkerzen", "wohnen-deko", "schlaf-topper", "bettwaren"],
+        "intro": "Draußen wird es kühler, drinnen gemütlicher: Die Herbst-Kollektion bringt Wärme in dein Zuhause – mit smarter Heiztechnik, kuscheliger Deko, perfektem Kaffee & Tee und Produkten für besseren Schlaf in der dunklen Jahreszeit.",
+        "highlight": "🍂 Jetzt: Heizlüfter, Kerzen, Kaffeevollautomaten, Topper, Herbst-Deko"
+    },
+    "weihnachten": {
+        "title": "Weihnachts-Welt",
+        "subtitle": "Geschenkideen, Festtags-Deko, Menü-Helfer, Adventskalender & Last-Minute-Retter",
+        "hero_image": "https://m.media-amazon.com/images/I/B0BD43SMHD._AC_SL500_.jpg",
+        "niches": ["weihnachten-advent", "geschenke", "geschenke-fuer-sie", "geschenke-fuer-ihn", "cocktail-abend", "esstisch-gaeste", "tischkultur-elegant", "backen-kochen", "schmoren-genuss", "bestseller", "buecher-frauen-ue25", "lego", "parfum-damen", "parfum-herren", "wellness", "spa-beauty-erlebnis"],
+        "intro": "Die schönste Zeit des Jahres verdient die besten Produkte: Ob Geschenke für sie/ihn/kinder, festliche Tafel, Adventskalender-Füllung oder das perfekte Weihnachtsmenü – unsere Weihnachts-Welt hat alles, was das Fest stressfrei und schön macht.",
+        "highlight": "🎄 Jetzt: Geschenk-Guides, Deko, Menü-Helfer, Last-Minute-Prime-Lieferung"
+    }
+}
+
+# Gift guides by occasion
+GIFT_GUIDES = {
+    "geburtstag": {
+        "title": "Geschenke zum Geburtstag",
+        "subtitle": "Persönlich, nützlich & garantiert gut ankommend – sortiert nach Interessen",
+        "hero_image": "https://m.media-amazon.com/images/I/B0D2HYVDF7._AC_SL500_.jpg",
+        "categories": {
+            "Für Genießer": ["kaffee-genuss", "tee-lounge", "cocktail-abend", "schmoren-genuss", "wein-zubehoer"],
+            "Für Technik-Fans": ["gaming-monitor", "handy-zubehoer", "smart-home", "fotos-kamera", "smart-home-bestseller"],
+            "Für Zuhause": ["wohnen-deko", "duftkerzen", "spa-beauty-erlebnis", "wellness-massage-bestseller", "bettwaren"],
+            "Für Kreative": ["diy", "backen-kochen", "kuechen-gadgets", "buecher-frauen-ue25", "lego"],
+            "Für Aktive": ["fitness-homegym", "lauf-ausruestung-damen", "outdoor-abenteuer", "yoga-meditation", "reiseausruestung-leicht"]
+        }
+    },
+    "weihnachten": {
+        "title": "Weihnachts-Geschenke",
+        "subtitle": "Vom kleinen Wichtel-Geschenk bis zum Hauptgeschenk – kuratiert für jeden Budget",
+        "hero_image": "https://m.media-amazon.com/images/I/B0BD43SMHD._AC_SL500_.jpg",
+        "categories": {
+            "Unter 20 €": ["duftkerzen", "badezusatz", "kuche-gadgets-klein", "buecher-frauen-ue25", "pflanzen"],
+            "20–50 €": ["kaffee-genuss", "cocktail-abend", "handy-zubehoer", "spa-beauty-erlebnis", "wohn-deko-klein"],
+            "50–100 €": ["kaffeevollautomat-bestseller", "smart-home-licht", "fotos-kamera-zubehoer", "wellness-massage-bestseller", "lego-sets"],
+            "100–200 €": ["saugroboter-bestseller", "heissluftfritteuse-profi", "gaming-monitor", "parfum-damen", "parfum-herren"],
+            "Über 200 €": ["kaffeevollautomat-premium", "saugroboter-premium", "smart-home-komplett", "fitness-homegym-premium", "reiseausruestung-premium"]
+        }
+    },
+    "muttertag": {
+        "title": "Muttertags-Geschenke",
+        "subtitle": "Danke sagen mit Produkten, die Mamas Alltag verschönern & entlasten",
+        "hero_image": "https://m.media-amazon.com/images/I/B0GX5H49DW._AC_SL500_.jpg",
+        "categories": {
+            "Entspannung & Wellness": ["spa-beauty-erlebnis", "wellness-massage-bestseller", "duftkerzen", "badezusatz", "haare-styling"],
+            "Küche & Genuss": ["kaffeevollautomat-bestseller", "kaffee-genuss", "tee-lounge", "backen-kochen", "kuechen-gadgets"],
+            "Zuhause & Deko": ["wohnen-deko", "pflanzen", "blumen-vasen", "duftkerzen", "bettwaren"],
+            "Praktisch & Zeit sparend": ["saugroboter-bestseller", "haushaltshelfer", "kuechenorganisation", "smart-home-licht"]
+        }
+    },
+    "vatertag": {
+        "title": "Vatertags-Geschenke",
+        "subtitle": "Tools, Gadgets & Genuss für Papas, die Qualität schätzen",
+        "hero_image": "https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg",
+        "categories": {
+            "Technik & Smart Home": ["smart-home", "smart-home-bestseller", "smart-home-sicherheit", "handy-zubehoer", "fotos-kamera"],
+            "Werkzeug & DIY": ["diy", "akku-schrauber", "werkzeug-koffer", "messwerkzeuge", "werkbank"],
+            "Grillen & Genuss": ["grill-zubehoer", "schmoren-genuss", "whisky-steine", "cocktail-abend", "kaffee-genuss"],
+            "Outdoor & Sport": ["outdoor-abenteuer", "lauf-ausruestung-damen", "fitness-homegym", "reiseausruestung-leicht", "camping-ausruestung"]
+        }
+    },
+    "einweihung": {
+        "title": "Einweihungs-Geschenke",
+        "subtitle": "Praktisch, stilvoll & fürs neue Zuhause gemacht",
+        "hero_image": "https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg",
+        "categories": {
+            "Küchen-Basics": ["kuechenmaschine-profi-bestseller", "backen-kochen", "kaffee", "esstisch-gaeste", "tischkultur-elegant"],
+            "Wohnen & Organisation": ["flue-ordnung-stauraum", "schrank-organisation", "kuechenorganisation", "wohnen-traumumfeld", "wanddeko"],
+            "Smart Home Start": ["smart-home-licht", "smart-home-sicherheit", "saugroboter-bestseller", "smart-home-bestseller"],
+            "Gemütlichkeit": ["duftkerzen", "wohnen-deko", "bettwaren", "schlaf-topper", "pflanzen"]
+        }
+    },
+    "geburt": {
+        "title": "Geschenke zur Geburt",
+        "subtitle": "Was frischgebackene Eltern wirklich brauchen (und was nicht)",
+        "hero_image": "https://m.media-amazon.com/images/I/B0D2HYVDF7._AC_SL500_.jpg",
+        "categories": {
+            "Fürs Baby": ["babywelt", "baby-kindersicherheit", "maedchenzimmer-aktuell", "babyphone", "krabbeldecke"],
+            "Für die Eltern": ["kaffeevollautomat-bestseller", "saugroboter-bestseller", "lieferdienst-gutschein", "wellness-massage-bestseller", "schlaf-topper"],
+            "Praktisch & Langlebig": ["windel-eimer", "flaschenwaermer", "stilleinlagen", "tragehilfe", "babyphone"]
+        }
+    }
+}
+
+# Situational lists - problem/solution focused
+SITUATIONAL_LISTS = {
+    "erste-wohnung": {
+        "title": "Erste Wohnung: Die komplette Checkliste",
+        "subtitle": "Von null auf eingerichtet – die Essentials, die wirklich gebraucht werden",
+        "hero_image": "https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg",
+        "sections": [
+            {"name": "Schlafen & Bad", "niches": ["schlafen-wohlfuehlzimmer", "bettwaren", "bad-organisation", "handtuch-sets", "badematten"]},
+            {"name": "Küche Basics", "niches": ["backen-kochen", "kaffee", "esstisch-gaeste", "tischkultur-elegant", "kuechenorganisation"]},
+            {"name": "Wohnen & Stauraum", "niches": ["flue-ordnung-stauraum", "schrank-organisation", "wohnen-deko", "wanddeko", "pflanzen"]},
+            {"name": "Technik & Haushalt", "niches": ["saugroboter-bestseller", "waschmaschine-zubehoer", "buegelstation", "staubsauger", "smart-home-licht"]},
+            {"name": "Werkzeug & Notfall", "niches": ["diy", "werkzeug-koffer", "erste-hilfe", "rauchmelder", "treppengitter"]}
+        ],
+        "budget_tip": "💡 Budget-Hack: Basics (Matratze, Herd, Kühlschrank) neu kaufen – Deko, Kleingeräte & Möbel gebraucht/Second-Hand."
+    },
+    "home-office-setup": {
+        "title": "Home-Office perfekt einrichten",
+        "subtitle": "Produktiv, ergonomisch & schön – alles für deinen Arbeitsplatz zuhause",
+        "hero_image": "https://m.media-amazon.com/images/I/B0C81Z7BBM._AC_SL500_.jpg",
+        "sections": [
+            {"name": "Ergonomie", "niches": ["home-office", "ergonomischer-stuhl", "hoehenverstellbarer-tisch", "monitor-arm", "tastatur-maus-ergonomisch"]},
+            {"name": "Technik", "niches": ["gaming-monitor", "docking-station", "webcam-4k", "mikrofon", "kopfhoerer-anc"]},
+            {"name": "Organisation", "niches": ["home-office-organisation", "ablage-systeme", "kabelmanagement", "whiteboard", "notizblock"]},
+            {"name": "Atmosphäre", "niches": ["pflanzen", "raumduft", "beleuchtung-smart", "duftkerzen", "wohnen-deko"]},
+            {"name": "Gesundheit", "niches": ["steh-sitz-tisch", "fussstuetze", "bildschirmbrille", "luftbefeuchter", "bewegungs-reminder"]}
+        ],
+        "budget_tip": "💡 Budget-Hack: Guter Stuhl (300–500 €) + Monitor-Arm (50 €) + Kabelmanagement (20 €) = 80 % Ergonomie für unter 600 €."
+    },
+    "baby-kommt": {
+        "title": "Baby kommt: Was wirklich in die Kliniktasche & ins Kinderzimmer gehört",
+        "subtitle": "Stressfrei vorbereitet – die Essentials ohne Überflüssiges",
+        "hero_image": "https://m.media-amazon.com/images/I/B0D2HYVDF7._AC_SL500_.jpg",
+        "sections": [
+            {"name": "Kliniktasche (Mama)", "niches": ["still-bh", "wochenbett-unterwaesche", "stillkissen", "bademantel", "snacks"]},
+            {"name": "Kliniktasche (Baby)", "niches": ["bodys-neugeboren", "strampler", "muetze", "socken", "decke", "autositz"]},
+            {"name": "Kinderzimmer", "niches": ["babybett", "matratze", "wickelkommode", "babyphone", "raumthermometer", "nachtlicht"]},
+            {"name": "Unterwegs", "niches": ["kinderwagen", "tragetuch", "wickeltasche", "flaschenwaermer-unterwegs", "reisebett"]},
+            {"name": "Sicherheit & Pflege", "niches": ["baby-kindersicherheit", "fieberthermometer", "nasensauger", "wundschutzcreme", "badewanne"]}
+        ],
+        "budget_tip": "💡 Budget-Hack: Kinderwagen & Babybett gebraucht (sehr kurz genutzt), Windeln & Feuchttücher im Abo, Kleidung Gr. 56/62 – Gr. 50/56 oft unnötig."
+    },
+    "umzug": {
+        "title": "Umzug: Packen, Organisieren, Einrichten – der Masterplan",
+        "subtitle": "Stressfrei umziehen mit System – von Kartons bis zur neuen Adresse",
+        "hero_image": "https://m.media-amazon.com/images/I/B0H1CMGNHR._AC_SL500_.jpg",
+        "sections": [
+            {"name": "Verpacken & Schützen", "niches": ["umzugskartons", "luftpolsterfolie", "packpapier", "klebeband", "stretchfolie", "matratzenhuelle"]},
+            {"name": "Organisation & Labeling", "niches": ["etiketten-drucker", "marker", "farbkodierung", "inventar-liste", "wichtige-dokumente"]},
+            {"name": "Transport & Helfer", "niches": ["sackkarre", "tragegurte", "spanngurte", "transporter-mieten", "umzugshelfer"]},
+            {"name": "Neue Wohnung vorbereiten", "niches": ["putzmittel-set", "grundreinigung", "zaehlerstand-foto", "uebergabe-protokoll", "nachsendeauftrag"]},
+            {"name": "Erste Tage Essentials", "niches": ["werkzeug-koffer", "lampe", "verlaengerungskabel", "klopapier", "handtuecher", "kaffee"]}
+        ],
+        "budget_tip": "💡 Budget-Hack: Kartons kostenlos bei Supermärkten/Apotheken, Umzugshelfer über Freunde + Pizza/Beer, Transporter Mo-Do 50 % günstiger als Wochenende."
+    },
+    "haustier-einzug": {
+        "title": "Haustier zieht ein: Hund/Katze/Kleintier – die Erstausstattung",
+        "subtitle": "Alles für den perfekten Start – artgerecht, sicher & praktisch",
+        "hero_image": "https://m.media-amazon.com/images/I/B0D2HYVDF7._AC_SL500_.jpg",
+        "sections": [
+            {"name": "Hund: Basics", "niches": ["hundebett", "fressnapf", "leinen-halsband", "spielzeug", "pflege", "transportbox"]},
+            {"name": "Katze: Basics", "niches": ["kratzbaum", "katzenklo", "streu", "fressnapf", "spielzeug", "transportbox", "katzensicherheit"]},
+            {"name": "Kleintier: Basics", "niches": ["kaefig-gehege", "einstreu", "futter", "traenke", "versteck", "auslauf"]},
+            {"name": "Tierarzt & Gesundheit", "niches": ["fieberthermometer-tier", "zeckenhaken", "entwurmung", "impfpass", "notfall-apotheke"]},
+            {"name": "Reinigung & Hygiene", "niches": ["haarentferner", "geruchsbeseitiger", "waschmaschine-hundefreundlich", "bodenschutz", "fusselrolle"]}
+        ],
+        "budget_tip": "💡 Budget-Hack: Kratzbaum & Hundebett oft gebraucht top Zustand, Futter & Streu im Abo 10–15 % günstiger, Tierarzt-Kosten: OP-Versicherung prüfen."
+    }
+}
+
+# Newsletter integration config
+NEWSLETTER_CONFIG = {
+    "provider": "mailerlite",
+    "form_action": "https://forms.mailerlite.com/f/your-form-id",
+    "inline_form_action": "https://forms.mailerlite.com/f/your-inline-form-id",
+    "lead_magnets": {
+        "checklist-erste-wohnung": "Checkliste: Erste Wohnung einrichten (PDF)",
+        "guide-smart-home": "Smart Home Einsteiger-Guide (PDF)",
+        "geschenk-finder": "Geschenk-Finder: Das richtige Geschenk in 2 Min (Interaktiv)",
+        "deal-alert": "Tägliche Top-Deals per E-Mail (nur echte Schnäppchen)"
+    },
+    "segments": ["deals", "guides", "seasonal", "new-niches"]
+}
+
 # Niche display names (German)
 NICHE_NAMES = {
     "baby-kindersicherheit": "Baby Kindersicherheit",
@@ -3288,11 +3480,388 @@ img { max-width: 100%; height: auto; display: block; }
     .contact-method { flex-direction: column; text-align: center; gap: 8px; }
 }
 
-/* ===== ACCESSIBILITY ===== */
+/* ===== PHASE 5: CONVERSION STRATEGY COMPONENTS ===== */
+
+/* Seasonal Worlds */
+.seasonal-hero, .gift-hero, .situational-hero, .overview-hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    margin: -24px -24px 40px;
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+.seasonal-hero .container, .gift-hero .container, .situational-hero .container, .overview-hero .container {
+    position: relative;
+    z-index: 1;
+}
+.seasonal-badge, .gift-badge, .situational-badge {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 14px;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: var(--radius-full);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.seasonal-hero h1, .gift-hero h1, .situational-hero h1, .overview-hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.seasonal-subtitle, .gift-subtitle, .situational-subtitle {
+    font-size: clamp(16px, 2.5vw, 20px);
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 12px;
+    line-height: 1.5;
+}
+.seasonal-highlight {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.15);
+    border-radius: var(--radius-full);
+    display: inline-block;
+}
+.seasonal-intro {
+    max-width: 800px;
+    margin: 0 auto 48px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+}
+.seasonal-products, .gift-nav, .situational-nav {
+    margin-bottom: 48px;
+}
+.seasonal-products h2, .gift-nav h2, .situational-nav h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.season-grid, .occasion-grid, .situational-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+.season-card, .occasion-card, .situational-card {
+    padding: 32px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all var(--transition-base);
+    text-align: center;
+}
+.season-card:hover, .occasion-card:hover, .situational-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+.season-card.current {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+.season-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 16px;
+}
+.season-card h3, .occasion-card h3, .situational-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+.season-card p, .occasion-card p, .situational-card p {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* Overview Cards */
+.season-overview-grid, .gift-overview-grid, .situational-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+.season-overview-card, .gift-overview-card, .situational-overview-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--color-text);
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-base);
+}
+.season-overview-card:hover, .gift-overview-card:hover, .situational-overview-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+.season-card-image, .gift-card-image, .situational-card-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+.season-card-content, .gift-card-content, .situational-card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.season-card-content .season-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.season-card-content h3, .gift-card-content h3, .situational-card-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--color-text);
+}
+.season-card-content p, .gift-card-content p, .situational-card-content p {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    margin-bottom: 12px;
+    flex: 1;
+}
+.season-highlight {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-primary);
+    padding: 6px 12px;
+    background: var(--color-primary-light);
+    border-radius: var(--radius-full);
+    display: inline-block;
+    width: fit-content;
+}
+
+/* Gift Categories */
+.gift-category {
+    margin-bottom: 48px;
+}
+.gift-category h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--color-primary);
+    display: inline-block;
+}
+
+/* Situational Lists */
+.situational-section {
+    margin-bottom: 40px;
+}
+.situational-section h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--color-text);
+}
+.budget-tip {
+    margin-top: 48px;
+}
+.budget-tip-card {
+    background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary-hover) 20%);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.budget-tip-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+.budget-tip-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin: 0;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    margin: 48px auto 0;
+    max-width: 700px;
+}
+.newsletter-card {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: 32px;
+    text-align: center;
+}
+.newsletter-content h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+.newsletter-content p {
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+}
+.newsletter-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    text-align: left;
+}
+.newsletter-benefits li {
+    font-size: 14px;
+    color: var(--color-text);
+    padding-left: 24px;
+    position: relative;
+}
+.newsletter-benefits li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+.newsletter-form {
+    display: flex;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto 16px;
+}
+.newsletter-form input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    background: var(--color-bg);
+    color: var(--color-text);
+}
+.newsletter-form input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+.newsletter-btn {
+    padding: 14px 24px;
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+.newsletter-btn:hover {
+    background: var(--color-primary-hover);
+}
+.newsletter-disclaimer {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+.newsletter-disclaimer a {
+    color: var(--color-primary);
+}
+
+/* Trust Badges in Footer */
+.footer-bottom {
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+.trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+.trust-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: var(--radius-full);
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-fast);
+}
+.trust-badge svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.trust-badge.amazon { border-color: #ff9900; color: #ff9900; }
+.trust-badge.amazon:hover { background: #ff9900; color: white; }
+.trust-badge.ssl { border-color: #10b981; color: #10b981; }
+.trust-badge.ssl:hover { background: #10b981; color: white; }
+.trust-badge.privacy { border-color: #3b82f6; color: #3b82f6; }
+.trust-badge.privacy:hover { background: #3b82f6; color: white; }
+.trust-badge.reviews { border-color: #f59e0b; color: #f59e0b; }
+.trust-badge.reviews:hover { background: #f59e0b; color: white; }
+
+/* Mobile adjustments for Phase 5 */
+@media (max-width: 600px) {
+    .seasonal-hero, .gift-hero, .situational-hero, .overview-hero {
+        min-height: 320px;
+        margin: -16px -16px 32px;
+        border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    }
+    .season-overview-grid, .gift-overview-grid, .situational-overview-grid {
+        grid-template-columns: 1fr;
+    }
+    .season-grid, .occasion-grid, .situational-grid {
+        grid-template-columns: 1fr;
+    }
+    .newsletter-benefits {
+        grid-template-columns: 1fr;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-btn {
+        width: 100%;
+    }
+    .season-card-image, .gift-card-image, .situational-card-image {
+        height: 160px;
+    }
+    .budget-tip-card {
+        padding: 24px;
+    }
+}
+
+/* ACCESSIBILITY */
 :focus-visible { outline: 3px solid var(--color-primary); outline-offset: 2px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
-/* ===== COOKIE BANNER ===== */
+/* COOKIE BANNER */
 .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: var(--color-bg); border-top: 1px solid var(--color-border); box-shadow: 0 -4px 20px rgba(0,0,0,0.1); padding: 16px 0; }
 .cookie-banner-content { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 16px; }
 @media (min-width: 640px) { .cookie-banner-content { flex-direction: row; align-items: center; justify-content: space-between; } }
@@ -4536,6 +5105,1115 @@ def generate_kaufberatung_pages(output_path, all_products):
         print(f"✅ Generated Kaufberatung: {guide['slug']}")
 
 
+# ============ PHASE 5: CONVERSION STRATEGY COMPONENT GENERATORS ============
+
+def generate_seasonal_world_pages(output_path: Path, all_products: dict):
+    """Generate seasonal world landing pages."""
+    from datetime import datetime
+    
+    current_month = datetime.now().month
+    # Determine current season
+    if current_month in [3, 4, 5]:
+        current_season = "fruehling"
+    elif current_month in [6, 7, 8]:
+        current_season = "sommer"
+    elif current_month in [9, 10, 11]:
+        current_season = "herbst"
+    else:
+        current_season = "weihnachten"
+    
+    for season_key, season in SEASONAL_WORLDS.items():
+        is_current = season_key == current_season
+        badge = " 🔥 AKTUELL" if is_current else ""
+        
+        # Collect products from all niches for this season
+        season_products = []
+        for niche_key in season['niches']:
+            if niche_key in all_products:
+                for product in all_products[niche_key][:2]:  # Top 2 per niche
+                    product['_niche'] = niche_key
+                    season_products.append(product)
+        
+        # Sort by rating/reviews, take top 12
+        season_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+        season_products = season_products[:12]
+        
+        # Generate product cards
+        product_cards = ""
+        for idx, product in enumerate(season_products):
+            product_cards += generate_product_card_v2(product, idx, context="seasonal")
+        
+        page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{season['title']}{badge} | Andreas Stehmann Links</title>
+    <meta name="description" content="{season['subtitle']} – {season['intro'][:150]}">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/saison/{season_key}/">
+    <link rel="preload" as="image" href="{season['hero_image']}">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script type="application/ld+json">{{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "{season['title']}{badge}",
+        "description": "{season['intro']}",
+        "mainEntity": {{
+            "@type": "ItemList",
+            "numberOfItems": {len(season_products)},
+            "itemListElement": [
+''' + ",\n".join([
+    f'''{{"@type": "ListItem", "position": {i+1}, "item": {{"@type": "Product", "name": "{p.get('name', p.get('title', ''))[:100].replace('"', '\\\\\\\\\\\\"')}", "url": "{get_affiliate_link(p['asin'])}", "image": "{get_amazon_image_url(p['asin'])}", "offers": {{"@type": "Offer", "price": "{p.get('price', '0').replace('€', '').replace(',', '.').strip()}", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}}}}}'''
+    for i, p in enumerate(season_products)
+]) + f'''
+            ]
+        }},
+        "publisher": {{"@type": "Organization", "name": "Andreas Stehmann Links", "url": "https://balu1705.github.io/andreasstehmann-links/"}}
+    }}</script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="seasonal-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{season['hero_image']}');">
+            <div class="container">
+                <span class="seasonal-badge">{'🔥 AKTUELLE SAISON' if is_current else '📅 SAISONAL'}</span>
+                <h1>{season['title']}{badge}</h1>
+                <p class="seasonal-subtitle">{season['subtitle']}</p>
+                <p class="seasonal-highlight">{season['highlight']}</p>
+            </div>
+        </section>
+        <section class="seasonal-intro container">
+            <p>{season['intro']}</p>
+        </section>
+        <section class="seasonal-products container">
+            <div class="product-grid">{product_cards}</div>
+        </section>
+        <section class="seasonal-nav container">
+            <h2>Alle Saison-Welten</h2>
+            <div class="season-grid">
+''' + "".join([
+    f'''<a href="/saison/{s_key}/" class="season-card {'current' if s_key == current_season else ''}">
+                <span class="season-icon">{'🌱' if s_key == 'fruehling' else '☀️' if s_key == 'sommer' else '🍂' if s_key == 'herbst' else '🎄'}</span>
+                <h3>{SEASONAL_WORLDS[s_key]['title']}</h3>
+                <p>{SEASONAL_WORLDS[s_key]['subtitle'][:80]}...</p>
+            </a>'''
+    for s_key in SEASONAL_WORLDS
+]) + '''
+            </div>
+        </section>
+        ''' + generate_newsletter_section("seasonal") + '''
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+        
+        # Write page
+        season_dir = output_path / "saison" / season_key
+        season_dir.mkdir(parents=True)
+        (season_dir / "index.html").write_text(page_html, encoding='utf-8')
+        print(f"✅ Generated Seasonal World: {season_key}")
+
+
+def generate_gift_guide_pages(output_path: Path, all_products: dict):
+    """Generate gift guide pages by occasion."""
+    for occasion_key, occasion in GIFT_GUIDES.items():
+        # Build category sections with products
+        category_sections = ""
+        for cat_name, niche_list in occasion['categories'].items():
+            cat_products = []
+            for niche_key in niche_list:
+                if niche_key in all_products:
+                    for product in all_products[niche_key][:1]:
+                        product['_niche'] = niche_key
+                        cat_products.append(product)
+            
+            cat_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+            cat_products = cat_products[:6]
+            
+            if cat_products:
+                product_cards = ""
+                for product in cat_products:
+                    product_cards += generate_product_card_v2(product, context="gift")
+                
+                category_sections += f'''
+                <section class="gift-category">
+                    <h3>{cat_name}</h3>
+                    <div class="product-grid">{product_cards}</div>
+                </section>
+'''
+        
+        page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{occasion['title']} | Andreas Stehmann Links</title>
+    <meta name="description" content="{occasion['subtitle']} – Kuratierte Geschenkideen für jeden Anlass & Budget.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/geschenke/{occasion_key}/">
+    <link rel="preload" as="image" href="{occasion['hero_image']}">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script type="application/ld+json">{{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "{occasion['title']}",
+        "description": "{occasion['subtitle']}",
+        "publisher": {{"@type": "Organization", "name": "Andreas Stehmann Links", "url": "https://balu1705.github.io/andreasstehmann-links/"}}
+    }}</script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gift-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{occasion['hero_image']}');">
+            <div class="container">
+                <span class="gift-badge">🎁 GESCHENK-GUIDE</span>
+                <h1>{occasion['title']}</h1>
+                <p class="gift-subtitle">{occasion['subtitle']}</p>
+            </div>
+        </section>
+        <section class="gift-nav container">
+            <h2>Alle Geschenk-Anlässe</h2>
+            <div class="occasion-grid">
+''' + "".join([
+    f'''<a href="/geschenke/{o_key}/" class="occasion-card">
+                <h3>{GIFT_GUIDES[o_key]['title']}</h3>
+                <p>{GIFT_GUIDES[o_key]['subtitle'][:80]}...</p>
+            </a>'''
+    for o_key in GIFT_GUIDES
+]) + '''
+            </div>
+        </section>
+        ''' + category_sections + '''
+        ''' + generate_newsletter_section("guides") + '''
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+        
+        # Write page
+        season_dir = output_path / "saison" / season_key
+        season_dir.mkdir(parents=True)
+        (season_dir / "index.html").write_text(page_html, encoding='utf-8')
+        print(f"✅ Generated Seasonal World: {season_key}")
+
+
+def generate_gift_finder_pages(output_path: Path, all_products: dict):
+    """Generate gift finder pages for different occasions."""
+    for occasion_key, gift_data in GIFT_GUIDES.items():
+        category_html = ""
+        for cat_name, niches in gift_data['categories'].items():
+            cat_products = []
+            for niche_key in niches:
+                if niche_key in all_products:
+                    for product in all_products[niche_key][:1]:
+                        product['_niche'] = niche_key
+                        cat_products.append(product)
+            
+            cat_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+            cat_products = cat_products[:6]
+            
+            if cat_products:
+                product_cards = ""
+                for idx, product in enumerate(cat_products):
+                    product_cards += generate_product_card_v2(product, idx, context="gift")
+                
+                category_html += f'''
+                <section class="gift-category">
+                    <h3>{cat_name}</h3>
+                    <div class="product-grid">{product_cards}</div>
+                </section>
+'''
+        
+        # JSON-LD for Gift Guide (ItemList)
+        json_ld_items = []
+        all_gift_products = []
+        for niches in gift_data['categories'].values():
+            for niche_key in niches:
+                if niche_key in all_products:
+                    all_gift_products.extend(all_products[niche_key][:1])
+        all_gift_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+        for idx, product in enumerate(all_gift_products[:12]):
+            json_ld_items.append(f'''{{
+                "@type": "ListItem",
+                "position": {idx + 1},
+                "item": {{
+                    "@type": "Product",
+                    "name": "{product.get('name', product.get('title', ''))[:100].replace(chr(34), chr(39))}",
+                    "image": "{get_amazon_image_url(product['asin'])}",
+                    "url": "{get_affiliate_link(product['asin'])}",
+                    "offers": {{
+                        "@type": "Offer",
+                        "url": "{get_affiliate_link(product['asin'])}",
+                        "priceCurrency": "EUR",
+                        "availability": "https://schema.org/InStock"
+                    }}
+                }}
+            }}''')
+        
+        json_ld_str = ",".join(json_ld_items)
+        
+        page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{gift_data['title']} | Andreas Stehmann Links</title>
+    <meta name="description" content="{gift_data['subtitle']} – Kuratierte Geschenk-Ideen für jeden Anlass.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/geschenke/{occasion_key}/">
+    <link rel="preload" as="image" href="{gift_data['hero_image']}">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script type="application/ld+json">{{
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "{gift_data['title']}",
+        "description": "{gift_data['subtitle']}",
+        "itemListElement": [
+{json_ld_str}
+        ]
+    }}</script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gift-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{gift_data['hero_image']}');">
+            <div class="container">
+                <span class="gift-badge">🎁 GESCHENK-FINDER</span>
+                <h1>{gift_data['title']}</h1>
+                <p class="gift-subtitle">{gift_data['subtitle']}</p>
+            </div>
+        </section>
+        <section class="gift-nav container">
+            <h2>Alle Geschenk-Guides</h2>
+            <div class="gift-grid">
+            <a href="/geschenke/geburtstag/" class="gift-card">
+                <h3>{GIFT_GUIDES['geburtstag']['title']}</h3>
+                <p>{GIFT_GUIDES['geburtstag']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/geschenke/weihnachten/" class="gift-card">
+                <h3>{GIFT_GUIDES['weihnachten']['title']}</h3>
+                <p>{GIFT_GUIDES['weihnachten']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/geschenke/muttertag/" class="gift-card">
+                <h3>{GIFT_GUIDES['muttertag']['title']}</h3>
+                <p>{GIFT_GUIDES['muttertag']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/geschenke/vatertag/" class="gift-card">
+                <h3>{GIFT_GUIDES['vatertag']['title']}</h3>
+                <p>{GIFT_GUIDES['vatertag']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/geschenke/einweihung/" class="gift-card">
+                <h3>{GIFT_GUIDES['einweihung']['title']}</h3>
+                <p>{GIFT_GUIDES['einweihung']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/geschenke/geburt/" class="gift-card">
+                <h3>{GIFT_GUIDES['geburt']['title']}</h3>
+                <p>{GIFT_GUIDES['geburt']['subtitle'][:80]}...</p>
+            </a>
+            </div>
+        </section>
+        {category_html}
+        {generate_newsletter_section("guides")}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+        
+        # Write page
+        gift_dir = output_path / "geschenke" / occasion_key
+        gift_dir.mkdir(parents=True)
+        (gift_dir / "index.html").write_text(page_html, encoding='utf-8')
+        print(f"✅ Generated Gift Finder: {occasion_key}")
+
+
+def generate_situational_list_pages(output_path: Path, all_products: dict):
+    """Generate situational checklist pages for different life events."""
+    for list_key, sit_list in SITUATIONAL_LISTS.items():
+        section_html = ""
+        for section in sit_list['sections']:
+            sec_products = []
+            for niche_key in section['niches']:
+                if niche_key in all_products:
+                    for product in all_products[niche_key][:1]:
+                        product['_niche'] = niche_key
+                        sec_products.append(product)
+            
+            sec_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+            sec_products = sec_products[:5]
+            
+            if sec_products:
+                product_cards = ""
+                for idx, product in enumerate(sec_products):
+                    product_cards += generate_product_card_v2(product, idx, context="situational")
+                
+                section_html += f'''
+                <section class="situational-section">
+                    <h3>{section['name']}</h3>
+                    <div class="product-grid">{product_cards}</div>
+                </section>
+'''
+        
+        # JSON-LD HowTo for checklist
+        howto_steps = []
+        for i, section in enumerate(sit_list['sections']):
+            step_items = []
+            for niche_key in section['niches'][:3]:
+                if niche_key in all_products and all_products[niche_key]:
+                    p = all_products[niche_key][0]
+                    step_items.append(f'{{"@type": "HowToDirection", "text": "{p.get("name", p.get("title", ""))[:80].replace(chr(34), chr(39))}"}}')
+            howto_steps.append(f'''{{
+                "@type": "HowToStep",
+                "position": {i+1},
+                "name": "{section['name']}",
+                "text": "Produkte für {section['name'].lower()} auswählen",
+                "itemListElement": [
+{",".join(step_items)}
+                ]
+            }}''')
+        
+        howto_str = ",".join(howto_steps)
+        
+        page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{sit_list['title']} | Andreas Stehmann Links</title>
+    <meta name="description" content="{sit_list['subtitle']} – Die komplette Checkliste mit Produkt-Empfehlungen.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/checklisten/{list_key}/">
+    <link rel="preload" as="image" href="{sit_list['hero_image']}">
+    <link rel="stylesheet" href="/assets/style.css">
+    <script type="application/ld+json">{{
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "{sit_list['title']}",
+        "description": "{sit_list['subtitle']}",
+        "step": [
+{howto_str}
+        ],
+        "publisher": {{"@type": "Organization", "name": "Andreas Stehmann Links", "url": "https://balu1705.github.io/andreasstehmann-links/"}}
+    }}</script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="situational-hero" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{sit_list['hero_image']}');">
+            <div class="container">
+                <span class="situational-badge">📋 CHECKLISTE</span>
+                <h1>{sit_list['title']}</h1>
+                <p class="situational-subtitle">{sit_list['subtitle']}</p>
+            </div>
+        </section>
+        <section class="situational-nav container">
+            <h2>Alle Situations-Checklisten</h2>
+            <div class="situational-grid">
+            <a href="/checklisten/erste-wohnung/" class="situational-card">
+                <h3>{SITUATIONAL_LISTS['erste-wohnung']['title']}</h3>
+                <p>{SITUATIONAL_LISTS['erste-wohnung']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/checklisten/home-office-setup/" class="situational-card">
+                <h3>{SITUATIONAL_LISTS['home-office-setup']['title']}</h3>
+                <p>{SITUATIONAL_LISTS['home-office-setup']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/checklisten/baby-kommt/" class="situational-card">
+                <h3>{SITUATIONAL_LISTS['baby-kommt']['title']}</h3>
+                <p>{SITUATIONAL_LISTS['baby-kommt']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/checklisten/umzug/" class="situational-card">
+                <h3>{SITUATIONAL_LISTS['umzug']['title']}</h3>
+                <p>{SITUATIONAL_LISTS['umzug']['subtitle'][:80]}...</p>
+            </a>
+            <a href="/checklisten/haustier-einzug/" class="situational-card">
+                <h3>{SITUATIONAL_LISTS['haustier-einzug']['title']}</h3>
+                <p>{SITUATIONAL_LISTS['haustier-einzug']['subtitle'][:80]}...</p>
+            </a>
+            </div>
+        </section>
+        {section_html}
+        <section class="budget-tip container">
+            <div class="budget-tip-card">
+                <h3>💡 Budget-Tipp</h3>
+                <p>{sit_list['budget_tip']}</p>
+            </div>
+        </section>
+        {generate_newsletter_section("guides")}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+        
+        # Write page
+        sit_dir = output_path / "checklisten" / list_key
+        sit_dir.mkdir(parents=True)
+        (sit_dir / "index.html").write_text(page_html, encoding='utf-8')
+        print(f"✅ Generated Situational List: {list_key}")
+
+def generate_recommendation_boxes(all_products: dict) -> dict:
+    """Generate contextual recommendation boxes for cross-selling."""
+    boxes = {}
+    
+    # "Auch interessant" - cross-niche recommendations
+    cross_niche_map = {
+        "kaffee": ["kaffee-genuss", "kaffeevollautomat-bestseller", "kaffee-zubehoer", "kaffee-eeis"],
+        "smart-home": ["smart-home-bestseller", "smart-home-licht", "smart-home-sicherheit", "saugroboter-bestseller"],
+        "wohnen": ["wohnen-deko", "wohnen-traumumfeld", "wanddeko", "pflanzen", "duftkerzen"],
+        "kueche": ["backen-kochen", "kuechen-gadgets", "kuechenorganisation", "kuechenmaschine-profi-bestseller"],
+        "schlafen": ["schlafen-wohlfuehlzimmer", "bettwaren", "schlaf-topper", "matratzen"],
+        "bad": ["bad-organisation", "wellness-massage-bestseller", "spa-beauty-erlebnis", "haare-styling"],
+        "outdoor": ["outdoor-abenteuer", "balkon-moebel-lounge", "grill-zubehoer", "camping-ausruestung"],
+        "baby": ["babywelt", "baby-kindersicherheit", "maedchenzimmer-aktuell", "babyphone"],
+        "haustier": ["hundebett", "kratzbaum", "fressnapf", "streu"],
+        "fitness": ["fitness-homegym", "lauf-ausruestung-damen", "yoga-meditation", "heimtrainer"],
+        "buero": ["home-office", "ergonomischer-stuhl", "hoehenverstellbarer-tisch", "monitor-arm"],
+    }
+    
+    for main_niche, related_niches in cross_niche_map.items():
+        rec_products = []
+        for rel_niche in related_niches:
+            if rel_niche in all_products and rel_niche != main_niche:
+                for product in all_products[rel_niche][:1]:
+                    product['_niche'] = rel_niche
+                    rec_products.append(product)
+        
+        if rec_products:
+            rec_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+            boxes[main_niche] = rec_products[:4]
+    
+    # "Zu diesem Produkt passt" - complementary products
+    complementary_map = {
+        "kaffeevollautomat": ["kaffee-genuss", "kaffee-zubehoer", "entkaelker", "milchaufschaeumer"],
+        "saugroboter": ["waschmaschine-zubehoer", "staubsauger-beutel", "reinigungsmittel", "smart-home-licht"],
+        "grill": ["grill-zubehoer", "fleischthermometer", "grillhandschuhe", "outdoor-beleuchtung"],
+        "babybett": ["babyphone", "matratze", "bettwaren-baby", "nachtlicht"],
+        "schreibtisch": ["ergonomischer-stuhl", "monitor-arm", "kabelmanagement", "beleuchtung-smart"],
+    }
+    
+    for product_type, niches in complementary_map.items():
+        comp_products = []
+        for niche in niches:
+            if niche in all_products:
+                for product in all_products[niche][:1]:
+                    product['_niche'] = niche
+                    comp_products.append(product)
+        if comp_products:
+            comp_products.sort(key=lambda p: (p.get('rating', 0), p.get('review_count', 0)), reverse=True)
+            boxes[f"complement_{product_type}"] = comp_products[:4]
+    
+    return boxes
+
+
+def generate_newsletter_section(context: str = "general") -> str:
+    """Generate newsletter signup section HTML."""
+    lead_magnet = NEWSLETTER_CONFIG['lead_magnets'].get(context, "Top-Deals & Guides direkt in dein Postfach")
+    
+    return f'''
+    <section class="newsletter-section container">
+        <div class="newsletter-card">
+            <div class="newsletter-content">
+                <h3>📬 Nie wieder ein Schnäppchen verpassen</h3>
+                <p>{lead_magnet}</p>
+                <ul class="newsletter-benefits">
+                    <li>✅ Täglich die besten Amazon-Deals (nur echte Rabatte)</li>
+                    <li>✅ Neue Kaufberatungen & Checklisten zuerst lesen</li>
+                    <li>✅ Saisonale Highlights rechtzeitig zum Start</li>
+                    <li>✅ Kein Spam, jederzeit abbestellbar</li>
+                </ul>
+            </div>
+            <form class="newsletter-form" action="{NEWSLETTER_CONFIG['inline_form_action']}" method="POST" target="_blank">
+                <input type="hidden" name="segment" value="{context}">
+                <input type="email" name="email" placeholder="deine@email.de" required aria-label="E-Mail-Adresse">
+                <button type="submit" class="newsletter-btn">Kostenlos abonnieren</button>
+            </form>
+            <p class="newsletter-disclaimer">Als Amazon-Partner verdiene ich an qualifizierten Käufen. <a href="/datenschutz/">Datenschutz</a></p>
+        </div>
+    </section>
+'''
+
+
+def generate_season_overview_page(output_path: Path):
+    """Generate overview page for all seasonal worlds."""
+    page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saison-Welten | Andreas Stehmann Links</title>
+    <meta name="description" content="Entdecke unsere kuratierten Saison-Welten: Frühlings-Favoriten, Sommer-Highlights, Herbst-Essentials & Weihnachts-Welt – die besten Produkte für jede Jahreszeit.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/saison/">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="overview-hero container">
+            <h1>📅 Saison-Welten</h1>
+            <p>Die besten Produkte für jede Jahreszeit – kuratiert, getestet, verlinkt.</p>
+        </section>
+        <section class="season-overview-grid container">
+''' + "".join([
+    f'''<a href="/saison/{s_key}/" class="season-overview-card">
+                <div class="season-card-image" style="background-image: url('{SEASONAL_WORLDS[s_key]['hero_image']}');"></div>
+                <div class="season-card-content">
+                    <span class="season-icon">{'🌱' if s_key == 'fruehling' else '☀️' if s_key == 'sommer' else '🍂' if s_key == 'herbst' else '🎄'}</span>
+                    <h3>{SEASONAL_WORLDS[s_key]['title']}</h3>
+                    <p>{SEASONAL_WORLDS[s_key]['subtitle']}</p>
+                    <span class="season-highlight">{SEASONAL_WORLDS[s_key]['highlight']}</span>
+                </div>
+            </a>'''
+    for s_key in SEASONAL_WORLDS
+]) + f'''
+        </section>
+        {generate_newsletter_section("seasonal")}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+    
+    season_overview_dir = output_path / "saison"
+    season_overview_dir.mkdir(parents=True)
+    (season_overview_dir / "index.html").write_text(page_html, encoding='utf-8')
+    print("✅ Generated Season Overview page")
+
+
+def generate_gift_overview_page(output_path: Path):
+    """Generate overview page for all gift guides."""
+    page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geschenk-Finder | Andreas Stehmann Links</title>
+    <meta name="description" content="Finde das perfekte Geschenk für jeden Anlass: Geburtstag, Weihnachten, Muttertag, Vatertag, Einweihung, Geburt – sortiert nach Budget & Interessen.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/geschenke/">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="overview-hero container">
+            <h1>🎁 Geschenk-Finder</h1>
+            <p>Das richtige Geschenk finden – nach Anlass, Budget & Interessen kuratiert.</p>
+        </section>
+        <section class="gift-overview-grid container">
+''' + "".join([
+    f'''<a href="/geschenke/{o_key}/" class="gift-overview-card">
+                <div class="gift-card-image" style="background-image: url('{GIFT_GUIDES[o_key]['hero_image']}');"></div>
+                <div class="gift-card-content">
+                    <h3>{GIFT_GUIDES[o_key]['title']}</h3>
+                    <p>{GIFT_GUIDES[o_key]['subtitle']}</p>
+                </div>
+            </a>'''
+    for o_key in GIFT_GUIDES
+]) + f'''
+        </section>
+        {generate_newsletter_section("guides")}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+    
+    gift_overview_dir = output_path / "geschenke"
+    gift_overview_dir.mkdir(parents=True)
+    (gift_overview_dir / "index.html").write_text(page_html, encoding='utf-8')
+    print("✅ Generated Gift Overview page")
+
+
+def generate_situational_overview_page(output_path: Path):
+    """Generate overview page for all situational checklists."""
+    page_html = f'''<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situations-Checklisten | Andreas Stehmann Links</title>
+    <meta name="description" content="Meistere jede Lebenslage mit unseren Checklisten: Erste Wohnung, Home-Office, Baby kommt, Umzug, Haustier-Einzug – mit Produkt-Empfehlungen & Budget-Tipps.">
+    <link rel="canonical" href="https://balu1705.github.io/andreasstehmann-links/checklisten/">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container" aria-label="Hauptnavigation">
+            <a href="/" class="logo" aria-label="Andreas Stehmann Links - Startseite">Andreas Stehmann Links</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menü öffnen">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="/">Start</a></li>
+                <li><a href="/nischen/">Nischen</a></li>
+                <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                <li><a href="/saison/">Saison-Welten</a></li>
+                <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                <li><a href="/checklisten/">Situations-Checklisten</a></li>
+                <li><a href="/deals/">Deals</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/ueber-uns/">Über uns</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="overview-hero container">
+            <h1>📋 Situations-Checklisten</h1>
+            <p>Lebenslagen meistern – mit kompletten Checklisten & den richtigen Produkten.</p>
+        </section>
+        <section class="situational-overview-grid container">
+''' + "".join([
+    f'''<a href="/checklisten/{s_key}/" class="situational-overview-card">
+                <div class="situational-card-image" style="background-image: url('{SITUATIONAL_LISTS[s_key]['hero_image']}');"></div>
+                <div class="situational-card-content">
+                    <h3>{SITUATIONAL_LISTS[s_key]['title']}</h3>
+                    <p>{SITUATIONAL_LISTS[s_key]['subtitle']}</p>
+                </div>
+            </a>'''
+    for s_key in SITUATIONAL_LISTS
+]) + f'''
+        </section>
+        {generate_newsletter_section("guides")}
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Andreas Stehmann Links</h3>
+                    <p>Kuratierte Produkt-Empfehlungen für dein Zuhause. Unabhängig, ehrlich, mit Herz.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="/">Startseite</a></li>
+                        <li><a href="/nischen/">Alle Nischen</a></li>
+                        <li><a href="/kaufberatung/">Kaufberatungen</a></li>
+                        <li><a href="/saison/">Saison-Welten</a></li>
+                        <li><a href="/geschenke/">Geschenk-Finder</a></li>
+                        <li><a href="/checklisten/">Checklisten</a></li>
+                        <li><a href="/deals/">Tages-Deals</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-nav" aria-label="Service">
+                    <h4>Service</h4>
+                    <ul>
+                        <li><a href="/ueber-uns/">Über uns</a></li>
+                        <li><a href="/affiliate-hinweis/">Affiliate-Hinweis</a></li>
+                        <li><a href="/datenschutz/">Datenschutz</a></li>
+                        <li><a href="/impressum/">Impressum</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Top-Deals & Guides direkt in dein Postfach.</p>
+                    <form action="{NEWSLETTER_CONFIG['form_action']}" method="POST" target="_blank">
+                        <input type="email" name="email" placeholder="Deine E-Mail" required>
+                        <button type="submit">Abonnieren</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="trust-badges" role="list" aria-label="Vertrauenssignale">
+                    <span class="trust-badge amazon" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg><span>Amazon Partner</span></span>
+                    <span class="trust-badge ssl" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M18 8h-1V7c0-2.76-2.24-5 5-5S7 4.24 7 7v1H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V7c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v1z"/></svg><span>SSL Verschlüsselt</span></span>
+                    <span class="trust-badge privacy" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg><span>Datenschutz</span></span>
+                    <span class="trust-badge reviews" role="listitem"><svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg><span>Geprüft</span></span>
+                </div>
+                <p>&copy; 2024 Andreas Stehmann Links. Als Amazon-Partner verdiene ich an qualifizierten Käufen.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/main.js"></script>
+</body>
+</html>'''
+    
+    sit_overview_dir = output_path / "checklisten"
+    sit_overview_dir.mkdir(parents=True)
+    (sit_overview_dir / "index.html").write_text(page_html, encoding='utf-8')
+    print("✅ Generated Situational Overview page")
+
+
 def main():
     print("🔄 Loading product data...")
     all_products = load_products()
@@ -4831,6 +6509,16 @@ def main():
     # Generate detailed Kaufberatung pages (Phase 3)
     print("📚 Generating detailed Kaufberatung pages...")
     generate_kaufberatung_pages(output_path, all_products)
+
+    # Generate Phase 5: Conversion Strategy Components
+    print("🌸 Generating Seasonal Worlds pages...")
+    generate_seasonal_world_pages(output_path, all_products)
+
+    print("🎁 Generating Gift Finder pages...")
+    generate_gift_finder_pages(output_path, all_products)
+
+    print("📋 Generating Situational List pages...")
+    generate_situational_list_pages(output_path, all_products)
 
     # Generate Kontakt page
     kontakt = '''<!DOCTYPE html>
